@@ -1,0 +1,14 @@
+Creative Commons License
+This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
+
+Specifics adhering to RogueTech:Stellaris
+
+Unless otherwise noted for a File or DLL
+
+You are NOT! allowed to modify and redistribute this work as your own or pass it off as related to RogueTech.
+
+You are NOT! allowed to make any modifications to RT and distribute these unless given explicit permission.
+
+You are NOT! allowed to monetize or profit of this work in any way.
+
+You are allowed to use the contents of the Repo to learn and as a starting point for your own, given full and proper Credits to all works that have been used.
