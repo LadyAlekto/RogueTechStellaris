@@ -1,0 +1,30 @@
+﻿l_english:
+
+ BIOPHAGE_ARMOR_1:0 "Bio-Armor" 
+ BIOPHAGE_ARMOR_2:0 "Bio-Armor MKII" 
+ BIOPHAGE_ARMOR_3:0 "Bio-Armor MKIII" 
+ BIOPHAGE_ARMOR_4:0 "Bio-Armor MKIV" 
+ BIOPHAGE_ARMOR_5:0 "Bio-Armor MKV" 
+ BIOPHAGE_ARMOR_6:0 "Bio-Armor MKVI"
+ 
+ BIOPHAGE_ARMOR_1_DESC:0 "Biologically Reinforced Armor"
+ BIOPHAGE_ARMOR_2_DESC:0 "Biologically Reinforced Armor MKII"
+ BIOPHAGE_ARMOR_3_DESC:0 "Biologically Reinforced Armor MKIII"
+ BIOPHAGE_ARMOR_4_DESC:0 "Biologically Reinforced Armor MKIV"
+ BIOPHAGE_ARMOR_5_DESC:0 "Biologically Reinforced Armor MKV"
+ BIOPHAGE_ARMOR_6_DESC:0 "Biologically Reinforced Armor MKVI"
+ 
+ ROGUE_SHIELD_BOOSTER_1:0 "Shield-Capacitators" 
+ ROGUE_SHIELD_BOOSTER_2:0 "Shield-Capacitators MKII" 
+ ROGUE_SHIELD_BOOSTER_3:0 "Shield-Capacitators MKIII" 
+ ROGUE_SHIELD_BOOSTER_4:0 "Shield-Capacitators MKIV" 
+ ROGUE_SHIELD_BOOSTER_5:0 "Shield-Capacitators MKV" 
+ ROGUE_SHIELD_BOOSTER_6:0 "Shield-Capacitators MKVI"
+ 
+ ROGUE_SHIELD_BOOSTER_1_DESC:0 "Shield Capacitators"
+ ROGUE_SHIELD_BOOSTER_2_DESC:0 "Shield Capacitators MKII"
+ ROGUE_SHIELD_BOOSTER_3_DESC:0 "Shield Capacitators MKIII"
+ ROGUE_SHIELD_BOOSTER_4_DESC:0 "Shield Capacitators MKIV"
+ ROGUE_SHIELD_BOOSTER_5_DESC:0 "Shield Capacitators MKV"
+ ROGUE_SHIELD_BOOSTER_6_DESC:0 "Shield Capacitators MKVI"
+ 

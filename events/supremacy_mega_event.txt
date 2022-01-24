@@ -1,0 +1,76 @@
+namespace = supremacy_mega
+
+# Interstellar Assembly Notification
+
+country_event = {
+	id = "supremacy_mega.9005"
+	title = "supremacy_mega.9005.name"
+	desc = supremacy_mega.9005.desc
+	show_sound = event_mystic_reveal
+	picture = GFX_evt_interstellar_assembly
+	is_triggered_only = yes
+	location = FROM
+
+	option = {
+		name = EXCELLENT
+
+	}
+}
+
+country_event = {
+	id = "supremacy_mega.9006"
+	title = "supremacy_mega.9006.name"
+	desc = supremacy_mega.9006.desc
+	show_sound = event_mystic_reveal
+	picture = GFX_evt_interstellar_assembly
+	is_triggered_only = yes
+	location = FROM
+
+	option = {
+		name = EXCELLENT
+
+	}
+}
+
+country_event = {
+	id = "supremacy_mega.9007"
+	title = "supremacy_mega.9007.name"
+	desc = supremacy_mega.9007.desc
+	show_sound = event_mystic_reveal
+	picture = GFX_evt_interstellar_assembly
+	is_triggered_only = yes
+	location = FROM
+
+	option = {
+		name = EXCELLENT
+	}
+}
+
+country_event = {
+	id = "supremacy_mega.9008"
+	title = "supremacy_mega.9008.name"
+	desc = supremacy_mega.9008.desc
+	show_sound = event_mystic_reveal
+	picture = GFX_evt_interstellar_assembly
+	is_triggered_only = yes
+	location = FROM
+
+	option = {
+		name = EXCELLENT
+
+	}
+}
+
+country_event = {
+	id = "supremacy_mega.9009"
+	title = "supremacy_mega.9009.name"
+	desc = supremacy_mega.9009.desc
+	show_sound = event_mystic_reveal
+	picture = GFX_evt_interstellar_assembly
+	is_triggered_only = yes
+	location = FROM
+
+	option = {
+		name = EXCELLENT
+	}
+}

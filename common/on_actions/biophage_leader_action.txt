@@ -1,0 +1,9 @@
+on_leader_spawned = {
+	events = {
+		biophage_leader.111
+	}
+	random_events = {
+		50 = 0
+		50 = biophage_leader.111
+	}
+}

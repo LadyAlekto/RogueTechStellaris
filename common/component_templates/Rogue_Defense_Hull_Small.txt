@@ -1,0 +1,182 @@
+utility_component_template = {
+	key = "Rogue_Basic_Hull_SMALL"
+	size = small
+	icon = "Rogue_Basic_Hull"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military constructor colonizer science transport shipclass_starbase  }
+	size_restriction = { marauder_corvette corvette crisis_corvette constructor colonizer science lithoid_colonizer transport starbase_outpost  }
+
+	component_set = "Rogue_Defense_Hull"
+	upgrades_to = "Rogue_Organic_Hull_SMALL"
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Organic_Hull_SMALL"
+	size = small
+	icon = "Rogue_Organic_Hull"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military constructor colonizer science transport shipclass_starbase  }
+	size_restriction = { marauder_corvette corvette crisis_corvette constructor colonizer science lithoid_colonizer transport starbase_outpost  }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			food = 0.15
+		}
+		upkeep = {
+			food = 0.015
+		}
+	}
+
+	prerequisites = { "tech_roguetech_bio_armor_plating" }
+	component_set = "Rogue_Defense_Hull"
+	upgrades_to = "Rogue_Crystal_Hull_SMALL"
+
+	modifier = {
+		ship_hull_add = 75
+		ship_hull_regen_add_perc = 1
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Crystal_Hull_SMALL"
+	size = small
+	icon = "Rogue_Crystal_Hull"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military constructor colonizer science transport shipclass_starbase  }
+	size_restriction = { marauder_corvette corvette crisis_corvette constructor colonizer science lithoid_colonizer transport starbase_outpost  }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			rare_crystals = 0.375
+		}
+	}
+
+	prerequisites = { "tech_crystal_armor_1" }
+	component_set = "Rogue_Defense_Hull"
+	upgrades_to = "Rogue_Crystal_Hull_MKII_SMALL"
+
+	modifier = {
+		ship_hull_add = 165
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Crystal_Hull_MKII_SMALL"
+	size = small
+	icon = "Rogue_Crystal_Hull_MKII"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military constructor colonizer science transport shipclass_starbase  }
+	size_restriction = { marauder_corvette corvette crisis_corvette constructor colonizer science lithoid_colonizer transport starbase_outpost  }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			rare_crystals = 0.495
+		}
+	}
+
+	prerequisites = { "tech_crystal_armor_2" }
+	component_set = "Rogue_Defense_Hull"
+	upgrades_to = "Rogue_Zontrium_Hull_SMALL"
+
+	modifier = {
+		ship_hull_add = 277.5
+	}
+
+	ai_weight = {
+		weight = 3
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Zontrium_Hull_SMALL"
+	size = small
+	icon = "Rogue_Zontrium_Hull"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military constructor colonizer science transport shipclass_starbase  }
+	size_restriction = { marauder_corvette corvette crisis_corvette constructor colonizer science lithoid_colonizer transport starbase_outpost  }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			sr_living_metal = 0.3
+			nanites = 0.3
+		}
+		upkeep = {
+			sr_living_metal = 0.015
+			nanites = 0.015
+		}
+	}
+
+	prerequisites = { "tech_roguetech_zontrium_hulls" }
+	component_set = "Rogue_Defense_Hull"
+	upgrades_to = "Rogue_Xentronium_Hull_SMALL"
+
+	modifier = {
+		ship_hull_add = 285
+		ship_hull_regen_add_perc = 1
+	}
+
+	ai_weight = {
+		weight = 4
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Xentronium_Hull_SMALL"
+	size = small
+	icon = "Rogue_Xentronium_Hull"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military constructor colonizer science transport shipclass_starbase  }
+	size_restriction = { marauder_corvette corvette crisis_corvette constructor colonizer science lithoid_colonizer transport starbase_outpost  }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			sr_living_metal = 0.495
+			nanites = 0.495
+		}
+		upkeep = {
+			sr_living_metal = 0.03
+			nanites = 0.03
+		}
+	}
+
+	prerequisites = { "tech_roguetech_xentronium_hulls" }
+	component_set = "Rogue_Defense_Hull"
+
+	modifier = {
+		ship_hull_add = 315
+		ship_hull_regen_add_perc = 1.5
+	}
+
+	ai_weight = {
+		weight = 6
+	}
+}

@@ -1,0 +1,297 @@
+ship_section_template = {
+	key = "SUPREMACY_BATTERY_STARBASE_SECTION"
+	entity = "starbase_turret_section_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ship_size = starbase_outpost
+	ship_size = starbase_starport
+	ship_size = starbase_starhold
+	ship_size = starbase_starfortress
+	ship_size = starbase_citadel
+
+	fits_on_slot = "1"
+	fits_on_slot = "2"
+	fits_on_slot = "3"
+	fits_on_slot = "4"
+	fits_on_slot = "5"
+	fits_on_slot = "6"
+
+	should_draw_components = yes
+
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_02"
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "medium_gun_03"
+	}
+	
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "invisible_large_turret"
+		locatorname = "medium_gun_04"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "invisible_large_turret"
+		locatorname = "medium_gun_05"
+	}
+	
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_06"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "medium_gun_07"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "invisible_small_turret"
+		locatorname = "medium_gun_08"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "invisible_small_turret"
+		locatorname = "medium_gun_09"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "invisible_small_turret"
+		locatorname = "medium_gun_10"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_04"
+		template = "invisible_small_turret"
+		locatorname = "medium_gun_11"
+	}
+}
+
+ship_section_template = {
+	key = "SUPREMACY_MISSILE_STARBASE_SECTION"
+	entity = "starbase_turret_section_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ship_size = starbase_outpost
+	ship_size = starbase_starport
+	ship_size = starbase_starhold
+	ship_size = starbase_starfortress
+	ship_size = starbase_citadel
+
+	fits_on_slot = "1"
+	fits_on_slot = "2"
+	fits_on_slot = "3"
+	fits_on_slot = "4"
+	fits_on_slot = "5"
+	fits_on_slot = "6"
+
+	should_draw_components = yes
+
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "medium_missile_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "medium_missile_turret"
+		locatorname = "medium_gun_02"
+	}
+	
+	component_slot = {
+		name = "TORPEDO_03"
+		template = "invisible_missile_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "TORPEDO_04"
+		template = "invisible_missile_turret"
+		locatorname = "medium_gun_02"
+	}
+	
+	component_slot = {
+		name = "TORPEDO_05"
+		template = "invisible_missile_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "TORPEDO_06"
+		template = "invisible_missile_turret"
+		locatorname = "medium_gun_02"
+	}
+	
+	component_slot = {
+		name = "TORPEDO_07"
+		template = "invisible_missile_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "TORPEDO_08"
+		template = "invisible_missile_turret"
+		locatorname = "medium_gun_02"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "medium_gun_01"
+	}	
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "medium_gun_02"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "invisible_point_defence_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_04"
+		template = "invisible_point_defence_turret"
+		locatorname = "medium_gun_02"
+	}
+	
+}
+
+ship_section_template = {
+	key = "SUPREMACY_HANGAR_STARBASE_SECTION"
+	entity = "orbital_station_hangarbay_section_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	ship_size = starbase_outpost
+	ship_size = starbase_starport
+	ship_size = starbase_starhold
+	ship_size = starbase_starfortress
+	ship_size = starbase_citadel
+
+	fits_on_slot = "1"
+	fits_on_slot = "2"
+	fits_on_slot = "3"
+	fits_on_slot = "4"
+	fits_on_slot = "5"
+	fits_on_slot = "6"
+
+	should_draw_components = yes
+
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	
+	component_slot = {
+		name = "STRIKE_CRAFT_05"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	
+	component_slot = {
+		name = "STRIKE_CRAFT_06"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	
+	component_slot = {
+		name = "STRIKE_CRAFT_07"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	
+	component_slot = {
+		name = "STRIKE_CRAFT_08"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	
+	component_slot = {
+		name = "STRIKE_CRAFT_09"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	
+	component_slot = {
+		name = "STRIKE_CRAFT_10"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	
+	component_slot = {
+		name = "STRIKE_CRAFT_11"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	
+	component_slot = {
+		name = "STRIKE_CRAFT_12"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "medium_gun_01"
+	}	
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "medium_gun_02"
+	}
+}

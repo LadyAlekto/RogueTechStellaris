@@ -1,0 +1,83 @@
+component_set = {
+	key = "BIOPHAGE_ARMOR_1"
+
+	icon = "BIOPHAGE_ARMOR_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "BIOPHAGE_ARMOR_2"
+
+	icon = "BIOPHAGE_ARMOR_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "BIOPHAGE_ARMOR_3"
+
+	icon = "BIOPHAGE_ARMOR_3"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "BIOPHAGE_ARMOR_4"
+
+	icon = "BIOPHAGE_ARMOR_4"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "BIOPHAGE_ARMOR_5"
+
+	icon = "BIOPHAGE_ARMOR_5"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "BIOPHAGE_ARMOR_6"
+
+	icon = "BIOPHAGE_ARMOR_6"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "ROGUE_SHIELD_BOOSTER_1"
+
+	icon = "ROGUE_SHIELD_BOOSTER_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "ROGUE_SHIELD_BOOSTER_2"
+
+	icon = "ROGUE_SHIELD_BOOSTER_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "ROGUE_SHIELD_BOOSTER_3"
+
+	icon = "ROGUE_SHIELD_BOOSTER_3"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "ROGUE_SHIELD_BOOSTER_4"
+
+	icon = "ROGUE_SHIELD_BOOSTER_5"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "ROGUE_SHIELD_BOOSTER_5"
+
+	icon = "ROGUE_SHIELD_BOOSTER_5"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "ROGUE_SHIELD_BOOSTER_6"
+
+	icon = "ROGUE_SHIELD_BOOSTER_6"
+	icon_frame = 1
+}

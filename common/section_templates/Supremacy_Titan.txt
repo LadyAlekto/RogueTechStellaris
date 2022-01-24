@@ -1,0 +1,569 @@
+ship_section_template = {
+	key = "SUPREMACY_TITAN_SUPERCARRIER_BOW"
+	ship_size = titan
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "titan_bow_entity"
+	icon = "GFX_ship_part_core_bow"
+	
+	prerequisites = { supremacy_tech_advanced_titans }
+
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}
+		modifier = {
+			factor = 0.1
+			is_preferred_weapons = weapon_type_explosive
+		}
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_strike_craft"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_strike_craft"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_strike_craft"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_strike_craft"
+		locatorname = "xl_gun_01"
+	}
+
+	aux_utility_slots = 2
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 50
+			sr_living_metal = 3
+			nanites = 3
+			sr_dark_matter = 3
+		}
+		upkeep = {
+			sr_living_metal = 0.2
+			nanites = 0.2
+			sr_dark_matter = 0.2
+		}
+	}
+}
+
+ship_section_template = {
+	key = "SUPREMACY_TITAN_SUPERCARRIER_CORE"
+	ship_size = titan
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "titan_mid_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { supremacy_tech_advanced_titans }
+	
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "large_strike_craft"
+		locatorname = "large_gun_01"
+				
+	}
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "large_strike_craft"
+		locatorname = "large_gun_02"
+	}
+	
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		locatorname = "large_gun_03"
+	}		
+	
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		locatorname = "large_gun_04"
+	}
+	
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		locatorname = "large_gun_01"
+	}		
+	
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		locatorname = "large_gun_02"
+	}
+	
+	component_slot = {
+		name = "STRIKE_CRAFT_05"
+		template = "large_strike_craft"
+		locatorname = "large_gun_03"
+	}		
+	
+	component_slot = {
+		name = "STRIKE_CRAFT_06"
+		template = "large_strike_craft"
+		locatorname = "large_gun_04"
+	}
+	
+	aux_utility_slots = 2
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 50
+			sr_living_metal = 3
+			nanites = 3
+			sr_dark_matter = 3
+		}
+		upkeep = {
+			sr_living_metal = 0.2
+			nanites = 0.2
+			sr_dark_matter = 0.2
+		}
+	}
+}
+
+#STERN
+
+ship_section_template = {
+	key = "SUPREMACY_TITAN_SUPERCARRIER_STERN"
+	ship_size = titan
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "titan_stern_entity"
+	icon = "GFX_ship_part_core_stern"
+	
+	prerequisites = { supremacy_tech_advanced_titans }
+	
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "large_strike_craft"
+		locatorname = "large_gun_01"
+	}
+	
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "large_strike_craft"
+		locatorname = "large_gun_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "point_defence_turret"
+		locatorname = "large_gun_01"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "point_defence_turret"
+		locatorname = "large_gun_02"
+	}
+	
+	aux_utility_slots = 2
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 50
+			sr_living_metal = 3
+			nanites = 3
+			sr_dark_matter = 3
+		}
+		upkeep = {
+			sr_living_metal = 0.2
+			nanites = 0.2
+			sr_dark_matter = 0.2
+		}
+	}
+}
+
+ship_section_template = {
+	key = "SUPREMACY_TITAN_INTERDICTOR_BOW"
+	ship_size = titan
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "titan_bow_entity"
+	icon = "GFX_ship_part_core_bow"
+	
+	prerequisites = { supremacy_tech_advanced_titans }
+
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}
+		modifier = {
+			factor = 0.1
+			is_preferred_weapons = weapon_type_explosive
+		}
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "medium_missile_turret"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "medium_missile_turret"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "medium_missile_turret"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "medium_missile_turret"
+		locatorname = "xl_gun_01"
+	}
+
+	aux_utility_slots = 2
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 50
+			sr_living_metal = 3
+			nanites = 3
+			sr_dark_matter = 3
+		}
+		upkeep = {
+			sr_living_metal = 0.2
+			nanites = 0.2
+			sr_dark_matter = 0.2
+		}
+	}
+}
+
+ship_section_template = {
+	key = "SUPREMACY_TITAN_INTERDICTOR_CORE"
+	ship_size = titan
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "titan_mid_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { supremacy_tech_advanced_titans }
+	
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "invisible_missile_turret"
+		locatorname = "large_gun_01"
+				
+	}
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "invisible_missile_turret"
+		locatorname = "large_gun_02"
+	}
+	
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "medium_missile_turret"
+		locatorname = "large_gun_03"
+	}		
+	
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "medium_missile_turret"
+		locatorname = "large_gun_04"
+	}
+	
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "medium_missile_turret"
+		locatorname = "large_gun_01"
+	}		
+	
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "medium_missile_turret"
+		locatorname = "large_gun_02"
+	}
+	
+	component_slot = {
+		name = "STRIKE_CRAFT_05"
+		template = "medium_missile_turret"
+		locatorname = "large_gun_03"
+	}		
+	
+	component_slot = {
+		name = "STRIKE_CRAFT_06"
+		template = "medium_missile_turret"
+		locatorname = "large_gun_04"
+	}
+	
+	aux_utility_slots = 2
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 50
+			sr_living_metal = 3
+			nanites = 3
+			sr_dark_matter = 3
+		}
+		upkeep = {
+			sr_living_metal = 0.2
+			nanites = 0.2
+			sr_dark_matter = 0.2
+		}
+	}
+}
+
+#STERN
+
+ship_section_template = {
+	key = "SUPREMACY_TITAN_INTERDICTOR_STERN"
+	ship_size = titan
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "titan_stern_entity"
+	icon = "GFX_ship_part_core_stern"
+	
+	prerequisites = { supremacy_tech_advanced_titans }
+	
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "medium_missile_turret"
+		locatorname = "large_gun_01"
+	}
+	
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "medium_missile_turret"
+		locatorname = "large_gun_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "point_defence_turret"
+		locatorname = "large_gun_01"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "point_defence_turret"
+		locatorname = "large_gun_02"
+	}
+	
+	aux_utility_slots = 2
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 50
+			sr_living_metal = 3
+			nanites = 3
+			sr_dark_matter = 3
+		}
+		upkeep = {
+			sr_living_metal = 0.2
+			nanites = 0.2
+			sr_dark_matter = 0.2
+		}
+	}
+}
+
+ship_section_template = {
+	key = "SUPREMACY_TITAN_SIEGE_BOW"
+	ship_size = titan
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "titan_bow_entity"
+	icon = "GFX_ship_part_core_bow"
+	
+	prerequisites = { supremacy_tech_advanced_titans }
+
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}
+		modifier = {
+			factor = 0.1
+			is_preferred_weapons = weapon_type_explosive
+		}
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "extra_large_turret"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "extra_large_turret"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "medium_turret"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "medium_turret"
+		locatorname = "xl_gun_01"
+	}
+
+	aux_utility_slots = 2
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 50
+			sr_living_metal = 3
+			nanites = 3
+			sr_dark_matter = 3
+		}
+		upkeep = {
+			sr_living_metal = 0.2
+			nanites = 0.2
+			sr_dark_matter = 0.2
+		}
+	}
+}
+
+ship_section_template = {
+	key = "SUPREMACY_TITAN_SIEGE_CORE"
+	ship_size = titan
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "titan_mid_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { supremacy_tech_advanced_titans }
+	
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "extra_large_turret"
+		locatorname = "large_gun_01"
+				
+	}
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "extra_large_turret"
+		locatorname = "large_gun_02"
+	}
+	
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_turret"
+		locatorname = "large_gun_03"
+	}		
+	
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_turret"
+		locatorname = "large_gun_04"
+	}
+	
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "medium_turret"
+		locatorname = "large_gun_01"
+	}		
+	
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "medium_turret"
+		locatorname = "large_gun_02"
+	}
+	
+	component_slot = {
+		name = "STRIKE_CRAFT_05"
+		template = "small_turret"
+		locatorname = "large_gun_03"
+	}		
+	
+	component_slot = {
+		name = "STRIKE_CRAFT_06"
+		template = "small_turret"
+		locatorname = "large_gun_04"
+	}
+	
+	aux_utility_slots = 2
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 50
+			sr_living_metal = 3
+			nanites = 3
+			sr_dark_matter = 3
+		}
+		upkeep = {
+			sr_living_metal = 0.2
+			nanites = 0.2
+			sr_dark_matter = 0.2
+		}
+	}
+}
+
+#STERN
+
+ship_section_template = {
+	key = "SUPREMACY_TITAN_SIEGE_STERN"
+	ship_size = titan
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "titan_stern_entity"
+	icon = "GFX_ship_part_core_stern"
+	
+	prerequisites = { supremacy_tech_advanced_titans }
+	
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "medium_turret"
+		locatorname = "large_gun_01"
+	}
+	
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "medium_turret"
+		locatorname = "large_gun_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "large_gun_01"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "large_gun_02"
+	}
+	
+	aux_utility_slots = 2
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 50
+			sr_living_metal = 3
+			nanites = 3
+			sr_dark_matter = 3
+		}
+		upkeep = {
+			sr_living_metal = 0.2
+			nanites = 0.2
+			sr_dark_matter = 0.2
+		}
+	}
+}

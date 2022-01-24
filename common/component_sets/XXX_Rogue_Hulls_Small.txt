@@ -1,0 +1,41 @@
+component_set = {
+	key = "Rogue_Basic_Hull"
+
+	icon = "Rogue_Basic_Hull"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "Rogue_Crystal_Hull"
+
+	icon = "Rogue_Crystal_Hull"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "Rogue_Crystal_Hull_MKII"
+
+	icon = "Rogue_Crystal_Hull_MKII"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "Rogue_Organic_Hull"
+
+	icon = "Rogue_Organic_Hull"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "Rogue_Zontrium_Hull"
+
+	icon = "Rogue_Zontrium_Hull"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "Rogue_Xentronium_Hull"
+
+	icon = "Rogue_Xentronium_Hull"
+	icon_frame = 1
+}

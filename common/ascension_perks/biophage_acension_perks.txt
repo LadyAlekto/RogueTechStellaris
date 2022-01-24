@@ -1,0 +1,45 @@
+ap_biophage_engineered_leaders = {
+	on_enabled = {
+		hidden_effect = {
+			country_event = { id = biophage_leader.222 }
+		}
+	}
+	possible = {
+			has_technology = "tech_roguetech_biological_mastery"
+	}
+	modifier = {
+		leader_age = 30
+		leader_skill_levels = 3
+		species_leader_exp_gain = 0.33
+	}
+
+	potential = {
+		NOT = {
+			has_ascension_perk = ap_biophage_engineered_leaders
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 1.5
+			num_owned_planets < 10
+		}
+		modifier = {
+			factor = 1.5
+			num_owned_planets < 20
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 3
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 2
+			has_ascension_perk = ap_become_the_crisis
+		}
+	}
+}

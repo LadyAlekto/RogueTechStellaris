@@ -1,0 +1,20 @@
+component_set = {
+	key = "SUPREMACY_SCALAR_CANNON"
+	
+	icon = "SUPREMACY_SCALAR_CANNON"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "SUPREMACY_SCALAR_CANNON_XL"
+	
+	icon = "SUPREMACY_SCALAR_CANNON_XL"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "SUPREMACY_SCALAR_CANNON_L"
+	
+	icon = "SUPREMACY_SCALAR_CANNON_L"
+	icon_frame = 1	
+}

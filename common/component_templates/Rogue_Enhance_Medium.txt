@@ -1,0 +1,350 @@
+utility_component_template = {
+	key = "Rogue_Stealth_Field_MEDIUM"
+	size = small
+	icon = "Rogue_Stealth_Field"
+	icon_frame = 1
+	power = -7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 7
+		}
+	}
+
+	prerequisites = { "tech_roguetech_stealth" }
+	component_set = "Rogue_Utility_Slot"
+	
+	size_restriction = { marauder_destroyer destroyer crisis_destroyer military_station_small starbase_starport }
+
+	modifier = {
+		ship_evasion_mult = 0.15
+		ship_evasion_add = 10
+		ship_disengage_chance_mult = 0.15
+	}
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 3.0
+			is_preferred_weapons = weapon_type_kinetic
+		}
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Shield_Batteries_MEDIUM"
+	size = small
+	icon = "Rogue_Shield_Batteries"
+	icon_frame = 1
+	power = -15
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 15
+			exotic_gases = 0.15
+		}
+	}
+
+	prerequisites = { "tech_shield_rechargers_1" }
+	component_set = "Rogue_Utility_Slot"
+	upgrades_to = "Rogue_PSI_Shield_Batteries_MEDIUM"
+	
+	size_restriction = { marauder_destroyer destroyer crisis_destroyer military_station_small starbase_starport }
+
+	modifier = {
+		ship_shield_mult = 0.25
+	}
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 2.0
+			is_preferred_weapons = weapon_type_energy
+			is_country_type = default
+			has_monthly_income = { resource = exotic_gases value > 0 }
+		}
+
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = exotic_gases }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_PSI_Shield_Batteries_MEDIUM"
+	size = small
+	icon = "Rogue_Shield_Batteries"
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 15
+			sr_zro = 0.15
+		}
+	}
+
+	prerequisites = { "tech_psionic_barrier" }
+	upgrades_to = "Rogue_PSI_Shield_Batteries_II_MEDIUM"
+	component_set = "Rogue_Utility_Slot"
+	
+	size_restriction = { marauder_destroyer destroyer crisis_destroyer military_station_small starbase_starport }
+
+	modifier = {
+		ship_shield_mult = 0.3
+	}
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 2.0
+			is_preferred_weapons = weapon_type_energy
+			is_country_type = default
+			has_monthly_income = { resource = sr_zro value > 0 }
+		}
+
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_zro }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_PSI_Shield_Batteries_II_MEDIUM"
+	size = small
+	icon = "Rogue_Shield_Batteries"
+	icon_frame = 1
+	power = -20
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 30
+			sr_zro = 0.3
+		}
+		upkeep = {
+			sr_zro = 0.02
+		}
+	}
+
+	prerequisites = { "tech_psionic_shield" }
+	component_set = "Rogue_Utility_Slot"
+	
+	size_restriction = { marauder_destroyer destroyer crisis_destroyer military_station_small starbase_starport }
+
+	modifier = {
+		ship_shield_mult = 0.4
+	}
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 2.0
+			is_preferred_weapons = weapon_type_energy
+			is_country_type = default
+			has_monthly_income = { resource = sr_zro value > 0 }
+		}
+
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_zro }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Hardened_Armor_MEDIUM"
+	size = small
+	icon = "Rogue_Hardened_Armor"
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+		}
+	}
+
+	prerequisites = { "tech_dragon_armor" }
+	component_set = "Rogue_Utility_Slot"
+	
+	size_restriction = { marauder_destroyer destroyer crisis_destroyer military_station_small starbase_starport }
+
+	modifier = {
+		ship_armor_mult = 0.25
+	}
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 3.0
+			is_preferred_weapons = weapon_type_kinetic
+		}
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Reinforced_Hull_MEDIUM"
+	size = small
+	icon = "Rogue_Reinforced_Hull"
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+			rare_crystals = 2
+		}
+	}
+
+	prerequisites = { "tech_crystal_armor_1" }
+	component_set = "Rogue_Utility_Slot"
+	
+	size_restriction = { marauder_destroyer destroyer crisis_destroyer military_station_small starbase_starport }
+
+	modifier = {
+		ship_hull_mult = 0.25
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = rare_crystals }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Auto_Repair_MEDIUM"
+	size = aux
+	icon = "GFX_ship_part_auto_repair"
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			food = 6
+		}
+	}
+
+	modifier = {
+		ship_hull_regen_add_perc = 1
+		ship_armor_regen_add_perc = 0.75
+		ship_shield_regen_add_perc = 0.5
+	}
+
+	prerequisites = { tech_regenerative_hull_tissue }
+	component_set = "Rogue_Utility_Slot"
+	upgrades_to = "Rogue_Auto_Repair_Nanites_MEDIUM"
+	
+	size_restriction = { marauder_destroyer destroyer crisis_destroyer military_station_small starbase_starport }
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 2.0
+			is_preferred_weapons = weapon_type_explosive
+		}
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Auto_Repair_Nanites_MEDIUM"
+	size = aux
+	icon = "Rogue_Auto_Repair_Nanites"
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+			nanites = 0.2
+		}
+	}
+
+	modifier = {
+		ship_hull_regen_add_perc = 2
+		ship_armor_regen_add_perc = 1
+		ship_shield_regen_add_perc = 0.7
+	}
+
+	prerequisites = { tech_nanite_repair_system }
+	component_set = "Rogue_Utility_Slot"
+	
+	size_restriction = { marauder_destroyer destroyer crisis_destroyer military_station_small starbase_starport }
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 2.0
+			is_preferred_weapons = weapon_type_explosive
+		}
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Fuel_Injectors_MEDIUM"
+	size = aux
+	icon = "Rogue_Fuel_Injectors"
+	icon_frame = 1
+	power = -10
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 8
+			exotic_gases = 0.15
+			sr_dark_matter = 0.15
+		}
+	}
+	modifier = {
+		ship_speed_mult = 0.2
+	}
+	
+	size_restriction = { marauder_destroyer destroyer crisis_destroyer military_station_small starbase_starport }
+	
+	prerequisites = { "tech_afterburners_2" }
+	component_set = "Rogue_Utility_Slot"
+
+	ai_weight = {
+		weight = 15
+		modifier = {
+			factor = 2.0
+			is_preferred_weapons = weapon_type_kinetic
+		}
+		modifier = {
+			factor = 0.5
+			is_preferred_weapons = weapon_type_explosive
+		}
+	}
+}
+
+utility_component_template = {
+	key = "SUPREMACY_JUMP_DRIVE_BOOST_MEDIUM"
+	size = small
+	icon = "SUPREMACY_JUMP_DRIVE_BOOST"
+	icon_frame = 1
+	power = -15
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 8
+			sr_dark_matter = 0.15
+		}
+	}
+	ship_modifier = {
+		ship_jumpdrive_cooldown_mult = -0.15
+		ship_ftl_jumpdrive_range_mult = 0.15
+		ship_emergency_ftl_min_days_mult = -0.15
+	}
+	
+	ai_weight = {
+		weight = 5
+	}
+
+	prerequisites = { "tech_supremacy_hyperspace_folding" }
+	component_set = "Rogue_Utility_Slot"
+	
+	size_restriction = { marauder_destroyer destroyer crisis_destroyer military_station_small starbase_starport }
+}

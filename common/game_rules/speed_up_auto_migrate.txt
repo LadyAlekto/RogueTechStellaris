@@ -1,0 +1,23 @@
+can_pop_auto_migrate = {
+	is_unemployed = yes
+	is_being_assimilated = no
+	OR = {
+		AND = {
+			is_shackled_robot = no
+			is_enslaved = no
+		}
+		planet = {
+			has_building = building_slave_processing
+		}
+	}
+}
+
+# This = planet
+# Checked before can_pop_auto_migrate to save performance
+can_planet_auto_migrate = {
+	NOT = { has_modifier = planet_culture_shock }
+	OR = {
+		colony_age > 5
+		is_capital = yes # Don't break Doomsday!
+	}
+}

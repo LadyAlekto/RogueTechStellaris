@@ -1,0 +1,15 @@
+cb_supremacy_total_war = {
+	show_in_diplomacy = no
+	show_notification = no
+	potential = {
+		has_tradition = tr_supremacy_total_war_finish
+	}
+	is_valid = {
+		has_total_war_cb = yes
+		NOT = { is_overlord_to = FROM }
+		OR = {
+			is_subject = no
+			overlord = { NOT = { is_same_value = from } }
+		}
+	}
+}

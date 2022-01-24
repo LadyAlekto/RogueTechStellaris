@@ -1,0 +1,347 @@
+# ####################
+# Mass Driver Reactor
+# ####################
+
+utility_component_template = {
+	key = "RT_NEMESIS_FUSION_FURNACE"
+	size = large
+	icon = "RT_NEMESIS_FUSION_FURNACE"
+	icon_frame = 1
+	power = 1200
+	
+		modifier = {
+		ship_weapon_damage = 0.15
+		ship_weapon_range_mult = 0.15
+	}
+	
+	resources = {
+		category = ship_components
+		cost = {
+			minerals = 100
+			rare_crystals = 2
+			exotic_gases = 3
+			volatile_motes = 1
+		}
+	}
+
+	prerequisites = { "tech_rogue_crisis_plattform" }
+	component_set = "power_core"
+	size_restriction = {
+		RT_NEMESIS_PLATTFORM
+		RT_NEMESIS_PLATTFORM_CANNON
+	}
+
+	ai_weight = {
+		weight = 66
+	}
+}
+
+# ####################
+# Beam Cannon
+# ####################
+
+weapon_component_template = {
+	key = "ROGUE_BEAM_CANNON"
+	size = point_defence
+	type = point_defence
+	prio_projectile = no
+
+	icon = "ROGUE_BEAM_CANNON"
+	icon_frame = 1
+
+	use_ship_kill_target = no
+	
+	damage = { min = 130 max = 160 }# May need more balancing
+	windup = { min = 5 max = 10 }
+	total_fire_time = 10
+	range = 100
+	accuracy = 0.6
+	power = -65
+	hull_damage = 1.5
+	armor_penetration = 0.5
+	armor_damage  = 1.1
+	shield_penetration = 0.5
+	shield_damage = 0.8
+	tracking = 0.5 # May need balancing
+
+	tags = { weapon_type_energy }
+	
+	size_restriction = { crisis_battleship battleship military_station_small RT_NEMESIS_PLATTFORM asteroid_artillery giga_massive_planet giga_planet_behemoth crisis_titan RT_NEMESIS_PLATTFORM_CANNON star_eater juggernaut }
+
+	prerequisites = { "tech_rogue_crisis_battleship" }
+	component_set = "ROGUE_BEAM_CANNON"
+	projectile_gfx = "tachyon_lance"
+	resources = {
+		category = ship_components
+		cost = {
+			minerals = 120
+			volatile_motes = 1.3
+			menace = 8
+		}
+		upkeep = {
+			minerals = @l_t5_upkeep_energy
+			energy = @l_t5_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+# ####################
+# Titan Cannon
+# ####################
+
+weapon_component_template = {
+	type = instant
+
+	key = "TITAN_KINETIC_CANNON_MASSIVE"
+	size = titanic
+
+	icon = "TITANIC_KINETIC"
+	icon_frame = 1
+
+	firing_arc = 35.0
+	min_range = 10.0
+	use_ship_kill_target = no
+	
+	damage = { min = 8000 max = 9000 }# May need more balancing
+	windup = { min = 5 max = 10 }
+	total_fire_time = 150
+	range = 250
+	accuracy = 0.75
+	power = -400
+	hull_damage = 1.1
+	armor_penetration = 0.4
+	armor_damage  = 1.5
+	shield_penetration = 0.4
+	shield_damage = 3
+	tracking = 0.33 # May need balancing
+	
+	size_restriction = { asteroid_artillery giga_massive_planet giga_planet_behemoth crisis_titan RT_NEMESIS_PLATTFORM_CANNON star_eater juggernaut }
+	
+	prerequisites = { "tech_rogue_crisis_titan" }
+	
+	component_set = "TITANIC_KINETIC_MASSIVE"
+	projectile_gfx = "adv_kinetic_artillery"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 20
+	resources = {
+		category = ship_components
+		cost = {
+			minerals = 800
+			volatile_motes = 6
+			menace = 25
+		}
+		upkeep = {
+			minerals = 5
+			energy = 1
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+}
+
+weapon_component_template = {
+	type = instant
+
+	key = "TITAN_KINETIC_CANNON"
+	size = titanic
+
+	icon = "TITANIC_KINETIC"
+	icon_frame = 1
+
+	firing_arc = 25.0
+	min_range = 10.0
+	use_ship_kill_target = no
+	
+	damage = { min = 2000 max = 2500 }# May need more balancing
+	windup = { min = 5 max = 10 }
+	total_fire_time = 100
+	range = 150
+	accuracy = 0.75
+	power = -300
+	hull_damage = 1.1
+	armor_penetration = 0.3
+	armor_damage  = 1.5
+	shield_penetration = 0.3
+	shield_damage = 2.5
+	tracking = 0.33 # May need balancing
+	
+	size_restriction = { crisis_battleship battleship military_station_small RT_NEMESIS_PLATTFORM }
+	
+	prerequisites = { "tech_rogue_crisis_battleship" }
+	
+	component_set = "TITANIC_KINETIC"
+	projectile_gfx = "adv_kinetic_artillery"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 20
+	resources = {
+		category = ship_components
+		cost = {
+			minerals = @xl_t6_cost
+			volatile_motes = @xl_t6_rare
+			menace = 10
+		}
+		upkeep = {
+			minerals = @xl_t6_upkeep_energy
+			energy = @xl_t6_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+}
+
+weapon_component_template = {
+	type = instant
+
+	key = "RT_NEMESIS_CANNON_LARGE"
+	size = large
+
+	icon = "RT_NEMESIS_CANNON"
+	icon_frame = 1
+
+	use_ship_kill_target = no
+	
+	damage = { min = 300 max = 450 }# May need more balancing
+	windup = { min = 5 max = 10 }
+	total_fire_time = 30
+	range = 80
+	accuracy = 0.7
+	power = -65
+	hull_damage = 1.1
+	armor_penetration = 0.3
+	armor_damage  = 1.5
+	shield_penetration = 0.3
+	shield_damage = 2.5
+	tracking = 0.33 # May need balancing
+
+	prerequisites = { "tech_rogue_jury_rigged_weapons" }
+	
+	component_set = "RT_NEMESIS_CANNON"
+	projectile_gfx = "adv_kinetic_artillery"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 20
+	resources = {
+		category = ship_components
+		cost = {
+			minerals = 120
+			volatile_motes = 1.3
+			menace = 8
+		}
+		upkeep = {
+			minerals = @l_t5_upkeep_energy
+			energy = @l_t5_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+}
+
+weapon_component_template = {
+	type = instant
+
+	key = "RT_NEMESIS_CANNON_MEDIUM"
+	size = medium
+
+	icon = "RT_NEMESIS_CANNON"
+	icon_frame = 1
+
+	use_ship_kill_target = no
+	
+	damage = { min = 65 max = 110 }# May need more balancing
+	windup = { min = 5 max = 10 }
+	total_fire_time = 30
+	range = 65
+	accuracy = 0.75
+	power = -35
+	hull_damage = 1.1
+	armor_penetration = 0.3
+	armor_damage  = 1.5
+	shield_penetration = 0.3
+	shield_damage = 2.5
+	tracking = 0.33 # May need balancing
+
+	prerequisites = { "tech_rogue_jury_rigged_weapons" }
+	
+	component_set = "RT_NEMESIS_CANNON"
+	projectile_gfx = "adv_kinetic_artillery"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 20
+	resources = {
+		category = ship_components
+		cost = {
+			minerals = 80
+			volatile_motes = 0.65
+			menace = 5
+		}
+		upkeep = {
+			minerals = @m_t5_upkeep_energy
+			energy = @m_t5_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+}
+
+weapon_component_template = {
+	type = instant
+
+	key = "RT_NEMESIS_CANNON_SMALL"
+	size = small
+
+	icon = "RT_NEMESIS_CANNON"
+	icon_frame = 1
+
+	use_ship_kill_target = no
+	
+	damage = { min = 30 max = 50 }# May need more balancing
+	windup = { min = 5 max = 10 }
+	total_fire_time = 30
+	range = 40
+	accuracy = 0.8
+	power = -20
+	hull_damage = 1.1
+	armor_penetration = 0.3
+	armor_damage  = 1.5
+	shield_penetration = 0.3
+	shield_damage = 2.5
+	tracking = 0.33 # May need balancing
+	
+	prerequisites = { "tech_rogue_jury_rigged_weapons" }
+	
+	component_set = "RT_NEMESIS_CANNON"
+	projectile_gfx = "adv_kinetic_artillery"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 20
+	resources = {
+		category = ship_components
+		cost = {
+			minerals = 50
+			volatile_motes = 0.33
+			menace = 3
+		}
+		upkeep = {
+			minerals = @s_t5_upkeep_energy
+			energy = @s_t5_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+}

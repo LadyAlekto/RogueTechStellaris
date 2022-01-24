@@ -1,0 +1,39 @@
+component_set = {
+	key = "Rogue_Defense_Hull"
+
+	required_component_set = yes
+	icon = "Rogue_Basic_Hull"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "Rogue_Defense_Armor"
+
+	required_component_set = yes
+	icon = "GFX_Juggernaut_building_set"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "Rogue_Defense_Shield"
+
+	required_component_set = yes
+	icon = "GFX_Juggernaut_building_set"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "Rogue_Utility_Slot"
+
+	required_component_set = yes
+	icon = "Rogue_Utility_Slot"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "Juggernaut_building_set"
+
+	required_component_set = yes
+	icon = "GFX_Juggernaut_building_set"
+	icon_frame = 1
+}

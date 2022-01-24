@@ -1,0 +1,199 @@
+@section_cost = 100
+
+ship_section_template = {
+	key = "ROGUE_PLATTFORM_CRISIS_HANGAR"
+	ship_size = RT_NEMESIS_PLATTFORM
+
+	fits_on_slot = "ship"
+	should_draw_components = yes
+	
+	prerequisites = { "tech_rogue_crisis_plattform" }
+
+	entity = "military_station_section_light_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "large_strike_craft"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "large_strike_craft"
+		locatorname = "small_gun_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "large_strike_craft"
+		locatorname = "small_gun_03"
+		is_side_slot = no
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_04"
+		template = "large_strike_craft"
+		locatorname = "small_gun_04"
+		is_side_slot = no
+	}
+
+	aux_utility_slots = 2
+
+	resources = {
+		category = ship_sections
+		cost = {
+			minerals = @section_cost
+			menace = 3
+		}
+	}
+
+	ai_weight = {
+		factor = 1
+		modifier = {
+			factor = 10
+			is_preferred_weapons = weapon_type_strike_craft
+		}
+	}
+}
+
+ship_section_template = {
+	key = "ROGUE_PLATTFORM_CRISIS_LARGE"
+	ship_size = RT_NEMESIS_PLATTFORM
+
+	fits_on_slot = "ship"
+	should_draw_components = yes
+	
+	prerequisites = { "tech_rogue_crisis_plattform" }
+
+	entity = "military_station_section_light_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "large_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "large_turret"
+		locatorname = "small_gun_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "large_turret"
+		locatorname = "small_gun_03"
+		is_side_slot = no
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_04"
+		template = "large_turret"
+		locatorname = "small_gun_04"
+		is_side_slot = no
+	}
+
+	aux_utility_slots = 2
+
+	resources = {
+		category = ship_sections
+		cost = {
+			minerals = @section_cost
+			menace = 3
+		}
+	}
+
+	ai_weight = {
+		factor = 1
+		modifier = {
+			factor = 10
+			is_preferred_weapons = weapon_type_strike_craft
+		}
+	}
+}
+
+ship_section_template = {
+	key = "ROGUE_PLATTFORM_CRISIS_TITANIC"
+	ship_size = RT_NEMESIS_PLATTFORM
+
+	fits_on_slot = "ship"
+	should_draw_components = yes
+	
+	prerequisites = { "tech_rogue_crisis_battleship" }
+
+	entity = "military_station_section_light_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}	
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "large_strike_craft"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "large_strike_craft"
+		locatorname = "small_gun_02"
+	}
+	
+	component_slot = {
+		name = "POINT_DEFENSE_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "medium_gun_06"
+	}
+
+	aux_utility_slots = 2
+
+	resources = {
+		category = ship_sections
+		cost = {
+			minerals = 300
+			menace = 10
+		}
+	}
+
+	ai_weight = {
+		factor = 1
+		modifier = {
+			factor = 10
+			is_preferred_weapons = weapon_type_kinetic
+		}
+	}
+}
+
+ship_section_template = {
+	key = "RT_NEMESIS_PLATTFORM_CANNON_CORE"
+	fits_on_slot = "ship"
+	ship_size = RT_NEMESIS_PLATTFORM_CANNON
+	entity = "rt_nemesis_plattform_cannon"
+	icon = "GFX_ship_part_core_mid"
+
+	component_slot = {
+		name = "TITANIC_GUN_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	
+	component_slot = {
+		name = "POINT_DEFENSE_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "medium_gun_05"
+	}
+
+	aux_utility_slots = 2
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 0
+		}
+	}
+}

@@ -1,0 +1,18 @@
+﻿l_english:
+ 
+ CONTAGION_MISSILE_1:0 "Contagion Missile"
+ CONTAGION_MISSILE_2:0 "Contagion Missile MKII"
+ CONTAGION_MISSILE_3:0 "Contagion Missile MKIII"
+ CONTAGION_MISSILE_4:0 "Contagion Missile MKIV"
+ CONTAGION_MISSILE_5:0 "Contagion Missile MKV"
+ CONTAGION_MISSILE_6:0 "Contagion Missile MKVI"
+	
+ CONTAGION_MISSILE_1_DESC:0 "Biologically Enriched Warhead"
+ CONTAGION_MISSILE_2_DESC:0 "Biologically Enriched Warhead MKII"
+ CONTAGION_MISSILE_3_DESC:0 "Biologically Enriched Warhead MKIII"
+ CONTAGION_MISSILE_4_DESC:0 "Biologically Enriched Warhead MKIV"
+ CONTAGION_MISSILE_5_DESC:0 "Biologically Enriched Warhead MKV"
+ CONTAGION_MISSILE_6_DESC:0 "Biologically Enriched Warhead MKVI"
+   
+ ROGUE_TEMPEST_MISSILE:0 "Tempest Launcher"
+ ROGUE_TEMPEST_MISSILE_DESC:0 "Sophisticated evasion and guidance systems allow these warheads to strike true past any point defense."

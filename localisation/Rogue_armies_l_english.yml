@@ -1,0 +1,23 @@
+﻿l_english: 
+ infector_army:0 "Reaper Swarm"
+ infector_army_plural:0 "Reaper Swarm"
+ infector_army_desc:0 "An Army of Engineered Organisms designed to terrorize and tear apart enemies without Mercy or Remorse. May be spawned when Parasite Armies kill an Organic Enemy." 
+ 
+ regenerator_army:0 "Regenerator"
+ regenerator_army_plural:0 "Regenerator"
+ regenerator_army_desc:0 "A Single organism capable of rapid regeneration. May be spawned when Parasite Armies kill an Organic Enemy." 
+ 
+ biological_titan_army:0 "Bio Titan"
+ biological_titan_army_plural:0 "Bio Titan"
+ biological_titan_army_desc:0 "Engineered Organism of massive scale that will devour and tear apart even the strongest fortifications." 
+  
+ bombardment_abduction:0 "Harvest"
+ bombardment_abduction_desc:0 "Harvest a planets population!.\n- §ELight§! damage to §YArmies§!\n- §EModerate§! damage to §YPlanet§!\n- Will §Yabduct§! Biological Pops instead of killing them\n- Down to the last Pop!"
+ 
+ nanotrite_army:0 "Nanite Soldier"
+ nanotrite_army_plural:0 "Nanite Army"
+ nanotrite_army_desc:0 "Enhanced with NanoTechnology, forged for absolute war."
+ 
+ nanotrite_super_army:0 "Berserker"
+ nanotrite_super_army_plural:0 "Berserkers"
+ nanotrite_super_army_desc:0 "NanoTech Soldiers wielding scalar energy, manipulating matter and energy at will."

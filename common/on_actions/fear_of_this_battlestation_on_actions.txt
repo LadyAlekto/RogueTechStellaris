@@ -1,0 +1,17 @@
+#From = Planet/Starbase/Megastructure scope
+#This = Fleet scope
+on_fleet_enter_orbit = {
+	events = {
+		fear_of_this_battlestation.100
+		fear_of_this_battlestation.101
+	}
+}
+
+# A fleet has entered a system | See also: on_fleet_auto_move_arrival
+# Scope = Fleet
+# From = System
+# on_entering_system_fleet = {
+# 	events = {
+# 		fear_of_this_battlestation.150
+# 	}
+# }

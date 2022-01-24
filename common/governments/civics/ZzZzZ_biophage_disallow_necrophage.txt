@@ -1,0 +1,47 @@
+origin_necrophage = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_necrophage.dds"
+	picture = GFX_origin_necrophage
+	flags = { custom_start_screen }
+
+	playable = {
+		host_has_dlc = "Necroids Species Pack"
+	}
+
+	possible = {
+		authority = {
+			NOT = { value = auth_machine_intelligence }
+		}
+		ethics = {
+			NOR = {
+				value = ethic_xenophile
+				value = ethic_fanatic_xenophile
+				value = ethic_fanatic_egalitarian
+			}
+		}
+		civics = {
+			NOR = {
+				value = civic_death_cult
+				value = civic_death_cult_corporate
+				value = civic_hive_empath
+				value = civic_hive_biophage
+			}
+		}
+	}
+
+	description = civic_tooltip_necrophage_effects
+
+	traits = {
+		trait = trait_necrophage
+	}
+
+	has_secondary_species = {
+		title = civic_necrophage_secondary_species
+	}
+
+	advanced_start = yes
+
+	random_weight = {
+		base = 5
+	}
+}

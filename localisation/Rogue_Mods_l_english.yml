@@ -1,0 +1,145 @@
+﻿l_english:
+ job_nanite_fabricator:0 "Nanite Fabricator"
+ job_nanite_fabricator_plural:0 "Nanite Fabricators"
+ job_nanite_fabricator_desc:1 "Produces rare nanites from raw materials."
+ job_nanite_fabricator_effect_desc:1 "Produces rare nanites from raw materials"
+ 
+ mod_job_nanite_fabricator_add:0 "$job_nanite_fabricator$ Jobs"
+ mod_job_nanite_fabricator_per_pop:0 "§G+1§! $job_nanite_fabricator$ Job per $VALUE$ Pops"
+ mod_job_nanite_fabricator_per_pop_short:0 "Nanite Fabricators produce nanites slowly"
+ 
+ job_nanite_fabricator_drone:0 "Nanite Fabricator"
+ job_nanite_fabricator_drone_plural:0 "Nanite Fabricators"
+ job_nanite_fabricator_drone_desc:1 "Produces rare nanites from raw materials."
+ job_nanite_fabricator_drone_effect_desc:1 "Produces rare nanites from raw materials"
+ 
+ mod_job_nanite_fabricator_drone_add:0 "$job_nanite_fabricator_drone$ Jobs"
+ mod_job_nanite_fabricator_drone_per_pop:0 "§G+1§! $job_nanite_fabricator_drone$ Job per $VALUE$ Pops"
+ mod_job_nanite_fabricator_drone_per_pop_short:0 "Nanite Fabricators produce nanites slowly"
+ 
+ mod_job_nanite_fabricator_robot_add:0 "$job_nanite_fabricator_robot$ Jobs"
+ mod_job_nanite_fabricator_robot_per_pop:0 "§G+1§! $job_nanite_fabricator_robot$ Job per $VALUE$ Pops"
+ mod_job_nanite_fabricator_robot_per_pop_short:0 "Nanite Fabricators produce nanites slowly"
+  
+ mod_job_anti_matter_researcher_add:0 "$job_anti_matter_researcher$ Jobs"
+ mod_job_anti_matter_researcher_per_pop:0 "§G+1§! $job_anti_matter_researcher$ Job per $VALUE$ Pops"
+ mod_job_anti_matter_researcher_per_pop_short:0 "Exotic-Matter Techs"
+  
+ mod_job_anti_matter_researcher_drone_add:0 "$job_anti_matter_researcher$ Jobs"
+ mod_job_anti_matter_researcher_drone_per_pop:0 "§G+1§! $job_anti_matter_researcher$ Job per $VALUE$ Pops"
+ mod_job_anti_matter_researcher_drone_per_pop_short:0 "Exotic-Matter Techs"
+  
+ mod_job_anti_matter_researcher_robot_add:0 "$job_anti_matter_researcher$ Jobs"
+ mod_job_anti_matter_researcher_robot_per_pop:0 "§G+1§! $job_anti_matter_researcher$ Job per $VALUE$ Pops"
+ mod_job_anti_matter_researcher_robot_per_pop_short:0 "Exotic-Matter Techs"
+  
+ mod_planet_nanite_fabricator_nanites_produces_add:0 "$job_nanite_fabricator$ $VALUE$ £nanites£ produced"
+ mod_planet_nanite_fabricator_physics_research_produces_add:0 "$job_nanite_fabricator$ $VALUE$ £physics_research£ produced"
+ mod_planet_nanite_fabricator_engineering_research_produces_add:0 "$job_nanite_fabricator$ $VALUE$ £engineering_research£ produced"
+ mod_planet_nanite_fabricator_society_research_produces_add:0 "$job_nanite_fabricator$ $VALUE$ £society_research£ produced"
+ mod_planet_nanite_fabricator_sr_living_metal_produces_add:0 "$job_nanite_fabricator$ $VALUE$ £sr_living_metal£ produced"
+ mod_planet_nanite_fabricator_alloys_produces_add:0 "$job_nanite_fabricator$ $VALUE$ £alloys£ produced"
+ mod_planet_nanite_fabricator_rare_crystals_produces_add:0 "$job_nanite_fabricator$ $VALUE$ £rare_crystals£ produced"
+ mod_planet_nanite_fabricator_volatile_motes_produces_add:0 "$job_nanite_fabricator$ $VALUE$ £volatile_motes£ produced"
+ mod_planet_nanite_fabricator_exotic_gases_produces_add:0 "$job_nanite_fabricator$ $VALUE$ £exotic_gases£ produced"
+
+ mod_planet_nanite_fabricator_sr_dark_matter_upkeep_mult:0 "$job_nanite_fabricator$ $VALUE$ £sr_dark_matter£ upkeep"
+ mod_planet_nanite_fabricator_minerals_upkeep_mult:0 "$job_nanite_fabricator$ $VALUE$ £minerals£ upkeep"
+ mod_planet_nanite_fabricator_food_upkeep_mult:0 "$job_nanite_fabricator$ $VALUE$ £food£ upkeep"
+ mod_planet_nanite_fabricator_energy_upkeep_mult:0 "$job_nanite_fabricator$ $VALUE$ £energy£ upkeep"
+ mod_planet_nanite_fabricator_consumer_goods_upkeep_mult:0 "$job_nanite_fabricator$ $VALUE$ £consumer_goods£ upkeep"
+ 
+ mod_planet_nanite_fabricator_upkeep_mult:0 "$job_nanite_fabricator$ $VALUE$ upkeep"
+ 
+ mod_planet_anti_matter_researcher_physics_research_produces_add:0 "$job_anti_matter_researcher$ $VALUE$ £physics_research£ produced"
+ mod_planet_anti_matter_researcher_engineering_research_produces_add:0 "$job_anti_matter_researcher$ $VALUE$ £engineering_research£ produced"
+ mod_planet_anti_matter_researcher_society_research_produces_add:0 "$job_anti_matter_researcher$ $VALUE$ £society_research£ produced"
+ mod_planet_anti_matter_researcher_sr_dark_matter_produces_add:0 "$job_anti_matter_researcher$ $VALUE$ £sr_dark_matter£ produced"
+ mod_planet_anti_matter_researcher_sr_dark_matter_produces_mult:0 "$job_anti_matter_researcher$ $VALUE$ £sr_dark_matter£ produced"
+ mod_planet_anti_matter_researcher_energy_produces_add:0 "$job_anti_matter_researcher$ $VALUE$ £energy£ produced"
+ mod_planet_anti_matter_researcher_energy_produces_mult:0 "$job_anti_matter_researcher$ $VALUE$ £energy£ produced"
+ 
+ mod_planet_anti_matter_researcher_minerals_upkeep_mult:0 "$job_anti_matter_researcher$ $VALUE$ £minerals£ upkeep"
+ mod_planet_anti_matter_researcher_alloys_upkeep_mult:0 "$job_anti_matter_researcher$ $VALUE$ £alloys£ upkeep"
+ mod_planet_anti_matter_researcher_consumer_goods_upkeep_mult:0 "$job_anti_matter_researcher$ $VALUE$ £consumer_goods£ upkeep"
+ mod_planet_anti_matter_researcher_food_upkeep_mult:0 "$job_anti_matter_researcher$ $VALUE$ £food£ upkeep"
+ 
+ mod_planet_anti_matter_researcher_upkeep_mult:0 "$job_anti_matter_researcher$ $VALUE$ upkeep"
+ 
+ mod_planet_anti_matter_researcher_produces_mult:0 "$job_anti_matter_researcher$ $VALUE$ production"
+   
+ mod_job_anti_matter_researcher_add:0 "Exotic-Matter Tech"
+ 
+ mod_job_restless_public_research_add:0 "Akashic Researcher Jobs"
+ mod_job_restless_public_research_per_pop:0 "Akashic Researcher Job per $VALUE$ Pops"
+ mod_job_restless_public_research_per_pop_short:0 "Akashic Researcher Job per $VALUE$ Pops"
+ 
+ job_restless_drone_research:0 "Akashic Researcher"
+ job_restless_drone_research_plural:0 "Akashic Researcher"
+ job_restless_drone_research_desc:1 "Produces small amounts of research"
+ job_restless_drone_research_effect_desc:1 "Produces small amounts of research"
+
+ mod_job_subspace_drone_add:0 "$job_subspace_drone$ Jobs"
+ mod_job_subspace_drone_per_pop:0 "§G+1§! $job_subspace_drone$ Job per $VALUE$ Pops"
+ mod_job_subspace_drone_per_pop_short:0 "subspace drones increase the empires stability, science and capacities"
+
+ mod_job_infector_drone_add:0 "$job_infector_drone$ Jobs"
+ mod_job_infector_drone_per_pop:0 "§G+1§! $job_infector_drone$ Job per $VALUE$ Pops"
+ mod_job_infector_drone_per_pop_short:0 "Infector drones increase a planets pop growth and assembly"
+ 
+ mod_ship_titan_cost_mult:0 "Titan Build Cost"
+ 
+ mod_shipclass_research_station_build_speed_mult:0 "Research station build speed"
+ mod_shipclass_mining_station_build_speed_mult:0 "Mining station build speed"
+ 
+ mod_shipsize_crisis_corvette_build_speed_mult:0 "Menace Corvette Build Speed"
+ mod_shipsize_crisis_destroyer_build_speed_mult:0 "Menace Destroyer Build Speed"
+ mod_shipsize_crisis_cruiser_build_speed_mult:0 "Menace Cruiser Build Speed"
+ mod_shipsize_crisis_battleship_build_speed_mult:0 "Galleon Build Speed"
+ mod_shipsize_crisis_titan_build_speed_mult:0 "Man'O'War Build Speed"
+ mod_shipsize_RT_NEMESIS_PLATTFORM_build_speed_mult:0 "Junk Platform Build Speed"
+ mod_shipsize_RT_NEMESIS_PLATTFORM_CANNON_build_speed_mult:0 "Mass Driver Build Speed"
+ 
+ mod_shipsize_crisis_corvette_upkeep_mult:0 "Menace Corvette Upkeep"
+ mod_shipsize_crisis_corvette_hull_mult:0 "Menace Corvette Hull Points"
+ mod_shipsize_crisis_corvette_hull_add:0 "$mod_shipsize_crisis_corvette_hull_mult$"
+
+ mod_shipsize_crisis_destroyer_upkeep_mult:0 "Menace Destroyer Upkeep"
+ mod_shipsize_crisis_destroyer_hull_mult:0 "Menace Destroyer Hull Points"
+ mod_shipsize_crisis_destroyer_hull_add:0 "$mod_shipsize_crisis_destroyer_hull_mult$"
+
+ mod_shipsize_crisis_cruiser_upkeep_mult:0 "Menace Cruiser Upkeep"
+ mod_shipsize_crisis_cruiser_hull_mult:0 "Menace Cruiser Hull Points"
+ mod_shipsize_crisis_cruiser_hull_add:0 "$mod_shipsize_crisis_cruiser_hull_mult$"
+
+ mod_shipsize_crisis_battleship_upkeep_mult:0 "Galleon Upkeep"
+ mod_shipsize_crisis_battleship_hull_mult:0 "Galleon Hull Points"
+ mod_shipsize_crisis_battleship_hull_add:0 "$mod_shipsize_crisis_battleship_hull_mult$"
+
+ mod_shipsize_crisis_titan_upkeep_mult:0 "Man'O'War Upkeep"
+ mod_shipsize_crisis_titan_hull_mult:0 "Man'O'War Hull Points"
+ mod_shipsize_crisis_titan_hull_add:0 "$mod_shipsize_crisis_titan_hull_mult$"
+ 
+ mod_shipsize_RT_NEMESIS_PLATTFORM_upkeep_mult:0 "Junk Platform Upkeep"
+ mod_shipsize_RT_NEMESIS_PLATTFORM_hull_mult:0 "Junk Platform Hull Points"
+ mod_shipsize_RT_NEMESIS_PLATTFORM_hull_add:0 "$mod_shipsize_RT_NEMESIS_PLATTFORM_hull_mult$"
+ 
+ mod_shipsize_RT_NEMESIS_PLATTFORM_CANNON_upkeep_mult:0 "Mass Driver Upkeep"
+ mod_shipsize_RT_NEMESIS_PLATTFORM_CANNON_hull_mult:0 "Mass Driver Hull Points"
+ mod_shipsize_RT_NEMESIS_PLATTFORM_CANNON_hull_add:0 "$mod_shipsize_RT_NEMESIS_PLATTFORM_CANNON_hull_mult$"
+  
+ mod_shipsize_juggernaut_hull_add:0 "Juggernaut Hull $VALUE$"
+ mod_shipsize_juggernaut_hull_mult:0 "Juggernaut Hull $VALUE$"
+ mod_shipsize_juggernaut_build_speed_mult:0 "Juggernaut build speed $VALUE$"
+ 
+ mod_station_gatherers_alloys_produces_mult:0 "Mining Station Alloys Output"
+ mod_station_gatherers_food_produces_mult:0 "Mining Station Food Output"
+ 
+ mod_shipsize_titan_cost_mult:0 "Titan Cost $VALUE$"
+ mod_shipsize_titan_build_speed_mult:0 "Titan build speed $VALUE$"
+ 
+ mod_shipclass_starbase_evasion_add:0 "Starbase Evasion $VALUE$"
+ mod_shipclass_starbase_build_speed_mult:0 "Starbase build speed $VALUE$"
+ 
+ mod_country_menace_produces_add:0 "$VALUE$ £menace£ §MMenace§! produced"
+ mod_country_base_menace_produces_add:0 "$VALUE$ £menace£ §MMenace§! produced"

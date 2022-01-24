@@ -1,0 +1,44 @@
+﻿l_english:
+
+ civic_hive_biophage:0 "Biophage"
+ civic_hive_biophage_desc:0 "Evolved to infect all biomatter to reanimate and restructure it into more of itself."
+ civic_tooltip_biophage_effects:0 "Allows your empire to §YNecrophage§! organics, infecting them and giving birth to new pops of your §YMain species§! when purged.\n\nInfecting Organic Armies can spawn Reaper and Regenerator Armies on their death. \n\nReanimate Biological Leviathans to fight for you"
+ 
+ trait_biophage:0 "Biophage"
+ trait_biophage_desc:1 "§LThis plague grows by consuming other lifeforms.§!\n"
+ 
+ trait_biophage_purification:0 "Purifiers"
+ trait_biophage_purification_desc:1 "§LPurifyiers purge all.§!\n"
+ 
+ trait_biophage_rapid_purification:0 "Rabid Purifiers"
+ trait_biophage_rapid_purification_desc:1 "§LRabid Purifyiers rapidly purge all.§!\n"
+ 
+ leader_trait_synaptic_enhance_gestalt:0 "Shared Consciousness"
+ leader_trait_synaptic_enhance_gestalt_desc:1 "This Leader has a strong connection to the collective memory."
+ 
+ leader_trait_custom_AI_assistant_gestalt:0 "Sub-Space Link"
+ leader_trait_custom_AI_assistant_gestalt_desc:1 "This Leader has a strong connection to the collective consciousness."
+ 
+ leader_trait_sapient_AI_assistant_gestalt:0 "Autonomous Assistant"
+ leader_trait_sapient_AI_assistant_gestalt_desc:1 "This leader has created a complex neural network capable of autonomous analys."
+ 
+ leader_trait_bio_comp_assistant_gestalt:0 "Bio-Comp Assistant"
+ leader_trait_bio_comp_assistant_gestalt_desc:1 "A Biological Computer with subspace link to the collective assists this leader."
+ 
+ leader_trait_biophage_engineered_leader_scientist:0 "Engineered"
+ leader_trait_biophage_engineered_leader_scientist_desc:1 "This leader was Engineered for their role."
+ 
+ leader_trait_biophage_engineered_leader_admiral:0 "Engineered"
+ leader_trait_biophage_engineered_leader_admiral_desc:1 "This leader was Engineered for their role."
+ 
+ leader_trait_biophage_engineered_leader_general:0 "Engineered"
+ leader_trait_biophage_engineered_leader_general_desc:1 "This leader was Engineered for their role."
+ 
+ leader_trait_biophage_engineered_leader_governor:0 "Engineered"
+ leader_trait_biophage_engineered_leader_governor_desc:1 "This leader was Engineered for their role."
+ 
+ leader_trait_biophage_engineered_leader_ruler:0 "Engineered"
+ leader_trait_biophage_engineered_leader_ruler_desc:1 "This leader was Engineered for their role."
+ 
+ ap_biophage_engineered_leaders:0 "Engineered Leaders"
+ ap_biophage_engineered_leaders_desc:0 "We cannot let nature decide who will lead us. \n\n§YLeaders Gain additional Traits§!"

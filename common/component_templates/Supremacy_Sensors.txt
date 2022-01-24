@@ -1,0 +1,156 @@
+utility_component_template = {
+	key = "CHRONOSENSOR"
+	size = medium
+	icon = "CHRONOTON_SENSORS"
+	icon_frame = 1
+	power = -23
+	
+	sensor_range = 5
+	hyperlane_range = 5
+
+	ship_modifier = {
+		ship_tracking_add = 10
+		ship_evasion_mult = 0.04
+		ship_ftl_jumpdrive_range_mult = 0.2	
+		ship_jumpdrive_cooldown_mult = -0.1
+	}
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+			sr_dark_matter = 2
+			nanites = 3
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.06
+		}
+	}
+
+	prerequisites = { "tech_supremacy_chronoton_fields" }
+	component_set = "sensor_components"
+	class_restriction = { shipclass_military }
+	
+	size_restriction = {
+		military_station_small
+		military_station_medium
+		military_station_large
+		titan
+		battleship
+		cruiser 
+		crisis_cruiser 
+		destroyer 
+		crisis_destroyer
+		corvette 
+		crisis_corvette
+		crisis_battleship
+		crisis_titan
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+utility_component_template = {
+	key = "CHRONOSENSOR_Juggs"
+	size = medium
+	icon = "CHRONOTON_SENSORS"
+	icon_frame = 1
+	power = -30
+	
+	sensor_range = 5
+	hyperlane_range = 5
+	
+	hostile_aura = {
+		name = "hostile_chronosensor_aura"
+		system_wide = yes
+		
+		stack_info = {			#A ship can only be affected by one aura of a certain id. If multiple auras have the same ID the one with the highest priority will be applied.
+			id = hostile_chronosensor
+			priority = 500
+		}
+		
+		modifier = {
+			ship_evasion_mult = -0.1
+			ship_engagement_range_mult = -0.1
+			weapon_type_point_defense_weapon_damage_mult = -0.1
+			weapon_type_point_defense_weapon_fire_rate_mult = -0.1
+			weapon_type_strike_craft_weapon_fire_rate_mult = -0.1
+			weapon_type_strike_craft_weapon_damage_mult = -0.1
+			weapon_type_strike_craft_speed_mult = -0.1
+		}
+		
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"   
+				dynamic_scale = no
+			}
+		}
+	}
+	
+	friendly_aura = {
+		name = "friendly_chronosensor_aura"
+		system_wide = yes
+		
+		stack_info = {			#A ship can only be affected by one aura of a certain id. If multiple auras have the same ID the one with the highest priority will be applied.
+			id = friendly_chronosensor
+			priority = 500
+		}
+		
+		modifier = {
+			ship_engagement_range_mult = 0.1
+			ship_evasion_mult = 0.1
+			weapon_type_point_defense_weapon_damage_mult = 0.05
+			weapon_type_point_defense_weapon_fire_rate_mult = 0.05
+			weapon_type_strike_craft_weapon_fire_rate_mult = 0.05
+			weapon_type_strike_craft_weapon_damage_mult = 0.05
+			weapon_type_strike_craft_speed_mult = 0.05
+			ship_tracking_add = 10
+		ship_ftl_jumpdrive_range_mult = 0.25	
+		ship_jumpdrive_cooldown_mult = -0.1
+		}
+		
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+			sr_dark_matter = 2
+			nanites = 4
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.06
+		}
+	}
+
+	prerequisites = { "tech_supremacy_chronoton_fields" }
+	component_set = "sensor_components"
+	
+		class_restriction = { shipclass_starbase shipclass_military_special }
+	size_restriction = {
+		juggernaut
+		star_eater
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}

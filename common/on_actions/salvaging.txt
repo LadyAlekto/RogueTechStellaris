@@ -1,0 +1,9 @@
+# This = owner of ship 1 (combatant)
+# From = owner of ship 2 (destroyed)
+# FromFrom = ship 1
+# FromFromFrom = ship 2
+on_ship_destroyed_perp = {
+	events = {
+		rogue_salvaging.666
+	}
+}

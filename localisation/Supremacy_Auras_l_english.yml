@@ -1,0 +1,37 @@
+﻿l_english:
+ SHIP_AURA_SUBSPACEJAMMER:0 "Subspace Manipulator"
+ SHIP_AURA_SUBSPACEJAMMER_DESC:0 "Localisted controlled supermassive Gravity fields cause a drastically distored Time/Space"
+ 
+ aura_ship_subspace_jammer:0 "Subspace Jammer"
+ aura_subspacemanipulator:0 "Subspace Manipulator"
+ 
+ SHIP_AURA_TITANCARRIER:0 "Carrier Command"
+ SHIP_AURA_TITANCARRIER_DESC:0 "Carrier Command Systems allow to efficiently coordinate Fleet Operations"
+ 
+ aura_titancarrier_hostile:0 "Execution"
+ aura_titancarrier_friendly:0 "Coordination"
+ 
+ hostile_chronosensor_aura:0 "Chronoton Field"
+ friendly_chronosensor_aura:0 "Networked Sensors"
+ 
+ SHIP_AURA_INTERDICTOR:0 "Interdictor"
+ SHIP_AURA_INTERDICTOR_DESC:0 "Gravimetric Projectors distort subspace to prevent enemy escapes"
+ 
+ aura_interdictor_module:0 "Interdictor"
+ 
+ SUPREMACY_SHIP_AURA_DRONE:0 "Drone Swarm"
+ SUPREMACY_SHIP_AURA_DRONE_DESC:0 "A swarm of Drones that surround, shield and repair the fleet."
+ 
+ aura_titan_maintenance_drone:0 "Drone Swarm"
+ 
+ SUPREMACY_SHIP_AURA_BOMBARDMENT:0 "Coordination Grid"
+ SUPREMACY_SHIP_AURA_BOMBARDMENT_DESC:0 "Automated firing solutions shared among the fleet increases Bombardment Damage and Anti-Fighter Coordination."
+ 
+ aura_titan_supremacy_bomardment_friend:0 "Eradication"
+ aura_titan_supremacy_bomardment_enemy:0 "Evasion"
+ 
+ aura_starbase_maintenance_drones:0 "Maintenance Drones"
+ aura_starbase_maintenance_drones_desc:0 "Maintenance Drones that actively seek out, shield and repair allied forces in orbit."
+ 
+ aura_starbase_system_wide_minefield:0 "System Wide Minefield"
+ aura_starbase_system_wide_minefield_desc:0 "Smart Mines with IFF to hamper enemy forces."

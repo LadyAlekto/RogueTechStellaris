@@ -1,0 +1,82 @@
+namespace = biophage_leader
+
+country_event = {
+	id = biophage_leader.111
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+				has_ascension_perk = ap_biophage_engineered_leaders
+			}
+
+	immediate = {
+		every_owned_leader = {
+			if = {
+				limit = { leader_class = admiral }
+				add_trait = leader_trait_biophage_engineered_leader_admiral
+				add_ruler_trait = leader_trait_biophage_engineered_leader_ruler
+			}
+			if = {
+				limit = { leader_class = general }
+				add_trait = leader_trait_biophage_engineered_leader_general
+				add_ruler_trait = leader_trait_biophage_engineered_leader_ruler
+			}
+			if = {
+				limit = { leader_class = governor }
+				add_trait = leader_trait_biophage_engineered_leader_governor
+				add_ruler_trait = leader_trait_biophage_engineered_leader_ruler
+			}
+			if = {
+				limit = { leader_class = scientist }
+				add_trait = leader_trait_biophage_engineered_leader_scientist
+				add_ruler_trait = leader_trait_biophage_engineered_leader_ruler
+			}
+			if = {
+				limit = { leader_class = ruler }
+				add_trait = leader_trait_biophage_engineered_leader_ruler
+				add_ruler_trait = leader_trait_biophage_engineered_leader_ruler
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = biophage_leader.222
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+				has_ascension_perk = ap_biophage_engineered_leaders
+			}
+
+	immediate = {
+		every_owned_leader = {
+			if = {
+				limit = { leader_class = admiral }
+				add_trait = leader_trait_biophage_engineered_leader_admiral
+				add_ruler_trait = leader_trait_biophage_engineered_leader_ruler
+			}
+			if = {
+				limit = { leader_class = general }
+				add_trait = leader_trait_biophage_engineered_leader_general
+				add_ruler_trait = leader_trait_biophage_engineered_leader_ruler
+			}
+			if = {
+				limit = { leader_class = governor }
+				add_trait = leader_trait_biophage_engineered_leader_governor
+				add_ruler_trait = leader_trait_biophage_engineered_leader_ruler
+			}
+			if = {
+				limit = { leader_class = scientist }
+				add_trait = leader_trait_biophage_engineered_leader_scientist
+				add_ruler_trait = leader_trait_biophage_engineered_leader_ruler
+			}
+			if = {
+				limit = { leader_class = ruler }
+				add_trait = leader_trait_biophage_engineered_leader_ruler
+				add_ruler_trait = leader_trait_biophage_engineered_leader_ruler
+			}
+		}
+	}
+}

@@ -1,0 +1,4 @@
+planet_infector_drone = {
+	icon = "job_necromancer"
+	parent = planet_jobs
+}

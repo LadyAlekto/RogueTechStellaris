@@ -1,0 +1,138 @@
+@EdictPerpetual = -1
+
+hyper_matter_fuel = {
+	length = @EdictPerpetual
+	icon = "GFX_edict_type_policy"
+	resources = {
+		category = ship_edicts
+		cost = {
+			exotic_gases = 50
+			sr_dark_matter = 50
+		}
+		upkeep = {
+			exotic_gases = 5
+			sr_dark_matter = 5
+		}
+	}
+
+	potential = {
+		has_technology = tech_supremacy_exotic_matter_propulsion
+	}
+
+	modifier = {
+		ship_speed_mult = 0.15
+		ship_jumpdrive_cooldown_mult = -0.1
+		ship_windup_mult = -0.1
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = @EdictMedPrio
+			is_at_war = yes
+		}
+	}
+}
+
+nanolathe_mass_production = {
+	length = @EdictPerpetual
+	icon = "GFX_edict_type_policy"
+	resources = {
+		category = rare_edicts
+		cost = {
+			nanites = 50
+			sr_living_metal = 50
+		}
+		upkeep = {
+			nanites = 5
+			sr_living_metal = 5
+		}
+	}
+
+	potential = {
+		has_technology = tech_rogue_nanolathe_engineering
+	}
+
+	modifier = {
+		planet_building_build_speed_mult = 0.15
+		megastructure_build_speed_mult = 0.15
+		shipclass_starbase_build_speed_mult = 0.15
+		starbase_shipyard_build_speed_mult = 0.15
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = @EdictMedPrio
+			is_at_war = yes
+		}
+	}
+}
+
+unrestricted_stargate_travel = {
+	length = @EdictPerpetual
+	icon = "GFX_edict_type_policy"
+	resources = {
+		category = ship_edicts
+		cost = {
+			energy = 50
+			sr_dark_matter = 50
+		}
+		upkeep = {
+			energy = 5
+			sr_dark_matter = 5
+		}
+	}
+
+	potential = {
+		has_ascension_perk = ap_stargate_instant_gateways
+		is_gestalt = no
+	}
+	
+	modifier = {
+		planet_crime_mult = 0.5
+		planet_amenities_mult = -0.25
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = @EdictMedPrio
+			is_at_war = yes
+		}
+	}
+}
+
+unrestricted_stargate_travel_gestalt = {
+	length = @EdictPerpetual
+	icon = "GFX_edict_type_policy"
+	resources = {
+		category = ship_edicts
+		cost = {
+			energy = 50
+			sr_dark_matter = 50
+		}
+		upkeep = {
+			energy = 5
+			sr_dark_matter = 5
+		}
+	}
+
+	potential = {
+		has_ascension_perk = ap_stargate_instant_gateways
+		is_gestalt = yes
+	}
+	
+	modifier = {
+		planet_crime_mult = 0.5
+		planet_amenities_no_happiness_mult = -0.25
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = @EdictMedPrio
+			is_at_war = yes
+		}
+	}
+}

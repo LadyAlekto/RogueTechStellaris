@@ -1,0 +1,234 @@
+supremacy_nanite_lab = {
+	base_buildtime = 600
+	icon = building_nanite_lab
+	category = manufacturing
+	base_cap_amount = 1
+	
+	planet_modifier = {
+	planet_buildings_cost_mult = -0.05
+		planet_building_build_speed_mult = 0.05		
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_nanite_fabricator_add = 1
+			job_nanite_fabricator_per_pop = 0.01
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_nanite_fabricator_drone_add = 1
+			job_nanite_fabricator_drone_per_pop = 0.01
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_nanite_fabricator_robot_add = 1
+			job_nanite_fabricator_robot_per_pop = 0.01
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 400
+			alloys = 500
+		}
+		produces = {
+			physics_research = 6
+			engineering_research = 6
+			society_research = 6
+			sr_living_metal = 0.1
+			nanites = 0.1
+		}
+		upkeep = {
+			sr_dark_matter = 0.3
+			minerals = 15
+			energy = 15
+		}
+	}
+
+	prerequisites = {
+		"tech_supremacy_anomalous_materials"
+	}
+	upgrades = {
+		"supremacy_nanite_plant"
+	}
+}
+
+supremacy_nanite_plant = {
+	base_buildtime = 300
+	icon = building_nanite_plant
+	category = manufacturing
+	can_build = no
+	
+		triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_nanite_fabricator_add = 2
+			job_nanite_fabricator_per_pop = 0.02
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_nanite_fabricator_drone_add = 2
+			job_nanite_fabricator_drone_per_pop = 0.02
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_nanite_fabricator_robot_add = 2
+			job_nanite_fabricator_robot_per_pop = 0.02
+		}
+	}
+	
+	planet_modifier = {
+		planet_nanite_fabricator_upkeep_mult = -0.3
+				
+		planet_nanite_fabricator_nanites_produces_add = 0.7
+		planet_nanite_fabricator_sr_living_metal_produces_add = 0.7
+		planet_nanite_fabricator_rare_crystals_produces_add = 0.2
+		planet_nanite_fabricator_volatile_motes_produces_add = 0.2
+		planet_nanite_fabricator_exotic_gases_produces_add = 0.2
+		
+		planet_buildings_cost_mult = -0.1
+		planet_building_build_speed_mult = 0.1
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+			alloys = 200
+			sr_dark_matter = 10
+		}
+		produces = {
+			physics_research = 4
+			engineering_research = 4
+			society_research = 4
+			sr_living_metal = 0.2
+			nanites = 0.2
+		}
+		upkeep = {
+			sr_dark_matter = 0.6
+			minerals = 12
+			energy = 12
+		}
+	}
+	
+	upgrades = {
+		"supremacy_universal_constructor"
+	}
+
+	prerequisites = {
+		"tech_supremacy_molecular_assembly"
+	}
+}
+
+supremacy_universal_constructor = {
+	base_buildtime = 300
+	icon = building_universal_constructor
+	category = manufacturing
+	can_build = no
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_nanite_fabricator_add = 3
+			job_nanite_fabricator_per_pop = 0.03
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_nanite_fabricator_drone_add = 3
+			job_nanite_fabricator_drone_per_pop = 0.03
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_nanite_fabricator_robot_add = 3
+			job_nanite_fabricator_robot_per_pop = 0.03
+		}
+	}
+	
+	planet_modifier = {
+		planet_nanite_fabricator_upkeep_mult = -0.5
+				
+		planet_nanite_fabricator_nanites_produces_add = 1.5
+		planet_nanite_fabricator_sr_living_metal_produces_add = 1.5
+		planet_nanite_fabricator_rare_crystals_produces_add = 0.4
+		planet_nanite_fabricator_volatile_motes_produces_add = 0.4
+		planet_nanite_fabricator_exotic_gases_produces_add = 0.4
+		
+		planet_buildings_cost_mult = -0.15
+		planet_building_build_speed_mult = 0.15
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 150
+			alloys = 150
+			sr_dark_matter = 20
+			rare_crystals = 15
+			volatile_motes = 15
+			exotic_gases = 15
+		}
+		produces = {
+			physics_research = 2
+			engineering_research = 2
+			society_research = 2
+			sr_living_metal = 0.4
+			nanites = 0.4
+		}
+		upkeep = {
+			sr_dark_matter = 1
+			minerals = 10
+			energy = 10
+		}
+	}
+
+	prerequisites = {
+		"tech_supremacy_intelligent_materials"
+	}
+}

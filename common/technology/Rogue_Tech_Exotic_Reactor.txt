@@ -1,0 +1,371 @@
+tech_supremacy_exotic_matter_theory = {
+	cost = @tier2cost3
+	area = Physics
+	tier = 2
+	category = { field_manipulation }
+	weight = 10
+	is_rare = yes
+	
+	prerequisites = { "tech_fusion_power" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 2
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_basic_science_lab_2"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_basic_science_lab_3"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_fusion_power"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_cold_fusion_power"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_antimatter_power"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_zero_point_power"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_shields_2"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_shields_3"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_shields_4"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_shields_5"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_power_hub_1"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_power_hub_2"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_wormhole_stabilization"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mine_living_metal"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mine_betharian"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mine_volatile_motes"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_volatile_motes"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mine_exotic_gases"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_exotic_gases"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mine_rare_crystals"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_rare_crystals"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mine_dark_matter"
+		}
+	}	
+	
+	ai_weight = {
+		factor = 5 #important resource
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+
+tech_supremacy_exotic_matter_application = {
+	cost = @tier3cost3
+	area = Physics
+	tier = 3
+	category = { field_manipulation }
+	weight = 10
+	is_rare = yes
+	
+	prerequisites = { "tech_supremacy_exotic_matter_theory" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 2
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_basic_science_lab_2"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_basic_science_lab_3"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_fusion_power"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_cold_fusion_power"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_antimatter_power"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_zero_point_power"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_shields_2"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_shields_3"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_shields_4"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_shields_5"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_power_hub_1"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_power_hub_2"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_wormhole_stabilization"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mine_living_metal"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mine_betharian"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mine_volatile_motes"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_volatile_motes"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mine_exotic_gases"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_exotic_gases"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mine_rare_crystals"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_rare_crystals"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mine_dark_matter"
+		}
+	}	
+	
+	ai_weight = {
+		factor = 5 #important resource
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+
+tech_supremacy_exotic_matter_annihilation = {
+	cost = @tier5cost3
+	area = Physics
+	tier = 5
+	category = { field_manipulation }
+	weight = 10
+	is_rare = yes
+	
+	prerequisites = { "tech_supremacy_exotic_matter_application" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 2
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_basic_science_lab_2"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_basic_science_lab_3"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_fusion_power"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_cold_fusion_power"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_antimatter_power"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_zero_point_power"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_shields_2"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_shields_3"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_shields_4"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_shields_5"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_power_hub_1"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_power_hub_2"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_wormhole_stabilization"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mine_living_metal"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mine_betharian"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mine_volatile_motes"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_volatile_motes"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mine_exotic_gases"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_exotic_gases"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mine_rare_crystals"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_rare_crystals"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mine_dark_matter"
+		}
+	}	
+	
+	ai_weight = {
+		factor = 5 #important resource
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}

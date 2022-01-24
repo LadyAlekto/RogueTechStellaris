@@ -1,0 +1,726 @@
+tech_supremacy_exotic_matter_propulsion = {
+	area = physics
+	category = { field_manipulation }
+	tier = 5
+	is_dangerous = yes
+	is_rare = yes
+	is_reverse_engineerable = no
+	ai_update_type = all
+	prerequisites = { "tech_supremacy_intelligent_materials" "tech_roguetech_scalar_energy_fields" "tech_supremacy_exotic_matter_annihilation" "tech_thrusters_4" }
+	cost = 22000
+	weight = 11
+	
+	modifier = {
+		ship_speed_mult = 0.1
+	}
+	
+	weight_modifier = {
+		factor = 1.50
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_nanite_transmutation"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_deflector"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_power_core"
+		}
+		modifier = {
+			factor = 5
+			has_technology = "tech_dark_matter_propulsion"
+		}
+		modifier = {
+			factor = 2
+			has_technology = "tech_roguetech_stealth"
+		}
+	}
+
+	ai_weight = {
+		factor = 1
+		modifier = {
+			factor = 10
+			research_leader = {
+				area = physics
+				OR = {
+					has_trait = "leader_trait_expertise_voidcraft"
+					has_trait = "leader_trait_maniacal"
+					has_trait = "leader_trait_curator"
+				}
+			}
+		}
+	}
+}
+
+tech_supremacy_horizon_core = {
+	area = physics
+	category = { particles }
+	tier = 5
+	is_dangerous = yes
+	is_rare = yes
+	is_reverse_engineerable = no
+	ai_update_type = all
+	prerequisites = { "tech_supremacy_intelligent_materials" "tech_roguetech_scalar_energy_fields" "tech_supremacy_exotic_matter_annihilation" "tech_supremacy_exotic_matter_propulsion" "tech_zero_point_power" }
+	cost = 60000
+	weight = 11
+	
+	modifier = {
+		ship_jumpdrive_cooldown_mult = -0.1
+	}
+
+	weight_modifier = {
+		factor = 1.50
+		modifier = {
+			factor = 1.5
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_nanite_transmutation"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_deflector"
+		}
+		modifier = {
+			factor = 5
+			has_technology = "tech_dark_matter_power_core"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_propulsion"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_roguetech_stealth"
+		}
+	}
+
+	ai_weight = {
+		factor = 1
+		modifier = {
+			factor = 10
+			research_leader = {
+				area = physics
+				OR = {
+					has_trait = "leader_trait_expertise_voidcraft"
+					has_trait = "leader_trait_maniacal"
+					has_trait = "leader_trait_curator"
+				}
+			}
+		}
+	}
+}
+
+tech_rogue_elerium_core = {
+	area = physics
+	category = { particles }
+	tier = 5
+	is_dangerous = yes
+	is_rare = yes
+	is_reverse_engineerable = no
+	ai_update_type = all
+	prerequisites = { "tech_supremacy_horizon_core" "tech_dark_matter_power_core" }
+	cost = 100000
+	weight = 11
+	
+	modifier = {
+		ship_jumpdrive_cooldown_mult = -0.1
+	}
+
+	weight_modifier = {
+		factor = 1.50
+		modifier = {
+			factor = 1.5
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_nanite_transmutation"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_deflector"
+		}
+		modifier = {
+			factor = 5
+			has_technology = "tech_dark_matter_power_core"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_propulsion"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_roguetech_stealth"
+		}
+	}
+
+	ai_weight = {
+		factor = 1
+		modifier = {
+			factor = 10
+			research_leader = {
+				area = physics
+				OR = {
+					has_trait = "leader_trait_expertise_voidcraft"
+					has_trait = "leader_trait_maniacal"
+					has_trait = "leader_trait_curator"
+				}
+			}
+		}
+	}
+}
+
+tech_supremacy_chronoton_fields = {
+	area = physics
+	category = { particles }
+	tier = 5
+	is_dangerous = yes
+	is_rare = yes
+	is_reverse_engineerable = no
+	ai_update_type = all
+	prerequisites = { "tech_supremacy_intelligent_materials" "tech_supremacy_exotic_matter_annihilation" "tech_supremacy_horizon_core" "tech_sensors_4" }
+	cost = 60000
+	weight = 11
+	
+	modifier = {
+		ship_evasion_mult = 0.03
+	}
+
+	weight_modifier = {
+		factor = 1.50
+		modifier = {
+			factor = 1.5
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_nanite_transmutation"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_deflector"
+		}
+		modifier = {
+			factor = 5
+			has_technology = "tech_dark_matter_power_core"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_propulsion"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_roguetech_stealth"
+		}
+	}
+
+	ai_weight = {
+		factor = 1
+		modifier = {
+			factor = 10
+			research_leader = {
+				area = physics
+				OR = {
+					has_trait = "leader_trait_expertise_voidcraft"
+					has_trait = "leader_trait_maniacal"
+					has_trait = "leader_trait_curator"
+				}
+			}
+		}
+	}
+}
+
+tech_supremacy_hyperspace_folding = {
+	area = physics
+	category = { particles }
+	tier = 5
+	is_dangerous = yes
+	is_rare = yes
+	is_reverse_engineerable = no
+	ai_update_type = all
+	prerequisites = { "tech_roguetech_scalar_energy_fields" "tech_jump_drive_1" }
+	cost = 60000
+	weight = 11
+	
+	modifier = {
+		ship_ftl_jumpdrive_range_mult = 0.1
+	}
+
+	weight_modifier = {
+		factor = 1.50
+		modifier = {
+			factor = 1.5
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_nanite_transmutation"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_deflector"
+		}
+		modifier = {
+			factor = 5
+			has_technology = "tech_dark_matter_power_core"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_propulsion"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_roguetech_stealth"
+		}
+	}
+
+	ai_weight = {
+		factor = 1
+		modifier = {
+			factor = 10
+			research_leader = {
+				area = physics
+				OR = {
+					has_trait = "leader_trait_expertise_voidcraft"
+					has_trait = "leader_trait_maniacal"
+					has_trait = "leader_trait_curator"
+				}
+			}
+		}
+	}
+}
+
+tech_roguetech_scalar_energy_fields = {
+	area = physics
+	category = { particles }
+	tier = 5
+	is_dangerous = yes
+	is_rare = yes
+	is_reverse_engineerable = no
+	ai_update_type = all
+	prerequisites = { "tech_supremacy_exotic_matter_annihilation" "tech_shields_5" "tech_juggernaut" }
+	cost = 60000
+	weight = 11
+	
+	modifier = {
+		ship_shield_mult = 0.05
+	}
+
+	weight_modifier = {
+		factor = 1.50
+		modifier = {
+			factor = 1.5
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_nanite_transmutation"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_deflector"
+		}
+		modifier = {
+			factor = 5
+			has_technology = "tech_dark_matter_power_core"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_propulsion"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_roguetech_stealth"
+		}
+	}
+
+	ai_weight = {
+		factor = 1
+		modifier = {
+			factor = 10
+			research_leader = {
+				area = physics
+				OR = {
+					has_trait = "leader_trait_expertise_voidcraft"
+					has_trait = "leader_trait_maniacal"
+					has_trait = "leader_trait_curator"
+				}
+			}
+		}
+	}
+}
+
+tech_roguetech_void_shields = {
+	area = physics
+	category = { particles }
+	tier = 5
+	is_dangerous = yes
+	is_rare = yes
+	is_reverse_engineerable = no
+	ai_update_type = all
+	prerequisites = { "tech_roguetech_scalar_energy_fields" "tech_dark_matter_deflector" }
+	cost = 80000
+	weight = 11
+	
+	modifier = {
+		ship_shield_mult = 0.1
+		ship_shield_regen_add_perc = 0.5
+	}
+
+	weight_modifier = {
+		factor = 1.50
+		modifier = {
+			factor = 1.5
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_nanite_transmutation"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_deflector"
+		}
+		modifier = {
+			factor = 5
+			has_technology = "tech_dark_matter_power_core"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_propulsion"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_roguetech_stealth"
+		}
+	}
+
+	ai_weight = {
+		factor = 1
+		modifier = {
+			factor = 10
+			research_leader = {
+				area = physics
+				OR = {
+					has_trait = "leader_trait_expertise_voidcraft"
+					has_trait = "leader_trait_maniacal"
+					has_trait = "leader_trait_curator"
+				}
+			}
+		}
+	}
+}
+
+tech_roguetech_stealth = {
+	cost = 3500
+	area = physics
+	tier = 2
+	ai_update_type = military
+	category = { field_manipulation }
+	prerequisites = { "tech_shield_rechargers_1" }
+	weight = 20
+	
+	modifier = {
+		army_health = 0.05
+		army_morale = 0.05		
+		ship_disengage_chance_mult = 0.33
+		ship_evasion_mult = 0.01
+		ship_evasion_add = 2
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_nanite_transmutation"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_physics_1"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_physics_2"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_physics_3"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_administrative_ai"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_combat_computers_1"
+		}
+		modifier = {
+			factor = 2
+			has_technology = "tech_encryption_1"
+		}
+		modifier = {
+			factor = 2
+			has_technology = "tech_decryption_1"
+		}
+		modifier = {
+			factor = 2
+			has_technology = "tech_encryption_2"
+		}
+		modifier = {
+			factor = 2
+			has_technology = "tech_decryption_2"
+		}
+		modifier = {
+			factor = 2
+			has_technology = "tech_encryption_3"
+		}
+		modifier = {
+			factor = 2
+			has_technology = "tech_decryption_3"
+		}
+		modifier = {
+			add = 1
+			has_technology = "tech_sensors_2"
+		}
+		modifier = {
+			add = 1
+			has_technology = "tech_sensors_3"
+		}
+		modifier = {
+			add = 1
+			has_technology = "tech_sensors_4"
+		}
+		modifier = {
+			add = 1
+			has_technology = "tech_positronic_implants"
+		}
+		modifier = {
+			add = 1
+			has_technology = "tech_combat_computers_2"
+		}
+		modifier = {
+			add = 1
+			has_technology = "tech_combat_computers_3"
+		}
+		modifier = {
+			add = 1
+			has_technology = "tech_combat_computers_autonomous"
+		}
+		modifier = {
+			add = 1
+			has_technology = "tech_auxiliary_fire_control"
+		}
+	}
+
+	ai_weight = {
+		factor = 2 #good component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+}
+
+tech_supremacy_scalar_cannon_minituaristion = {
+	area = physics
+	category = { particles }
+	tier = 5
+	is_dangerous = yes
+	is_rare = yes
+	is_reverse_engineerable = no
+	ai_update_type = all
+	prerequisites = { "tech_supremacy_intelligent_materials" "tech_supremacy_exotic_matter_annihilation" "tech_roguetech_scalar_energy_fields" "tech_supremacy_dreadnought" }
+	cost = 100000
+	weight = 11
+	
+	modifier = {
+		weapon_type_energy_weapon_damage_mult = 0.05
+	}
+
+	weight_modifier = {
+		factor = 1.50
+		modifier = {
+			factor = 1.5
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_nanite_transmutation"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_deflector"
+		}
+		modifier = {
+			factor = 5
+			has_technology = "tech_dark_matter_power_core"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_propulsion"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_roguetech_stealth"
+		}
+	}
+
+	ai_weight = {
+		factor = 1
+		modifier = {
+			factor = 10
+			research_leader = {
+				area = physics
+				OR = {
+					has_trait = "leader_trait_expertise_voidcraft"
+					has_trait = "leader_trait_maniacal"
+					has_trait = "leader_trait_curator"
+				}
+			}
+		}
+	}
+}
+
+tech_supremacy_scalar_cannon_minituaristion_2 = {
+	area = physics
+	category = { particles }
+	tier = 5
+	is_dangerous = yes
+	is_rare = yes
+	is_reverse_engineerable = no
+	ai_update_type = all
+	prerequisites = { "tech_supremacy_intelligent_materials" "tech_supremacy_exotic_matter_annihilation" "tech_roguetech_scalar_energy_fields" "tech_supremacy_dreadnought" "tech_supremacy_scalar_cannon_minituaristion" }
+	cost = 120000
+	weight = 11
+	
+	modifier = {
+		weapon_type_energy_weapon_damage_mult = 0.05
+	}
+
+	weight_modifier = {
+		factor = 1.50
+		modifier = {
+			factor = 1.5
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_nanite_transmutation"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_deflector"
+		}
+		modifier = {
+			factor = 5
+			has_technology = "tech_dark_matter_power_core"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_propulsion"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_roguetech_stealth"
+		}
+	}
+
+	ai_weight = {
+		factor = 1
+		modifier = {
+			factor = 10
+			research_leader = {
+				area = physics
+				OR = {
+					has_trait = "leader_trait_expertise_voidcraft"
+					has_trait = "leader_trait_maniacal"
+					has_trait = "leader_trait_curator"
+				}
+			}
+		}
+	}
+}
+
+tech_supremacy_scalar_cannon_minituaristion_3 = {
+	area = society
+	category = { military_theory }
+	tier = 5
+	is_dangerous = yes
+	is_rare = yes
+	is_reverse_engineerable = no
+	ai_update_type = all
+	prerequisites = { "tech_supremacy_intelligent_materials" "tech_supremacy_exotic_matter_annihilation" "tech_roguetech_scalar_energy_fields" "tech_supremacy_dreadnought" "tech_supremacy_scalar_cannon_minituaristion" "tech_supremacy_scalar_cannon_minituaristion_2" }
+	cost = 140000
+	weight = 11
+	
+	modifier = {
+		planet_army_build_speed_mult = 0.1
+		army_experience_gain_mult = 0.1
+		army_starting_experience_add = 100
+		army_damage_mult = 0.2
+	}
+
+	weight_modifier = {
+		factor = 1.50
+		modifier = {
+			factor = 1.5
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_nanite_transmutation"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_deflector"
+		}
+		modifier = {
+			factor = 5
+			has_technology = "tech_dark_matter_power_core"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_propulsion"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_roguetech_stealth"
+		}
+	}
+
+	ai_weight = {
+		factor = 1
+		modifier = {
+			factor = 10
+			research_leader = {
+				area = physics
+				OR = {
+					has_trait = "leader_trait_expertise_voidcraft"
+					has_trait = "leader_trait_maniacal"
+					has_trait = "leader_trait_curator"
+				}
+			}
+		}
+	}
+}

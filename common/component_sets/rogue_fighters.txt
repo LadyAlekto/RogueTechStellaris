@@ -1,0 +1,67 @@
+component_set = {
+	key = "SUPREMACY_STEALTH_SCOUT"
+	
+	icon = "fighter_Ia"
+	icon_frame = 1	
+}
+component_set = {
+	key = "SUPREMACY_STEALTH_FIGHTER_1"
+	
+	icon = "fighter_IIa"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "SUPREMACY_STEALTH_FIGHTER_2"
+	
+	icon = "fighter_IIIa"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "SUPREMACY_STEALTH_FIGHTER_3"
+	
+	icon = "fighter_IVa"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "SUPREMACY_STRIKE_CRAFT"
+	
+	icon = "fighter_Va"
+	icon_frame = 1	
+}
+component_set = {
+	key = "BIOPHAGE_SWARM_FIGHTER_1"
+	
+	icon = "BIOPHAGE_SWARM_FIGHTER_1"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "BIOPHAGE_SWARM_FIGHTER_2"
+	
+	icon = "BIOPHAGE_SWARM_FIGHTER_2"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "BIOPHAGE_SWARM_FIGHTER_3"
+	
+	icon = "BIOPHAGE_SWARM_FIGHTER_3"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "BIOPHAGE_SWARM_FIGHTER_4"
+	
+	icon = "BIOPHAGE_SWARM_FIGHTER_4"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "BIOPHAGE_SWARM_FIGHTER_5"
+	
+	icon = "BIOPHAGE_SWARM_FIGHTER_5"
+	icon_frame = 1	
+}

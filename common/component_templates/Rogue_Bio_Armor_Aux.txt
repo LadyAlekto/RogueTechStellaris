@@ -1,0 +1,178 @@
+utility_component_template = {
+	key = "BIOPHAGE_ARMOR_1"
+	size = aux
+	icon = "BIOPHAGE_ARMOR_1"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_mult = 0.1
+		ship_hull_mult = 0.05
+		ship_armor_regen_add_perc = 0.5
+		ship_hull_regen_add_perc = 0.5
+	}
+
+	prerequisites = { "tech_roguetech_bio_armor_plating"  "tech_ship_armor_1" }
+	component_set = "BIOPHAGE_ARMOR_1"
+	upgrades_to = "BIOPHAGE_ARMOR_2"
+	resources = {
+		category = ship_components
+		cost = {
+			food = 2
+		}
+		upkeep = {
+			food = 0.02
+		}
+	}
+		ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "BIOPHAGE_ARMOR_2"
+	size = aux
+	icon = "BIOPHAGE_ARMOR_2"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_mult = 0.12
+		ship_hull_mult = 0.06
+		ship_armor_regen_add_perc = 0.5
+		ship_hull_regen_add_perc = 0.5
+	}
+
+	prerequisites = { "tech_roguetech_bio_armor_plating"  "tech_ship_armor_2" }
+	component_set = "BIOPHAGE_ARMOR_2"
+	upgrades_to = "BIOPHAGE_ARMOR_3"
+	resources = {
+		category = ship_components
+		cost = {
+			food = 3
+		}
+		upkeep = {
+			food = 0.03
+		}
+	}
+		ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "BIOPHAGE_ARMOR_3"
+	size = aux
+	icon = "BIOPHAGE_ARMOR_3"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_mult = 0.14
+		ship_hull_mult = 0.07
+		ship_armor_regen_add_perc = 0.5
+		ship_hull_regen_add_perc = 0.5
+	}
+
+	prerequisites = { "tech_roguetech_bio_armor_plating"  "tech_ship_armor_3" }
+	component_set = "BIOPHAGE_ARMOR_3"
+	upgrades_to = "BIOPHAGE_ARMOR_4"
+resources = {
+		category = ship_components
+		cost = {
+			food = 4
+		}
+		upkeep = {
+			food = 0.04
+		}
+	}
+		ai_weight = {
+		weight = 3
+	}
+}
+
+utility_component_template = {
+	key = "BIOPHAGE_ARMOR_4"
+	size = aux
+	icon = "BIOPHAGE_ARMOR_4"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_mult = 0.16
+		ship_hull_mult = 0.08
+		ship_armor_regen_add_perc = 0.5
+		ship_hull_regen_add_perc = 0.5
+	}
+
+	prerequisites = { "tech_roguetech_bio_armor_plating"  "tech_ship_armor_4" }
+	component_set = "BIOPHAGE_ARMOR_4"
+	upgrades_to = "BIOPHAGE_ARMOR_5"
+	resources = {
+		category = ship_components
+		cost = {
+			food = 5
+		}
+		upkeep = {
+			food = 0.05
+		}
+	}
+		ai_weight = {
+		weight = 5
+	}
+}
+
+utility_component_template = {
+	key = "BIOPHAGE_ARMOR_5"
+	size = aux
+	icon = "BIOPHAGE_ARMOR_5"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_mult = 0.18
+		ship_hull_mult = 0.09
+		ship_armor_regen_add_perc = 0.5
+		ship_hull_regen_add_perc = 0.5
+	}
+
+	prerequisites = { "tech_roguetech_bio_armor_plating"  "tech_ship_armor_5" }
+	component_set = "BIOPHAGE_ARMOR_5"
+	upgrades_to = "BIOPHAGE_ARMOR_6"
+	resources = {
+		category = ship_components
+		cost = {
+			food = 6
+		}
+		upkeep = {
+			food = 0.06
+		}
+	}
+		ai_weight = {
+		weight = 7
+	}
+}
+
+utility_component_template = {
+	key = "BIOPHAGE_ARMOR_6"
+	size = aux
+	icon = "BIOPHAGE_ARMOR_6"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_mult = 0.2
+		ship_hull_mult = 0.1
+		ship_armor_regen_add_perc = 0.5
+		ship_hull_regen_add_perc = 0.5
+	}
+
+	prerequisites = { "tech_roguetech_bio_armor_plating"  "tech_dragon_armor" }
+	component_set = "BIOPHAGE_ARMOR_6"
+	resources = {
+		category = ship_components
+		cost = {
+			food = 8
+		}
+		upkeep = {
+			food = 0.08
+		}
+	}
+		ai_weight = {
+		weight = 10
+	}
+}

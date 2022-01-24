@@ -1,0 +1,19 @@
+
+	spriteTypes = {
+	
+	spriteType = {
+			name = "TITANIC_KINETIC"
+			texturefile = "gfx/interface/icons/ship_parts/TITANIC_KINETIC.dds"
+		}
+		
+		spriteType = {
+			name = "RT_NEMESIS_CANNON"
+			texturefile = "gfx/interface/icons/ship_parts/RT_NEMESIS_CANNON.dds"
+		}
+		
+		spriteType = {
+			name = "RT_NEMESIS_FUSION_FURNACE"
+			texturefile = "gfx/interface/icons/ship_parts/RT_NEMESIS_FUSION_FURNACE.dds"
+		}
+	
+	}

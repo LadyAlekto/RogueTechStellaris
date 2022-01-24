@@ -1,0 +1,41 @@
+ap_stargate_instant_gateways = {
+	possible = {
+		has_technology = "tech_gateway_construction"
+	}
+	modifier = {
+		planet_resettlement_unemployed_mult = 2
+		pop_growth_from_immigration = 0.2
+		planet_immigration_pull_mult = 0.05
+		planet_emigration_push_mult = 0.15
+	}
+
+	potential = {
+		NOT = {
+			has_ascension_perk = ap_stargate_instant_gateways
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 1.5
+			num_owned_planets < 10
+		}
+		modifier = {
+			factor = 1.5
+			num_owned_planets < 20
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 3
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 2
+			has_ascension_perk = ap_become_the_crisis
+		}
+	}
+}

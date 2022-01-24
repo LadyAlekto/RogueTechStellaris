@@ -1,0 +1,43 @@
+tradition_category_rogue_salvaging = {
+	tree_template = "tree_12_12"
+	adoption_bonus = "tr_rogue_nemesis_salvaging_adopt"
+	finish_bonus = "tr_rogue_nemesis_salvaging_finish"
+
+	potential = {
+		has_ascension_perk = ap_become_the_crisis
+	}
+
+	traditions = {
+		"tr_rogue_nemesis_salvaging_planets"
+		"tr_rogue_nemesis_salvaging_ships"
+		"tr_rogue_nemesis_salvaging_starbase"
+		"tr_rogue_nemesis_salvaging_jury_rig"
+		"tr_rogue_nemesis_salvaging_plattform"
+	}
+	
+	ai_weight = {
+		factor = 7.5
+		modifier = {
+			factor = 0
+			is_militarist = no
+			is_xenophobe = no
+			is_gestalt = no
+		}
+		modifier = {
+			factor = 10
+			is_homicidal = yes
+		}
+		modifier = {
+			factor = 5
+			has_ascension_perk = ap_become_the_crisis
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_xenophobe
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_xenophobe
+		}
+	}
+}

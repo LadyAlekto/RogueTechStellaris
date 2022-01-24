@@ -1,0 +1,186 @@
+#utility_component_template = {
+#	key = "SHIP_BUILDING_EMPTY"
+#	size = medium
+#	icon = "GFX_Juggernaut_building_set"
+#	icon_frame = 1
+#	power = 0
+#
+#	component_set = "Juggernaut_building_set"
+#
+#	ai_weight = {
+#		weight = 1
+#	}
+#}
+
+utility_component_template = {
+	key = "Juggernaut_Shipyard"
+	size = medium
+	icon = "Juggernaut_Shipyard"
+	icon_frame = 1
+	power = 0
+	
+	modifier = {
+		starbase_shipyard_capacity_add = 2
+	}
+	
+	ai_weight = {
+		weight = 5
+	}
+	
+	size_restriction = { juggernaut }
+	class_restriction = { shipclass_starbase }
+	prerequisites = { "tech_juggernaut" }
+	component_set = "Juggernaut_building_set"
+}
+
+
+utility_component_template = {
+	key = "SUPREMACY_Juggernaut_Shipyard"
+	size = medium
+	icon = "SUPREMACY_Juggernaut_Shipyard"
+	icon_frame = 1
+	power = 0
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 11
+			sr_dark_matter = 5
+			nanites = 6
+			sr_living_metal = 4
+		}
+		upkeep = {
+			sr_dark_matter = 0.2
+			nanites = 0.1
+			sr_living_metal = 0.1
+		}
+	}
+	
+	modifier = {
+		starbase_shipyard_capacity_add = 4
+		starbase_shipyard_build_speed_mult = 0.5
+	}
+	
+	ai_weight = {
+		weight = 5
+	}
+	
+	size_restriction = { juggernaut }
+	class_restriction = { shipclass_starbase }
+	prerequisites = { "tech_supremacy_dreadnought" }
+	component_set = "Juggernaut_building_set"
+}
+
+utility_component_template = {
+	key = "SUPREMACY_Juggernaut_Engines"
+	size = medium
+	icon = "SUPREMACY_Juggernaut_Engines"
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 11
+			sr_dark_matter = 5
+			nanites = 6
+			sr_living_metal = 4
+		}
+		upkeep = {
+			sr_dark_matter = 0.2
+			nanites = 0.1
+			sr_living_metal = 0.1
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 0.25
+		ship_evasion_add = 16
+		ship_jumpdrive_cooldown_mult = -0.2
+		ship_ftl_jumpdrive_range_mult = 0.2
+		ship_emergency_ftl_min_days_mult = -0.2
+	}
+	
+	ai_weight = {
+		weight = 5
+	}
+	
+	size_restriction = { juggernaut }
+	class_restriction = { shipclass_starbase }
+	prerequisites = { "tech_supremacy_exotic_matter_propulsion" }
+	component_set = "Juggernaut_building_set"
+}
+
+utility_component_template = {
+	key = "SUPREMACY_Juggernaut_Defenses"
+	size = medium
+	icon = "SUPREMACY_Juggernaut_Defenses"
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 11
+			sr_dark_matter = 5
+			nanites = 6
+			sr_living_metal = 4
+		}
+		upkeep = {
+			sr_dark_matter = 0.2
+			nanites = 0.1
+			sr_living_metal = 0.1
+		}
+	}
+	modifier = {		
+		ship_shield_add = 5000
+		ship_shield_mult = 0.1
+		ship_armor_add = 10000
+		ship_armor_mult = 0.2
+		ship_hull_add = 50000
+		ship_hull_mult = 0.1	
+	}
+	
+	ai_weight = {
+		weight = 5
+	}
+	
+	size_restriction = { juggernaut }
+	class_restriction = { shipclass_starbase }
+	prerequisites = { "tech_supremacy_super_positional_materials" }
+	component_set = "Juggernaut_building_set"
+}
+
+utility_component_template = {
+	key = "SUPREMACY_Juggernaut_batteries"
+	size = medium
+	icon = "SUPREMACY_Juggernaut_batteries"
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 11
+			sr_dark_matter = 5
+			nanites = 6
+			sr_living_metal = 4
+		}
+		upkeep = {
+			sr_dark_matter = 0.2
+			nanites = 0.1
+			sr_living_metal = 0.1
+		}
+	}
+	modifier = {		
+		ship_weapon_damage = 0.25
+		ship_weapon_range_mult= 0.25
+		ship_fire_rate_mult = 0.25
+		ship_tracking_add = 20
+	}
+	
+	ai_weight = {
+		weight = 5
+	}
+	
+	size_restriction = { juggernaut }
+	class_restriction = { shipclass_starbase }
+	prerequisites = { "tech_roguetech_scalar_energy_fields" }
+	component_set = "Juggernaut_building_set"
+}

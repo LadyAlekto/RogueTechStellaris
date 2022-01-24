@@ -1,0 +1,282 @@
+ship_section_template = {
+	key = "RT_CRISIS_BATTLESHIP"
+	ship_size = crisis_battleship
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = rogue_nemesis_galleon
+	icon = "GFX_ship_part_core_mid"
+		
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}	
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "large_gun_02"
+	}	
+	component_slot = {
+		name = "MISSILE_01"
+		template = "medium_missile_turret"
+		locatorname = "large_gun_03"
+	}
+	component_slot = {
+		name = "MISSILE_02"
+		template = "medium_missile_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "MISSILE_03"
+		template = "medium_missile_turret"
+		locatorname = "medium_gun_02"
+	}
+	component_slot = {
+		name = "MISSILE_04"
+		template = "medium_missile_turret"
+		locatorname = "medium_gun_03"
+	}
+
+	aux_utility_slots = 4
+}
+
+
+ship_section_template = {
+	key = "RT_CRISIS_BATTLESHIP_ADVANCED"
+	ship_size = crisis_battleship
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = rogue_nemesis_galleon
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { supremacy_tech_advanced_battleships }
+		
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}	
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "large_gun_02"
+	}	
+	component_slot = {
+		name = "MISSILE_01"
+		template = "medium_missile_turret"
+		locatorname = "large_gun_03"
+	}
+	component_slot = {
+		name = "MISSILE_02"
+		template = "medium_missile_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "MISSILE_03"
+		template = "medium_missile_turret"
+		locatorname = "medium_gun_02"
+	}
+	component_slot = {
+		name = "MISSILE_04"
+		template = "medium_missile_turret"
+		locatorname = "medium_gun_03"
+	}
+		component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		locatorname = "medium_gun_03"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		locatorname = "medium_gun_04"
+	}
+		component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		locatorname = "medium_gun_03"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		locatorname = "medium_gun_04"
+	}
+
+	aux_utility_slots = 6
+	
+		resources = {
+		category = ship_sections
+		cost = {
+			minerals = 30
+			sr_living_metal = 1
+			nanites = 1
+			sr_dark_matter = 1
+		}
+		upkeep = {
+			sr_living_metal = 0.1
+			nanites = 0.1
+			sr_dark_matter = 0.1
+		}
+	}
+}
+
+ship_section_template = {
+	key = "RT_CRISIS_TITAN"
+	ship_size = crisis_titan
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = rogue_nemesis_manowar
+	icon = "GFX_ship_part_core_mid"
+		
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}	
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "large_gun_02"
+	}	
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "invisible_point_defence_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "invisible_point_defence_turret"
+		locatorname = "large_gun_02"
+	}	
+	component_slot = {
+		name = "MISSILE_01"
+		template = "invisible_missile_turret"
+		locatorname = "large_gun_03"
+	}
+	component_slot = {
+		name = "MISSILE_02"
+		template = "invisible_missile_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		locatorname = "medium_gun_03"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		locatorname = "medium_gun_04"
+	}
+
+	aux_utility_slots = 6
+}
+
+ship_section_template = {
+	key = "RT_CRISIS_TITAN_ADVANCED"
+	ship_size = crisis_titan
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = rogue_nemesis_manowar
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { supremacy_tech_advanced_titans }
+		
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}	
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "large_gun_02"
+	}	
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "invisible_point_defence_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "invisible_point_defence_turret"
+		locatorname = "large_gun_02"
+	}
+component_slot = {
+		name = "LARGE_GUN_05"
+		template = "invisible_point_defence_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "invisible_point_defence_turret"
+		locatorname = "large_gun_02"
+	}	
+	component_slot = {
+		name = "MISSILE_01"
+		template = "invisible_missile_turret"
+		locatorname = "large_gun_03"
+	}
+	component_slot = {
+		name = "MISSILE_02"
+		template = "invisible_missile_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "MISSILE_03"
+		template = "invisible_missile_turret"
+		locatorname = "large_gun_03"
+	}
+	component_slot = {
+		name = "MISSILE_04"
+		template = "invisible_missile_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		locatorname = "medium_gun_03"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		locatorname = "medium_gun_04"
+	}
+
+		resources = {
+		category = ship_sections
+		cost = {
+			minerals = 50
+			sr_living_metal = 2
+			nanites = 2
+			sr_dark_matter = 2
+		}
+		upkeep = {
+			sr_living_metal = 0.15
+			nanites = 0.15
+			sr_dark_matter = 0.15
+		}
+	}
+
+	aux_utility_slots = 8
+}

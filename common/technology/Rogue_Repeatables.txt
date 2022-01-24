@@ -1,0 +1,258 @@
+tech_rogue_base_delta_zero_initiative = {
+	area = society
+	cost = @repeatableTechBaseCost
+	cost_per_level = @repeatableTechLevelCost
+	tier = @repeatableTechTier
+	category = { military_theory }
+	levels = 10
+	prerequisites = { "tech_supremacy_dreadnought" }
+	weight = @repeatableTechWeight
+	
+	weight_modifier = {
+		factor = @repatableTechFactor
+	}
+	
+	ai_weight = {
+		factor = 1.0
+	}
+	
+	weight_groups = {
+		repeatable
+	}
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+	
+	modifier = {
+		ship_orbital_bombardment_mult = 0.05
+	}
+}
+
+tech_supremacy_naval_cap = {
+	area = society
+	cost = @repeatableTechBaseCost
+	cost_per_level = @repeatableTechLevelCost
+	tier = @repeatableTechTier
+	category = { military_theory }
+	levels = 10
+	prerequisites = { "tech_supremacy_dreadnought" }
+	weight = @repeatableTechWeight
+	
+	weight_modifier = {
+		factor = @repatableTechFactor
+	}
+	
+	ai_weight = {
+		factor = 1.0
+	}
+	
+	weight_groups = {
+		repeatable
+	}
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+	
+	modifier = {
+		country_naval_cap_add = 5
+		country_command_limit_add = 5
+	}
+}
+
+tech_supremacy_command_limit = {
+	area = society
+	cost = @repeatableTechBaseCost
+	cost_per_level = @repeatableTechLevelCost
+	tier = @repeatableTechTier
+	category = { military_theory }
+	levels = 20
+	prerequisites = { "tech_supremacy_naval_cap" }
+	weight = @repeatableTechWeight
+	
+	weight_modifier = {
+		factor = @repatableTechFactor
+	}
+	
+	ai_weight = {
+		factor = 1.0
+	}
+	
+	weight_groups = {
+		repeatable
+	}
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+	
+	modifier = {
+		country_command_limit_add = 5
+	}
+}
+
+tech_supremacy_hull = {
+	area = engineering
+	cost = @repeatableTechBaseCost
+	cost_per_level = @repeatableTechLevelCost
+	tier = @repeatableTechTier
+	category = { voidcraft }
+	levels = 5
+	prerequisites = { "tech_supremacy_dreadnought" }
+	weight = @repeatableTechWeight
+	
+	weight_modifier = {
+		factor = @repatableTechFactor
+	}
+	
+	ai_weight = {
+		factor = 1.0
+	}
+	
+	weight_groups = {
+		repeatable
+	}
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+	
+	modifier = {
+		shipsize_juggernaut_hull_add = 300
+		shipsize_juggernaut_hull_mult = 0.03
+		shipsize_juggernaut_build_speed_mult = 0.04
+	}
+}
+
+tech_supremacy_class = {
+	area = engineering
+	cost = @repeatableTechBaseCost
+	cost_per_level = @repeatableTechLevelCost
+	tier = @repeatableTechTier
+	category = { voidcraft }
+	levels = 5
+	prerequisites = { "tech_supremacy_dreadnought" }
+	weight = @repeatableTechWeight
+	
+	weight_modifier = {
+		factor = @repatableTechFactor
+	}
+	
+	ai_weight = {
+		factor = 1.0
+	}
+	
+	weight_groups = {
+		repeatable
+	}
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+	
+	modifier = {
+		shipclass_starbase_build_cost_mult = -0.01
+		shipclass_starbase_build_speed_mult = 0.02
+		shipclass_starbase_hull_mult = 0.02
+		shipclass_starbase_damage_mult = 0.03
+		shipclass_starbase_evasion_add = 0.1
+	}
+}
+
+tech_supremacy_megastructure_building_speed = {
+	area = engineering
+	cost = @repeatableTechBaseCost
+	cost_per_level = @repeatableTechLevelCost
+	tier = @repeatableTechTier
+	category = { industry }
+	levels = 20
+    prerequisites = { "tech_rogue_nanolathe_engineering" }
+	weight = @repeatableTechWeight
+	
+	weight_modifier = {
+		factor = @repatableTechFactor
+	}
+	
+	ai_weight = {
+		factor = 1.0
+	}
+	
+	weight_groups = {
+		repeatable
+	}
+
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+	
+	modifier = {
+		megastructure_build_speed_mult = 0.05
+		shipclass_starbase_build_speed_mult = 0.05
+		starbase_module_build_speed_mult = 0.05
+		starbase_building_build_speed_mult = 0.05		
+	}
+}
+
+tech_supremacy_ship_building_speed = {
+	area = engineering
+	cost = @repeatableTechBaseCost
+	cost_per_level = @repeatableTechLevelCost
+	tier = @repeatableTechTier
+	category = { industry }
+	levels = 20
+    prerequisites = { "tech_rogue_nanolathe_engineering" }
+	weight = @repeatableTechWeight
+	
+	weight_modifier = {
+		factor = @repatableTechFactor
+	}
+	
+	ai_weight = {
+		factor = 1.0
+	}
+	
+	weight_groups = {
+		repeatable
+	}
+
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+	
+	modifier = {
+		starbase_shipyard_build_speed_mult = 0.05
+		planet_building_build_speed_mult = 0.05
+		planet_army_build_speed_mult = 0.05
+		shipclass_research_station_build_speed_mult = 0.05
+		shipclass_mining_station_build_speed_mult = 0.05
+	}
+}
+
+tech_supremacy_anomalous_materials_mass_production = {
+	area = Physics
+	cost = @repeatableTechBaseCost
+	cost_per_level = @repeatableTechLevelCost
+	tier = @repeatableTechTier
+	category = { industry }
+	levels = 10
+    prerequisites = { "tech_supremacy_intelligent_materials" "tech_supremacy_exotic_matter_annihilation" }
+	weight = @repeatableTechWeight
+	
+	weight_modifier = {
+		factor = @repatableTechFactor
+	}
+	
+	ai_weight = {
+		factor = 1.0
+	}
+	
+	weight_groups = {
+		repeatable
+	}
+
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+	
+	modifier = {
+		country_sr_dark_matter_produces_mult = 0.05
+		country_sr_living_metal_produces_mult = 0.05
+		country_nanites_produces_mult = 0.05
+	}
+}

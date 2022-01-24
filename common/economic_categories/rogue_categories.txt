@@ -1,0 +1,38 @@
+planet_nanite_fabricator = {
+	icon = "GFX_Nanite_Fabricator"
+	parent = planet_metallurgists
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+}
+
+planet_anti_matter_researcher = {
+	icon = "GFX_anti_matter_researcher"
+	parent = planet_technician
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+}
+
+planet_tw_soldiers = {
+	parent = planet_jobs
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+}

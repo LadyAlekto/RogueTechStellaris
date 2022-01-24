@@ -1,0 +1,65 @@
+
+	spriteTypes = {	
+	spriteType = {
+			name = "Rogue_Basic_Armor"
+			texturefile = "gfx/interface/icons/ship_parts/armor/Rogue_Basic_Armor.dds"
+		}
+	spriteType = {
+			name = "Rogue_Armor_Nanocomposite"
+			texturefile = "gfx/interface/icons/ship_parts/armor/Rogue_Armor_Nanocomposite.dds"
+		}
+	spriteType = {
+			name = "Rogue_Armor_Ceramo"
+			texturefile = "gfx/interface/icons/ship_parts/armor/Rogue_Armor_Ceramo.dds"
+		}
+	spriteType = {
+			name = "Rogue_Armor_Plasteel"
+			texturefile = "gfx/interface/icons/ship_parts/armor/Rogue_Armor_Plasteel.dds"
+		}
+	spriteType = {
+			name = "Rogue_Armor_Durasteel"
+			texturefile = "gfx/interface/icons/ship_parts/armor/Rogue_Armor_Durasteel.dds"
+		}
+	spriteType = {
+			name = "Rogue_Armor_Neutronium"
+			texturefile = "gfx/interface/icons/ship_parts/armor/Rogue_Armor_Neutronium.dds"
+		}
+	spriteType = {
+			name = "Rogue_Armor_Adamantium"
+			texturefile = "gfx/interface/icons/ship_parts/armor/Rogue_Armor_Adamantium.dds"
+		}
+	spriteType = {
+			name = "Rogue_Armor_Dragonscales"
+			texturefile = "gfx/interface/icons/ship_parts/armor/Rogue_Armor_Dragonscales.dds"
+		}				
+	spriteType = {
+			name = "Rogue_Armor_AdamtiumScales"
+			texturefile = "gfx/interface/icons/ship_parts/armor/Rogue_Armor_AdamtiumScales.dds"
+		}
+		
+		spriteType = {
+			name = "BIOPHAGE_ARMOR_1"
+			texturefile = "gfx/interface/icons/ship_parts/armor/biophage_armor_1.dds"
+		}
+		spriteType = {
+			name = "BIOPHAGE_ARMOR_2"
+			texturefile = "gfx/interface/icons/ship_parts/armor/biophage_armor_2.dds"
+		}
+		spriteType = {
+			name = "BIOPHAGE_ARMOR_3"
+			texturefile = "gfx/interface/icons/ship_parts/armor/biophage_armor_3.dds"
+		}
+	
+		spriteType = {
+			name = "BIOPHAGE_ARMOR_4"
+			texturefile = "gfx/interface/icons/ship_parts/armor/biophage_armor_4.dds"
+		}
+		spriteType = {
+			name = "BIOPHAGE_ARMOR_5"
+			texturefile = "gfx/interface/icons/ship_parts/armor/biophage_armor_5.dds"
+		}
+		spriteType = {
+			name = "BIOPHAGE_ARMOR_6"
+			texturefile = "gfx/interface/icons/ship_parts/armor/biophage_armor_6.dds"
+		}
+	}

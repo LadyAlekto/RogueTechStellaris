@@ -1,0 +1,137 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_tradition_category_bg_tradition_category_supremacy_total_war"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_supremacy_total_war.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tradition_hex_bg_tradition_category_supremacy_total_war"
+		textureFile = "gfx/interface/traditions/tradition_hex_bg_supremacy_red.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tradition_category_icon_tradition_category_supremacy_total_war"
+		textureFile = "gfx/interface/traditions/GFX_tradition_category_icon_tradition_category_supremacy_total_war.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tr_supremacy_total_war_blitzkrieg"
+		textureFile = "gfx/interface/traditions/tr_supremacy_total_war_blitzkrieg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tr_supremacy_total_war_conscription"
+		textureFile = "gfx/interface/traditions/tr_supremacy_total_war_conscription.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tr_supremacy_total_war_discipline"
+		textureFile = "gfx/interface/traditions/tr_supremacy_total_war_discipline.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tr_supremacy_total_war_mobilisation"
+		textureFile = "gfx/interface/traditions/tr_supremacy_total_war_mobilisation.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tr_supremacy_total_war_paranoia"
+		textureFile = "gfx/interface/traditions/tr_supremacy_total_war_paranoia.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tradition_category_icon_tradition_category_supremacy_total_war"
+		textureFile = "gfx/interface/traditions/GFX_tradition_category_icon_tradition_category_supremacy_total_war.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_wg_supremacy_total_annihilation"
+		texturefile = "gfx/interface/icons/diplomacy/wg_supremacy_total_annihilation.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tradition_category_bg_tradition_category_biophage_harvest"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_biophage_harvest.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tradition_hex_bg_tradition_category_biophage_harvest"
+		textureFile = "gfx/interface/traditions/tradition_hex_bg_green.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tradition_category_icon_tradition_category_biophage_harvest"
+		textureFile = "gfx/interface/traditions/GFX_tradition_category_icon_tradition_category_biophage_harvest.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tr_biophage_harvest_vivisection"
+		textureFile = "gfx/interface/traditions/tr_biophage_harvest_vivisection.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tr_biophage_harvest_oppression"
+		textureFile = "gfx/interface/traditions/tr_biophage_harvest_oppression.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tr_biophage_harvest_foraging"
+		textureFile = "gfx/interface/traditions/tr_biophage_harvest_foraging.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tr_biophage_harvest_bioweapons"
+		textureFile = "gfx/interface/traditions/tr_biophage_harvest_bioweapons.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tr_biophage_harvest_recycle"
+		textureFile = "gfx/interface/traditions/tr_biophage_harvest_recycle.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ap_biophage_engineered_leaders"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_biophage_engineered_leaders.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_tradition_category_bg_tradition_category_rogue_salvaging"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_rogue_salvaging.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tradition_hex_bg_tradition_category_rogue_salvaging"
+		textureFile = "gfx/interface/traditions/tradition_hex_bg_salvaging_red.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tradition_category_icon_tradition_category_rogue_salvaging"
+		textureFile = "gfx/interface/traditions/tradition_category_icon_rogue_salvaging.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tr_rogue_nemesis_salvaging_planets"
+		textureFile = "gfx/interface/traditions/rogue_nemesis_salvaging_planets.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tr_rogue_nemesis_salvaging_ships"
+		textureFile = "gfx/interface/traditions/rogue_nemesis_salvaging_ships.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tr_rogue_nemesis_salvaging_starbase"
+		textureFile = "gfx/interface/traditions/rogue_nemesis_salvaging_starbase.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tr_rogue_nemesis_salvaging_plattform"
+		textureFile = "gfx/interface/traditions/rogue_nemesis_salvaging_plattform.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tr_rogue_nemesis_salvaging_jury_rig"
+		textureFile = "gfx/interface/traditions/rogue_nemesis_salvaging_jury_rig.dds"
+	}
+}

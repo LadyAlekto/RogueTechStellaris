@@ -1,0 +1,535 @@
+utility_component_template = {
+	key = "SUPREMACY_Juggernaut_minefield"
+	size = medium
+	icon = "SUPREMACY_Juggernaut_minefield"
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 22
+			sr_dark_matter = 8
+			nanites = 9
+			sr_living_metal = 7
+		}
+		upkeep = {
+			sr_dark_matter = 0.5
+			nanites = 0.15
+			sr_living_metal = 0.1
+		}
+	}
+	hostile_aura = {
+		name = "aura_juggernaut_system_wide_minefield"
+		system_wide = yes
+
+		stack_info = {
+			id = hostile_juggernaut_system_wide_minefield
+			priority = 10
+		}
+
+		modifier = {
+			ship_shield_mult = -0.15
+			ship_armor_mult = -0.15
+			ship_speed_mult = -0.15
+			ship_evasion_mult = -0.15
+			ship_disengage_chance_mult = -0.15
+			ship_fire_rate_mult = -0.1
+		}
+
+		graphics = {
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 5
+	}
+	
+	size_restriction = { juggernaut }
+	class_restriction = { shipclass_starbase }
+	prerequisites = { "tech_supremacy_dreadnought" }
+	component_set = "ship_aura_components"
+}
+
+utility_component_template = {
+	key = "SHIP_AURA_SUBSPACEJAMMER"
+	size = medium
+	icon = "SHIP_AURA_SUBSPACEJAMMER"
+	icon_frame = 1
+	power = 0
+	
+	size_restriction = { juggernaut }
+	component_set = "ship_aura_components"
+	prerequisites = { "tech_supremacy_dreadnought" }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 22
+			sr_dark_matter = 8
+			nanites = 9
+			sr_living_metal = 7
+		}
+		upkeep = {
+			sr_dark_matter = 0.5
+			nanites = 0.15
+			sr_living_metal = 0.1
+		}
+	}
+	
+	ftl_inhibitor = yes
+	
+	hostile_aura = {
+		name = "aura_ship_subspace_jammer"
+		system_wide = yes
+		
+		stack_info = {			#A ship can only be affected by one aura of a certain id. If multiple auras have the same ID the one with the highest priority will be applied.
+			id = hostile_subspacejammer_aura
+			priority = 500
+		}
+		
+		modifier = {
+			ship_emergency_ftl_min_days_mult = 2
+			ship_disengage_chance_mult = -0.5
+			ship_windup_mult = 0.66
+			ship_winddown_mult = 0.66
+			ship_speed_mult = -0.15
+			ship_evasion_mult = -0.1
+			ship_engagement_range_mult = -0.1
+		}
+		
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"   
+				dynamic_scale = no
+			}
+		}
+	}
+	
+	friendly_aura = {
+		name = "aura_subspacemanipulator"
+		system_wide = yes
+		
+		stack_info = {			#A ship can only be affected by one aura of a certain id. If multiple auras have the same ID the one with the highest priority will be applied.
+			id = friendly_subspacemanipulator
+			priority = 500
+		}
+		
+		modifier = {
+			ship_engagement_range_mult = 0.1
+			ship_speed_mult = 0.15
+			ship_evasion_mult = 0.1
+			ship_windup_mult = -0.2
+			ship_winddown_mult = -0.2
+			ship_jumpdrive_cooldown_mult = -0.2
+		}
+		
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+utility_component_template = {
+	key = "STARBASE_SYSTEM_WIDE_MINEFIELD"
+	size = medium
+	icon = "GFX_ship_part_aura_snare"
+	icon_frame = 1
+	power = 0
+
+	class_restriction = { shipclass_starbase }
+
+	hostile_aura = {
+		name = "aura_starbase_system_wide_minefield"
+		system_wide = yes
+
+		stack_info = {
+			id = hostile_system_wide_minefield
+			priority = 10
+		}
+
+		modifier = {
+			ship_shield_mult = -0.20
+			ship_armor_mult = -0.20
+			ship_speed_mult = -0.20
+			ship_evasion_mult = -0.20
+			ship_disengage_chance_mult = -0.20
+			ship_fire_rate_mult = -0.1
+		}
+
+		graphics = {
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "STARBASE_MAINTENANCE_DRONES"
+	size = medium
+	icon = "GFX_ship_part_aura_snare"
+	icon_frame = 1
+	power = 0
+
+	class_restriction = { shipclass_starbase }
+
+		friendly_aura = {
+		name = "aura_starbase_maintenance_drones"
+		radius = @shipAuraRange
+		apply_on = ships
+		
+		stack_info = {			#A ship can only be affected by one aura of a certain id. If multiple auras have the same ID the one with the highest priority will be applied.
+			id = friendly_aura_starbase_maintenance_drones
+			priority = 500
+		}
+		
+		modifier = {
+		ship_shield_mult = 0.2
+		ship_shield_regen_add_perc = 1
+		ship_armor_mult = 0.1
+		ship_hull_mult = 0.1
+		ship_hull_regen_add_perc = 1
+		ship_armor_regen_add_perc = 1
+		}
+		
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "SHIP_AURA_INTERDICTOR"
+	size = medium
+	icon = "SHIP_AURA_INTERDICTOR"
+	icon_frame = 1
+	power = 0
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 40
+			sr_dark_matter = 2
+			nanites = 3
+			rare_crystals = 1
+			exotic_gases = 1
+			volatile_motes = 1
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.06
+			sr_dark_matter = 0.3
+			nanites = 0.2
+		}
+	}
+
+	prerequisites = { "supremacy_tech_advanced_titans" }
+	size_restriction = { titan }
+	component_set = "ship_aura_components"
+	
+	ftl_inhibitor = yes
+	
+	hostile_aura = {
+		name = "aura_interdictor_module"
+		system_wide = yes
+		apply_on = fleets
+		
+		stack_info = {			#A ship can only be affected by one aura of a certain id. If multiple auras have the same ID the one with the highest priority will be applied.
+			id = hostile_snare_aura
+			priority = 100
+		}
+		
+		modifier = {
+			ship_emergency_ftl_min_days_mult = 2
+			ship_disengage_chance_mult = -2.00
+			ship_windup_mult = 2
+			ship_winddown_mult = 2
+		}
+		
+		graphics = {
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+
+utility_component_template = {
+	key = "SHIP_AURA_TITANCARRIER"
+	size = medium
+	icon = "SHIP_AURA_TITANCARRIER"
+	icon_frame = 1
+	power = 0
+	
+	prerequisites = { "supremacy_tech_advanced_titans" }
+	
+	size_restriction = { titan }
+	component_set = "ship_aura_components"
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 40
+			sr_dark_matter = 6
+			nanites = 5
+			rare_crystals = 1
+			exotic_gases = 1
+			volatile_motes = 1
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.06
+			sr_dark_matter = 0.3
+			nanites = 0.2
+		}
+	}
+	
+	hostile_aura = {
+		name = "aura_titancarrier_hostile"
+		system_wide = yes
+		
+		stack_info = {			#A ship can only be affected by one aura of a certain id. If multiple auras have the same ID the one with the highest priority will be applied.
+			id = hostile_titancarrier_aura
+			priority = 500
+		}
+		
+		modifier = {
+			ship_evasion_mult = -0.1
+			ship_engagement_range_mult = -0.1
+			weapon_type_point_defense_weapon_damage_mult = -0.1
+			weapon_type_point_defense_weapon_fire_rate_mult = -0.1
+		}
+		
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"   
+				dynamic_scale = no
+			}
+		}
+	}
+	
+	friendly_aura = {
+		name = "aura_titancarrier_friendly"
+		radius = @shipAuraRange
+		apply_on = ships
+		
+		stack_info = {			#A ship can only be affected by one aura of a certain id. If multiple auras have the same ID the one with the highest priority will be applied.
+			id = friendly_titancarrier_aura
+			priority = 500
+		}
+		
+		modifier = {
+			ship_engagement_range_mult = 0.25
+			weapon_type_strike_craft_weapon_damage_mult = 0.15
+			weapon_type_strike_craft_speed_mult = 0.2
+			weapon_type_strike_craft_weapon_fire_rate_mult = 0.15
+		}
+		
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+utility_component_template = {
+	key = "SUPREMACY_SHIP_AURA_DRONE"
+	size = medium
+	icon = "SUPREMACY_SHIP_AURA_DRONE"
+	icon_frame = 1
+	power = 0
+	
+	prerequisites = { "supremacy_tech_advanced_titans" }
+
+	size_restriction = { titan }
+	component_set = "ship_aura_components"
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 40
+			sr_dark_matter = 6
+			nanites = 5
+			rare_crystals = 1
+			exotic_gases = 1
+			volatile_motes = 1
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.06
+			sr_dark_matter = 0.3
+			nanites = 0.2
+		}
+	}
+
+	friendly_aura = {
+		name = "aura_titan_maintenance_drone"
+		radius = @shipAuraRange
+		apply_on = ships
+
+		stack_info = {			#A ship can only be affected by one aura of a certain id. If multiple auras have the same ID the one with the highest priority will be applied.
+			id = aura_titan_maintenance_drone_id
+			priority = 20
+		}
+
+		modifier = {
+			ship_shield_mult = 0.1
+		ship_shield_regen_add_perc = 1
+		ship_armor_mult = 0.05
+		ship_hull_mult = 0.05
+		ship_hull_regen_add_perc = 1
+		ship_armor_regen_add_perc = 1
+		}
+
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_positive_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+}
+
+utility_component_template = {
+	key = "SUPREMACY_SHIP_AURA_BOMBARDMENT"
+	size = medium
+	icon = "SUPREMACY_SHIP_AURA_BOMBARDMENT"
+	icon_frame = 1
+	power = 0
+	
+	prerequisites = { "supremacy_tech_advanced_titans" }
+
+	size_restriction = { titan }
+	component_set = "ship_aura_components"
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 40
+			sr_dark_matter = 6
+			nanites = 5
+			rare_crystals = 1
+			exotic_gases = 1
+			volatile_motes = 1
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.06
+			sr_dark_matter = 0.3
+			nanites = 0.2
+		}
+	}
+
+	friendly_aura = {
+		name = "aura_titan_supremacy_bomardment_friend"
+		radius = @shipAuraRange
+		apply_on = ships
+
+		stack_info = {			#A ship can only be affected by one aura of a certain id. If multiple auras have the same ID the one with the highest priority will be applied.
+			id = aura_titan_supremacy_bomardment_friend_id
+			priority = 20
+		}
+
+		modifier = {
+			ship_orbital_bombardment_mult = 0.4
+		}
+
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_positive_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+	
+	hostile_aura = {
+		name = "aura_titan_supremacy_bomardment_enemy"
+		system_wide = yes
+		apply_on = fleets
+		
+		stack_info = {			#A ship can only be affected by one aura of a certain id. If multiple auras have the same ID the one with the highest priority will be applied.
+			id = aura_titan_supremacy_bomardment_enemy_id
+			priority = 100
+		}
+		
+		modifier = {
+			weapon_type_strike_craft_weapon_damage_mult = -0.1
+			weapon_type_strike_craft_speed_mult = -0.15
+			weapon_type_strike_craft_weapon_fire_rate_mult = -0.1
+		}
+		
+		graphics = {
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+}

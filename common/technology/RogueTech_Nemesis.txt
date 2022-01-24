@@ -1,0 +1,349 @@
+tech_rogue_jury_rigged_weapons = {
+	area = Engineering
+	category = { materials }
+	tier = 2
+	is_dangerous = yes
+	is_rare = yes
+	is_reverse_engineerable = no
+	ai_update_type = all
+	cost = 6000
+	weight = 100
+	
+	potential = {
+		has_ascension_perk = ap_become_the_crisis
+	}
+	
+	modifier = {
+		country_base_menace_produces_add = 1
+	}
+
+	weight_modifier = {
+		factor = 1.50
+		modifier = {
+			factor = 1.5
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.5
+			has_ascension_perk = ap_become_the_crisis
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_nanite_transmutation"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_deflector"
+		}
+		modifier = {
+			factor = 5
+			has_technology = "tech_dark_matter_power_core"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_propulsion"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_roguetech_stealth"
+		}
+	}
+
+	ai_weight = {
+		factor = 7.5
+		modifier = {
+			factor = 0
+			is_militarist = no
+			is_xenophobe = no
+			is_gestalt = no
+		}
+		modifier = {
+			factor = 10
+			is_homicidal = yes
+		}
+		modifier = {
+			factor = 5
+			has_ascension_perk = ap_become_the_crisis
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_xenophobe
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_xenophobe
+		}
+	}
+}
+
+tech_rogue_crisis_plattform = {
+	area = Engineering
+	category = { materials }
+	tier = 2
+	is_dangerous = yes
+	is_rare = yes
+	is_reverse_engineerable = no
+	ai_update_type = all
+	cost = 8000
+	weight = 100
+	
+	potential = {
+		has_crisis_level = crisis_level_2
+	}
+	
+	modifier = {
+		country_base_menace_produces_add = 1
+	}
+	
+	prerequisites = { "tech_rogue_jury_rigged_weapons" }
+
+	weight_modifier = {
+		factor = 1.50
+		modifier = {
+			factor = 1.5
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.5
+			has_ascension_perk = ap_become_the_crisis
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_nanite_transmutation"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_deflector"
+		}
+		modifier = {
+			factor = 5
+			has_technology = "tech_dark_matter_power_core"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_propulsion"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_roguetech_stealth"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_rogue_jury_rigged_weapons"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_rogue_crisis_battleship"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_rogue_crisis_titan"
+		}
+	}
+
+	ai_weight = {
+		factor = 7.5
+		modifier = {
+			factor = 0
+			is_militarist = no
+			is_xenophobe = no
+			is_gestalt = no
+		}
+		modifier = {
+			factor = 10
+			is_homicidal = yes
+		}
+		modifier = {
+			factor = 5
+			has_ascension_perk = ap_become_the_crisis
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_xenophobe
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_xenophobe
+		}
+	}
+}
+
+tech_rogue_crisis_battleship = {
+	area = Engineering
+	category = { materials }
+	tier = 3
+	is_dangerous = yes
+	is_rare = yes
+	is_reverse_engineerable = no
+	ai_update_type = all
+	cost = 16000
+	weight = 100
+	
+	potential = {
+		has_crisis_level = crisis_level_3
+	}
+	
+	modifier = {
+		country_base_menace_produces_add = 1
+	}
+	
+	prerequisites = { "tech_rogue_jury_rigged_weapons" "tech_battleships" }
+
+	weight_modifier = {
+		factor = 1.50
+		modifier = {
+			factor = 1.5
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.5
+			has_ascension_perk = ap_become_the_crisis
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_nanite_transmutation"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_deflector"
+		}
+		modifier = {
+			factor = 5
+			has_technology = "tech_dark_matter_power_core"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_propulsion"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_roguetech_stealth"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_rogue_jury_rigged_weapons"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_rogue_crisis_plattform"
+		}
+	}
+
+	ai_weight = {
+		factor = 7.5
+		modifier = {
+			factor = 0
+			is_militarist = no
+			is_xenophobe = no
+			is_gestalt = no
+		}
+		modifier = {
+			factor = 10
+			is_homicidal = yes
+		}
+		modifier = {
+			factor = 5
+			has_ascension_perk = ap_become_the_crisis
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_xenophobe
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_xenophobe
+		}
+	}
+}
+
+tech_rogue_crisis_titan = {
+	area = Engineering
+	category = { materials }
+	tier = 4
+	is_dangerous = yes
+	is_rare = yes
+	is_reverse_engineerable = no
+	ai_update_type = all
+	cost = 20000
+	weight = 100
+	
+	potential = {
+		has_crisis_level = crisis_level_4
+	}
+	
+	modifier = {
+		country_base_menace_produces_add = 1
+	}
+	
+	prerequisites = { "tech_rogue_jury_rigged_weapons" "tech_rogue_crisis_plattform" "tech_rogue_crisis_battleship" "tech_titans" }
+
+	weight_modifier = {
+		factor = 1.50
+		modifier = {
+			factor = 1.5
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.5
+			has_ascension_perk = ap_become_the_crisis
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_nanite_transmutation"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_deflector"
+		}
+		modifier = {
+			factor = 5
+			has_technology = "tech_dark_matter_power_core"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_propulsion"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_roguetech_stealth"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_rogue_jury_rigged_weapons"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_rogue_crisis_battleship"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_rogue_crisis_plattform"
+		}
+	}
+
+	ai_weight = {
+		factor = 7.5
+		modifier = {
+			factor = 0
+			is_militarist = no
+			is_xenophobe = no
+			is_gestalt = no
+		}
+		modifier = {
+			factor = 10
+			is_homicidal = yes
+		}
+		modifier = {
+			factor = 5
+			has_ascension_perk = ap_become_the_crisis
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_xenophobe
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_xenophobe
+		}
+	}
+}

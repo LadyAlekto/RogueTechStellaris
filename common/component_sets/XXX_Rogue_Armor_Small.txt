@@ -1,0 +1,62 @@
+component_set = {
+	key = "Rogue_Basic_Armor"
+
+	icon = "Rogue_Basic_Armor"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "Rogue_Armor_Nanocomposite"
+
+	icon = "Rogue_Armor_Nanocomposite"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "Rogue_Armor_Ceramo"
+
+	icon = "Rogue_Armor_Ceramo"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "Rogue_Armor_Plasteel"
+
+	icon = "Rogue_Armor_Plasteel"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "Rogue_Armor_Durasteel"
+
+	icon = "Rogue_Armor_Durasteel"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "Rogue_Armor_Neutronium"
+
+	icon = "Rogue_Armor_Neutronium"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "Rogue_Armor_Adamantium"
+
+	icon = "Rogue_Armor_Adamantium"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "Rogue_Armor_Dragonscales"
+
+	icon = "Rogue_Armor_Dragonscales"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "Rogue_Armor_AdamtiumScales"
+
+	icon = "Rogue_Armor_AdamtiumScales"
+	icon_frame = 1
+}

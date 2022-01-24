@@ -1,0 +1,132 @@
+﻿l_english:
+ tradition_category_supremacy_total_war:0 "Total War"
+ tradition_category_supremacy_total_war_desc:0 "If an injury has to be done to a man it should be so severe that his vengeance need not be feared."
+ 
+ tr_supremacy_total_war_adopt:0 "Total War Tradition"
+ tr_supremacy_total_war_adopt_desc:0 "§G+10%§! Sublight Speed and Ship Build Speed."
+ 
+ tr_supremacy_total_war_finish:0 "Total War"
+ tr_supremacy_total_war_finish_desc:0 "Unlock Ascension Perk. Unlock Total Annihilation Casus Belli."
+
+ tr_supremacy_total_war_mobilisation:0 "Mobilisation"
+ tr_supremacy_total_war_mobilisation_desc:0 "§G+15%§! Ship and Army build speed."
+ tr_supremacy_total_war_mobilisation_delayed:0 "Into the Gates of Hell we march."
+ 
+ tr_supremacy_total_war_conscription:0 "Conscription"
+ tr_supremacy_total_war_conscription_desc:0 "+1 $job_soldier$ \n Soldier produce +0.5 £unity£"
+ tr_supremacy_total_war_conscription_delayed:0 "Everyone must do their part."
+ 
+ tr_supremacy_total_war_conscription_hive:0 "War Drones"
+ tr_supremacy_total_war_conscription_hive_desc:0 "+1 $job_warrior_drone$ \n Warrior drones produce +0.5 £unity£"
+ tr_supremacy_total_war_conscription_hive_delayed:0 "The Hive must be protected."
+ 
+ tr_supremacy_total_war_conscription_machine:0 "War Drones"
+ tr_supremacy_total_war_conscription_machine_desc:0 "+1 $job_warrior_drone$ \n Warrior drones produce +0.5 £unity£"
+ tr_supremacy_total_war_conscription_machine_delayed:0 "Warrior Drone production approved."
+ 
+ tr_supremacy_total_war_paranoia:0 "Paranoia"
+ tr_supremacy_total_war_paranoia_desc:0 "+2 Encryption and Decryption"
+ tr_supremacy_total_war_paranoia_delayed:0 "Sometimes paranoia's just having all the facts."
+ 
+ tr_supremacy_total_war_blitzkrieg:0 "Blitzkrieg"
+ tr_supremacy_total_war_blitzkrieg_desc:0 "§G10%§! Sublight Speed, FTL Warmup, Jump Drive Range and Cooldown improvement"
+ tr_supremacy_total_war_blitzkrieg_delayed:0 "In war, avoid what is strong, and strike at what is weak."
+ 
+ tr_supremacy_total_war_discipline:0 "Discipline"
+ tr_supremacy_total_war_discipline_desc:0 "+1 $job_nanite_fabricator$ and $job_anti_matter_researcher$."
+ tr_supremacy_total_war_discipline_delayed:0 "A Job for all who want one."
+ 
+ tr_supremacy_total_war_discipline_hive:0 "Discipline"
+ tr_supremacy_total_war_discipline_hive_desc:0 "+1 $job_nanite_fabricator_drone$ and $job_anti_matter_researcher$."
+ tr_supremacy_total_war_discipline_hive_delayed:0 "Move as one, Victory for All."
+ 
+ tr_supremacy_total_war_discipline_machine:0 "Discipline"
+ tr_supremacy_total_war_discipline_machine_desc:0 "+1 $job_nanite_fabricator_robot$ and $job_anti_matter_researcher$."
+ tr_supremacy_total_war_discipline_machine_delayed:0 "Extraction Protocols engaged."
+ 
+ casus_belli_cb_supremacy_total_war:0 "No Mercy"
+ casus_belli_cb_supremacy_total_war_desc:0 "The only acceptable outcome is the complete elimination of the other"
+ 
+ war_goal_wg_supremacy_total_annihilation:0 "Total Annihilation"
+ war_goal_wg_supremacy_total_annihilation_desc:0 "The only acceptable outcome is the complete elimination of the other"
+ 
+ tradition_category_biophage_harvest:0 "Harvest"
+ tradition_category_biophage_harvest_desc:0 "The Galaxy is sown plentifully with life, it is time to reap the harvest"
+ 
+ tr_biophage_harvest_adopt:0 "Harvest Tradition"
+ tr_biophage_harvest_adopt_desc:0 "Unlock the 'Harvest'-Bombardment to reap the bounty of life."
+ 
+ tr_biophage_harvest_finish:0 "Harvest"
+ tr_biophage_harvest_finish_desc:0 "Unlock Ascension Perk. \nPurge speed increased by 100%. \nPop growth speed increased by 15%"
+ 
+ tr_biophage_harvest_finish_machine:0 "Harvest"
+ tr_biophage_harvest_finish_machine_desc:0 "Unlock Ascension Perk. \nPurge speed increased by 100%. \nMechanical Pop assembly speed increased by 15%"
+
+ tr_biophage_harvest_vivisection:0 "Vivisection"
+ tr_biophage_harvest_vivisection_desc:0 "Gain 10% Monthly £unity£ from Purging Organics."
+ tr_biophage_harvest_vivisection_delayed:0 "We must learn what we can."
+ 
+ tr_biophage_harvest_oppression:0 "Oppression"
+ tr_biophage_harvest_oppression_desc:0 "Gain 20% Monthly £influence£ from Purging Organics."
+ tr_biophage_harvest_oppression_delayed:0 "The reaper does not listen to the harvest."
+ 
+ tr_biophage_harvest_foraging:0 "Foraging"
+ tr_biophage_harvest_foraging:0 "+1 $job_farmer$"
+ tr_biophage_harvest_foraging_delayed:0 "Plenty sits still. Hunger is a wanderer."
+ 
+ tr_biophage_harvest_foraging_hive:0 "Foraging"
+ tr_biophage_harvest_foraging_hive:0 "+1 $job_agri_drone$"
+ tr_biophage_harvest_foraging_hive_delayed:0 "Plenty sits still. Hunger is a wanderer."
+ 
+ tr_biophage_harvest_foraging_machine:0 "Efficiency"
+ tr_biophage_harvest_foraging_machine:0 "+1 £job_technician_drone£"
+ tr_biophage_harvest_foraging_machine_delayed:0 "Plenty sits still. Hunger is a wanderer."
+  
+ tr_biophage_harvest_bioweapons:0 "Virus Bombs"
+ tr_biophage_harvest_bioweapons_desc:0 "§G+25%§! Bombardment Damage.\n §PGain £unity£ for Bombing Planets§!"
+ tr_biophage_harvest_bioweapons_delayed:0 "No sacrifice is too great. No treachery too small."
+ 
+ tr_biophage_harvest_recycle:0 "Recycle"
+ tr_biophage_harvest_recycle_desc:0 "+1 £consumer_goods£ from Farmers."
+ tr_biophage_harvest_recycle_delayed:0 "Reduce - Reuse - Recycle."
+ 
+ tr_biophage_harvest_recycle_hive:0 "Recycle"
+ tr_biophage_harvest_recycle_hive_desc:0 "+1 £minerals£ from Farmer Drones."
+ tr_biophage_harvest_recycle_hive_delayed:0 "Reduce - Reuse - Recycle."
+ 
+ tr_biophage_harvest_recycle_machine:0 "Recycle"
+ tr_biophage_harvest_recycle_machine_desc:0 "+1 £energy£ from Technicians."
+ tr_biophage_harvest_recycle_machine_delayed:0 "Reduce - Reuse - Recycle."
+ 
+ ap_supremacy_akashic_records:0 "Akashic Records"
+ ap_supremacy_akashic_records_desc:0 "Secrets beyond Time and Space. §G\nAdmin Capacity +10% \nNaval Capacity +100 \n+2 Encryption and Decryption \n+10% Researcher Output§!"
+ ap_supremacy_akashic_records_modifier_desc:0 "Secrets beyond Time and Space. \n§HUnlocks Building:§! $supremacy_akashic_records$"
+ 
+ tradition_category_rogue_salvaging:0 "Salvaging"
+ tradition_category_rogue_salvaging_desc:0 "Riches are everywhere if one knows where to look."
+ 
+ tr_rogue_nemesis_salvaging_adopt:0 "Salvaging"
+ tr_rogue_nemesis_salvaging_adopt_desc:0 "§G+10%§! £minerals£ production. \n §G+0.15§! £menace£ §MMenace§! produced per unlocked tier"
+ 
+ tr_rogue_nemesis_salvaging_finish:0 "Salvaging"
+ tr_rogue_nemesis_salvaging_finish_desc:0 "Unlock Ascension Perk. \nGain £minerals£ from destroying enemies."
+
+ tr_rogue_nemesis_salvaging_planets:0 "Structures"
+ tr_rogue_nemesis_salvaging_planets_desc:0 "§G-15%§! Planetary Structures Cost and Upkeep."
+ tr_rogue_nemesis_salvaging_planets_delayed:0 "Who needs blueprints anyway?"
+ 
+ tr_rogue_nemesis_salvaging_ships:0 "Ships"
+ tr_rogue_nemesis_salvaging_ships_desc:0 "§G-15%§! Ship Cost and Upkeep."
+ tr_rogue_nemesis_salvaging_ships_delayed:0 "There, I fixed it."
+ 
+ tr_rogue_nemesis_salvaging_starbase:0 "Starbases"
+ tr_rogue_nemesis_salvaging_starbase_desc:0 "§G-15%§! Starbase Cost and Upkeep."
+ tr_rogue_nemesis_salvaging_starbase_delayed:0 "Necessity is the mother of... creative engineering."
+ 
+ tr_rogue_nemesis_salvaging_plattform:0 "Defenses"
+ tr_rogue_nemesis_salvaging_plattform_desc:0 "§G-15%§! Defense Plattform Cost and Upkeep."
+ tr_rogue_nemesis_salvaging_plattform_delayed:0 "The shaking means it's working."
+ 
+ tr_rogue_nemesis_salvaging_jury_rig:0 "Jury Rigging"
+ tr_rogue_nemesis_salvaging_jury_rig_desc:0 "§G+20%§! Build Speeds for Ships, Structures, Starbases and Plattforms. \n§G+33%§! Megastructure Build Speed"
+ tr_rogue_nemesis_salvaging_jury_rig_delayed:0 "Just plug the relay into the manifold, what could go wrong?."

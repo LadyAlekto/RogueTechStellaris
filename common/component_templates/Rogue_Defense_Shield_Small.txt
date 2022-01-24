@@ -1,0 +1,380 @@
+utility_component_template = {
+	key = "Rogue_Basic_Shield_SMALL"
+	size = small
+	icon = "Rogue_Basic_Shield"
+	icon_frame = 1
+	power = -0
+	
+	class_restriction = { shipclass_military constructor colonizer science transport shipclass_starbase  }
+	size_restriction = { marauder_corvette corvette crisis_corvette constructor colonizer science lithoid_colonizer transport starbase_outpost  }
+
+	component_set = "Rogue_Defense_Shield"
+	upgrades_to = "Rogue_Shield_Deflector_SMALL"
+	
+	modifier = {
+		ship_armor_mult = 0.1
+		ship_hull_mult = 0.1
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Shield_Deflector_SMALL"
+	size = small
+	icon = "Rogue_Shield_Deflector"
+	icon_frame = 1
+	power = -22.5
+	
+	class_restriction = { shipclass_military constructor colonizer science transport shipclass_starbase  }
+	size_restriction = { marauder_corvette corvette crisis_corvette constructor colonizer science lithoid_colonizer transport starbase_outpost  }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 7.5
+		}
+		upkeep = {
+			energy = 0.0.075
+			alloys = 0.015
+		}
+	}
+
+	prerequisites = { "tech_shields_1" }
+	component_set = "Rogue_Defense_Shield"
+	upgrades_to = "Rogue_Shield_ImpDeflector_SMALL"
+
+	modifier = {
+		ship_shield_add = 75
+		ship_shield_regen_add_perc = 1
+	}
+	
+	ai_weight = {
+		weight = 2
+
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Shield_ImpDeflector_SMALL"
+	size = small
+	icon = "Rogue_Shield_ImpDeflector"
+	icon_frame = 1
+	power = -30
+	
+	class_restriction = { shipclass_military constructor colonizer science transport shipclass_starbase  }
+	size_restriction = { marauder_corvette corvette crisis_corvette constructor colonizer science lithoid_colonizer transport starbase_outpost  }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10.5
+		}
+		upkeep = {
+			energy = 0.105
+			alloys = 0.21
+		}
+	}
+
+	prerequisites = { "tech_shields_2" }
+	component_set = "Rogue_Defense_Shield"
+	upgrades_to = "Rogue_Shield_Shields_SMALL"
+
+	modifier = {
+		ship_shield_add = 97.5
+		ship_shield_regen_add_perc = 1
+	}
+
+	ai_weight = {
+		weight = 3
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Shield_Shields_SMALL"
+	size = small
+	icon = "Rogue_Shield_Shields"
+	icon_frame = 1
+	power = -37.5
+	
+	class_restriction = { shipclass_military constructor colonizer science transport shipclass_starbase  }
+	size_restriction = { marauder_corvette corvette crisis_corvette constructor colonizer science lithoid_colonizer transport starbase_outpost  }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 13.5
+		}
+		upkeep = {
+			energy = 0.135
+			alloys = 0.027
+		}
+	}
+
+	prerequisites = { "tech_shields_3" }
+	component_set = "Rogue_Defense_Shield"
+	upgrades_to = "Rogue_Shield_AdvShields_SMALL"
+
+	modifier = {
+		ship_shield_add = 127.5
+		ship_shield_regen_add_perc = 1
+	}
+
+	ai_weight = {
+		weight = 4
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Shield_AdvShields_SMALL"
+	size = small
+	icon = "Rogue_Shield_AdvShields"
+	icon_frame = 1
+	power = -52.5
+	
+	class_restriction = { shipclass_military constructor colonizer science transport shipclass_starbase  }
+	size_restriction = { marauder_corvette corvette crisis_corvette constructor colonizer science lithoid_colonizer transport starbase_outpost  }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 13.5
+			exotic_gases = 0.375
+		}
+		upkeep = {
+			energy = 0.135
+			alloys = 0.027
+		}
+	}
+
+	prerequisites = { "tech_shields_4" }
+	component_set = "Rogue_Defense_Shield"
+	upgrades_to = "Rogue_Shield_HyperShield_SMALL"
+
+	modifier = {
+		ship_shield_add = 165
+		ship_shield_regen_add_perc = 1
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Shield_HyperShield_SMALL"
+	size = small
+	icon = "Rogue_Shield_HyperShield"
+	icon_frame = 1
+	power = -67.5
+	
+	class_restriction = { shipclass_military constructor colonizer science transport shipclass_starbase  }
+	size_restriction = { marauder_corvette corvette crisis_corvette constructor colonizer science lithoid_colonizer transport starbase_outpost  }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 18
+			exotic_gases = 0.495
+		}
+		upkeep = {
+			energy = 0.18
+			alloys = 0.036
+		}
+	}
+
+	prerequisites = { "tech_shields_5" }
+	component_set = "Rogue_Defense_Shield"
+	upgrades_to = "Rogue_Shield_DarkMatter_SMALL"
+
+	modifier = {
+		ship_shield_add = 217.5
+		ship_shield_regen_add_perc = 1
+	}
+
+	ai_weight = {
+		weight = 6
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Shield_DarkMatter_SMALL"
+	size = small
+	icon = "Rogue_Shield_DarkMatter"
+	icon_frame = 1
+	power = -82.5
+	
+	class_restriction = { shipclass_military constructor colonizer science transport shipclass_starbase  }
+	size_restriction = { marauder_corvette corvette crisis_corvette constructor colonizer science lithoid_colonizer transport starbase_outpost  }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 24
+			sr_dark_matter = 0.375
+		}
+		upkeep = {
+			energy = 0.024
+			alloys = 0.048
+		}
+	}
+
+	prerequisites = { "tech_dark_matter_deflector" }
+	component_set = "Rogue_Defense_Shield"
+	upgrades_to = "Rogue_Shield_PsiBarrier_SMALL"
+
+	modifier = {
+		ship_shield_add =277.5
+		ship_shield_regen_add_perc = 1
+	}
+
+	ai_weight = {
+		weight = 7
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Shield_PsiBarrier_SMALL"
+	size = small
+	icon = "Rogue_Shield_PsiBarrier"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military constructor colonizer science transport shipclass_starbase  }
+	size_restriction = { marauder_corvette corvette crisis_corvette constructor colonizer science lithoid_colonizer transport starbase_outpost  }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10.5
+		}
+		upkeep = {
+			alloys = 0.021
+		}
+	}
+
+	prerequisites = { "tech_psionic_barrier" }
+	component_set = "Rogue_Defense_Shield"
+	upgrades_to = "Rogue_Shield_Scalar_SMALL"
+
+	modifier = {
+		ship_shield_add = 97.5
+		ship_shield_regen_add_perc = 1
+	}
+
+	ai_weight = {
+		weight = 8
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Shield_Scalar_SMALL"
+	size = small
+	icon = "Rogue_Shield_Scalar"
+	icon_frame = 1
+	power = -97.5
+	
+	class_restriction = { shipclass_military constructor colonizer science transport shipclass_starbase  }
+	size_restriction = { marauder_corvette corvette crisis_corvette constructor colonizer science lithoid_colonizer transport starbase_outpost  }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 27
+			sr_dark_matter = 0.495
+		}
+		upkeep = {
+			energy = 0.24
+			alloys = 0.048
+			sr_dark_matter = 0.03
+		}
+	}
+
+	prerequisites = { "tech_roguetech_scalar_energy_fields" }
+	component_set = "Rogue_Defense_Shield"
+	upgrades_to = "Rogue_Shield_PsiShields_SMALL"
+
+	modifier = {
+		ship_shield_add = 330
+		ship_shield_regen_add_perc = 1
+	}
+
+	ai_weight = {
+		weight = 8
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Shield_PsiShields_SMALL"
+	size = small
+	icon = "Rogue_Shield_PsiShields_SMALL"
+	icon_frame = 1
+	power = -112.5
+	
+	class_restriction = { shipclass_military constructor colonizer science transport shipclass_starbase  }
+	size_restriction = { marauder_corvette corvette crisis_corvette constructor colonizer science lithoid_colonizer transport starbase_outpost  }
+	
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 31.5
+			sr_zro = 0.1665
+		}
+		upkeep = {
+			energy = 0.315
+			alloys = 0.063
+		}
+	}
+
+	prerequisites = { "tech_psionic_shield" }
+	component_set = "Rogue_Defense_Shield"
+	upgrades_to = "Rogue_Shield_Void_SMALL"
+
+	modifier = {
+		ship_shield_add = 360
+		ship_shield_regen_add_perc = 1
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Shield_Void_SMALL"
+	size = small
+	icon = "Rogue_Shield_Void"
+	icon_frame = 1
+	power = -142.5
+	
+	class_restriction = { shipclass_military constructor colonizer science transport shipclass_starbase  }
+	size_restriction = { marauder_corvette corvette crisis_corvette constructor colonizer science lithoid_colonizer transport starbase_outpost  }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 37.5
+			sr_dark_matter = 0.6
+		}
+		upkeep = {
+			energy = 0.315
+			alloys = 0.0.63
+			sr_dark_matter = 0.06
+		}
+	}
+
+	prerequisites = { "tech_roguetech_void_shields" }
+	component_set = "Rogue_Defense_Shield"
+
+	modifier = {
+		ship_shield_add = 405
+		ship_shield_regen_add_perc = 1
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+}

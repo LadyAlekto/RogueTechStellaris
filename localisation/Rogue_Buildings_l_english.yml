@@ -1,0 +1,35 @@
+﻿l_english:
+ rogue_planetary_gateway:0 "Gateway"
+ rogue_planetary_gateway_desc:0 "This Gate to the Stars allows instant travel between any colonies equipped with one, drastically improving mobility of pops."
+
+ supremacy_exotic_matter_laboratory:0 "Exotic Matter Laboratory"
+ supremacy_exotic_matter_laboratory_desc:0 "Laboratory to investigate Exotic Matter."
+ 
+ supremacy_exotic_matter_plant:0 "Exotic Matter Plant"
+ supremacy_exotic_matter_plant_desc:0 "Practical application of Exotic Matter."
+ 
+ supremacy_exotic_matter_reactor:0 "Exotic Matter Reactor"
+ supremacy_exotic_matter_reactor_desc:0 "Contains a controlled and stable micro blackhole to extract Exotic Matter."
+ 
+ supremacy_nanite_lab:0 "Materials Lab"
+ supremacy_nanite_lab_desc:0 "Laboratory to investigate Anomalous Materials."
+ 
+ supremacy_nanite_plant:0 "Nanite Plant"
+ supremacy_nanite_plant_desc:0 "Plant to produce Anomalous Materials."
+ 
+ supremacy_universal_constructor:0 "Universal Constructor"
+ supremacy_universal_constructor_desc:0 "Controlled micromachines and quantum fields create a seemingly endless stream of rare resources."
+ 
+ supremacy_akashic_records:0 "Akashic Records"
+ supremacy_akashic_records_desc:0 "Facilities to access the immaterial Akashic records of all that was and will be. Provides Amenities and Stability."
+ 
+ building_biophage_spawning_pool:0 "Infector Pools"
+ building_biophage_spawning_pool_desc:1 "Direct the Planetary Infection and consume biomass to increase growth speed."
+ building_biophage_spawning_pool_MKII:0 "Infector Growth"
+ building_biophage_spawning_pool_MKII_desc:1 "More efficient planing of the Planetary Infection allows more Biomass converted to drones."
+ building_biophage_spawning_pool_MKIII:0 "Infector Mounds"
+ building_biophage_spawning_pool_MKIII_desc:1 "A vast complex dedicated to convert biomass into drones."
+ 
+ building_subspace_nexus_1:0 "Subspace Nexus"
+ building_subspace_nexus_1_desc:1 "Links the Hive's vast consciousness together into a singular purpose."
+ 

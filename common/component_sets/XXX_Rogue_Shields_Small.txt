@@ -1,0 +1,76 @@
+component_set = {
+	key = "Rogue_Basic_Shield"
+
+	icon = "Rogue_Basic_Shield"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "Rogue_Shield_Deflector"
+
+	icon = "Rogue_Shield_Deflector"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "Rogue_Shield_ImpDeflector"
+
+	icon = "Rogue_Shield_ImpDeflector"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "Rogue_Shield_Shields"
+
+	icon = "Rogue_Shield_Shields"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "Rogue_Shield_AdvShields"
+
+	icon = "Rogue_Shield_AdvShields"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "Rogue_Shield_HyperShield"
+
+	icon = "Rogue_Shield_HyperShield"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "Rogue_Shield_DarkMatter"
+
+	icon = "Rogue_Shield_DarkMatter"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "Rogue_Shield_PsiBarrier"
+
+	icon = "Rogue_Shield_PsiBarrier"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "Rogue_Shield_Scalar"
+
+	icon = "Rogue_Shield_Scalar"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "Rogue_Shield_PsiShields"
+
+	icon = "Rogue_Shield_PsiShields"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "Rogue_Shield_Void"
+
+	icon = "Rogue_Shield_Void"
+	icon_frame = 1
+}

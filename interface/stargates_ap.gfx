@@ -1,0 +1,8 @@
+
+	spriteTypes = {	
+	spriteType = {
+		name = "GFX_ap_stargate_instant_gateways"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_stargate_instant_gateways.dds"
+		alwaystransparent = yes
+	}
+	}

@@ -1,0 +1,293 @@
+weapon_component_template = {
+	key = "SUPREMACY_SCALAR_CANNON"
+	size = titanic
+	type = instant
+	prio_projectile = yes
+	
+	ship_modifier = { ship_orbital_bombardment_mult = 0.3 }
+
+	icon = "SUPREMACY_SCALAR_CANNON"
+	icon_frame = 1
+
+	use_ship_kill_target = no
+	
+	damage = { min = 600 max = 700 }# May need more balancing
+	windup = { min = 5 max = 10 }
+	total_fire_time = 10
+	range = 250
+	accuracy = 0.75
+	power = -600
+	hull_damage = 1.5
+	armor_penetration = 0.5
+	armor_damage  = 1.3
+	shield_penetration = 0.5
+	shield_damage = 1.2
+	tracking = 0.3 # May need balancing
+
+	tags = { weapon_type_energy }
+
+	prerequisites = { "tech_roguetech_scalar_energy_fields" }
+	component_set = "SUPREMACY_SCALAR_CANNON"
+	projectile_gfx = "perdition_beam"
+	size_restriction = { colossus juggernaut star_eater }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 300
+			sr_living_metal = 50
+			nanites = 50
+			sr_dark_matter = 50
+		}
+		upkeep = {
+			sr_living_metal = 0.5
+			nanites = 0.5
+			sr_dark_matter = 0.6
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+weapon_component_template = {
+	key = "SUPREMACY_SCALAR_ION_CANNON"
+	size = titanic
+	type = instant
+	prio_projectile = yes
+	
+	ship_modifier = { ship_orbital_bombardment_mult = 0.3 }
+	
+	icon = "SUPREMACY_SCALAR_CANNON"
+	icon_frame = 1
+
+	use_ship_kill_target = no
+	
+	damage = { min = 600 max = 700 }# May need more balancing
+	windup = { min = 5 max = 10 }
+	total_fire_time = 10
+	range = 250
+	accuracy = 0.75
+	power = -100
+	hull_damage = 1.3
+	armor_penetration = 0.5
+	armor_damage  = 1.2
+	shield_penetration = 0.5
+	shield_damage = 1.1
+	tracking = 0.3 # May need balancing
+
+	tags = { weapon_type_energy }
+
+	prerequisites = { "tech_roguetech_scalar_energy_fields" }
+	component_set = "SUPREMACY_SCALAR_CANNON"
+	projectile_gfx = "perdition_beam"
+	size_restriction = { ion_cannon }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 300
+			sr_living_metal = 50
+			nanites = 50
+			sr_dark_matter = 50
+		}
+		upkeep = {
+			sr_living_metal = 0.5
+			nanites = 0.5
+			sr_dark_matter = 0.6
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+weapon_component_template = {
+	key = "SUPREMACY_SCALAR_CANNON_XL"
+	size = extra_large
+	type = instant
+	prio_projectile = yes
+	
+	ship_modifier = { ship_orbital_bombardment_mult = 0.2 }
+
+	icon = "SUPREMACY_SCALAR_CANNON_XL"
+	icon_frame = 1
+
+	use_ship_kill_target = no
+	
+	damage = { min = 250 max = 350 }# May need more balancing
+	windup = { min = 5 max = 10 }
+	total_fire_time = 10
+	range = 150
+	accuracy = 0.7
+	power = -300
+	hull_damage = 1.3
+	armor_penetration = 0.5
+	armor_damage  = 1.2
+	shield_penetration = 0.5
+	shield_damage = 1.1
+	tracking = 0.4 # May need balancing
+
+	tags = { weapon_type_energy }
+
+	prerequisites = { "tech_supremacy_scalar_cannon_minituaristion" }
+	component_set = "SUPREMACY_SCALAR_CANNON_XL"
+	projectile_gfx = "perdition_beam"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 150
+			sr_living_metal = 20
+			nanites = 20
+			sr_dark_matter = 20
+		}
+		upkeep = {
+			sr_living_metal = 0.3
+			nanites = 0.3
+			sr_dark_matter = 0.4
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+weapon_component_template = {
+	key = "SUPREMACY_SCALAR_CANNON_L"
+	size = large
+	type = instant
+	prio_projectile = no
+	
+	ship_modifier = { ship_orbital_bombardment_mult = 0.1 }
+
+	icon = "SUPREMACY_SCALAR_CANNON_L"
+	icon_frame = 1
+
+	use_ship_kill_target = no
+	
+	damage = { min = 130 max = 160 }# May need more balancing
+	windup = { min = 5 max = 10 }
+	total_fire_time = 10
+	range = 100
+	accuracy = 0.6
+	power = -75
+	hull_damage = 1.3
+	armor_penetration = 0.5
+	armor_damage  = 1.2
+	shield_penetration = 0.5
+	shield_damage = 1.1
+	tracking = 0.5 # May need balancing
+
+	tags = { weapon_type_energy }
+
+	prerequisites = { "tech_supremacy_scalar_cannon_minituaristion_2" }
+	component_set = "SUPREMACY_SCALAR_CANNON_L"
+	projectile_gfx = "uv_laser_l"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 50
+			sr_living_metal = 10
+			nanites = 10
+			sr_dark_matter = 10
+		}
+		upkeep = {
+			sr_living_metal = 0.15
+			nanites = 0.15
+			sr_dark_matter = 0.2
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+weapon_component_template = {
+	key = "SUPREMACY_SCALAR_CANNON_M"
+	size = medium
+	type = instant
+	prio_projectile = no
+	
+	icon = "SUPREMACY_SCALAR_CANNON_SMALL"
+	icon_frame = 1
+
+	use_ship_kill_target = no
+	
+	damage = { min = 60 max = 70 }# May need more balancing
+	windup = { min = 5 max = 10 }
+	total_fire_time = 10
+	range = 80
+	accuracy = 0.6
+	power = -35
+	hull_damage = 1.3
+	armor_penetration = 0.5
+	armor_damage  = 1.2
+	shield_penetration = 0.5
+	shield_damage = 1.1
+	tracking = 0.5 # May need balancing
+
+	tags = { weapon_type_energy }
+
+	prerequisites = { "tech_supremacy_scalar_cannon_minituaristion_2" }
+	component_set = "SUPREMACY_SCALAR_CANNON_L"
+	projectile_gfx = "uv_laser_m"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 30
+			sr_living_metal = 5
+			nanites = 5
+			sr_dark_matter = 5
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+weapon_component_template = {
+	key = "SUPREMACY_SCALAR_CANNON_S"
+	size = small
+	type = instant
+	prio_projectile = no
+	
+	icon = "SUPREMACY_SCALAR_CANNON_SMALL"
+	icon_frame = 1
+
+	use_ship_kill_target = no
+	
+	damage = { min = 30 max = 40 }# May need more balancing
+	windup = { min = 5 max = 10 }
+	total_fire_time = 10
+	range = 35
+	accuracy = 0.6
+	power = -20
+	hull_damage = 1.3
+	armor_penetration = 0.5
+	armor_damage  = 1.2
+	shield_penetration = 0.5
+	shield_damage = 1.1
+	tracking = 0.5 # May need balancing
+
+	tags = { weapon_type_energy }
+
+	prerequisites = { "tech_supremacy_scalar_cannon_minituaristion_2" }
+	component_set = "SUPREMACY_SCALAR_CANNON_L"
+	projectile_gfx = "uv_laser_s"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 50
+			sr_living_metal = 3
+			nanites = 3
+			sr_dark_matter = 3
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}

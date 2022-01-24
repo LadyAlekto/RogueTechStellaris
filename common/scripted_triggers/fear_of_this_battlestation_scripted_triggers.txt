@@ -1,0 +1,26 @@
+fotb_is_not_aetherophasic_engine = {
+	NOT = {
+		any_system_megastructure = {
+			OR = {
+				is_megastructure_type = crisis_sphere_0
+				is_megastructure_type = crisis_sphere_1
+				is_megastructure_type = crisis_sphere_2
+				is_megastructure_type = crisis_sphere_3
+				is_megastructure_type = crisis_sphere_4
+			}
+		}
+	}
+}
+fotb_is_star_eater_orbiting_valid_star = {
+	solar_system = {
+		fotb_is_not_aetherophasic_engine = yes
+		star = {
+			any_fleet_in_orbit = {
+				is_ship_size = star_eater
+				owner = {
+					is_same_value = root.owner
+				}
+			}
+		}
+	}
+}

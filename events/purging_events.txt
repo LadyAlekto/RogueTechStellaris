@@ -1,0 +1,80 @@
+namespace = biophage_trad_purge
+
+
+planet_event = {
+	id = biophage_trad_purge.1
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		from = {
+			OR = {
+				has_active_tradition = tr_biophage_harvest_vivisection
+			}
+		}
+		fromfrom = {
+			is_robot_pop = no
+			NOT = {
+				is_same_species = owner_species
+			}
+		}
+		is_controlled_by = from
+	}
+	
+	immediate = {	
+		owner = {
+			add_monthly_resource_mult = { 
+				resource = unity
+				value = 0.1		
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = biophage_trad_purge.2
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		from = {
+			OR = {
+				has_active_tradition = tr_biophage_harvest_oppression
+			}
+		}
+		fromfrom = {
+			is_robot_pop = no
+			NOT = {
+				is_same_species = owner_species
+			}
+		}
+		is_controlled_by = from
+	}
+	
+	immediate = {
+	owner = {
+			add_monthly_resource_mult = { 
+				resource = influence
+				value = 0.2		
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = biophage_trad_purge.6
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		from = {
+				has_active_tradition = tr_biophage_harvest_bioweapons
+		}
+	}
+	
+	immediate = {	
+		from = {
+			add_resource = { unity = 1 }
+		}
+	}
+}

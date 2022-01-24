@@ -1,0 +1,125 @@
+Apply basic defense values to ship sizes!
+
+*note*
+couldnt do scaling modifiers, now controlled by size and shipclass restrictions closer to og notes
+
+Sizes:
+Small (Corvettes, Outposts) 1.5 Small defense items worth
+Medium (Destroyer, Starports) 2 Small defense items worth
+Large (Cruiser, Starhold) 2.6 Medium defense items worth
+XL (Battleship, Starfortress) 2 Large defense items worth
+Titanic (Titan, Citadel) 4 Large defense items worth
+Supremacy (Juggernaut and Star Eater) 6 Large defense items worth
+
+Hulls:
+Basic Hull: No Effect
+
+Crystal Infused:
+
+Crystal Forged:
+
+Organic Hull:
+
+Zontrium Hull:
+
+Xentronium Hull:
+
+Armor:
+
+Basic: No Effect
+
+Nanocomposite:
+
+Ceramo:
+
+Plasteel:
+
+Durasteel:
+
+Neutronium:
+
+Dragonscale:
+
+Adamantium:
+
+Adamantium Scales:
+
+Shields:
+
+Basic: No Effect
+
+Deflectors:
+
+Improved Deflectors:
+
+Shields
+
+Advanced Shields:
+
+Hyper Shields: 
+
+Dark Matter Deflectors: 
+
+Psionic Barrier:
+
+Scalar Barrier: 
+
+Psionic Shields: 
+
+Void Shields: 
+
+food
+
+			volatile_motes = XXX
+			exotic_gases = XXX
+			rare_crystals = XXX
+
+			sr_zro = XXX
+
+			sr_dark_matter = XXX
+			sr_living_metal = XXX
+			nanites = XXX
+
+Utility Slots: link to vanilla and new techs - Intentionall mostly tough to get
+
+None: No Effect - Base Item
+
+Hardened Armor: 15% Increased Armor - tech_dragon_armor
+Reinforced Hull: 15% Hull -  tech_crystal_armor_1
+Shield Batteries: 20% Shields - tech_shield_rechargers_1
+
+Auto-Repair: 1% Regen all defenses - tech_regenerative_hull_tissue
+Nanite-Repair: 2% Regen all defenses - tech_nanite_repair_system
+
+
+Injectors: 10% sublight speed - tech_afterburners_2
+FTL-Calculator: +10% jump range and cooldown, -10% Emergency FTL cooldown - hyperspace folding
+
+Stealth Field: +10% Evasion +5 Evasion - stealth doctrine
+
+Aux Slot Items:
+Intelligent Materials: +15% Armor/Hull, +1% Regen Armor/Hull
+Shield Modulator: +2% Shield Regeneration
+Shield Capacitator: +20% Shields
+Weapon Crews: +10% Weapon Damage
+
+Shield Battery: Improves Shield Regeneration
+
+Shield Capacitator: Improves Shield Strength
+
+Stealth Field: Evasion add and multi
+
+Hyper Drive Capacitator: Improves all FTL
+
+High Capacity Cells: Improves Weapon Damage
+
+Smart Materials: Improves Hulls and Armor + regen
+
+juggs only: production bays: 1 shipyard size
+
+-----
+New Repeatable 
+Superpositional Materials
+10 Steps, Extra T1 Armor each class
+Superdense Alloys
+10 Steps, Extra T1 Hull each class

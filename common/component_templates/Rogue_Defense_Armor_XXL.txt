@@ -1,0 +1,306 @@
+utility_component_template = {
+	key = "Rogue_Basic_Armor_XXL"
+	size = small
+	icon = "Rogue_Basic_Armor"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase  }
+	size_restriction = { titan starbase_citadel crisis_titan }
+
+	component_set = "Rogue_Defense_Armor"
+	upgrades_to = "Rogue_Armor_Nanocomposite_XXL"
+	
+	modifier = {
+		ship_shield_mult = 0.2
+		ship_hull_mult = 0.2
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Armor_Nanocomposite_XXL"
+	size = small
+	icon = "Rogue_Armor_Nanocomposite"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase  }
+	size_restriction = { titan starbase_citadel crisis_titan }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 160
+		}
+		upkeep = {
+			energy = 0.8
+			alloys = 0.32
+		}
+	}
+
+	prerequisites = { "tech_ship_armor_1" }
+	component_set = "Rogue_Defense_Armor"
+	upgrades_to = "Rogue_Armor_Ceramo_XXL"
+
+	modifier = {
+		ship_armor_add = 1200
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Armor_Ceramo_XXL"
+	size = small
+	icon = "Rogue_Armor_Ceramo"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase  }
+	size_restriction = { titan starbase_citadel crisis_titan }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 216
+		}
+		upkeep = {
+			energy = 2.08
+			alloys = 0.416
+		}
+	}
+
+	prerequisites = { "tech_ship_armor_2" }
+	component_set = "Rogue_Defense_Armor"
+	upgrades_to = "Rogue_Armor_Plasteel_XXL"
+
+	modifier = {
+		ship_armor_add = 1560
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Armor_Plasteel_XXL"
+	size = small
+	icon = "Rogue_Armor_Plasteel"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase  }
+	size_restriction = { titan starbase_citadel crisis_titan }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 272
+		}
+		upkeep = {
+			energy = 2.72
+			alloys = 0.544
+		}
+	}
+
+	prerequisites = { "tech_ship_armor_3" }
+	component_set = "Rogue_Defense_Armor"
+	upgrades_to = "Rogue_Armor_Durasteel_XXL"
+
+	modifier = {
+		ship_armor_add = 2040
+	}
+
+	ai_weight = {
+		weight = 3
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Armor_Durasteel_XXL"
+	size = small
+	icon = "Rogue_Armor_Durasteel"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase  }
+	size_restriction = { titan starbase_citadel crisis_titan }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 272
+		}
+		upkeep = {
+			energy = 2.72
+			alloys = 0.544
+		}
+	}
+
+	prerequisites = { "tech_ship_armor_4" }
+	component_set = "Rogue_Defense_Armor"
+	upgrades_to = "Rogue_Armor_Neutronium_XXL"
+
+	modifier = {
+		ship_armor_add = 2640
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = rare_crystals }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Armor_Neutronium_XXL"
+	size = small
+	icon = "Rogue_Armor_Neutronium"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase  }
+	size_restriction = { titan starbase_citadel crisis_titan }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 352
+		}
+		upkeep = {
+			energy = 3.52
+			alloys = 0.784
+		}
+	}
+
+	prerequisites = { "tech_ship_armor_5" }
+	component_set = "Rogue_Defense_Armor"
+	upgrades_to = "Rogue_Armor_Adamantium_XXL"
+
+	modifier = {
+		ship_armor_add = 3480
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+utility_component_template = {
+	key = "Rogue_Armor_Adamantium_XXL"
+	size = small
+	icon = "Rogue_Armor_Adamantium"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase  }
+	size_restriction = { titan starbase_citadel crisis_titan }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 352
+			sr_living_metal = 2.4
+			nanites = 2.4
+		}
+		upkeep = {
+			energy = 3.52
+			alloys = 0.784
+			sr_living_metal = 0.12
+			nanites = 0.12
+		}
+	}
+
+	prerequisites = { "tech_roguetech_adamantium_armor" }
+	component_set = "Rogue_Defense_Armor"
+	upgrades_to = "Rogue_Armor_Dragonscales_XXL"
+
+	modifier = {
+		ship_armor_add = 3680
+		ship_armor_regen_add_perc = 1
+	}
+
+	ai_weight = {
+		weight = 6
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Armor_Dragonscales_XXL"
+	size = small
+	icon = "Rogue_Armor_Dragonscales"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase  }
+	size_restriction = { titan starbase_citadel crisis_titan }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 456
+		}
+		upkeep = {
+			energy = 4.56
+			alloys = 0.912
+		}
+	}
+
+	prerequisites = { "tech_dragon_armor" }
+	component_set = "Rogue_Defense_Armor"
+	upgrades_to = "Rogue_Armor_AdamtiumScales_XXL"
+
+	modifier = {
+		ship_armor_add = 4440
+	}
+
+	ai_weight = {
+		weight = 7
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Armor_AdamtiumScales_XXL"
+	size = small
+	icon = "Rogue_Armor_AdamtiumScales"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase  }
+	size_restriction = { titan starbase_citadel crisis_titan }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 456
+			sr_living_metal = 4
+			nanites = 4
+		}
+		upkeep = {
+			energy = 4.56
+			alloys = 0.912
+			sr_living_metal = 0.24
+			nanites = 0.24
+		}
+	}
+
+	prerequisites = { "tech_roguetech_adamantium_scales" }
+	component_set = "Rogue_Defense_Armor"
+
+	modifier = {
+		ship_armor_add = 5200
+		ship_armor_regen_add_perc = 1.5
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+}

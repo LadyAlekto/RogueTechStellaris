@@ -1,0 +1,52 @@
+building_subspace_nexus_1 = {
+	base_buildtime = 300
+	base_cap_amount = 1
+	icon = building_imperial_hive_capital
+
+	category = research
+
+	potential = {
+		owner = { is_hive_empire = yes }
+		OR = {
+	is_planet_class = pc_hive
+	is_planet_class = pc_infested
+	is_planet_class = pc_pdhive1
+	is_planet_class = pc_pdhive2
+	has_planet_flag = pd_infesting1
+	has_planet_flag = pd_infesting2
+		}
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = { is_hive_empire = no }
+	}
+
+	planet_modifier = {
+		job_subspace_drone_add = 1
+		job_subspace_drone_per_pop = 0.03
+		job_synapse_drone_add = 1
+		job_synapse_drone_per_pop = 0.02
+		planet_stability_add = 5
+	}
+
+	resources = {
+		category = planet_buildings
+		produces = {
+			unity = 1
+		}
+		cost = {
+			minerals = 200
+			food = 100
+			energy = 100
+		}
+		upkeep = {
+			food = 5
+			energy = 2
+		}
+	}
+
+	triggered_desc = {
+		text = job_subspace_drone_effect_desc
+	}
+}

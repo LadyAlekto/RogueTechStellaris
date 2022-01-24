@@ -1,0 +1,346 @@
+ship_section_template = {
+	key = "SUPREMACY_CARRIER_CRUISER_BOW"
+	ship_size = cruiser
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "cruiser_bow_M1S2_entity"
+	icon = "GFX_ship_part_core_bow"
+	
+	prerequisites = { supremacy_tech_advanced_cruisers }
+
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			is_preferred_weapons = weapon_type_explosive
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}
+	}
+
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "large_strike_craft"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	aux_utility_slots = 2
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 20
+			sr_living_metal = 1
+			nanites = 1
+			sr_dark_matter = 1
+		}
+		upkeep = {
+			sr_living_metal = 0.1
+			nanites = 0.1
+			sr_dark_matter = 0.1
+		}
+	}
+}
+
+ship_section_template = {
+	key = "SUPREMACY_CARRIER_CRUISER_CORE"
+	ship_size = cruiser
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "cruiser_mid_S2HB_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { supremacy_tech_advanced_cruisers }
+
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			is_preferred_weapons = weapon_type_strike_craft
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { is_preferred_weapons = weapon_type_strike_craft }
+		}
+	}
+
+	component_slot = {
+		name = "PD_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "PD_02"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+
+	aux_utility_slots = 2
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 20
+			sr_living_metal = 1
+			nanites = 1
+			sr_dark_matter = 1
+		}
+		upkeep = {
+			sr_living_metal = 0.1
+			nanites = 0.1
+			sr_dark_matter = 0.1
+		}
+	}
+}
+
+ship_section_template = {
+	key = "SUPREMACY_CARRIER_CRUISER_STERN"
+	ship_size = cruiser
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "cruiser_stern_M1_entity"
+	icon = "GFX_ship_part_core_stern"
+	
+	prerequisites = { supremacy_tech_advanced_cruisers }
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "large_strike_craft"
+		locatorname = "medium_gun_01"
+	}
+
+	aux_utility_slots = 2
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 20
+			sr_living_metal = 1
+			nanites = 1
+			sr_dark_matter = 1
+		}
+		upkeep = {
+			sr_living_metal = 0.1
+			nanites = 0.1
+			sr_dark_matter = 0.1
+		}
+	}
+}
+
+ship_section_template = {
+	key = "SUPREMACY_ARTILLERY_CRUISER_BOW"
+	ship_size = cruiser
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "cruiser_bow_M1S2_entity"
+	icon = "GFX_ship_part_core_bow"
+	
+	prerequisites = { supremacy_tech_advanced_cruisers }
+
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			is_preferred_weapons = weapon_type_explosive
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}
+	}
+
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "medium_missile_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+
+	aux_utility_slots = 2
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 20
+			sr_living_metal = 1
+			nanites = 1
+			sr_dark_matter = 1
+		}
+		upkeep = {
+			sr_living_metal = 0.1
+			nanites = 0.1
+			sr_dark_matter = 0.1
+		}
+	}
+}
+
+ship_section_template = {
+	key = "SUPREMACY_ARTILLERY_CRUISER_CORE"
+	ship_size = cruiser
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "cruiser_mid_M2S2_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { supremacy_tech_advanced_cruisers }
+
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			is_preferred_weapons = weapon_type_explosive
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}
+	}
+
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "medium_missile_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "medium_missile_turret"
+		locatorname = "medium_gun_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "medium_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "medium_turret"
+		locatorname = "small_gun_02"
+	}
+
+	aux_utility_slots = 2
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 20
+			sr_living_metal = 1
+			nanites = 1
+			sr_dark_matter = 1
+		}
+		upkeep = {
+			sr_living_metal = 0.1
+			nanites = 0.1
+			sr_dark_matter = 0.1
+		}
+	}
+}
+
+ship_section_template = {
+	key = "SUPREMACY_ARTILLERY_CRUISER_STERN"
+	ship_size = cruiser
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "cruiser_stern_S2_entity"
+	icon = "GFX_ship_part_core_stern"
+	
+	prerequisites = { supremacy_tech_advanced_cruisers }
+
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "medium_missile_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+
+	aux_utility_slots = 2
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 20
+			sr_living_metal = 1
+			nanites = 1
+			sr_dark_matter = 1
+		}
+		upkeep = {
+			sr_living_metal = 0.1
+			nanites = 0.1
+			sr_dark_matter = 0.1
+		}
+	}
+}
+
+ship_section_template = {
+	key = "RT_CRISIS_CRUISER_SECTION"
+	ship_size = crisis_cruiser
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "crisis_cruiser_hull_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { supremacy_tech_advanced_cruisers }
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "medium_missile_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_missile_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_missile_turret"
+		locatorname = "medium_gun_02"
+	}
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "medium_missile_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+
+	aux_utility_slots = 2
+}

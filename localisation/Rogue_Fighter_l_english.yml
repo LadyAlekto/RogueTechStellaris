@@ -1,0 +1,42 @@
+﻿l_english:
+ SUPREMACY_STEALTH_SCOUT:0 "Stealth Scout"
+ SUPREMACY_STEALTH_SCOUT_DESC:0 "A Stealthed Strike Craft. Moves faster and is harder to hit then conventional Fighters."
+ 
+ SUPREMACY_STEALTH_FIGHTER_1:0 "Stealth Striker"
+ SUPREMACY_STEALTH_FIGHTER_1_DESC:0 "Stealthed Strike Craft for Void Superiority. Moves faster and is harder to hit then conventional Fighters."
+ 
+ SUPREMACY_STEALTH_FIGHTER_2:0 "Stealth Fighter"
+ SUPREMACY_STEALTH_FIGHTER_2_DESC:0 "Stealthed Void Superiority Fighter. Moves faster and is harder to hit then conventional Fighters."
+ 
+ SUPREMACY_STEALTH_FIGHTER_3:0 "Stealth Bomber"
+ SUPREMACY_STEALTH_FIGHTER_3_DESC:0 "Stealth Fighter/Bomber without equal. Moves faster and is harder to hit then conventional Fighters."
+ 
+ SUPREMACY_STRIKE_CRAFT:0 "Fury Stealth Bomber"
+ SUPREMACY_STRIKE_CRAFT_DESC:0 "The Ultimate Strike Craft, made possible by minituaristion of Exotic Matter Technologys. Moves faster and is harder to hit then conventional Fighters."
+ 
+ fighter_Ia:0 "Stealth Scout"
+ fighter_Ia_desc:0 "A Stealthed Strike Craft. Moves faster and is harder to hit then conventional Fighters."
+ 
+ fighter_IIa:0 "Stealth Striker"
+ fighter_IIa_desc:0 "Stealthed Strike Craft for Void Superiority. Moves faster and is harder to hit then conventional Fighters."
+ 
+ fighter_IIIa:0 "Stealth Fighter"
+ fighter_IIIa_desc:0 "Stealthed Void Superiority Fighter. Moves faster and is harder to hit then conventional Fighters."
+ 
+ fighter_IVa:0 "Stealth Bomber"
+ fighter_IVa_desc:0 "Stealth Fighter/Bomber without equal. Moves faster and is harder to hit then conventional Fighters."
+ 
+ fighter_Va:0 "Fury Stealth Bomber"
+ fighter_Va:0 "The Ultimate Strike Craft, made possible by minituaristion of Exotic Matter Technologys. Moves faster and is harder to hit then conventional Fighters."
+ 
+ BIOPHAGE_SWARM_FIGHTER_1:0 "Swarm Fighter" 
+ BIOPHAGE_SWARM_FIGHTER_2:0 "Swarm Fighter MKII"
+ BIOPHAGE_SWARM_FIGHTER_3:0 "Swarm Fighter MKIII"
+ BIOPHAGE_SWARM_FIGHTER_4:0 "Swarm Fighter MKIV"
+ BIOPHAGE_SWARM_FIGHTER_5:0 "Swarm Fighter MKV"
+ 
+ BIOPHAGE_SWARM_FIGHTER_1_DESC:0 "Biologically Engineered Strike Craft"
+ BIOPHAGE_SWARM_FIGHTER_2_DESC:0 "Biologically Engineered Strike Craft MKII"
+ BIOPHAGE_SWARM_FIGHTER_3_DESC:0 "Biologically Engineered Strike Craft MKIII"
+ BIOPHAGE_SWARM_FIGHTER_4_DESC:0 "Biologically Engineered Strike Craft MKIV"
+ BIOPHAGE_SWARM_FIGHTER_5_DESC:0 "Biologically Engineered Strike Craft MKV"

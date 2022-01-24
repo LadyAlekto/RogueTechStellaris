@@ -1,0 +1,144 @@
+infector_drone = {
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	building_icon = building_xeno_tourism_agency
+	icon = "necromancer"
+	
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_drone_job
+
+	country_modifier = {
+		country_naval_cap_add = 2
+	}
+	
+	triggered_country_modifier = { #intentionally left in
+		potential = {
+			exists = planet
+			planet = {
+				exists = owner
+				owner = { has_technology = "tech_ground_defense_planning" }
+			}
+		}
+		modifier = {
+			country_naval_cap_add = 2
+		}
+	}
+
+	pop_modifier = {
+		pop_defense_armies_add = 1
+	}
+
+	triggered_pop_modifier = {
+		potential = {
+			exists = planet
+			planet = {
+				has_modifier = martial_law
+			}
+		}
+		modifier = {
+			pop_defense_armies_add = 2
+		}
+	}
+
+	planet_modifier = {
+		pop_growth_speed = 0.05
+		planet_pop_assembly_organic_mult = 0.05
+		planet_pop_assembly_organic_add = 1
+		pop_purge_speed = 0.1		
+		planet_stability_add = 1
+		planet_crime_no_happiness_add = -2
+	}
+
+	resources = {
+		category = planet_infector_drone
+		upkeep = {
+			trigger = {
+				is_lithoid = no
+			}
+			food = 2
+			minerals = 1
+			energy = 1
+		}
+		upkeep = {
+			trigger = {
+				is_lithoid = yes
+			}
+			minerals = 3
+			energy = 2
+		}
+	}
+
+	weight = {
+		weight = 100
+		modifier = {
+			factor = 20
+		}
+		modifier = {
+			factor = 2
+			has_trait = trait_resilient
+		}
+		modifier = {
+			factor = 2
+			has_trait = trait_very_strong
+		}
+		modifier = {
+			factor = 1.5
+			has_trait = trait_strong
+		}
+		modifier = {
+			factor = 0.5
+			has_trait = trait_weak
+		}
+		modifier = {
+			factor = 1.1
+			has_trait = trait_cybernetic
+		}
+		modifier = {
+			factor = 2
+			has_trait = trait_presapient_earthbound
+		}
+		modifier = {
+			factor = 1.1
+			has_trait = trait_limited_regeneration
+		}
+		modifier = {
+			factor = 1.1
+			has_trait = trait_brainslug
+		}
+		modifier = {
+			factor = 1.35
+			OR = {
+				has_trait = trait_presapient_natural_intellectuals
+				has_trait = trait_natural_physicists
+				has_trait = trait_natural_sociologists
+				has_trait = trait_intelligent
+			}
+		}
+		modifier = {
+			factor = 1.75
+			has_trait = trait_erudite
+		}
+		modifier = {
+			factor = 1.05
+			OR = {
+				has_trait = trait_robust
+				has_trait = trait_robot_efficient_processors
+			}
+		}
+		modifier = {
+			factor = 0.9
+			has_trait = trait_quarrelsome
+		}
+		modifier = {
+			factor = 2
+			has_trait = trait_lithoid
+		}
+	}
+}

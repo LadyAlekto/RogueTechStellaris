@@ -1,0 +1,25 @@
+tradition_category_supremacy_total_war = {
+	tree_template = "tree_12_12"
+	adoption_bonus = "tr_supremacy_total_war_adopt"
+	finish_bonus = "tr_supremacy_total_war_finish"
+
+	traditions = {
+		"tr_supremacy_total_war_mobilisation"
+		"tr_supremacy_total_war_conscription"
+		"tr_supremacy_total_war_paranoia"
+		"tr_supremacy_total_war_blitzkrieg"
+		"tr_supremacy_total_war_discipline"
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_xenophobe
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_xenophobe
+		}
+	}
+}

@@ -1,0 +1,83 @@
+#An army has been killed in ground combat
+# This = owner
+# From = army
+# FromFrom = opponent
+# FromFromFrom = planet
+
+namespace = revive
+
+country_event = {
+    id = revive.888
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = {
+        FROM  = {
+            is_organic_species = yes
+        }
+		FROMFROM  = {
+            has_civic = civic_hive_biophage
+        }
+        FROMFROMFROM = { NOT = { has_planet_flag = army_infected } }
+    }
+    immediate = {
+	log = "killing fired"
+        fire_on_action = { on_action = on_army_infector_chance }
+		
+    }
+}
+
+country_event = {
+    id = revive.666
+    is_triggered_only = yes
+    hide_window = yes
+    immediate = {
+	log = "from [From.GetName], fromfrom [fromfrom.GetName] fromfromfrom [fromfromfrom.GetName] fromfromfromfrom [fromfromfromfrom.GetName]"
+	FROMFROMFROM.species = {
+            save_event_target_as = army_species
+        }
+        FROMFROMFROM = {
+            save_event_target_as = opponent_country
+        }
+        FROMFROMFROMFROM = {
+			   log = "elseif opponent is [opponent_country.GetName] army target is [army_species.GetName]"
+                create_army = {
+                    name = "Reaper Drones"
+                    species = event_target:army_species
+                    type = infector_army
+                    owner = event_target:opponent_country
+                }
+				set_timed_planet_flag = {
+                flag = army_infected
+                days = 2
+            }
+        }
+    }
+}
+
+country_event = {
+    id = revive.777
+    is_triggered_only = yes
+    hide_window = yes
+    immediate = {
+	log = "from [From.GetName], fromfrom [fromfrom.GetName] fromfromfrom [fromfromfrom.GetName] fromfromfromfrom [fromfromfromfrom.GetName]"
+	FROMFROMFROM.species = {
+            save_event_target_as = army_species
+        }
+        FROMFROMFROM = {
+            save_event_target_as = opponent_country
+        }
+        FROMFROMFROMFROM = {
+			   log = "elseif opponent is [opponent_country.GetName] army target is [army_species.GetName]"
+                create_army = {
+                    name = "Regenerator Drones"
+                    species = event_target:army_species
+                    type = regenerator_army
+                    owner = event_target:opponent_country
+                }
+				set_timed_planet_flag = {
+                flag = army_infected
+                days = 2
+            }
+        }
+    }
+}

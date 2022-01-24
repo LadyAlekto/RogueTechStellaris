@@ -1,0 +1,12 @@
+﻿l_english: 
+ edict_hyper_matter_fuel:0 "Hyper Matter Fuel"
+ edict_hyper_matter_fuel_desc:0 "Refined Gases and Dark Matter improve FTL and SubLight speeds."
+ 
+ edict_nanolathe_mass_production:0 "Nanolathe Engineering"
+ edict_nanolathe_mass_production_desc:0 "Exotic Matter Fields and Nanites allow to 3d print anything effortlessly."
+ 
+ edict_unrestricted_stargate_travel:0 "Unrestricted Gateway Travel"
+ edict_unrestricted_stargate_travel_desc:0 "Double the effects of any active Planetary Gateway. Increases empire wide Crime."
+ 
+ edict_unrestricted_stargate_travel_gestalt:0 "Unrestricted Gateway Travel"
+ edict_unrestricted_stargate_travel_gestalt_desc:0 "Double the effects of any active Planetary Gateway. Increases empire wide Crime."

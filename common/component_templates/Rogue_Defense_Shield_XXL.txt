@@ -1,0 +1,379 @@
+utility_component_template = {
+	key = "Rogue_Basic_Shield_XXL"
+	size = small
+	icon = "Rogue_Basic_Shield"
+	icon_frame = 1
+	power = -0
+	
+	class_restriction = { shipclass_military shipclass_starbase  }
+	size_restriction = { titan starbase_citadel crisis_titan }
+
+	component_set = "Rogue_Defense_Shield"
+	upgrades_to = "Rogue_Shield_Deflector_XXL"
+	
+	modifier = {
+		ship_armor_mult = 0.2
+		ship_hull_mult = 0.2
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Shield_Deflector_XXL"
+	size = small
+	icon = "Rogue_Shield_Deflector"
+	icon_frame = 1
+	power = -240
+	
+	class_restriction = { shipclass_military shipclass_starbase  }
+	size_restriction = { titan starbase_citadel crisis_titan }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 80
+		}
+		upkeep = {
+			energy = 0.8
+			alloys = 0.16
+		}
+	}
+
+	prerequisites = { "tech_shields_1" }
+	component_set = "Rogue_Defense_Shield"
+	upgrades_to = "Rogue_Shield_ImpDeflector_XXL"
+
+	modifier = {
+		ship_shield_add = 1200
+		ship_shield_regen_add_perc = 1.8
+	}
+	
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Shield_ImpDeflector_XXL"
+	size = small
+	icon = "Rogue_Shield_ImpDeflector"
+	icon_frame = 1
+	power = -320
+	
+	class_restriction = { shipclass_military shipclass_starbase  }
+	size_restriction = { titan starbase_citadel crisis_titan }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 104
+		}
+		upkeep = {
+			energy = 1.04
+			alloys = 0.208
+		}
+	}
+
+	prerequisites = { "tech_shields_2" }
+	component_set = "Rogue_Defense_Shield"
+	upgrades_to = "Rogue_Shield_Shields_XXL"
+
+	modifier = {
+		ship_shield_add = 1560
+		ship_shield_regen_add_perc = 1.8
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Shield_Shields_XXL"
+	size = small
+	icon = "Rogue_Shield_Shields"
+	icon_frame = 1
+	power = -400
+	
+	class_restriction = { shipclass_military shipclass_starbase  }
+	size_restriction = { titan starbase_citadel crisis_titan }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 136
+		}
+		upkeep = {
+			energy = 1.36
+			alloys = 0.272
+		}
+	}
+
+	prerequisites = { "tech_shields_3" }
+	component_set = "Rogue_Defense_Shield"
+	upgrades_to = "Rogue_Shield_AdvShields_XXL"
+
+	modifier = {
+		ship_shield_add = 2160
+		ship_shield_regen_add_perc = 1.8
+	}
+
+	ai_weight = {
+		weight = 3
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Shield_AdvShields_XXL"
+	size = small
+	icon = "Rogue_Shield_AdvShields"
+	icon_frame = 1
+	power = -560
+	
+	class_restriction = { shipclass_military shipclass_starbase  }
+	size_restriction = { titan starbase_citadel crisis_titan }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 136
+			exotic_gases = 4
+		}
+		upkeep = {
+			energy = 1.36
+			alloys = 0.272
+		}
+	}
+
+	prerequisites = { "tech_shields_4" }
+	component_set = "Rogue_Defense_Shield"
+	upgrades_to = "Rogue_Shield_HyperShield_XXL"
+
+	modifier = {
+		ship_shield_add = 2640
+		ship_shield_regen_add_perc = 1.8
+	}
+
+	ai_weight = {
+		weight = 4
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Shield_HyperShield_XXL"
+	size = small
+	icon = "Rogue_Shield_HyperShield"
+	icon_frame = 1
+	power = -720
+	
+	class_restriction = { shipclass_military shipclass_starbase  }
+	size_restriction = { titan starbase_citadel crisis_titan }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 176
+			exotic_gases = 5.332
+		}
+		upkeep = {
+			energy = 1.76
+			alloys = 0.352
+		}
+	}
+
+	prerequisites = { "tech_shields_5" }
+	component_set = "Rogue_Defense_Shield"
+	upgrades_to = "Rogue_Shield_DarkMatter_XXL"
+
+	modifier = {
+		ship_shield_add = 3480
+		ship_shield_regen_add_perc = 1.8
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Shield_DarkMatter_XXL"
+	size = small
+	icon = "Rogue_Shield_DarkMatter"
+	icon_frame = 1
+	power = -880
+	
+	class_restriction = { shipclass_military shipclass_starbase  }
+	size_restriction = { titan starbase_citadel crisis_titan }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 228
+			sr_dark_matter = 4
+		}
+		upkeep = {
+			energy = 2.28
+			alloys = 0.416
+		}
+	}
+
+	prerequisites = { "tech_dark_matter_deflector" }
+	component_set = "Rogue_Defense_Shield"
+	upgrades_to = "Rogue_Shield_PsiBarrier_XXL"
+
+	modifier = {
+		ship_shield_add = 4440
+		ship_shield_regen_add_perc = 1.8
+	}
+
+	ai_weight = {
+		weight = 6
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Shield_PsiBarrier_XXL"
+	size = small
+	icon = "Rogue_Shield_PsiBarrier"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase  }
+	size_restriction = { titan starbase_citadel crisis_titan }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 104
+		}
+		upkeep = {
+			alloys = 0.208
+		}
+	}
+
+	prerequisites = { "tech_psionic_barrier" }
+	component_set = "Rogue_Defense_Shield"
+	upgrades_to = "Rogue_Shield_Scalar_XXL"
+
+	modifier = {
+		ship_shield_add = 1560
+		ship_shield_regen_add_perc = 1.8
+	}
+
+	ai_weight = {
+		weight = 8
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Shield_Scalar_XXL"
+	size = small
+	icon = "Rogue_Shield_Scalar"
+	icon_frame = 1
+	power = -1040
+	
+	class_restriction = { shipclass_military shipclass_starbase  }
+	size_restriction = { titan starbase_citadel crisis_titan }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 260
+			sr_dark_matter = 4
+		}
+		upkeep = {
+			energy = 2.28
+			alloys = 0.416
+			sr_dark_matter = 0.24
+		}
+	}
+
+	prerequisites = { "tech_roguetech_scalar_energy_fields" }
+	component_set = "Rogue_Defense_Shield"
+	upgrades_to = "Rogue_Shield_PsiShields_XXL"
+
+	modifier = {
+		ship_shield_add = 5200
+		ship_shield_regen_add_perc = 1.8
+	}
+
+	ai_weight = {
+		weight = 8
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Shield_PsiShields_XXL"
+	size = small
+	icon = "Rogue_Shield_PsiShields_XXL"
+	icon_frame = 1
+	power = -1200
+	
+	class_restriction = { shipclass_military shipclass_starbase  }
+	size_restriction = { titan starbase_citadel crisis_titan }
+	
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 296
+			sr_zro = 1.332
+		}
+		upkeep = {
+			energy = 2.96
+			alloys = 0.592
+		}
+	}
+
+	prerequisites = { "tech_psionic_shield" }
+	component_set = "Rogue_Defense_Shield"
+	upgrades_to = "Rogue_Shield_Void_XXL"
+
+	modifier = {
+		ship_shield_add = 5760
+		ship_shield_regen_add_perc = 1.8
+	}
+
+	ai_weight = {
+		weight = 9
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Shield_Void_XXL"
+	size = small
+	icon = "Rogue_Shield_Void"
+	icon_frame = 1
+	power = -1320
+	
+	class_restriction = { shipclass_military shipclass_starbase  }
+	size_restriction = { titan starbase_citadel crisis_titan }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 328
+			sr_dark_matter = 4.8
+		}
+		upkeep = {
+			energy = 2.96
+			alloys = 0.592
+			sr_dark_matter = 0.48
+		}
+	}
+
+	prerequisites = { "tech_roguetech_void_shields" }
+	component_set = "Rogue_Defense_Shield"
+
+	modifier = {
+		ship_shield_add = 6400
+		ship_shield_regen_add_perc = 1.8
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+}

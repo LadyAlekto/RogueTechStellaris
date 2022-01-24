@@ -1,0 +1,49 @@
+
+	spriteTypes = {
+		spriteType = {
+			name = "fighter_Ia"
+			texturefile = "gfx/interface/icons/ship_parts/fighters/fighter_Ia.dds"
+		}
+		spriteType = {
+			name = "fighter_IIa"
+			texturefile = "gfx/interface/icons/ship_parts/fighters/fighter_IIa.dds"
+		}
+		spriteType = {
+			name = "fighter_IIIa"
+			texturefile = "gfx/interface/icons/ship_parts/fighters/fighter_IIIa.dds"
+		}
+	
+		spriteType = {
+			name = "fighter_IVa"
+			texturefile = "gfx/interface/icons/ship_parts/fighters/fighter_IVa.dds"
+		}
+		spriteType = {
+			name = "fighter_Va"
+			texturefile = "gfx/interface/icons/ship_parts/fighters/fighter_Va.dds"
+		}
+		spriteType = {
+			name = "BIOPHAGE_SWARM_FIGHTER_1"
+			texturefile = "gfx/interface/icons/ship_parts/fighters/biophage_swarm_fighters_1.dds"
+		}
+		
+		spriteType = {
+			name = "BIOPHAGE_SWARM_FIGHTER_2"
+			texturefile = "gfx/interface/icons/ship_parts/fighters/biophage_swarm_fighters_2.dds"
+		}
+		
+		spriteType = {
+			name = "BIOPHAGE_SWARM_FIGHTER_3"
+			texturefile = "gfx/interface/icons/ship_parts/fighters/biophage_swarm_fighters_3.dds"
+		}
+		
+		spriteType = {
+			name = "BIOPHAGE_SWARM_FIGHTER_4"
+			texturefile = "gfx/interface/icons/ship_parts/fighters/biophage_swarm_fighters_4.dds"
+		}
+		
+		spriteType = {
+			name = "BIOPHAGE_SWARM_FIGHTER_5"
+			texturefile = "gfx/interface/icons/ship_parts/fighters/biophage_swarm_fighters_5.dds"
+		}
+	
+	}

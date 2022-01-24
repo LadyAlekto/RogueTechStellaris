@@ -1,0 +1,180 @@
+building_biophage_spawning_pool = {
+	base_buildtime = 200
+	base_cap_amount = 1
+	icon = building_sacrificial_temple_1
+
+	category = unity
+
+	potential = {	
+		owner = { is_hive_empire = yes 	
+					has_valid_civic = civic_hive_biophage
+		}
+	}
+	
+	show_tech_unlock_if = {
+		has_valid_civic = civic_hive_biophage
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = { is_hive_empire = no }
+	}
+
+	planet_modifier = {
+		job_infector_drone_add = 1
+		job_infector_drone_per_pop = 0.05
+		planet_pop_assembly_organic_mult = 0.1
+		planet_pop_assembly_organic_add = 1
+		pop_growth_speed = 0.1
+		pop_purge_speed = 1
+		planet_housing_add = 1
+		planet_amenities_add = 5
+		job_patrol_drone_add = 1
+		job_patrol_drone_per_pop = 0.03		
+	}
+	
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+			food = 100
+			energy = 100
+		}
+		upkeep = {
+			food = 5
+			energy = 2
+		}
+	}
+	
+	upgrades = {
+		"building_biophage_spawning_pool_MKII"
+	}
+
+	triggered_desc = {
+		text = job_infector_drone_effect_desc
+	}
+}
+
+building_biophage_spawning_pool_MKII = {
+	base_buildtime = 250
+	icon = building_sacrificial_temple_2
+	can_build = no
+
+	category = unity
+
+	potential = {	
+		owner = { is_hive_empire = yes 	
+					has_valid_civic = civic_hive_biophage
+		}
+	}
+	
+	show_tech_unlock_if = {
+		has_valid_civic = civic_hive_biophage
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = { is_hive_empire = no }
+	}
+
+	planet_modifier = {
+		job_infector_drone_add = 2
+		job_infector_drone_per_pop = 0.05
+		planet_pop_assembly_organic_mult = 0.15
+		planet_pop_assembly_organic_add = 1.15
+		pop_growth_speed = 0.2
+		pop_purge_speed = 2	
+		planet_housing_add = 2
+		planet_amenities_add = 10
+		job_patrol_drone_add = 1.5
+		job_patrol_drone_per_pop = 0.04
+	}
+		
+	resources = {
+		category = planet_buildings
+		produces = {
+			unity = 2
+		}
+		cost = {
+			minerals = 300
+			food = 120
+			energy = 200
+		}
+		upkeep = {
+			food = 10
+			energy = 4
+		}
+	}
+	
+	upgrades = {
+		"building_biophage_spawning_pool_MKIII"
+	}
+	
+	prerequisites = {
+		"tech_roguetech_biological_engineering"
+	}
+
+	triggered_desc = {
+		text = job_infector_drone_effect_desc
+	}
+}
+
+building_biophage_spawning_pool_MKIII = {
+	base_buildtime = 333
+	icon = building_sacrificial_temple_3
+	can_build = no
+
+	category = unity
+
+	potential = {	
+		owner = { is_hive_empire = yes 	
+					has_valid_civic = civic_hive_biophage
+		}
+	}
+	
+	show_tech_unlock_if = {
+		has_valid_civic = civic_hive_biophage
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = { is_hive_empire = no }
+	}
+
+	planet_modifier = {
+		job_infector_drone_add = 3
+		job_infector_drone_per_pop = 0.05
+		planet_pop_assembly_organic_mult = 0.3
+		planet_pop_assembly_organic_add = 1.3
+		pop_growth_speed = 0.3
+		pop_purge_speed = 3	
+		planet_housing_add = 3
+		planet_amenities_add = 15
+		job_patrol_drone_add = 2
+		job_patrol_drone_per_pop = 0.05
+	}
+	
+	resources = {
+		category = planet_buildings
+		produces = {
+			unity = 3
+		}
+		cost = {
+			minerals = 500
+			food = 200
+			energy = 300
+		}
+		upkeep = {
+			food = 20
+			energy = 8
+		}
+	}
+		
+	prerequisites = {
+		"tech_roguetech_biological_mastery"
+	}
+
+	triggered_desc = {
+		text = job_infector_drone_effect_desc
+	}
+}

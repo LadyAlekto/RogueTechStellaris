@@ -1,0 +1,27 @@
+﻿l_english:
+ SHIP_BUILDING_EMPTY:0 "Juggernaut Building"
+ SHIP_BUILDING_EMPTY_DESC:0 "Juggernaut Building"
+
+ Juggernaut_building_set:0 "Juggernaut Building"
+ Juggernaut_building_set_DESC:0 "Juggernaut Building"
+
+ Juggernaut_Shipyard:0 "Shipyard"
+ Juggernaut_Shipyard_DESC:0 "Basic Juggernaut Shipyards"
+ 
+ SUPREMACY_Juggernaut_Shipyard:0 "Dreadnought Shipyard"
+ SUPREMACY_Juggernaut_Shipyard_DESC:0 "Dreadnought Shipyards allow to produce more ships faster"
+ 
+ SUPREMACY_Juggernaut_Engines:0 "Hyperspace Manifold"
+ SUPREMACY_Juggernaut_Engines_DESC:0 "Additional Engines and FTL computing improves Juggernaut Mobility"
+ 
+ SUPREMACY_Juggernaut_Defenses:0 "Reinforced Defenses"
+ SUPREMACY_Juggernaut_Defenses_DESC:0 "Additional Plating and Shield Generators increases the Juggernauts Defenses"
+ 
+ SUPREMACY_Juggernaut_batteries:0 "Improved Turrets"
+ SUPREMACY_Juggernaut_batteries_DESC:0 "Overhauled Juggernaut Weapon system increase its offensive potential"
+
+ SUPREMACY_Juggernaut_minefield:0 "Nanobot Dispenser"
+ SUPREMACY_Juggernaut_minefield_DESC:0 "Seed the gravity well with smart bombs"
+  
+ aura_juggernaut_system_wide_minefield:0 "Nano Bot Minefield"
+ aura_juggernaut_system_wide_minefield_desc:0 "Seeds Smartmines in its vincinity."

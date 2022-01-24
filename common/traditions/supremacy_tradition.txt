@@ -1,0 +1,151 @@
+tr_supremacy_total_war_adopt = {
+	modifier = {
+		ship_speed_mult = 0.1
+		starbase_shipyard_build_speed_mult = 0.1
+	}
+}
+
+tr_supremacy_total_war_finish = {
+	modifier = {
+		ascension_perks_add = 1
+	}
+}
+
+tr_supremacy_total_war_mobilisation= {
+	modifier = {
+		planet_army_build_speed_mult = 0.15
+		starbase_shipyard_build_speed_mult = 0.15
+	}
+
+	ai_weight = {
+		factor = 5000
+	}
+}
+
+tr_supremacy_total_war_conscription = {	
+
+	modifier = {
+		job_soldier_add = 1
+	}
+
+	tradition_swap = {
+		name = tr_supremacy_total_war_conscription_hive
+		inherit_effects = no
+		inherit_icon = yes
+		trigger = {
+			is_hive_empire = yes
+		}
+
+		modifier = {
+		job_warrior_drone_add = 1
+	}
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_supremacy_total_war_conscription_machine
+		inherit_effects = no
+		inherit_icon = yes
+		trigger = {
+			is_machine_empire = yes
+		}
+		
+		modifier = {
+		job_warrior_drone_add = 1
+	}
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	ai_weight = {
+		factor = 5000
+	}
+}
+
+tr_supremacy_total_war_paranoia = {
+	possible = {
+		has_tradition = tr_supremacy_total_war_mobilisation
+	}
+	modifier = {
+		intel_encryption_add = 2
+		intel_decryption_add = 2
+	}
+
+	ai_weight = {
+		factor = 5000
+	}
+}
+
+tr_supremacy_total_war_blitzkrieg = {
+	possible = {
+		has_tradition = tr_supremacy_total_war_mobilisation
+		has_tradition = tr_supremacy_total_war_conscription
+	}
+
+	modifier = {
+		ship_jumpdrive_cooldown_mult = -0.1
+		ship_ftl_jumpdrive_range_mult = 0.1
+		ship_speed_mult = 0.1
+		ship_windup_mult = -0.1
+	}
+
+	ai_weight = {
+		factor = 5000
+	}
+}
+
+tr_supremacy_total_war_discipline = {
+	possible = {
+		has_tradition = tr_supremacy_total_war_conscription
+	}
+
+	modifier = {
+		job_nanite_fabricator_add = 1
+		job_anti_matter_researcher_add = 1
+	}
+
+	tradition_swap = {
+		name = tr_supremacy_total_war_discipline_hive
+		inherit_effects = no
+		inherit_icon = yes
+		trigger = {
+			is_hive_empire = yes
+		}
+
+		modifier = {
+		job_nanite_fabricator_drone_add = 1
+		job_anti_matter_researcher_drone_add= 1
+	}
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_supremacy_total_war_discipline_machine
+		inherit_effects = no
+		inherit_icon = yes
+		trigger = {
+			is_machine_empire = yes
+		}
+		
+		modifier = {
+		job_nanite_fabricator_robot_add = 1
+		job_anti_matter_researcher_robot_add = 1
+	}
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	ai_weight = {
+		factor = 5000
+	}
+}

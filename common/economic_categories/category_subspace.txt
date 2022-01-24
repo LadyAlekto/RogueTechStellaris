@@ -1,0 +1,4 @@
+planet_subspace_drone = {
+	icon = "brain_drone"
+	parent = planet_jobs
+}

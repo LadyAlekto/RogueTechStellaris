@@ -1,0 +1,66 @@
+﻿l_english:
+ job_nanite_fabricator:0 "Nanite Fabricator"
+ job_nanite_fabricator_plural:0 "Nanite Fabricators"
+ job_nanite_fabricator_desc:1 "Produces rare nanites from raw materials."
+ job_nanite_fabricator_effect_desc:1 "Produces rare nanites from raw materials"
+ planet_nanite_fabricator: "Convert raw materials into nanites"
+ 
+ job_nanite_fabricator_drone:0 "Nanite Fabricator"
+ job_nanite_fabricator_drone_plural:0 "Nanite Fabricators"
+ job_nanite_fabricator_drone_desc:1 "Produces rare nanites from raw materials."
+ job_nanite_fabricator_drone_effect_desc:1 "Produces rare nanites from raw materials"
+ planet_nanite_fabricator_drone: "Convert raw materials into nanites"
+ 
+ job_nanite_fabricator_robot:0 "Nanite Fabricator"
+ job_nanite_fabricator_robot_plural:0 "Nanite Fabricators"
+ job_nanite_fabricator_robot_desc:1 "Produces rare nanites from raw materials."
+ job_nanite_fabricator_robot_effect_desc:1 "Produces rare nanites from raw materials"
+ planet_nanite_fabricator_robot: "Convert raw materials into nanites"
+ 
+ job_anti_matter_researcher:0 "Exotic-Matter Tech"
+ job_anti_matter_researcher_plural:0 "Exotic-Matter Tech"
+ job_anti_matter_researcher_desc:1 "Researches and generates small quantities of Dark Matter."
+ job_anti_matter_researcher_effect_desc:1 "Researches and generates small quantities of Dark Matter"
+ 
+ job_anti_matter_researcher_drone:0 "Exotic-Matter Tech"
+ job_anti_matter_researcher_drone_plural:0 "Exotic-Matter Tech"
+ job_anti_matter_researcher_drone_desc:1 "Researches and generates small quantities of Dark Matter."
+ job_anti_matter_researcher_drone_effect_desc:1 "Researches and generates small quantities of Dark Matter"
+ 
+ job_anti_matter_researcher_robot:0 "Exotic-Matter Tech"
+ job_anti_matter_researcher_robot_plural:0 "Exotic-Matter Tech"
+ job_anti_matter_researcher_robot_desc:1 "Researches and generates small quantities of Dark Matter."
+ job_anti_matter_researcher_robot_effect_desc:1 "Researches and generates small quantities of Dark Matter"
+
+ planet_anti_matter_researcher: "Generates Energy and Exotic Matter"
+
+ building_public_research_labs:0 "Akashic Records"
+ building_public_research_labs_desc:0 "Facilities to access the immaterial Akashic records of all that was and will be. Provides Amenities and Stability."
+ 
+ job_restless_public_research:0 "Akashic Researcher"
+ job_restless_public_research_plural:0 "Akashic Researcher"
+ job_restless_public_research_desc:1 "Produces small amounts of research"
+ job_restless_public_research_effect_desc:1 "Produces small amounts of research"
+
+ job_restless_drone_research:0 "Akashic Researcher"
+ job_restless_drone_research_plural:0 "Akashic Researcher"
+ job_restless_drone_research_desc:1 "Produces small amounts of research"
+ job_restless_drone_research_effect_desc:1 "Produces small amounts of research"
+
+ job_subspace_drone:0 "Subspace Drone"
+ job_subspace_drone_plural:0 "Subspace Drones"
+ job_subspace_drone_desc:1 "Mutated Brain Drones that effectively link the Collectives Experiences together."
+ job_subspace_drone_effect_desc:1 "£job_subspace_drone£ $job_subspace_drone_plural$ increase Research and Administrative/Naval Capacity!"
+ planet_subspace_drone: "Mutated Brain Drones"
+ 
+ job_infector_drone:0 "Infector Drone"
+ job_infector_drone_plural:0 "Infector Drones"
+ job_infector_drone_desc:1 "Specialised Spawning drones that direct planetary infection."
+ job_infector_drone_effect_desc:1 "£job_infector_drone£ $job_infector_drone_plural$ increase £mod_pop_growth_speed£ §Y$MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$§!"
+ 
+ planet_infector_drone: "Convert Biomass into more drones"
+  
+ job_tw_commander:0 "Commander"
+ job_tw_commander_plural:0 "Commander"
+ job_tw_commander_desc:1 "Capable of coordinating warfare on a unpredecendent scale."
+ job_tw_commander_effect_desc:1 "Improves"

@@ -1,0 +1,455 @@
+supremacy_tech_advanced_corvettes = {
+	cost = @tier2cost3
+	area = engineering
+	tier = 2
+	category = { voidcraft }
+	prerequisites = { "tech_supremacy_anomalous_materials" }
+	weight = @tier2weight3
+	is_rare = yes
+	
+	modifier = {
+		shipsize_corvette_hull_add = 10
+		shipsize_corvette_hull_mult = 0.05
+		shipsize_corvette_build_speed_mult = 0.05
+		ship_corvette_cost_mult = -0.05		
+	}
+	
+	weight_modifier = {
+	modifier = {
+			factor = 2
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { years_passed > 10 }
+		}
+		modifier = {
+			factor = 10
+			any_neighbor_country = {
+				has_technology = tech_destroyers
+			}
+		}
+		modifier = {
+			factor = 2
+			years_passed > 15
+		}
+		modifier = {
+			factor = 3
+			years_passed > 20
+		}
+		modifier = {
+			factor = 4
+			years_passed > 30
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_supremacy_adopt
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 100 #important tech
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_CORVETTE_CONSTRUCTION_TITLE"
+			desc = "TECH_UNLOCK_CORVETTE_CONSTRUCTION_DESC"
+		}
+	}
+}
+
+supremacy_tech_advanced_destroyers = {
+	cost = @tier3cost3
+	area = engineering
+	tier = 3
+	category = { voidcraft }
+	prerequisites = { "supremacy_tech_advanced_corvettes" "tech_destroyers" "tech_supremacy_anomalous_materials" }
+	weight = @tier3weight3
+	is_rare = yes
+
+	gateway = ship
+
+	## unlock destroyer
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_DESTROYER_CONSTRUCTION_TITLE"
+			desc = "TECH_UNLOCK_DESTROYER_CONSTRUCTION_DESC"
+		}
+	}
+
+	modifier = {
+		shipsize_destroyer_hull_add = 20
+		shipsize_destroyer_hull_mult = 0.05
+		shipsize_destroyer_build_speed_mult = 0.05
+		ship_destroyer_cost_mult = -0.05		
+	}
+
+	weight_modifier = {
+	modifier = {
+			factor = 2
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { years_passed > 10 }
+		}
+		modifier = {
+			factor = 10
+			any_neighbor_country = {
+				has_technology = tech_destroyers
+			}
+		}
+		modifier = {
+			factor = 2
+			years_passed > 15
+		}
+		modifier = {
+			factor = 3
+			years_passed > 20
+		}
+		modifier = {
+			factor = 4
+			years_passed > 30
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_supremacy_adopt
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 100 #important tech
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+}
+
+supremacy_tech_advanced_cruisers = {
+	cost = @tier4cost3
+	area = engineering
+	tier = 4
+	category = { voidcraft }
+	prerequisites = { "supremacy_tech_advanced_destroyers" "tech_cruisers" "tech_supremacy_anomalous_materials" }
+	weight = @tier4weight3
+	is_rare = yes
+
+	gateway = ship
+
+	## unlock cruisers
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_CRUISER_CONSTRUCTION_TITLE"
+			desc = "TECH_UNLOCK_CRUISER_CONSTRUCTION_DESC"
+		}
+	}
+
+	modifier = {
+		shipsize_cruiser_hull_add = 30
+		shipsize_cruiser_hull_mult = 0.05
+		shipsize_cruiser_build_speed_mult = 0.05
+		ship_cruiser_cost_mult = -0.05		
+	}
+
+	weight_modifier = {
+	modifier = {
+			factor = 2
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { years_passed > 20 }
+		}
+		modifier = {
+			factor = 10
+			any_neighbor_country = {
+				has_technology = tech_cruisers
+			}
+		}
+		modifier = {
+			factor = 2
+			years_passed > 30
+		}
+		modifier = {
+			factor = 3
+			years_passed > 35
+		}
+		modifier = {
+			factor = 4
+			years_passed > 40
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_supremacy_adopt
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 100 #higher factor due to cruiser hull
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+}
+
+supremacy_tech_advanced_battleships = {
+	cost = @tier5cost3
+	area = engineering
+	tier = 5
+	category = { voidcraft }
+	prerequisites = { "supremacy_tech_advanced_cruisers" "tech_battleships" "tech_supremacy_anomalous_materials" }
+	weight = @tier5weight3
+	is_rare = yes
+
+	## unlock battleships
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_BATTLESHIP_CONSTRUCTION_TITLE"
+			desc = "TECH_UNLOCK_BATTLESHIP_CONSTRUCTION_DESC"
+		}
+	}
+
+	modifier = {
+		shipsize_battleship_hull_add = 40
+		shipsize_battleship_hull_mult = 0.05
+		shipsize_battleship_build_speed_mult = 0.05
+		ship_battleship_cost_mult = -0.05		
+	}
+
+	weight_modifier = {
+	modifier = {
+			factor = 2
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { years_passed > 50 }
+		}
+		modifier = {
+			factor = 10
+			any_neighbor_country = {
+				has_technology = tech_battleships
+			}
+		}
+		modifier = {
+			factor = 2
+			years_passed > 60
+		}
+		modifier = {
+			factor = 3
+			years_passed > 65
+		}
+		modifier = {
+			factor = 4
+			years_passed > 70
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_supremacy_adopt
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 100 #higher factor due to battleship hull
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+}
+
+supremacy_tech_advanced_titans = {
+	cost = @tier5cost3
+	area = engineering
+	tier = 5
+	category = { voidcraft }
+	prerequisites = { "supremacy_tech_advanced_battleships" "tech_titans" "tech_supremacy_anomalous_materials" }
+	weight = @tier5weight3
+	ai_update_type = military
+	is_rare = yes
+
+	modifier = {
+		shipsize_titan_hull_add = 50
+		shipsize_titan_hull_mult = 0.05
+		shipsize_titan_build_speed_mult = 0.05
+		ship_titan_cost_mult = -0.05		
+	}
+
+	potential = {
+		host_has_dlc = "Apocalypse"
+	}
+
+	## unlock titans
+	prereqfor_desc = {
+		hide_prereq_for_desc = component
+		ship = {
+			title = "TECH_UNLOCK_TITAN_CONSTRUCTION_TITLE"
+			desc = "TECH_UNLOCK_TITAN_CONSTRUCTION_DESC"
+		}
+		custom = {
+			title = "TECH_UNLOCK_ION_CANNON_CONSTRUCTION_TITLE"
+			desc = "TECH_UNLOCK_ION_CANNON_CONSTRUCTION_DESC"
+		}
+	}
+
+	weight_modifier = {
+	modifier = {
+			factor = 2
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { years_passed > 100 }
+		}
+		modifier = {
+			factor = 10
+			any_neighbor_country = {
+				has_technology = tech_titans
+			}
+		}
+		modifier = {
+			factor = 2
+			years_passed > 130
+		}
+		modifier = {
+			factor = 3
+			years_passed > 140
+		}
+		modifier = {
+			factor = 4
+			years_passed > 150
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_supremacy_adopt
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 100 #higher factor due to titan hull
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+}
+
+tech_supremacy_dreadnought = {
+	area = Engineering
+	category = { materials }
+	tier = 5
+	is_dangerous = yes
+	is_rare = yes
+	is_reverse_engineerable = no
+	ai_update_type = all
+	prerequisites = { "tech_supremacy_intelligent_materials" "tech_supremacy_exotic_matter_annihilation" "tech_roguetech_scalar_energy_fields" "tech_juggernaut" }
+	cost = 100000
+	weight = 11
+			
+	modifier = {
+		shipsize_juggernaut_hull_add = 100
+		shipsize_juggernaut_hull_mult = 0.1
+		shipsize_juggernaut_build_speed_mult = 0.1
+		ship_juggernaut_cost_mult = -0.1
+	}
+
+	weight_modifier = {
+		factor = 1.50
+		modifier = {
+			factor = 1.5
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_nanite_transmutation"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_deflector"
+		}
+		modifier = {
+			factor = 5
+			has_technology = "tech_dark_matter_power_core"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_propulsion"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_roguetech_stealth"
+		}
+	}
+
+	ai_weight = {
+		factor = 1
+		modifier = {
+			factor = 10
+			research_leader = {
+				area = physics
+				OR = {
+					has_trait = "leader_trait_expertise_voidcraft"
+					has_trait = "leader_trait_maniacal"
+					has_trait = "leader_trait_curator"
+				}
+			}
+		}
+	}
+}

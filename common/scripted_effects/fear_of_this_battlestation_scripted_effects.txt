@@ -1,0 +1,107 @@
+@fotb_orbit_fear_length = 90 # 3 months
+
+fear_of_this_battlestation_add_modifier = {
+	if = {
+		# World Cracker
+		# Neutron Sweep
+		limit = {
+			any_fleet_in_orbit = {
+				is_ship_size = colossus
+				owner = {
+					is_same_value = root.owner
+				}
+				any_owned_ship = {
+					OR = {
+						has_component = PLANET_KILLER_CRACKER
+						has_component = PLANET_KILLER_NEUTRON
+					}
+				}
+			}
+		}
+		add_modifier = { modifier = fear_of_this_battlestation_standard days = @fotb_orbit_fear_length }
+	} else_if = {
+		# Global Pacifier
+		limit = {
+			any_fleet_in_orbit = {
+				is_ship_size = colossus
+				owner = {
+					is_same_value = root.owner
+				}
+				any_owned_ship = {
+					has_component = PLANET_KILLER_SHIELDER
+				}
+			}
+		}
+		add_modifier = { modifier = fear_of_this_battlestation_pacifist days = @fotb_orbit_fear_length }
+	} else_if = {
+		# Divine Enforcer
+		limit = {
+			any_fleet_in_orbit = {
+				is_ship_size = colossus
+				owner = {
+					is_same_value = root.owner
+				}
+				any_owned_ship = {
+					has_component = PLANET_KILLER_GODRAY
+				}
+			}
+		}
+		add_modifier = { modifier = fear_of_this_battlestation_spiritualist days = @fotb_orbit_fear_length }
+	} else_if = {
+		# Nanobot Diffuser
+		limit = {
+			any_fleet_in_orbit = {
+				is_ship_size = colossus
+				owner = {
+					is_same_value = root.owner
+				}
+				any_owned_ship = {
+					has_component = PLANET_KILLER_NANOBOTS
+				}
+			}
+		}
+		add_modifier = { modifier = fear_of_this_battlestation_nanobot days = @fotb_orbit_fear_length }
+	} else_if = {
+		# Deluge Machine - On Ocean World
+		limit = {
+			any_fleet_in_orbit = {
+				is_ship_size = colossus
+				owner = {
+					is_same_value = root.owner
+				}
+				any_owned_ship = {
+					has_component = PLANET_KILLER_DELUGE
+				}
+			}
+			is_planet_class = pc_ocean
+		}
+		add_modifier = { modifier = fear_of_this_battlestation_ocean days = @fotb_orbit_fear_length }
+	} else_if = {
+		# Deluge Machine - Non Ocean World
+		limit = {
+			any_fleet_in_orbit = {
+				is_ship_size = colossus
+				owner = {
+					is_same_value = root.owner
+				}
+				any_owned_ship = {
+					has_component = PLANET_KILLER_DELUGE
+				}
+			}
+		}
+		add_modifier = { modifier = fear_of_this_battlestation_not_ocean days = @fotb_orbit_fear_length }
+	} else_if = {
+		# "friendly" star eater in orbit. Has lower priority due to being not directly in orbit over planet
+		limit = {
+			fotb_is_star_eater_orbiting_valid_star = yes
+		}
+		add_modifier = { modifier = fear_of_this_battlestation_star_eater days = @fotb_orbit_fear_length }
+	} else = {
+		# default fallback
+		add_modifier = { modifier = fear_of_this_battlestation_standard days = @fotb_orbit_fear_length }
+	}
+	planet_event = {
+		id = fear_of_this_battlestation.110
+		days = @fotb_orbit_fear_length
+	}
+}

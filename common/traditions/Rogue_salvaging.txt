@@ -1,0 +1,90 @@
+tr_rogue_nemesis_salvaging_adopt = {
+	modifier = {
+		country_minerals_produces_mult = 0.1
+		country_base_menace_produces_add = 0.15
+	}
+}
+
+tr_rogue_nemesis_salvaging_finish = {
+	modifier = {
+		ascension_perks_add = 1
+		country_base_menace_produces_add = 0.15
+	}
+}
+
+tr_rogue_nemesis_salvaging_planets= {
+	modifier = {
+		 planet_structures_upkeep_mult = -0.15
+		 planet_structures_cost_mult = -0.15
+		 country_base_menace_produces_add = 0.15
+	}
+
+	ai_weight = {
+		factor = 100
+	}
+}
+
+tr_rogue_nemesis_salvaging_ships = {	
+
+	modifier = {
+		 ships_upkeep_mult = -0.15
+		 starbase_shipyard_build_cost_mult = -0.15
+		 country_base_menace_produces_add = 0.15
+	}
+
+	ai_weight = {
+		factor = 500
+	}
+}
+
+tr_rogue_nemesis_salvaging_starbase = {
+	possible = {
+		has_tradition = tr_rogue_nemesis_salvaging_planets
+	}
+	modifier = {
+		starbases_upkeep_mult = -0.15
+		starbases_cost_mult = -0.15
+		starbase_upgrade_cost_mult = -0.15
+		country_base_menace_produces_add = 0.15		
+	}
+
+	ai_weight = {
+		factor = 100
+	}
+}
+
+tr_rogue_nemesis_salvaging_jury_rig = {
+	possible = {
+		has_tradition = tr_rogue_nemesis_salvaging_starbase
+		has_tradition = tr_rogue_nemesis_salvaging_plattform
+	}
+
+	modifier = {
+		megastructure_build_speed_mult = 0.33
+		starbase_shipyard_build_speed_mult = 0.2
+		planet_building_build_speed_mult = 0.2
+		shipclass_military_build_speed_mult = 0.2
+		starbase_upgrade_speed_mult = 0.2
+		country_base_menace_produces_add = 0.15
+	}
+
+	ai_weight = {
+		factor = 100
+	}
+}
+
+tr_rogue_nemesis_salvaging_plattform = {
+	possible = {
+		has_tradition = tr_rogue_nemesis_salvaging_ships
+	}
+
+	modifier = {
+		shipclass_military_station_build_cost_mult = -0.15
+		ship_military_station_small_upkeep_mult = -0.15
+		country_base_menace_produces_add = 0.15
+	}
+
+	ai_weight = {
+		factor = 100
+	}
+}

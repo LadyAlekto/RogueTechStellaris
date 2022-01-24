@@ -1,0 +1,38 @@
+spriteTypes = {	
+		
+		spriteType = {
+			name = "CONTAGION_MISSILE_1"
+			texturefile = "gfx/interface/icons/ship_parts/Missile/biophage_missile_1.dds"
+		}
+		
+		spriteType = {
+			name = "CONTAGION_MISSILE_2"
+			texturefile = "gfx/interface/icons/ship_parts/Missile/biophage_missile_2.dds"
+		}
+		
+		spriteType = {
+			name = "CONTAGION_MISSILE_3"
+			texturefile = "gfx/interface/icons/ship_parts/Missile/biophage_missile_3.dds"
+		}
+		
+		spriteType = {
+			name = "CONTAGION_MISSILE_4"
+			texturefile = "gfx/interface/icons/ship_parts/Missile/biophage_missile_4.dds"
+		}
+		
+		spriteType = {
+			name = "CONTAGION_MISSILE_5"
+			texturefile = "gfx/interface/icons/ship_parts/Missile/biophage_missile_5.dds"
+		}
+		
+		spriteType = {
+			name = "CONTAGION_MISSILE_6"
+			texturefile = "gfx/interface/icons/ship_parts/Missile/biophage_missile_6.dds"
+		}
+		
+		spriteType = {
+			name = "ROGUE_TEMPEST_MISSILE"
+			texturefile = "gfx/interface/icons/ship_parts/Missile/ROGUE_TEMPEST_MISSILE.dds"
+		}
+		
+		}

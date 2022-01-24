@@ -1,0 +1,68 @@
+Ship overhaul mod
+
+"RogueTech: Stellaris"
+
+you will need something like dnyamic ui
+
+Sadly will not be entirely compatible with ship or item mods
+Overrides vanilla Ship sizes and Section Templates for new component system
+Does not replace vanilla sets or items, so stuff like giga structure ships can be constructed classically
+
+overrides vanilla auras (for star eater)
+
+merger of my biophage and supremacy dreadnought and stargate ap mods
+
+New Civis (more to come)
+Biophage: merges most necrophage play into a single civic
+
+New Traditions and expands upon Becoming the Crisis
+
+All ship classes new required components
+
+Remove basic utility slots, instead aux slots
+
+Defense components go into 3 categories, average strength similar to balanced build
+
+Shields: All shields go in here, upgrades similar to all vanilla tiers, selecting "None" Boosts Hull and Armor
+
+Hull: New line of hull components
+
+Armor: All Armors go in here, selecting "None" Boosts Hull and Shields
+
+Enhancements: a selection of items that boost different defenses
+
+Juggernaut Building: now you can change the juggernaut from being a shipyard to different roles
+
+Advanced Ship Sections that provide more slots but cost very rare resources
+
+Crisis ships nerfed to now have item cost and cost a bit of menace
+
+New Technologies, ships, weapon and plattform parts when going Crisis
+
+3 new plattform sections unlocked with "Jury Rigged Weapons"
+
+New Weapons, from biological warheads and fighters, to a whole new range of weapons that fire a constant beam
+
+New unique tech trees for other ascensions and machines will come in future
+
+New Armies
+
+Starbase Upgrade to one of the 5 ship defenses
+Defenses scale through multi and additional weapon mounts
++2 Modules For citadel
+1 aux slot per size
+
+2 Aux for Defense Plattforms
+
+Defense Plattforms use destroyer defenses
+
+Defines tweaks include much higher fleet max, command limits and scales starbase and fleet size with number of pops
+
+Rare resource edicts are now perpetual but require a upkeep, upkeep is a tenth of its activation cost
+
+Includes "Fear of this battlestation" by ringbearer
+https://steamuserimages-a.akamaihd.net/ugc/1834655158082381800/E13496108D0241709B376F295E116710521D17E7/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true
+
+idea inspired by: https://steamcommunity.com/sharedfiles/filedetails/?id=2636347658
+
+

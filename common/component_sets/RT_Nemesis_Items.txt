@@ -1,0 +1,34 @@
+component_set = {
+	key = "TITANIC_KINETIC"
+	
+	icon = "TITANIC_KINETIC"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TITANIC_KINETIC_MASSIVE"
+	
+	icon = "TITANIC_KINETIC"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "RT_NEMESIS_CANNON"
+	
+	icon = "RT_NEMESIS_CANNON"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "RT_NEMESIS_FUSION_FURNACE"
+	
+	icon = "RT_NEMESIS_FUSION_FURNACE"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ROGUE_BEAM_CANNON"
+	
+	icon = "ROGUE_BEAM_CANNON"
+	icon_frame = 1	
+}

@@ -1,0 +1,400 @@
+tech_rogue_nanolathe_engineering = {
+	area = engineering
+	cost = 40000
+	tier = 4
+	is_dangerous = yes
+	is_rare = yes
+	category = { industry }
+    prerequisites = { "tech_roguetech_scalar_energy_fields" }
+	weight = 20
+	
+	weight_modifier = {
+		factor = 1.50
+		modifier = {
+			factor = 1.5
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_nanite_transmutation"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_deflector"
+		}
+		modifier = {
+			factor = 5
+			has_technology = "tech_dark_matter_power_core"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_propulsion"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_roguetech_stealth"
+		}
+	}
+	
+	ai_weight = {
+		factor = 1.0
+	}
+	
+	modifier = {
+		planet_building_build_speed_mult = 0.1
+		megastructure_build_speed_mult = 0.1
+		shipclass_starbase_build_speed_mult = 0.1
+		starbase_shipyard_build_speed_mult = 0.1
+		starbase_upgrade_speed_mult = 0.1
+	}
+}
+
+tech_supremacy_super_positional_materials = {
+	area = Engineering
+	category = { materials }
+	tier = 5
+	is_dangerous = yes
+	is_rare = yes
+	is_reverse_engineerable = no
+	ai_update_type = all
+	prerequisites = { "tech_supremacy_anomalous_materials" "tech_roguetech_scalar_energy_fields" "tech_juggernaut" }
+	cost = 60000
+	weight = 11
+	
+	modifier = {
+		ship_armor_mult = 0.1
+		ship_hull_mult = 0.1
+	}
+
+	weight_modifier = {
+		factor = 1.50
+		modifier = {
+			factor = 1.5
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_nanite_transmutation"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_deflector"
+		}
+		modifier = {
+			factor = 5
+			has_technology = "tech_dark_matter_power_core"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_propulsion"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_roguetech_stealth"
+		}
+	}
+
+	ai_weight = {
+		factor = 1
+		modifier = {
+			factor = 10
+			research_leader = {
+				area = physics
+				OR = {
+					has_trait = "leader_trait_expertise_voidcraft"
+					has_trait = "leader_trait_maniacal"
+					has_trait = "leader_trait_curator"
+				}
+			}
+		}
+	}
+}
+
+
+tech_roguetech_zontrium_hulls = {
+	area = Engineering
+	category = { materials }
+	tier = 4
+	is_dangerous = yes
+	is_rare = yes
+	is_reverse_engineerable = no
+	ai_update_type = all
+	prerequisites = { "tech_supremacy_anomalous_materials" "tech_supremacy_super_positional_materials" }
+	cost = 50000
+	weight = 11
+	
+	modifier = {
+		ship_hull_mult = 0.1
+	}
+
+	weight_modifier = {
+		factor = 1.50
+		modifier = {
+			factor = 1.5
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_nanite_transmutation"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_deflector"
+		}
+		modifier = {
+			factor = 5
+			has_technology = "tech_dark_matter_power_core"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_propulsion"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_roguetech_stealth"
+		}
+	}
+
+	ai_weight = {
+		factor = 1
+		modifier = {
+			factor = 10
+			research_leader = {
+				area = physics
+				OR = {
+					has_trait = "leader_trait_expertise_voidcraft"
+					has_trait = "leader_trait_maniacal"
+					has_trait = "leader_trait_curator"
+				}
+			}
+		}
+	}
+}
+
+tech_roguetech_xentronium_hulls = {
+	area = Engineering
+	category = { materials }
+	tier = 5
+	is_dangerous = yes
+	is_rare = yes
+	is_reverse_engineerable = no
+	ai_update_type = all
+	prerequisites = { "tech_roguetech_zontrium_hulls" "tech_crystal_armor_2" "tech_supremacy_intelligent_materials" }
+	cost = 80000
+	weight = 11
+	
+	modifier = {
+		ship_hull_mult = 0.1
+	}
+
+	weight_modifier = {
+		factor = 1.50
+		modifier = {
+			factor = 1.5
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_nanite_transmutation"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_deflector"
+		}
+		modifier = {
+			factor = 5
+			has_technology = "tech_dark_matter_power_core"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_propulsion"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_roguetech_stealth"
+		}
+	}
+
+	ai_weight = {
+		factor = 1
+		modifier = {
+			factor = 10
+			research_leader = {
+				area = physics
+				OR = {
+					has_trait = "leader_trait_expertise_voidcraft"
+					has_trait = "leader_trait_maniacal"
+					has_trait = "leader_trait_curator"
+				}
+			}
+		}
+	}
+}
+
+tech_roguetech_adamantium_armor = {
+	area = Engineering
+	category = { materials }
+	tier = 4
+	is_dangerous = yes
+	is_rare = yes
+	is_reverse_engineerable = no
+	ai_update_type = all
+	prerequisites = { "tech_supremacy_super_positional_materials" "tech_supremacy_molecular_assembly" "tech_ship_armor_5" }
+	cost = 50000
+	weight = 11
+	
+	modifier = {
+		ship_armor_mult = 0.1
+	}
+
+	weight_modifier = {
+		factor = 1.50
+		modifier = {
+			factor = 1.5
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_nanite_transmutation"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_deflector"
+		}
+		modifier = {
+			factor = 5
+			has_technology = "tech_dark_matter_power_core"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_propulsion"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_roguetech_stealth"
+		}
+	}
+
+	ai_weight = {
+		factor = 1
+		modifier = {
+			factor = 10
+			research_leader = {
+				area = physics
+				OR = {
+					has_trait = "leader_trait_expertise_voidcraft"
+					has_trait = "leader_trait_maniacal"
+					has_trait = "leader_trait_curator"
+				}
+			}
+		}
+	}
+}
+
+tech_roguetech_adamantium_scales = {
+	area = Engineering
+	category = { materials }
+	tier = 5
+	is_dangerous = yes
+	is_rare = yes
+	is_reverse_engineerable = no
+	ai_update_type = all
+	prerequisites = { "tech_roguetech_adamantium_armor" "tech_supremacy_intelligent_materials" "tech_dragon_armor" }
+	cost = 80000
+	weight = 11
+	
+	modifier = {
+		ship_armor_mult = 0.1
+	}
+
+	weight_modifier = {
+		factor = 1.50
+		modifier = {
+			factor = 1.5
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_nanite_transmutation"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_deflector"
+		}
+		modifier = {
+			factor = 5
+			has_technology = "tech_dark_matter_power_core"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_propulsion"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_roguetech_stealth"
+		}
+	}
+
+	ai_weight = {
+		factor = 1
+		modifier = {
+			factor = 10
+			research_leader = {
+				area = physics
+				OR = {
+					has_trait = "leader_trait_expertise_voidcraft"
+					has_trait = "leader_trait_maniacal"
+					has_trait = "leader_trait_curator"
+				}
+			}
+		}
+	}
+}
+
+tech_rogue_tempest_missiles = {
+	area = engineering
+	cost = @tier5cost2
+	tier = 5
+	category = { propulsion }
+	ai_update_type = military
+	is_reverse_engineerable = no
+	prerequisites = { "tech_swarmer_missiles_2" }
+	weight = @tier5weight1
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+}

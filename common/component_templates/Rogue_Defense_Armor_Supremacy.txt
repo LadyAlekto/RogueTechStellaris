@@ -1,0 +1,306 @@
+utility_component_template = {
+	key = "Rogue_Basic_Armor_SUPREMACY"
+	size = small
+	icon = "Rogue_Basic_Armor"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special  }
+	size_restriction = { juggernaut star_eater }
+
+	component_set = "Rogue_Defense_Armor"
+	upgrades_to = "Rogue_Armor_Nanocomposite_SUPREMACY"
+	
+	modifier = {
+		ship_shield_mult = 0.25
+		ship_hull_mult = 0.25
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Armor_Nanocomposite_SUPREMACY"
+	size = small
+	icon = "Rogue_Armor_Nanocomposite"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special  }
+	size_restriction = { juggernaut star_eater }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 240
+		}
+		upkeep = {
+			energy = 1.2
+			alloys = 0.48
+		}
+	}
+
+	prerequisites = { "tech_ship_armor_1" }
+	component_set = "Rogue_Defense_Armor"
+	upgrades_to = "Rogue_Armor_Ceramo_SUPREMACY"
+
+	modifier = {
+		ship_armor_add = 1800
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Armor_Ceramo_SUPREMACY"
+	size = small
+	icon = "Rogue_Armor_Ceramo"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special  }
+	size_restriction = { juggernaut star_eater }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 324
+		}
+		upkeep = {
+			energy = 3.12
+			alloys = 0.624
+		}
+	}
+
+	prerequisites = { "tech_ship_armor_2" }
+	component_set = "Rogue_Defense_Armor"
+	upgrades_to = "Rogue_Armor_Plasteel_SUPREMACY"
+
+	modifier = {
+		ship_armor_add = 2340
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Armor_Plasteel_SUPREMACY"
+	size = small
+	icon = "Rogue_Armor_Plasteel"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special  }
+	size_restriction = { juggernaut star_eater }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 408
+		}
+		upkeep = {
+			energy = 4.08
+			alloys = 0.816
+		}
+	}
+
+	prerequisites = { "tech_ship_armor_3" }
+	component_set = "Rogue_Defense_Armor"
+	upgrades_to = "Rogue_Armor_Durasteel_SUPREMACY"
+
+	modifier = {
+		ship_armor_add = 3060
+	}
+
+	ai_weight = {
+		weight = 3
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Armor_Durasteel_SUPREMACY"
+	size = small
+	icon = "Rogue_Armor_Durasteel"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special  }
+	size_restriction = { juggernaut star_eater }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 408
+		}
+		upkeep = {
+			energy = 4.08
+			alloys = 0.816
+		}
+	}
+
+	prerequisites = { "tech_ship_armor_4" }
+	component_set = "Rogue_Defense_Armor"
+	upgrades_to = "Rogue_Armor_Neutronium_SUPREMACY"
+
+	modifier = {
+		ship_armor_add = 3960
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = rare_crystals }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Armor_Neutronium_SUPREMACY"
+	size = small
+	icon = "Rogue_Armor_Neutronium"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special  }
+	size_restriction = { juggernaut star_eater }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 528
+		}
+		upkeep = {
+			energy = 5.28
+			alloys = 1.176
+		}
+	}
+
+	prerequisites = { "tech_ship_armor_5" }
+	component_set = "Rogue_Defense_Armor"
+	upgrades_to = "Rogue_Armor_Adamantium_SUPREMACY"
+
+	modifier = {
+		ship_armor_add = 5220
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+utility_component_template = {
+	key = "Rogue_Armor_Adamantium_SUPREMACY"
+	size = small
+	icon = "Rogue_Armor_Adamantium"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special  }
+	size_restriction = { juggernaut star_eater }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 570
+			sr_living_metal = 3.6
+			nanites = 3.6
+		}
+		upkeep = {
+			energy = 5.28
+			alloys = 1.176
+			sr_living_metal = 0..18
+			nanites = 0.18
+		}
+	}
+
+	prerequisites = { "tech_roguetech_adamantium_armor" }
+	component_set = "Rogue_Defense_Armor"
+	upgrades_to = "Rogue_Armor_Dragonscales_SUPREMACY"
+
+	modifier = {
+		ship_armor_add = 5520
+		ship_armor_regen_add_perc = 1
+	}
+
+	ai_weight = {
+		weight = 6
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Armor_Dragonscales_SUPREMACY"
+	size = small
+	icon = "Rogue_Armor_Dragonscales"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special  }
+	size_restriction = { juggernaut star_eater }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 684
+		}
+		upkeep = {
+			energy = 6.84
+			alloys = 1.368
+		}
+	}
+
+	prerequisites = { "tech_dragon_armor" }
+	component_set = "Rogue_Defense_Armor"
+	upgrades_to = "Rogue_Armor_AdamtiumScales_SUPREMACY"
+
+	modifier = {
+		ship_armor_add = 6660
+	}
+
+	ai_weight = {
+		weight = 7
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Armor_AdamtiumScales_SUPREMACY"
+	size = small
+	icon = "Rogue_Armor_AdamtiumScales"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special  }
+	size_restriction = { juggernaut star_eater }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 780
+			sr_living_metal = 6
+			nanites = 6
+		}
+		upkeep = {
+			energy = 6.84
+			alloys = 1.368
+			sr_living_metal = 0.36
+			nanites = 0.36
+		}
+	}
+
+	prerequisites = { "tech_roguetech_adamantium_scales" }
+	component_set = "Rogue_Defense_Armor"
+
+	modifier = {
+		ship_armor_add = 7800
+		ship_armor_regen_add_perc = 1.5
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+}

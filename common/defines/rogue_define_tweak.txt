@@ -1,0 +1,31 @@
+NGameplay = {
+
+	COMMAND_LIMIT_MAX = 2000
+	
+	NAVAL_CAPACITY_MAX										= 99999	# Max value of Naval Capacity
+	NAVAL_CAPACITY_POP_MULT									= 0.01	# Mult value of Naval Capacity for each Pop
+	
+	STARBASE_CAPACITY_BASE									= 1		# Base value of Starbase Capacity
+	STARBASE_CAPACITY_SYSTEM_MULT							= 0.05	# Mult value of Starbase Capacity for each owned system
+	STARBASE_CAPACITY_POP_MULT								= 0.01	# Mult value of Starbase Capacity for each Pop
+	
+	SHIPYARD_MAX_OVER_CAPACITY = 5.0		# Max amount of ships that we should want to be queued in one shipyard (x shipyard capacity)
+		SHIPYARD_DISTANCE_DIV_FACTOR = 3.0		# The lower this is, the more reinforce tends to use the closest shipyard(s) available. Strongly NOT recommended to have this <1
+		SHIPYARD_REINFORCE_MAX_DISTANCE = 3000	# Shipyards further away than this from the closest shipyard will not be considered for reinforcements
+		
+		GOVERNMENT_CIVIC_POINTS_BASE		= 2		# Base amount of civic points (to "pay" for government civic costs)
+			
+	MAX_PLANET_BUILDING_SLOTS				= 36
+	
+	LIMITED_EXPLORATION = 1		# If set to 1, only science ships with scientists can enter unvisited systems
+	
+	LEADER_POOL_SIZE		= 3				# Each leader pool will consist of this many leaders
+		LEADER_POOL_LEAD_TIME	= 5				# Years leaders will remain in the leader pool until replaced
+		LEADER_BASE_SKILL_CAP	= 5
+		LEADER_MAX_SKILL_CAP	= 50
+		
+		STATION_SELF_REPAIR_TIMER_DAYS			= 0		# Number of days after taking damage before a station will start self-repairing
+	STARBASE_SELF_REPAIR_TIMER_DAYS			= 0		# Number of days after taking damage before a starbase will start self-repairing
+	STARBASE_ENABLED_HEALTH_PERCENTAGE		= 0.50	# Percentage of max health when a starbase that can be disabled will be enabled.
+	
+	}

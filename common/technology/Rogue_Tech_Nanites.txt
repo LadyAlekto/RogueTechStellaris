@@ -1,0 +1,395 @@
+tech_supremacy_anomalous_materials = {
+	cost = @tier2cost3
+	area = engineering
+	tier = 2
+	category = { materials }
+	weight = 10
+	is_rare = yes
+	
+	prerequisites = { "tech_supremacy_exotic_matter_theory" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 2
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_nanite_transmutation }
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_nanite_transmutation"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_modular_engineering"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_space_defense_station_improvement"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_ship_armor_2"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_ship_armor_3"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_ship_armor_4"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_ship_armor_5"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_crystal_armor_1"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_crystal_armor_2"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mineral_purification_1"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mineral_purification_2"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_advanced_metallurgy_1"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_advanced_metallurgy_2"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mine_living_metal"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mine_betharian"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mine_volatile_motes"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_volatile_motes"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mine_exotic_gases"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_exotic_gases"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mine_rare_crystals"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_rare_crystals"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mine_dark_matter"
+		}
+	}	
+	
+	ai_weight = {
+		factor = 5 #important resource
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+
+tech_supremacy_molecular_assembly = {
+	cost = @tier3cost3
+	area = engineering
+	tier = 3
+	category = { materials }
+	weight = 10
+	is_rare = yes
+	
+	prerequisites = { "tech_supremacy_anomalous_materials" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 2
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_nanite_transmutation }
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_nanite_transmutation"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_modular_engineering"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_space_defense_station_improvement"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_ship_armor_2"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_ship_armor_3"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_ship_armor_4"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_ship_armor_5"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_crystal_armor_1"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_crystal_armor_2"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mineral_purification_1"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mineral_purification_2"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_advanced_metallurgy_1"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_advanced_metallurgy_2"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mine_living_metal"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mine_betharian"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mine_volatile_motes"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_volatile_motes"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mine_exotic_gases"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_exotic_gases"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mine_rare_crystals"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_rare_crystals"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mine_dark_matter"
+		}
+	}	
+	
+	ai_weight = {
+		factor = 5 #important resource
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+
+tech_supremacy_intelligent_materials = {
+	cost = @tier5cost3
+	area = engineering
+	tier = 5
+	category = { materials }
+	weight = 10
+	is_rare = yes
+	
+	prerequisites = { "tech_supremacy_molecular_assembly" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 2
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_nanite_transmutation }
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_nanite_transmutation"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_modular_engineering"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_space_defense_station_improvement"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_ship_armor_2"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_ship_armor_3"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_ship_armor_4"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_ship_armor_5"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_crystal_armor_1"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_crystal_armor_2"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mineral_purification_1"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mineral_purification_2"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_advanced_metallurgy_1"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_advanced_metallurgy_2"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mine_living_metal"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mine_betharian"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mine_volatile_motes"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_volatile_motes"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mine_exotic_gases"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_exotic_gases"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mine_rare_crystals"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_rare_crystals"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_mine_dark_matter"
+		}
+	}	
+	
+	ai_weight = {
+		factor = 5 #important resource
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}

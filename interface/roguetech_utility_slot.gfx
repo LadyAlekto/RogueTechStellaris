@@ -1,0 +1,45 @@
+
+	spriteTypes = {
+	spriteType = {
+			name = "Rogue_Utility_Slot"
+			texturefile = "gfx/interface/icons/ship_parts/Enhancements/Rogue_Utility_Slot.dds"
+		}
+		
+	spriteType = {
+			name = "Rogue_Stealth_Field"
+			texturefile = "gfx/interface/icons/ship_parts/Enhancements/Rogue_Stealth_Field.dds"
+		}
+	spriteType = {
+			name = "Rogue_Shield_Batteries"
+			texturefile = "gfx/interface/icons/ship_parts/Enhancements/Rogue_Shield_Batteries.dds"
+		}
+	spriteType = {
+			name = "Rogue_Hardened_Armor"
+			texturefile = "gfx/interface/icons/ship_parts/Enhancements/Rogue_Hardened_Armor.dds"
+		}
+	spriteType = {
+			name = "Rogue_Reinforced_Hull"
+			texturefile = "gfx/interface/icons/ship_parts/Enhancements/Rogue_Reinforced_Hull.dds"
+		}
+	spriteType = {
+			name = "Rogue_Auto_Repair"
+			texturefile = "gfx/interface/icons/ship_parts/Enhancements/Rogue_Auto_Repair.dds"
+		}
+	spriteType = {
+			name = "Rogue_Auto_Repair_Nanites"
+			texturefile = "gfx/interface/icons/ship_parts/Enhancements/Rogue_Auto_Repair_Nanites.dds"
+		}
+	spriteType = {
+			name = "Rogue_Fuel_Injectors"
+			texturefile = "gfx/interface/icons/ship_parts/Enhancements/Rogue_Fuel_Injectors.dds"
+		}
+	spriteType = {
+			name = "Rogue_Stealth_Field"
+			texturefile = "gfx/interface/icons/ship_parts/Enhancements/Rogue_Stealth_Field.dds"
+		}
+	spriteType = {
+			name = "SUPREMACY_JUMP_DRIVE_BOOST"
+			texturefile = "gfx/interface/icons/ship_parts/Enhancements/SUPREMACY_JUMP_DRIVE_BOOST.dds"
+		}
+
+	}

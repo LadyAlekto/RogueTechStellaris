@@ -1,0 +1,94 @@
+# World Cracker
+# Neutron Sweep
+fear_of_this_battlestation_standard = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_drifting_gateway.dds"
+	icon_frame = 1
+	planet_stability_add = 20
+	planet_crime_add = -100
+	planet_emigration_push_add = 100
+	pop_growth_speed = -0.25
+	pop_growth_from_immigration = -0.5
+	
+	planet_jobs_produces_mult = -0.10
+	pop_happiness = -0.05
+
+	pop_ethic_authoritarian_attraction_mult = 0.33
+	pop_ethic_militarist_attraction_mult = 0.10
+}
+
+# Global Pacifier
+fear_of_this_battlestation_pacifist = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_drifting_gateway.dds"
+	icon_frame = 1
+	planet_stability_add = 20
+	planet_crime_add = -100
+	pop_growth_speed = -0.25
+	
+	planet_jobs_produces_mult = -0.05
+	planet_jobs_unity_produces_mult = 0.05
+
+	pop_ethic_pacifist_attraction_mult = 0.33
+	pop_ethic_egalitarian_attraction_mult = 0.10
+}
+
+# Divine Enforcer
+fear_of_this_battlestation_spiritualist = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_drifting_gateway.dds"
+	icon_frame = 1
+	planet_stability_add = 10
+	planet_crime_add = -100
+
+	planet_jobs_unity_produces_mult = 0.05
+
+	pop_ethic_spiritualist_attraction_mult = 0.33
+}
+
+# Nanobot Diffuser
+fear_of_this_battlestation_nanobot = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_drifting_gateway.dds"
+	icon_frame = 1
+	planet_stability_add = 10
+	planet_crime_no_happiness_add = -100
+}
+
+# Deluge Machine
+fear_of_this_battlestation_ocean = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_drifting_gateway.dds"
+	icon_frame = 1
+	planet_stability_add = 10
+
+	planet_jobs_food_produces_mult = 0.05
+	trade_value_mult = 0.05
+}
+
+fear_of_this_battlestation_not_ocean = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_drifting_gateway.dds"
+	icon_frame = 1
+	planet_stability_add = 15
+	planet_crime_add = -100
+	planet_emigration_push_add = 100
+	pop_growth_speed = -0.1
+	pop_growth_from_immigration = -0.25
+	
+	planet_jobs_produces_mult = -0.05
+
+	pop_ethic_authoritarian_attraction_mult = 0.33
+	pop_ethic_militarist_attraction_mult = 0.10
+}
+
+# Star Eater
+fear_of_this_battlestation_star_eater = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_drifting_gateway.dds"
+	icon_frame = 1
+	planet_stability_add = 10
+	planet_crime_add = -50
+	planet_emigration_push_add = 50
+	pop_growth_speed = -0.1
+	pop_growth_from_immigration = -0.25
+	
+	planet_jobs_produces_mult = -0.05
+	pop_happiness = -0.05
+
+	pop_ethic_authoritarian_attraction_mult = 0.20
+	pop_ethic_militarist_attraction_mult = 0.05
+}

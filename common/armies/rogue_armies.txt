@@ -1,0 +1,68 @@
+nanotrite_army = {
+	damage = 1.80
+	health = 1.50
+	morale = 1.50
+	morale_damage = 1.3
+	collateral_damage = 0.8
+	war_exhaustion = 1.00
+	time = 90
+	icon = GFX_army_type_machine_defensive
+	prerequisites = { "tech_assault_armies" }
+	resources = {
+		category = armies
+		cost = {
+			alloys = 50
+			sr_living_metal = 2
+			nanites = 2
+		}
+
+		upkeep = {
+			energy = 1
+			sr_living_metal = 0.02
+			nanites = 0.02
+		}
+	}
+	
+	prerequisites = { "tech_supremacy_scalar_cannon_minituaristion_3" }
+
+	potential = {
+		owner = {
+				NOT = { has_technology = tech_gene_seed_purification }
+		}
+	}
+}
+
+nanotrite_super_army = {
+	damage = 3.0
+	health = 3.5
+	morale = 3.5
+	morale_damage = 3.0
+	collateral_damage = 0.5
+	war_exhaustion = 3.0
+	time = 150
+	icon = GFX_army_type_imperial
+
+	resources = {
+		category = armies
+		cost = {
+			alloys = 100
+			sr_living_metal = 3
+			nanites = 3
+			sr_dark_matter = 3
+		}
+
+		upkeep = {
+			energy = 2
+			sr_living_metal = 0.04
+			nanites = 0.04
+			sr_dark_matter = 0.04
+		}
+	}
+
+	prerequisites = { "tech_supremacy_scalar_cannon_minituaristion_3" }
+	potential = {
+		owner = {
+			has_technology = tech_gene_seed_purification
+		}
+	}
+}

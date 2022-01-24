@@ -1,0 +1,80 @@
+
+	spriteTypes = {	
+	spriteType = {
+			name = "Rogue_Basic_Shield"
+			texturefile = "gfx/interface/icons/ship_parts/shields/Rogue_Basic_Shield.dds"
+		}
+	spriteType = {
+			name = "Rogue_Shield_Deflector"
+			texturefile = "gfx/interface/icons/ship_parts/shields/Rogue_Shield_Deflector.dds"
+		}
+	spriteType = {
+			name = "Rogue_Shield_ImpDeflector"
+			texturefile = "gfx/interface/icons/ship_parts/shields/Rogue_Shield_ImpDeflector.dds"
+		}
+	spriteType = {
+			name = "Rogue_Shield_Shields"
+			texturefile = "gfx/interface/icons/ship_parts/shields/Rogue_Shield_Shields.dds"
+		}		
+	spriteType = {
+			name = "Rogue_Shield_AdvShields"
+			texturefile = "gfx/interface/icons/ship_parts/shields/Rogue_Shield_AdvShields.dds"
+		}
+	spriteType = {
+			name = "Rogue_Shield_HyperShield"
+			texturefile = "gfx/interface/icons/ship_parts/shields/Rogue_Shield_HyperShield.dds"
+		}
+		
+	spriteType = {
+			name = "Rogue_Shield_DarkMatter"
+			texturefile = "gfx/interface/icons/ship_parts/shields/Rogue_Shield_DarkMatter.dds"
+		}
+	
+	spriteType = {
+			name = "Rogue_Shield_PsiBarrier"
+			texturefile = "gfx/interface/icons/ship_parts/shields/Rogue_Shield_PsiBarrier.dds"
+		}
+	spriteType = {
+			name = "Rogue_Shield_Scalar"
+			texturefile = "gfx/interface/icons/ship_parts/shields/Rogue_Shield_Scalar.dds"
+		}
+	spriteType = {
+			name = "Rogue_Shield_PsiShields"
+			texturefile = "gfx/interface/icons/ship_parts/shields/Rogue_Shield_PsiShields.dds"
+		}		
+	spriteType = {
+			name = "Rogue_Shield_Void"
+			texturefile = "gfx/interface/icons/ship_parts/shields/Rogue_Shield_Void.dds"
+		}
+		
+		spriteType = {
+			name = "ROGUE_SHIELD_BOOSTER_1"
+			texturefile = "gfx/interface/icons/ship_parts/shields/LA_supremacy_void_shield_I.dds"
+		}
+		
+		spriteType = {
+			name = "ROGUE_SHIELD_BOOSTER_2"
+			texturefile = "gfx/interface/icons/ship_parts/shields/LA_supremacy_void_shield_II.dds"
+		}
+		
+		spriteType = {
+			name = "ROGUE_SHIELD_BOOSTER_3"
+			texturefile = "gfx/interface/icons/ship_parts/shields/LA_supremacy_void_shield_III.dds"
+		}
+		
+		spriteType = {
+			name = "ROGUE_SHIELD_BOOSTER_4"
+			texturefile = "gfx/interface/icons/ship_parts/shields/LA_supremacy_void_shield_IV.dds"
+		}
+		
+		spriteType = {
+			name = "ROGUE_SHIELD_BOOSTER_5"
+			texturefile = "gfx/interface/icons/ship_parts/shields/LA_supremacy_void_shield_V.dds"
+		}
+		
+		spriteType = {
+			name = "ROGUE_SHIELD_BOOSTER_6"
+			texturefile = "gfx/interface/icons/ship_parts/shields/LA_supremacy_void_shield_VI.dds"
+		}
+
+	}

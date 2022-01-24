@@ -1,0 +1,659 @@
+########################
+# Supremacy Reactors
+########################
+
+utility_component_template = {
+	key = "SUPREMACY_REACTOR_CORE_Corvette"
+	size = small
+	icon = "event_horizon_dark_matter_reactor"
+	icon_frame = 1
+	power = 250
+	
+		modifier = {
+		ship_jumpdrive_cooldown_mult = -0.25
+		ship_ftl_jumpdrive_range_mult = 0.25
+		ship_emergency_ftl_min_days_mult = -0.2
+	}
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 40
+			nanites = 3
+			sr_dark_matter = 6
+			rare_crystals = 1
+			exotic_gases = 1
+			volatile_motes = 0.5
+		}
+		upkeep = {
+			energy = 0.4
+			alloys = 0.04
+			nanites = 0.1
+			sr_dark_matter = 0.2
+		}
+	}
+
+	prerequisites = { "tech_supremacy_horizon_core" }
+	component_set = "power_core"
+	size_restriction = { corvette crisis_corvette }
+	upgrades_to = "ROGUE_SUPER_REACTOR_CORE_Corvette"
+
+	ai_weight = {
+		weight = 66
+	}
+}
+
+utility_component_template = {
+	key = "SUPREMACY_REACTOR_CORE_Destroyer"
+	size = small
+	icon = "event_horizon_dark_matter_reactor"
+	icon_frame = 1
+	power = 500
+	
+		modifier = {
+		ship_jumpdrive_cooldown_mult = -0.25
+		ship_ftl_jumpdrive_range_mult = 0.25
+		ship_emergency_ftl_min_days_mult = -0.2
+	}
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 60
+			nanites = 8
+			sr_dark_matter = 8
+			rare_crystals = 1.1
+			exotic_gases = 1.1
+			volatile_motes = 0.6
+		}
+		upkeep = {
+			energy = 0.8
+			alloys = 0.08
+			nanites = 0.14
+			sr_dark_matter = 0.26
+		}
+	}
+
+	prerequisites = { "tech_supremacy_horizon_core" }
+	component_set = "power_core"
+	size_restriction = { destroyer crisis_destroyer }
+	upgrades_to = "ROGUE_SUPER_REACTOR_CORE_Destroyer"
+
+	ai_weight = {
+		weight = 66
+	}
+}
+
+utility_component_template = {
+	key = "SUPREMACY_REACTOR_CORE_Cruiser"
+	size = small
+	icon = "event_horizon_dark_matter_reactor"
+	icon_frame = 1
+	power = 1000
+	
+		modifier = {
+		ship_jumpdrive_cooldown_mult = -0.25
+		ship_ftl_jumpdrive_range_mult = 0.25
+		ship_emergency_ftl_min_days_mult = -0.2
+	}
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 160
+			nanites = 11
+			sr_dark_matter = 12
+			rare_crystals = 1.2
+			exotic_gases = 1.2
+			volatile_motes = 0.6
+		}
+		upkeep = {
+			energy = 1.5
+			alloys = 0.16
+			nanites = 0.18
+			sr_dark_matter = 0.32
+		}
+	}
+
+	prerequisites = { "tech_supremacy_horizon_core" }
+	component_set = "power_core"
+	size_restriction = { cruiser crisis_cruiser }
+	upgrades_to = "ROGUE_SUPER_REACTOR_CORE_Cruiser"
+
+	ai_weight = {
+		weight = 66
+	}
+}
+
+utility_component_template = {
+	key = "SUPREMACY_REACTOR_CORE_Battleship"
+	size = small
+	icon = "event_horizon_dark_matter_reactor"
+	icon_frame = 1
+	power = 1800
+	
+		modifier = {
+		ship_jumpdrive_cooldown_mult = -0.25
+		ship_ftl_jumpdrive_range_mult = 0.25
+		ship_emergency_ftl_min_days_mult = -0.2
+	}
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 320
+			nanites = 22
+			sr_dark_matter = 16
+			rare_crystals = 1.2
+			exotic_gases = 1.2
+			volatile_motes = 0.6
+		}
+		upkeep = {
+			energy = 3
+			alloys = 0.33
+			nanites = 0.22
+			sr_dark_matter = 0.36
+		}
+	}
+
+	prerequisites = { "tech_supremacy_horizon_core" }
+	component_set = "power_core"
+	size_restriction = { battleship crisis_battleship }
+	upgrades_to = "ROGUE_SUPER_REACTOR_CORE_Battleship"
+
+	ai_weight = {
+		weight = 66
+	}
+}
+
+utility_component_template = {
+	key = "SUPREMACY_REACTOR_CORE_Titan"
+	size = small
+	icon = "event_horizon_dark_matter_reactor"
+	icon_frame = 1
+	power = 4000
+	
+		modifier = {
+		ship_jumpdrive_cooldown_mult = -0.25
+		ship_ftl_jumpdrive_range_mult = 0.25
+		ship_emergency_ftl_min_days_mult = -0.2
+	}
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 700
+			nanites = 33
+			sr_dark_matter = 22
+			rare_crystals = 1.5
+			exotic_gases = 1.4
+			volatile_motes = 1
+		}
+		upkeep = {
+			energy = 6
+			alloys = 0.7
+			nanites = 0.26
+			sr_dark_matter = 0.4
+		}
+	}
+
+	prerequisites = { "tech_supremacy_horizon_core" }
+	component_set = "power_core"
+	size_restriction = { titan crisis_titan }
+	upgrades_to = "ROGUE_SUPER_REACTOR_CORE_Titan"
+
+	ai_weight = {
+		weight = 66
+	}
+}
+
+utility_component_template = {
+	key = "SUPREMACY_REACTOR_CORE_Plattform"
+	size = large
+	icon = "event_horizon_dark_matter_reactor"
+	icon_frame = 1
+	power = 800
+	
+		modifier = {
+		ship_shield_add = 300
+		ship_shield_mult = 0.1
+		ship_shield_regen_add_perc = 1
+	}
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 750
+			nanites = 12
+			sr_dark_matter = 6
+			rare_crystals = 2
+			exotic_gases = 3
+			volatile_motes = 1
+		}
+		upkeep = {
+			energy = 0.4
+			alloys = 0.13
+			nanites = 0.2
+			sr_dark_matter = 0.25
+		}
+	}
+
+	prerequisites = { "tech_supremacy_horizon_core" }
+	component_set = "power_core"
+	class_restriction = { shipclass_military_station ion_cannon }
+	size_restriction = {
+		military_station_small
+		military_station_medium
+		military_station_large
+		ion_cannon
+	}
+	upgrades_to = "ROGUE_SUPER_REACTOR_CORE_Plattform"
+
+	ai_weight = {
+		weight = 66
+	}
+}
+
+utility_component_template = {
+	key = "SUPREMACY_REACTOR_CORE_XXL"
+	size = large
+	icon = "event_horizon_dark_matter_reactor"
+	icon_frame = 1
+	power = 6000
+	
+		modifier = {
+		ship_shield_add = 300
+		ship_shield_mult = 0.15
+		ship_shield_regen_add_perc = 1
+	}
+	
+	prerequisites = { "tech_supremacy_horizon_core" }
+	component_set = "power_core"
+	class_restriction = { shipclass_starbase }
+	size_restriction = {
+		starbase_outpost
+		starbase_starport
+		starbase_starhold
+		starbase_starfortress
+		starbase_citadel
+	}
+	upgrades_to = "ROGUE_SUPER_REACTOR_CORE_XXL"
+
+	ai_weight = {
+		weight = 66
+	}
+}
+
+
+utility_component_template = {
+	key = "SUPREMACY_REACTOR_CORE_Juggs"
+	size = large
+	icon = "event_horizon_dark_matter_reactor"
+	icon_frame = 1
+	power = 6000
+	
+		modifier = {
+		ship_jumpdrive_cooldown_mult = -0.25
+		ship_ftl_jumpdrive_range_mult = 0.25
+		ship_emergency_ftl_min_days_mult = -0.2
+	}
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 1200
+			nanites = 44
+			sr_dark_matter = 50
+			rare_crystals = 4
+			exotic_gases = 10
+			volatile_motes = 5
+		}
+		upkeep = {
+			energy = 0.4
+			alloys = 0.13
+			nanites = 0.2
+			sr_dark_matter = 0.4
+			rare_crystals = 0.2
+			exotic_gases = 0.1
+			volatile_motes = 0.1
+		}
+	}
+
+	prerequisites = { "tech_supremacy_horizon_core" }
+	component_set = "power_core"
+	class_restriction = { shipclass_starbase }
+	size_restriction = {
+		colossus juggernaut star_eater
+	}
+	upgrades_to = "ROGUE_SUPER_REACTOR_CORE_Juggs"
+
+	ai_weight = {
+		weight = 66
+	}
+}
+
+########################
+# Rogue Reactors
+########################
+
+utility_component_template = {
+	key = "ROGUE_SUPER_REACTOR_CORE_Corvette"
+	size = small
+	icon = "Chronoton_Reactor_Core"
+	icon_frame = 1
+	power = 330
+	
+		modifier = {
+		ship_jumpdrive_cooldown_mult = -0.25
+		ship_ftl_jumpdrive_range_mult = 0.3
+		ship_emergency_ftl_min_days_mult = -0.2
+	}
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 40
+			nanites = 3
+			sr_dark_matter = 9
+			rare_crystals = 1
+			exotic_gases = 1
+			volatile_motes = 0.5
+		}
+		upkeep = {
+			energy = 0.4
+			alloys = 0.04
+			nanites = 0.1
+			sr_dark_matter = 0.3
+		}
+	}
+
+	prerequisites = { "tech_rogue_elerium_core" }
+	component_set = "power_core"
+	size_restriction = { corvette crisis_corvette }
+
+	ai_weight = {
+		weight = 66
+	}
+}
+
+utility_component_template = {
+	key = "ROGUE_SUPER_REACTOR_CORE_Destroyer"
+	size = small
+	icon = "Chronoton_Reactor_Core"
+	icon_frame = 1
+	power = 650
+	
+		modifier = {
+		ship_jumpdrive_cooldown_mult = -0.25
+		ship_ftl_jumpdrive_range_mult = 0.3
+		ship_emergency_ftl_min_days_mult = -0.2
+	}
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 60
+			nanites = 8
+			sr_dark_matter = 11
+			rare_crystals = 1.1
+			exotic_gases = 1.1
+			volatile_motes = 0.6
+		}
+		upkeep = {
+			energy = 0.8
+			alloys = 0.08
+			nanites = 0.14
+			sr_dark_matter = 0.4
+		}
+	}
+
+	prerequisites = { "tech_rogue_elerium_core" }
+	component_set = "power_core"
+	size_restriction = { destroyer crisis_destroyer }
+
+	ai_weight = {
+		weight = 66
+	}
+}
+
+utility_component_template = {
+	key = "ROGUE_SUPER_REACTOR_CORE_Cruiser"
+	size = small
+	icon = "Chronoton_Reactor_Core"
+	icon_frame = 1
+	power = 1300
+	
+		modifier = {
+		ship_jumpdrive_cooldown_mult = -0.25
+		ship_ftl_jumpdrive_range_mult = 0.3
+		ship_emergency_ftl_min_days_mult = -0.2
+	}
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 160
+			nanites = 11
+			sr_dark_matter = 16
+			rare_crystals = 1.2
+			exotic_gases = 1.2
+			volatile_motes = 0.6
+		}
+		upkeep = {
+			energy = 1.5
+			alloys = 0.16
+			nanites = 0.18
+			sr_dark_matter = 0.5
+		}
+	}
+
+	prerequisites = { "tech_rogue_elerium_core" }
+	component_set = "power_core"
+	size_restriction = { cruiser crisis_cruiser }
+
+	ai_weight = {
+		weight = 66
+	}
+}
+
+utility_component_template = {
+	key = "ROGUE_SUPER_REACTOR_CORE_Battleship"
+	size = small
+	icon = "Chronoton_Reactor_Core"
+	icon_frame = 1
+	power = 2200
+	
+		modifier = {
+		ship_jumpdrive_cooldown_mult = -0.25
+		ship_ftl_jumpdrive_range_mult = 0.3
+		ship_emergency_ftl_min_days_mult = -0.2
+	}
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 320
+			nanites = 22
+			sr_dark_matter = 20
+			rare_crystals = 1.2
+			exotic_gases = 1.2
+			volatile_motes = 0.6
+		}
+		upkeep = {
+			energy = 3
+			alloys = 0.33
+			nanites = 0.22
+			sr_dark_matter = 0.6
+		}
+	}
+
+	prerequisites = { "tech_rogue_elerium_core" }
+	component_set = "power_core"
+	size_restriction = { battleship crisis_battleship }
+
+	ai_weight = {
+		weight = 66
+	}
+}
+
+utility_component_template = {
+	key = "ROGUE_SUPER_REACTOR_CORE_Titan"
+	size = small
+	icon = "Chronoton_Reactor_Core"
+	icon_frame = 1
+	power = 4500
+	
+		modifier = {
+		ship_jumpdrive_cooldown_mult = -0.25
+		ship_ftl_jumpdrive_range_mult = 0.3
+		ship_emergency_ftl_min_days_mult = -0.2
+	}
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 700
+			nanites = 33
+			sr_dark_matter = 28
+			rare_crystals = 1.5
+			exotic_gases = 1.4
+			volatile_motes = 1
+		}
+		upkeep = {
+			energy = 6
+			alloys = 0.7
+			nanites = 0.26
+			sr_dark_matter = 0.7
+		}
+	}
+
+	prerequisites = { "tech_rogue_elerium_core" }
+	component_set = "power_core"
+	size_restriction = { titan crisis_titan }
+
+	ai_weight = {
+		weight = 66
+	}
+}
+
+utility_component_template = {
+	key = "ROGUE_SUPER_REACTOR_CORE_Plattform"
+	size = large
+	icon = "Chronoton_Reactor_Core"
+	icon_frame = 1
+	power = 1000
+	
+		modifier = {
+		ship_shield_add = 500
+		ship_shield_mult = 0.1
+		ship_shield_regen_add_perc = 1
+	}
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 750
+			nanites = 12
+			sr_dark_matter = 9
+			rare_crystals = 2
+			exotic_gases = 3
+			volatile_motes = 1
+		}
+		upkeep = {
+			energy = 0.4
+			alloys = 0.13
+			nanites = 0.2
+			sr_dark_matter = 0.3
+		}
+	}
+
+	prerequisites = { "tech_rogue_elerium_core" }
+	component_set = "power_core"
+	class_restriction = { shipclass_military_station ion_cannon }
+	size_restriction = {
+		military_station_small
+		military_station_medium
+		military_station_large
+		ion_cannon
+	}
+
+	ai_weight = {
+		weight = 66
+	}
+}
+
+utility_component_template = {
+	key = "ROGUE_SUPER_REACTOR_CORE_XXL"
+	size = large
+	icon = "Chronoton_Reactor_Core"
+	icon_frame = 1
+	power = 7000
+	
+		modifier = {
+		ship_shield_add = 600
+		ship_shield_mult = 0.15
+		ship_shield_regen_add_perc = 1
+	}
+	
+	prerequisites = { "tech_rogue_elerium_core" }
+	component_set = "power_core"
+	class_restriction = { shipclass_starbase }
+	size_restriction = {
+		starbase_outpost
+		starbase_starport
+		starbase_starhold
+		starbase_starfortress
+		starbase_citadel
+	}
+
+	ai_weight = {
+		weight = 66
+	}
+}
+
+
+utility_component_template = {
+	key = "ROGUE_SUPER_REACTOR_CORE_Juggs"
+	size = large
+	icon = "Chronoton_Reactor_Core"
+	icon_frame = 1
+	power = 7000
+	
+		modifier = {
+		ship_jumpdrive_cooldown_mult = -0.25
+		ship_ftl_jumpdrive_range_mult = 0.3
+		ship_emergency_ftl_min_days_mult = -0.2
+	}
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 1200
+			nanites = 44
+			sr_dark_matter = 60
+			rare_crystals = 4
+			exotic_gases = 10
+			volatile_motes = 5
+		}
+		upkeep = {
+			energy = 0.4
+			alloys = 0.13
+			nanites = 0.2
+			sr_dark_matter = 0.8
+			rare_crystals = 0.2
+			exotic_gases = 0.1
+			volatile_motes = 0.1
+		}
+	}
+
+	prerequisites = { "tech_rogue_elerium_core" }
+	component_set = "power_core"
+	class_restriction = { shipclass_starbase }
+	size_restriction = {
+		colossus juggernaut star_eater
+	}
+
+	ai_weight = {
+		weight = 66
+	}
+}

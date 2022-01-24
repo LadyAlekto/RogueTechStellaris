@@ -1,0 +1,66 @@
+
+	spriteTypes = {
+	
+	spriteType = {
+		name = "supremacy_dark_matter_core"
+		texturefile = "gfx/interface/icons/modules/supremacy_dark_matter_core.dds"
+	}
+			
+		spriteType = {
+		name = "GFX_Supremacy_SpaceMines"
+		texturefile = "gfx/interface/icons/modules/space_mines_purple.dds"
+	}
+
+  spriteType = {
+		name = "GFX_supremacy_gun_battery"
+		texturefile = "gfx/interface/icons/modules/spaceport_module_mg_purple.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_supremacy_hangar_bay"
+		texturefile = "gfx/interface/icons/modules/sb_hangar_bay_purple.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_supremacy_missile_battery"
+		texturefile = "gfx/interface/icons/modules/sb_missile_battery_purple.dds"
+	}
+	
+	spriteType = {
+		name = "supremacy_orbital_administration"
+		texturefile = "gfx/interface/icons/modules/sb_command_center_purple.dds"
+	}
+
+  spriteType = {
+		name = "supremacy_maintenance_drones"
+		texturefile = "gfx/interface/icons/modules/spaceport_module_reinforced_hull_layers_purple.dds"
+	}
+	
+	spriteType = {
+		name = "supremacy_shipyard"
+		texturefile = "gfx/interface/icons/modules/sb_shipyard_purple.dds"
+	}
+	
+	spriteType = {
+		name = "supremacy_science_quarters"
+		texturefile = "gfx/interface/icons/modules/spaceport_module_repair_bay_purple.dds"
+	}
+	
+	spriteType = {
+		name = "supremacy_starbase_orbital_alloy_refineries"
+		texturefile = "gfx/interface/icons/modules/supremacy_starbase_orbital_alloy_refineries.dds"
+	}
+	spriteType = {
+		name = "supremacy_starbase_orbital_mineral_refineries"
+		texturefile = "gfx/interface/icons/modules/supremacy_starbase_orbital_mineral_refineries.dds"
+	}
+	spriteType = {
+		name = "supremacy_starbase_orbital_energy_refineries"
+		texturefile = "gfx/interface/icons/modules/supremacy_starbase_orbital_energy_refineries.dds"
+	}
+	spriteType = {
+		name = "supremacy_starbase_orbital_food_refineries"
+		texturefile = "gfx/interface/icons/modules/supremacy_starbase_orbital_food_refineries.dds"
+	}
+	
+	}

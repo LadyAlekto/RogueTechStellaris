@@ -1,0 +1,291 @@
+supremacy_gun_battery = {
+	section = "SUPREMACY_BATTERY_STARBASE_SECTION"
+	icon = "GFX_supremacy_gun_battery"
+	construction_days = 180
+
+	resources = {
+		category = starbase_modules
+		cost = {
+			alloys = 100
+			sr_dark_matter = 20
+			nanites = 50
+			sr_living_metal = 50
+		}
+
+		upkeep = {
+			energy = 10
+			sr_dark_matter = 1
+			nanites = 1
+			sr_living_metal = 1
+		}
+	}
+
+	station_modifier = {
+		ship_hull_mult = 0.1
+		ship_armor_mult = 0.1
+		ship_shield_mult = 0.1
+		ship_hull_regen_add_perc = 0.01
+		ship_armor_regen_add_perc = 0.01
+		ship_shield_regen_add_perc = 0.01
+		starbase_trade_protection_range_add = 2
+		starbase_trade_protection_add = 10
+	}
+
+	ai_build_at_chokepoint = yes
+	ai_build_outside_chokepoint = no
+	ai_weight = {
+		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		modifier = {
+			factor = 2
+			exists = owner
+			owner = {
+				OR = {
+					is_preferred_weapons = weapon_type_energy
+					is_preferred_weapons = weapon_type_kinetic
+				}
+			}
+		}
+	}
+
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_space_defense_station_improvement }
+	}
+	
+	show_in_tech = "tech_space_defense_station_improvement"
+}
+
+supremacy_missile_battery = {
+	section = "SUPREMACY_MISSILE_STARBASE_SECTION"
+	icon = "GFX_supremacy_missile_battery"
+	construction_days = 180
+
+	resources = {
+		category = starbase_modules
+		cost = {
+			alloys = 100
+			sr_dark_matter = 20
+			nanites = 50
+			sr_living_metal = 50
+		}
+
+		upkeep = {
+			energy = 10
+			sr_dark_matter = 1
+			nanites = 1
+			sr_living_metal = 1
+		}
+	}
+
+	station_modifier = {
+		ship_hull_mult = 0.1
+		ship_armor_mult = 0.1
+		ship_shield_mult = 0.1
+		ship_hull_regen_add_perc = 0.01
+		ship_armor_regen_add_perc = 0.01
+		ship_shield_regen_add_perc = 0.01
+		starbase_trade_protection_range_add = 2
+		starbase_trade_protection_add = 10
+	}
+
+	ai_build_at_chokepoint = yes
+	ai_build_outside_chokepoint = no
+	ai_weight = {
+		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		modifier = {
+			factor = 2
+			exists = owner
+			owner = { is_preferred_weapons = weapon_type_explosive }
+		}
+	}
+
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_space_defense_station_improvement }
+	}
+	
+	show_in_tech = "tech_space_defense_station_improvement"
+}
+
+supremacy_hangar_bay = {
+	icon = "GFX_supremacy_hangar_bay"
+	section = "SUPREMACY_HANGAR_STARBASE_SECTION"
+	construction_days = 180
+
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_strike_craft_1 }
+	}
+
+	resources = {
+		category = starbase_modules
+		cost = {
+			alloys = 100
+			sr_dark_matter = 20
+			nanites = 50
+			sr_living_metal = 50
+		}
+
+		upkeep = {
+			energy = 10
+			sr_dark_matter = 1
+			nanites = 1
+			sr_living_metal = 1
+		}
+	}
+
+	station_modifier = {
+		ship_hull_mult = 0.05
+		ship_armor_mult = 0.05
+		ship_shield_mult = 0.05
+		starbase_trade_protection_range_add = 3
+		starbase_trade_protection_add = 15
+	}
+
+	ai_build_outside_chokepoint = yes
+	ai_weight = {
+		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		modifier = {
+			factor = 2
+			exists = owner
+			owner = { is_preferred_weapons = weapon_type_strike_craft }
+		}
+	}
+
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_space_defense_station_improvement }
+	}
+	
+	show_in_tech = "tech_space_defense_station_improvement"
+}
+
+supremacy_starbase_orbital_mineral_refineries = {
+	icon = "supremacy_starbase_orbital_mineral_refineries"
+	section = "REFINERY_STARBASE_SECTION"
+	construction_days = 180
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_mineral_purification_1 }
+	}
+	
+	show_in_tech = "tech_mineral_purification_1"
+
+	resources = {
+		category = starbase_modules
+		cost = {
+			alloys = 75
+			energy = 25
+		}
+
+		produces = {
+			minerals = 5
+		}
+
+		upkeep = {
+			energy = 1.5
+		}
+	}
+	
+	system_modifier = {
+		planet_jobs_minerals_produces_mult = 0.1
+		station_gatherers_minerals_produces_mult = 0.1
+	}
+}
+
+supremacy_starbase_orbital_energy_refineries = {
+	icon = "supremacy_starbase_orbital_energy_refineries"
+	section = "REFINERY_STARBASE_SECTION"
+	construction_days = 180
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_power_hub_1 }
+	}
+	
+	show_in_tech = "tech_power_hub_1"
+
+
+	resources = {
+		category = starbase_modules
+		cost = {
+			alloys = 75
+			energy = 25
+		}
+
+		produces = {
+			energy = 5
+		}
+	}
+
+	system_modifier = {
+		planet_jobs_energy_produces_mult = 0.1
+		station_gatherers_energy_produces_mult = 0.1
+	}
+}
+
+supremacy_starbase_orbital_food_refineries = {
+	icon = "supremacy_starbase_orbital_food_refineries"
+	section = "REFINERY_STARBASE_SECTION"
+	construction_days = 180
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_food_processing_1 }
+	}
+
+	show_in_tech = "tech_food_processing_1"
+
+	resources = {
+		category = starbase_modules
+		cost = {
+			alloys = 75
+			energy = 25
+		}
+
+		produces = {
+			food = 5
+		}
+
+		upkeep = {
+			energy = 1.5
+		}
+	}
+
+	system_modifier = {
+		planet_jobs_food_produces_mult = 0.1
+		station_gatherers_food_produces_mult = 0.1
+	}
+}
+
+supremacy_starbase_orbital_alloy_refineries = {
+	icon = "supremacy_starbase_orbital_alloy_refineries"
+	section = "REFINERY_STARBASE_SECTION"
+	construction_days = 180
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_alloys_1 }
+	}
+	
+	show_in_tech = "tech_alloys_1"
+
+	resources = {
+		category = starbase_modules
+		cost = {
+			alloys = 75
+			energy = 25
+		}
+
+		produces = {
+			alloys = 5
+		}
+
+		upkeep = {
+			minerals = 10
+			energy = 5
+		}
+	}
+
+	system_modifier = {
+		planet_jobs_alloys_produces_mult = 0.1
+		station_gatherers_alloys_produces_mult = 0.1
+	}
+}

@@ -1,0 +1,183 @@
+utility_component_template = {
+	key = "Rogue_Basic_Hull_XL"
+	size = small
+	icon = "Rogue_Basic_Hull"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special ion_cannon shipclass_military_station }
+	size_restriction = { marauder_galleon crisis_battleship battleship starbase_starfortress colossus RT_NEMESIS_PLATTFORM_CANNON ion_cannon }
+
+	component_set = "Rogue_Defense_Hull"
+	upgrades_to = "Rogue_Organic_Hull_XL"
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Organic_Hull_XL"
+	size = small
+	icon = "Rogue_Organic_Hull"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special ion_cannon shipclass_military_station }
+	size_restriction = { marauder_galleon crisis_battleship battleship starbase_starfortress colossus RT_NEMESIS_PLATTFORM_CANNON ion_cannon }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			food = 1
+		}
+		upkeep = {
+			food = 0.1
+		}
+	}
+
+	prerequisites = { "tech_roguetech_bio_armor_plating" }
+	component_set = "Rogue_Defense_Hull"
+	upgrades_to = "Rogue_Crystal_Hull_XL"
+
+	modifier = {
+		ship_hull_add = 660
+		ship_hull_regen_add_perc = 1
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Crystal_Hull_XL"
+	size = small
+	icon = "Rogue_Crystal_Hull"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special ion_cannon shipclass_military_station }
+	size_restriction = { marauder_galleon crisis_battleship battleship starbase_starfortress colossus RT_NEMESIS_PLATTFORM_CANNON ion_cannon }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			rare_crystals = 2
+		}
+	}
+
+	prerequisites = { "tech_crystal_armor_1" }
+	component_set = "Rogue_Defense_Hull"
+	upgrades_to = "Rogue_Crystal_Hull_MKII_XL"
+
+	modifier = {
+		ship_hull_add = 1320
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Crystal_Hull_MKII_XL"
+	size = small
+	icon = "Rogue_Crystal_Hull_MKII"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special ion_cannon shipclass_military_station }
+	size_restriction = { marauder_galleon crisis_battleship battleship starbase_starfortress colossus RT_NEMESIS_PLATTFORM_CANNON ion_cannon }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			rare_crystals = 2.6
+		}
+	}
+
+	prerequisites = { "tech_crystal_armor_2" }
+	component_set = "Rogue_Defense_Hull"
+	upgrades_to = "Rogue_Zontrium_Hull_XL"
+
+	modifier = {
+		ship_hull_add = 2220
+	}
+
+	ai_weight = {
+		weight = 3
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Zontrium_Hull_XL"
+	size = small
+	icon = "Rogue_Zontrium_Hull"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special ion_cannon shipclass_military_station }
+	size_restriction = { marauder_galleon crisis_battleship battleship starbase_starfortress colossus RT_NEMESIS_PLATTFORM_CANNON ion_cannon }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			sr_living_metal = 1.2
+			nanites = 1.2
+		}
+		upkeep = {
+			sr_living_metal = 0.06
+			nanites = 0.06
+		}
+	}
+
+	prerequisites = { "tech_roguetech_zontrium_hulls" }
+	component_set = "Rogue_Defense_Hull"
+	upgrades_to = "Rogue_Xentronium_Hull_XL"
+
+	modifier = {
+		ship_hull_add = 2600
+		ship_hull_regen_add_perc = 1
+	}
+
+	ai_weight = {
+		weight = 4
+	}
+
+}
+
+utility_component_template = {
+	key = "Rogue_Xentronium_Hull_XL"
+	size = small
+	icon = "Rogue_Xentronium_Hull"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special ion_cannon shipclass_military_station }
+	size_restriction = { marauder_galleon crisis_battleship battleship starbase_starfortress colossus RT_NEMESIS_PLATTFORM_CANNON ion_cannon }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			sr_living_metal = 2
+			nanites = 2
+		}
+		upkeep = {
+			sr_living_metal = 0.12
+			nanites = 0.12
+		}
+	}
+
+	prerequisites = { "tech_roguetech_xentronium_hulls" }
+	component_set = "Rogue_Defense_Hull"
+
+	modifier = {
+		ship_hull_add = 3000
+		ship_hull_regen_add_perc = 1.5
+	}
+
+	ai_weight = {
+		weight = 6
+	}
+}

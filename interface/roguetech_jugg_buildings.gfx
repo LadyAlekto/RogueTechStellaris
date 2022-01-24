@@ -1,0 +1,36 @@
+spriteTypes = {
+spriteType = {
+			name = "GFX_Juggernaut_building_set"
+			texturefile = "gfx/interface/icons/ship_parts/JuggBuildings/Juggernaut_building_set.dds"
+		}
+		
+	spriteType = {
+		name = "Juggernaut_Shipyard"
+		texturefile = "gfx/interface/icons/ship_parts/JuggBuildings/Juggernaut_Shipyard.dds"
+	}
+		
+	spriteType = {
+		name = "SUPREMACY_Juggernaut_Shipyard"
+		texturefile = "gfx/interface/icons/ship_parts/JuggBuildings/SUPREMACY_Juggernaut_Shipyard.dds"
+	}
+	
+	spriteType = {
+		name = "SUPREMACY_Juggernaut_Engines"
+		texturefile = "gfx/interface/icons/ship_parts/JuggBuildings/SUPREMACY_Juggernaut_Engines.dds"
+	}
+	
+	spriteType = {
+		name = "SUPREMACY_Juggernaut_Defenses"
+		texturefile = "gfx/interface/icons/ship_parts/JuggBuildings/SUPREMACY_Juggernaut_Defenses.dds"
+	}
+	
+	spriteType = {
+		name = "SUPREMACY_Juggernaut_batteries"
+		texturefile = "gfx/interface/icons/ship_parts/JuggBuildings/SUPREMACY_Juggernaut_batteries.dds"
+	}
+	
+	spriteType = {
+		name = "SUPREMACY_Juggernaut_minefield"
+		texturefile = "gfx/interface/icons/ship_parts/JuggBuildings/SUPREMACY_Juggernaut_minefield.dds"
+	}
+}

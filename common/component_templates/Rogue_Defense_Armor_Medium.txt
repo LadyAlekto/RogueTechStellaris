@@ -1,0 +1,306 @@
+utility_component_template = {
+	key = "Rogue_Basic_Armor_MEDIUM"
+	size = small
+	icon = "Rogue_Basic_Armor"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_station  }
+	size_restriction = { marauder_destroyer destroyer crisis_destroyer military_station_small starbase_starport }
+
+	component_set = "Rogue_Defense_Armor"
+	upgrades_to = "Rogue_Armor_Nanocomposite_MEDIUM"
+	
+	modifier = {
+		ship_shield_mult = 0.1
+		ship_hull_mult = 0.1
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Armor_Nanocomposite_MEDIUM"
+	size = small
+	icon = "Rogue_Armor_Nanocomposite"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_station  }
+	size_restriction = { marauder_destroyer destroyer crisis_destroyer military_station_small starbase_starport }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+		}
+		upkeep = {
+			energy = 0.2
+			alloys = 0.04
+		}
+	}
+
+	prerequisites = { "tech_ship_armor_1" }
+	component_set = "Rogue_Defense_Armor"
+	upgrades_to = "Rogue_Armor_Ceramo_MEDIUM"
+
+	modifier = {
+		ship_armor_add = 100
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Armor_Ceramo_MEDIUM"
+	size = small
+	icon = "Rogue_Armor_Ceramo"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_station  }
+	size_restriction = { marauder_destroyer destroyer crisis_destroyer military_station_small starbase_starport }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 26
+		}
+		upkeep = {
+			energy = 0.26
+			alloys = 0.052
+		}
+	}
+
+	prerequisites = { "tech_ship_armor_2" }
+	component_set = "Rogue_Defense_Armor"
+	upgrades_to = "Rogue_Armor_Plasteel_MEDIUM"
+
+	modifier = {
+		ship_armor_add = 130
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Armor_Plasteel_MEDIUM"
+	size = small
+	icon = "Rogue_Armor_Plasteel"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_station  }
+	size_restriction = { marauder_destroyer destroyer crisis_destroyer military_station_small starbase_starport }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 34
+		}
+		upkeep = {
+			energy = 0.34
+			alloys = 0.68
+		}
+	}
+
+	prerequisites = { "tech_ship_armor_3" }
+	component_set = "Rogue_Defense_Armor"
+	upgrades_to = "Rogue_Armor_Durasteel_MEDIUM"
+
+	modifier = {
+		ship_armor_add = 170
+	}
+
+	ai_weight = {
+		weight = 3
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Armor_Durasteel_MEDIUM"
+	size = small
+	icon = "Rogue_Armor_Durasteel"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_station  }
+	size_restriction = { marauder_destroyer destroyer crisis_destroyer military_station_small starbase_starport }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 34
+		}
+		upkeep = {
+			energy = 0.34
+			alloys = 0.068
+		}
+	}
+
+	prerequisites = { "tech_ship_armor_4" }
+	component_set = "Rogue_Defense_Armor"
+	upgrades_to = "Rogue_Armor_Neutronium_MEDIUM"
+
+	modifier = {
+		ship_armor_add = 220
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = rare_crystals }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Armor_Neutronium_MEDIUM"
+	size = small
+	icon = "Rogue_Armor_Neutronium"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_station  }
+	size_restriction = { marauder_destroyer destroyer crisis_destroyer military_station_small starbase_starport }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 44
+		}
+		upkeep = {
+			energy = 0.44
+			alloys = 0.088
+		}
+	}
+
+	prerequisites = { "tech_ship_armor_5" }
+	component_set = "Rogue_Defense_Armor"
+	upgrades_to = "Rogue_Armor_Adamantium_MEDIUM"
+
+	modifier = {
+		ship_armor_add = 290
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+utility_component_template = {
+	key = "Rogue_Armor_Adamantium_MEDIUM"
+	size = small
+	icon = "Rogue_Armor_Adamantium"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_station  }
+	size_restriction = { marauder_destroyer destroyer crisis_destroyer military_station_small starbase_starport }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 50
+			sr_living_metal = 0.4
+			nanites = 0.4
+		}
+		upkeep = {
+			energy = 0.44
+			alloys = 0.088
+			sr_living_metal = 0.02
+			nanites = 0.02
+		}
+	}
+
+	prerequisites = { "tech_roguetech_adamantium_armor" }
+	component_set = "Rogue_Defense_Armor"
+	upgrades_to = "Rogue_Armor_Dragonscales_MEDIUM"
+
+	modifier = {
+		ship_armor_add = 320
+		ship_armor_regen_add_perc = 1
+	}
+
+	ai_weight = {
+		weight = 6
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Armor_Dragonscales_MEDIUM"
+	size = small
+	icon = "Rogue_Armor_Dragonscales"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_station  }
+	size_restriction = { marauder_destroyer destroyer crisis_destroyer military_station_small starbase_starport }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 58
+		}
+		upkeep = {
+			energy = 0.58
+			alloys = 0.116
+		}
+	}
+
+	prerequisites = { "tech_dragon_armor" }
+	component_set = "Rogue_Defense_Armor"
+	upgrades_to = "Rogue_Armor_AdamtiumScales_MEDIUM"
+
+	modifier = {
+		ship_armor_add = 370
+	}
+
+	ai_weight = {
+		weight = 7
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Armor_AdamtiumScales_MEDIUM"
+	size = small
+	icon = "Rogue_Armor_AdamtiumScales"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_station  }
+	size_restriction = { marauder_destroyer destroyer crisis_destroyer military_station_small starbase_starport }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 66
+			sr_living_metal = 0.66
+			nanites = 0.66
+		}
+		upkeep = {
+			energy = 0.58
+			alloys = 0.116
+			sr_living_metal = 0.04
+			nanites = 0.04
+		}
+	}
+
+	prerequisites = { "tech_roguetech_adamantium_scales" }
+	component_set = "Rogue_Defense_Armor"
+
+	modifier = {
+		ship_armor_add = 400
+		ship_armor_regen_add_perc = 1.5
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+}

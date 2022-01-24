@@ -1,0 +1,379 @@
+utility_component_template = {
+	key = "Rogue_Basic_Shield_LARGE"
+	size = small
+	icon = "Rogue_Basic_Shield"
+	icon_frame = 1
+	power = -0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_station  }
+	size_restriction = { marauder_cruiser cruiser crisis_cruiser starbase_starhold RT_NEMESIS_PLATTFORM }
+
+	component_set = "Rogue_Defense_Shield"
+	upgrades_to = "Rogue_Shield_Deflector_LARGE"
+	
+	modifier = {
+		ship_armor_mult = 0.15
+		ship_hull_mult = 0.15
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Shield_Deflector_LARGE"
+	size = small
+	icon = "Rogue_Shield_Deflector"
+	icon_frame = 1
+	power = -78
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_station  }
+	size_restriction = { marauder_cruiser cruiser crisis_cruiser starbase_starhold RT_NEMESIS_PLATTFORM }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 26
+		}
+		upkeep = {
+			energy = 0.26
+			alloys = 0.052
+		}
+	}
+
+	prerequisites = { "tech_shields_1" }
+	component_set = "Rogue_Defense_Shield"
+	upgrades_to = "Rogue_Shield_ImpDeflector_LARGE"
+
+	modifier = {
+		ship_shield_add = 325
+		ship_shield_regen_add_perc = 1.4
+	}
+	
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Shield_ImpDeflector_LARGE"
+	size = small
+	icon = "Rogue_Shield_ImpDeflector"
+	icon_frame = 1
+	power = -104
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_station  }
+	size_restriction = { marauder_cruiser cruiser crisis_cruiser starbase_starhold RT_NEMESIS_PLATTFORM }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 33.8
+		}
+		upkeep = {
+			energy = 0.338
+			alloys = 0.0676
+		}
+	}
+
+	prerequisites = { "tech_shields_2" }
+	component_set = "Rogue_Defense_Shield"
+	upgrades_to = "Rogue_Shield_Shields_LARGE"
+
+	modifier = {
+		ship_shield_add = 416
+		ship_shield_regen_add_perc = 1.4
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Shield_Shields_LARGE"
+	size = small
+	icon = "Rogue_Shield_Shields"
+	icon_frame = 1
+	power = -130
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_station  }
+	size_restriction = { marauder_cruiser cruiser crisis_cruiser starbase_starhold RT_NEMESIS_PLATTFORM }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 44.2
+		}
+		upkeep = {
+			energy = 0.442
+			alloys = 0.0884
+		}
+	}
+
+	prerequisites = { "tech_shields_3" }
+	component_set = "Rogue_Defense_Shield"
+	upgrades_to = "Rogue_Shield_AdvShields_LARGE"
+
+	modifier = {
+		ship_shield_add = 559
+		ship_shield_regen_add_perc = 1.4
+	}
+
+	ai_weight = {
+		weight = 3
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Shield_AdvShields_LARGE"
+	size = small
+	icon = "Rogue_Shield_AdvShields"
+	icon_frame = 1
+	power = -182
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_station  }
+	size_restriction = { marauder_cruiser cruiser crisis_cruiser starbase_starhold RT_NEMESIS_PLATTFORM }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 44.2
+			exotic_gases = 1.3
+		}
+		upkeep = {
+			energy = 0.442
+			alloys = 0.0884
+		}
+	}
+
+	prerequisites = { "tech_shields_4" }
+	component_set = "Rogue_Defense_Shield"
+	upgrades_to = "Rogue_Shield_HyperShield_LARGE"
+
+	modifier = {
+		ship_shield_add = 715
+		ship_shield_regen_add_perc = 1.4
+	}
+
+	ai_weight = {
+		weight = 4
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Shield_HyperShield_LARGE"
+	size = small
+	icon = "Rogue_Shield_HyperShield"
+	icon_frame = 1
+	power = -234
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_station  }
+	size_restriction = { marauder_cruiser cruiser crisis_cruiser starbase_starhold RT_NEMESIS_PLATTFORM }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 57.2
+			exotic_gases = 1.7316
+		}
+		upkeep = {
+			energy = 0.572
+			alloys = 0.1144
+		}
+	}
+
+	prerequisites = { "tech_shields_5" }
+	component_set = "Rogue_Defense_Shield"
+	upgrades_to = "Rogue_Shield_DarkMatter_LARGE"
+
+	modifier = {
+		ship_shield_add = 949
+		ship_shield_regen_add_perc = 1.4
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Shield_DarkMatter_LARGE"
+	size = small
+	icon = "Rogue_Shield_DarkMatter"
+	icon_frame = 1
+	power = -286
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_station  }
+	size_restriction = { marauder_cruiser cruiser crisis_cruiser starbase_starhold RT_NEMESIS_PLATTFORM }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 75.4
+			sr_dark_matter = 1.3
+		}
+		upkeep = {
+			energy = 0.754
+			alloys = 0.1508
+		}
+	}
+
+	prerequisites = { "tech_dark_matter_deflector" }
+	component_set = "Rogue_Defense_Shield"
+	upgrades_to = "Rogue_Shield_PsiBarrier_LARGE"
+
+	modifier = {
+		ship_shield_add = 1209
+		ship_shield_regen_add_perc = 1.4
+	}
+
+	ai_weight = {
+		weight = 6
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Shield_PsiBarrier_LARGE"
+	size = small
+	icon = "Rogue_Shield_PsiBarrier"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_station  }
+	size_restriction = { marauder_cruiser cruiser crisis_cruiser starbase_starhold RT_NEMESIS_PLATTFORM }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 33.8
+		}
+		upkeep = {
+			alloys = 0.0676
+		}
+	}
+
+	prerequisites = { "tech_psionic_barrier" }
+	component_set = "Rogue_Defense_Shield"
+	upgrades_to = "Rogue_Shield_Scalar_LARGE"
+
+	modifier = {
+		ship_shield_add = 416
+		ship_shield_regen_add_perc = 1.4
+	}
+
+	ai_weight = {
+		weight = 8
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Shield_Scalar_LARGE"
+	size = small
+	icon = "Rogue_Shield_Scalar"
+	icon_frame = 1
+	power = -338
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_station  }
+	size_restriction = { marauder_cruiser cruiser crisis_cruiser starbase_starhold RT_NEMESIS_PLATTFORM }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 85.8
+			sr_dark_matter = 1.716
+		}
+		upkeep = {
+			energy = 0.754
+			alloys = 0.1508
+			sr_dark_matter = 0.104
+		}
+	}
+
+	prerequisites = { "tech_roguetech_scalar_energy_fields" }
+	component_set = "Rogue_Defense_Shield"
+	upgrades_to = "Rogue_Shield_PsiShields_LARGE"
+
+	modifier = {
+		ship_shield_add = 1300
+		ship_shield_regen_add_perc = 1.4
+	}
+
+	ai_weight = {
+		weight = 8
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Shield_PsiShields_LARGE"
+	size = small
+	icon = "Rogue_Shield_PsiShields_LARGE"
+	icon_frame = 1
+	power = -390
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_station  }
+	size_restriction = { marauder_cruiser cruiser crisis_cruiser starbase_starhold RT_NEMESIS_PLATTFORM }
+	
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 98.8
+			sr_zro = 0.5772
+		}
+		upkeep = {
+			energy = 0.988
+			alloys = 0.1976
+		}
+	}
+
+	prerequisites = { "tech_psionic_shield" }
+	component_set = "Rogue_Defense_Shield"
+	upgrades_to = "Rogue_Shield_Void_LARGE"
+
+	modifier = {
+		ship_shield_add = 1560
+		ship_shield_regen_add_perc = 1.4
+	}
+
+	ai_weight = {
+		weight = 9
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Shield_Void_LARGE"
+	size = small
+	icon = "Rogue_Shield_Void"
+	icon_frame = 1
+	power = -416
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_station  }
+	size_restriction = { marauder_cruiser cruiser crisis_cruiser starbase_starhold RT_NEMESIS_PLATTFORM }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 114.4
+			sr_dark_matter = 2.08
+		}
+		upkeep = {
+			energy = 0.988
+			alloys = 0.1946
+			sr_dark_matter = 0.208
+		}
+	}
+
+	prerequisites = { "tech_roguetech_void_shields" }
+	component_set = "Rogue_Defense_Shield"
+
+	modifier = {
+		ship_shield_add = 1820
+		ship_shield_regen_add_perc = 1.4
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+}

@@ -1,0 +1,306 @@
+utility_component_template = {
+	key = "Rogue_Basic_Armor_XL"
+	size = small
+	icon = "Rogue_Basic_Armor"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special ion_cannon shipclass_military_station }
+	size_restriction = { marauder_galleon crisis_battleship battleship starbase_starfortress colossus RT_NEMESIS_PLATTFORM_CANNON ion_cannon }
+
+	component_set = "Rogue_Defense_Armor"
+	upgrades_to = "Rogue_Armor_Nanocomposite_XL"
+	
+	modifier = {
+		ship_shield_mult = 0.15
+		ship_hull_mult = 0.15
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Armor_Nanocomposite_XL"
+	size = small
+	icon = "Rogue_Armor_Nanocomposite"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special ion_cannon shipclass_military_station }
+	size_restriction = { marauder_galleon crisis_battleship battleship starbase_starfortress colossus RT_NEMESIS_PLATTFORM_CANNON ion_cannon }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 80
+		}
+		upkeep = {
+			energy = 0.8
+			alloys = 0.16
+		}
+	}
+
+	prerequisites = { "tech_ship_armor_1" }
+	component_set = "Rogue_Defense_Armor"
+	upgrades_to = "Rogue_Armor_Ceramo_XL"
+
+	modifier = {
+		ship_armor_add = 600
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Armor_Ceramo_XL"
+	size = small
+	icon = "Rogue_Armor_Ceramo"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special ion_cannon shipclass_military_station }
+	size_restriction = { marauder_galleon crisis_battleship battleship starbase_starfortress colossus RT_NEMESIS_PLATTFORM_CANNON ion_cannon }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 108
+		}
+		upkeep = {
+			energy = 1.04
+			alloys = 0.208
+		}
+	}
+
+	prerequisites = { "tech_ship_armor_2" }
+	component_set = "Rogue_Defense_Armor"
+	upgrades_to = "Rogue_Armor_Plasteel_XL"
+
+	modifier = {
+		ship_armor_add = 780
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Armor_Plasteel_XL"
+	size = small
+	icon = "Rogue_Armor_Plasteel"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special ion_cannon shipclass_military_station }
+	size_restriction = { marauder_galleon crisis_battleship battleship starbase_starfortress colossus RT_NEMESIS_PLATTFORM_CANNON ion_cannon }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 136
+		}
+		upkeep = {
+			energy = 1.36
+			alloys = 0.272
+		}
+	}
+
+	prerequisites = { "tech_ship_armor_3" }
+	component_set = "Rogue_Defense_Armor"
+	upgrades_to = "Rogue_Armor_Durasteel_XL"
+
+	modifier = {
+		ship_armor_add = 1020
+	}
+
+	ai_weight = {
+		weight = 3
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Armor_Durasteel_XL"
+	size = small
+	icon = "Rogue_Armor_Durasteel"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special ion_cannon shipclass_military_station }
+	size_restriction = { marauder_galleon crisis_battleship battleship starbase_starfortress colossus RT_NEMESIS_PLATTFORM_CANNON ion_cannon }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 136
+		}
+		upkeep = {
+			energy = 0.272
+			alloys = 1.36
+		}
+	}
+
+	prerequisites = { "tech_ship_armor_4" }
+	component_set = "Rogue_Defense_Armor"
+	upgrades_to = "Rogue_Armor_Neutronium_XL"
+
+	modifier = {
+		ship_armor_add = 1320
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = rare_crystals }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Armor_Neutronium_XL"
+	size = small
+	icon = "Rogue_Armor_Neutronium"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special ion_cannon shipclass_military_station }
+	size_restriction = { marauder_galleon crisis_battleship battleship starbase_starfortress colossus RT_NEMESIS_PLATTFORM_CANNON ion_cannon }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 176
+		}
+		upkeep = {
+			energy = 1.76
+			alloys = 0.392
+		}
+	}
+
+	prerequisites = { "tech_ship_armor_5" }
+	component_set = "Rogue_Defense_Armor"
+	upgrades_to = "Rogue_Armor_Adamantium_XL"
+
+	modifier = {
+		ship_armor_add = 1740
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+utility_component_template = {
+	key = "Rogue_Armor_Adamantium_XL"
+	size = small
+	icon = "Rogue_Armor_Adamantium"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special ion_cannon shipclass_military_station }
+	size_restriction = { marauder_galleon crisis_battleship battleship starbase_starfortress colossus RT_NEMESIS_PLATTFORM_CANNON ion_cannon }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 190
+			sr_living_metal = 1.2
+			nanites = 1.2
+		}
+		upkeep = {
+			energy = 1.76
+			alloys = 0.392
+			sr_living_metal = 0.06
+			nanites = 0.06
+		}
+	}
+
+	prerequisites = { "tech_roguetech_adamantium_armor" }
+	component_set = "Rogue_Defense_Armor"
+	upgrades_to = "Rogue_Armor_Dragonscales_XL"
+
+	modifier = {
+		ship_armor_add = 1840
+		ship_armor_regen_add_perc = 1
+	}
+
+	ai_weight = {
+		weight = 6
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Armor_Dragonscales_XL"
+	size = small
+	icon = "Rogue_Armor_Dragonscales"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special ion_cannon shipclass_military_station }
+	size_restriction = { marauder_galleon crisis_battleship battleship starbase_starfortress colossus RT_NEMESIS_PLATTFORM_CANNON ion_cannon }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 228
+		}
+		upkeep = {
+			energy = 2.28
+			alloys = 0.456
+		}
+	}
+
+	prerequisites = { "tech_dragon_armor" }
+	component_set = "Rogue_Defense_Armor"
+	upgrades_to = "Rogue_Armor_AdamtiumScales_XL"
+
+	modifier = {
+		ship_armor_add = 2220
+	}
+
+	ai_weight = {
+		weight = 7
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Armor_AdamtiumScales_XL"
+	size = small
+	icon = "Rogue_Armor_AdamtiumScales"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special ion_cannon shipclass_military_station }
+	size_restriction = { marauder_galleon crisis_battleship battleship starbase_starfortress colossus RT_NEMESIS_PLATTFORM_CANNON ion_cannon }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 228
+			sr_living_metal = 2
+			nanites = 2
+		}
+		upkeep = {
+			energy = 2.28
+			alloys = 0.456
+			sr_living_metal = 0.12
+			nanites = 0.12
+		}
+	}
+
+	prerequisites = { "tech_roguetech_adamantium_scales" }
+	component_set = "Rogue_Defense_Armor"
+
+	modifier = {
+		ship_armor_add = 2600
+		ship_armor_regen_add_perc = 1.5
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+}

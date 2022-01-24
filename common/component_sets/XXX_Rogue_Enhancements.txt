@@ -1,0 +1,55 @@
+component_set = {
+	key = "Rogue_Utility_Slot_None"
+
+	icon = "Rogue_Utility_None"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "Rogue_Stealth_Field"
+
+	icon = "Rogue_Stealth_Field"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "Rogue_Shield_Batteries"
+
+	icon = "Rogue_Shield_Batteries"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "Rogue_Hardened_Armor"
+
+	icon = "Rogue_Hardened_Armor"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "Rogue_Reinforced_Hull"
+
+	icon = "Rogue_Reinforced_Hull"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "Rogue_Auto_Repair"
+
+	icon = "Rogue_Auto_Repair"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "Rogue_Auto_Repair_Nanites"
+
+	icon = "Rogue_Auto_Repair_Nanites"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "Rogue_Fuel_Injectors"
+
+	icon = "Rogue_Fuel_Injectors"
+	icon_frame = 1
+}

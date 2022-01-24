@@ -1,0 +1,27 @@
+
+	spriteTypes = {	
+	spriteType = {
+			name = "Rogue_Basic_Hull"
+			texturefile = "gfx/interface/icons/ship_parts/hulls/Rogue_Basic_Hull.dds"
+		}
+	spriteType = {
+			name = "Rogue_Crystal_Hull"
+			texturefile = "gfx/interface/icons/ship_parts/hulls/Rogue_Crystal_Hull.dds"
+		}
+	spriteType = {
+			name = "Rogue_Crystal_Hull_MKII"
+			texturefile = "gfx/interface/icons/ship_parts/hulls/Rogue_Crystal_Hull_MKII.dds"
+		}
+	spriteType = {
+			name = "Rogue_Organic_Hull"
+			texturefile = "gfx/interface/icons/ship_parts/hulls/Rogue_Organic_Hull.dds"
+		}
+	spriteType = {
+			name = "Rogue_Zontrium_Hull"
+			texturefile = "gfx/interface/icons/ship_parts/hulls/Rogue_Zontrium_Hull.dds"
+		}
+	spriteType = {
+			name = "Rogue_Xentronium_Hull"
+			texturefile = "gfx/interface/icons/ship_parts/hulls/Rogue_Xentronium_Hull.dds"
+		}
+	}

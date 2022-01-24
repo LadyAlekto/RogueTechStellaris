@@ -1,0 +1,29 @@
+tradition_category_biophage_harvest = {
+	tree_template = "tree_12_12"
+	adoption_bonus = "tr_biophage_harvest_adopt"
+	finish_bonus = "tr_biophage_harvest_finish"
+
+	potential = {
+		has_nemesis = yes
+	}
+
+	traditions = {
+		"tr_biophage_harvest_vivisection"
+		"tr_biophage_harvest_oppression"
+		"tr_biophage_harvest_foraging"
+		"tr_biophage_harvest_bioweapons"
+		"tr_biophage_harvest_recycle"
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_xenophobe
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_xenophobe
+		}
+	}
+}

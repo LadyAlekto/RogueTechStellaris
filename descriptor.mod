@@ -1,0 +1,10 @@
+version="0.1"
+tags={
+	"Gameplay"
+	"Spaceships"
+	"Technologies"
+	"Balance"
+	"Overhaul"
+}
+name="RogueTech"
+supported_version="3.2.2"

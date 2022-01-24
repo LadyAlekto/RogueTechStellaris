@@ -1,0 +1,183 @@
+utility_component_template = {
+	key = "Rogue_Basic_Hull_XXL"
+	size = small
+	icon = "Rogue_Basic_Hull"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase  }
+	size_restriction = { titan starbase_citadel crisis_titan }
+
+	component_set = "Rogue_Defense_Hull"
+	upgrades_to = "Rogue_Organic_Hull_XXL"
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Organic_Hull_XXL"
+	size = small
+	icon = "Rogue_Organic_Hull"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase  }
+	size_restriction = { titan starbase_citadel crisis_titan }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			food = 2
+		}
+		upkeep = {
+			food = 0.2
+		}
+	}
+
+	prerequisites = { "tech_roguetech_bio_armor_plating" }
+	component_set = "Rogue_Defense_Hull"
+	upgrades_to = "Rogue_Crystal_Hull_XXL"
+
+	modifier = {
+		ship_hull_add = 1320
+		ship_hull_regen_add_perc = 1
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Crystal_Hull_XXL"
+	size = small
+	icon = "Rogue_Crystal_Hull"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase  }
+	size_restriction = { titan starbase_citadel crisis_titan }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			rare_crystals = 4
+		}
+	}
+
+	prerequisites = { "tech_crystal_armor_1" }
+	component_set = "Rogue_Defense_Hull"
+	upgrades_to = "Rogue_Crystal_Hull_MKII_XXL"
+
+	modifier = {
+		ship_hull_add = 2640
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Crystal_Hull_MKII_XXL"
+	size = small
+	icon = "Rogue_Crystal_Hull_MKII"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase  }
+	size_restriction = { titan starbase_citadel crisis_titan }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			rare_crystals = 5.2
+		}
+	}
+
+	prerequisites = { "tech_crystal_armor_2" }
+	component_set = "Rogue_Defense_Hull"
+	upgrades_to = "Rogue_Zontrium_Hull_XXL"
+
+	modifier = {
+		ship_hull_add = 4440
+	}
+
+	ai_weight = {
+		weight = 3
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Zontrium_Hull_XXL"
+	size = small
+	icon = "Rogue_Zontrium_Hull"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase  }
+	size_restriction = { titan starbase_citadel crisis_titan }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			sr_living_metal = 2.4
+			nanites = 2.4
+		}
+		upkeep = {
+			sr_living_metal = 0.12
+			nanites = 0.12
+		}
+	}
+
+	prerequisites = { "tech_roguetech_zontrium_hulls" }
+	component_set = "Rogue_Defense_Hull"
+	upgrades_to = "Rogue_Xentronium_Hull_XXL"
+
+	modifier = {
+		ship_hull_add = 5200
+		ship_hull_regen_add_perc = 1
+	}
+
+	ai_weight = {
+		weight = 4
+	}
+
+}
+
+utility_component_template = {
+	key = "Rogue_Xentronium_Hull_XXL"
+	size = small
+	icon = "Rogue_Xentronium_Hull"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase  }
+	size_restriction = { titan starbase_citadel crisis_titan }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			sr_living_metal = 4
+			nanites = 4
+		}
+		upkeep = {
+			sr_living_metal = 0.24
+			nanites = 0.24
+		}
+	}
+
+	prerequisites = { "tech_roguetech_xentronium_hulls" }
+	component_set = "Rogue_Defense_Hull"
+
+	modifier = {
+		ship_hull_add = 6000
+		ship_hull_regen_add_perc = 1.5
+	}
+
+	ai_weight = {
+		weight = 6
+	}
+}

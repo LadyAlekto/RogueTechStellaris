@@ -1,0 +1,44 @@
+﻿l_english:
+ sm_science_quarters:0 "Science Quarters"
+ sm_science_quarters_desc:0 "Quarters for Scientists to generate some research and speed up Empire Wide Science Projects."
+ 
+ sm_orbital_administration:0 "Orbital Administration"
+ sm_orbital_administration_desc:0 "Administrative Quarters to easily supervise empire wide communications."
+ 
+ sm_system_wide_minefield:0 "System Wide Minefield"
+ sm_system_wide_minefield_desc:0 "Systems to deploy and operate a System Wide smart Minefield to hamper enemy forces."
+ 
+ aura_starbase_system_wide_minefield:0 "System Wide Minefield"
+ aura_starbase_system_wide_minefield_desc:0 "Smart Mines with IFF to hamper enemy forces."
+ 
+ sm_maintenance_drones:0 "Maintenance Drones"
+ sm_maintenance_drones_desc:0 "Maintenance Drones that actively seek out, Shield and Repair allied forces in orbit."
+ 
+ aura_starbase_maintenance_drones:0 "Maintenance Drones"
+ aura_starbase_maintenance_drones_desc:0 "Maintenance Drones that actively seek out, shield and repair allied forces in orbit."
+ 
+ sm_supremacy_starbase_orbital_mineral_refineries:0 "Orbital Mineral Refineries"
+ sm_supremacy_starbase_orbital_energy_refineries:0 "Orbital Power Grid"
+ sm_supremacy_starbase_orbital_food_refineries:0 "Orbital Farms"
+ sm_supremacy_starbase_orbital_alloy_refineries:0 "Orbital Alloy Smelters"
+ sm_supremacy_dark_matter_collector:0 "Exotic Matter Collectors"
+ 
+ sm_supremacy_starbase_orbital_mineral_refineries_desc:0 "Refineries added directly into the starbase improves the systems mineral output"
+ sm_supremacy_starbase_orbital_energy_refineries_desc:0 "Interconnected solar farms and power production improves the systems energy output"
+ sm_supremacy_starbase_orbital_food_refineries_desc:0 "Orbital Seed stores and distribution systems improves the systems food output"
+ sm_supremacy_starbase_orbital_alloy_refineries_desc:0 "Integrated Zero-G smelters improves the systems alloy output"
+ sm_supremacy_dark_matter_collector_desc:0 "Draw Exotic Matter directly from the vacuum of space"
+  
+ sm_supremacy_shipyard:0 "Advanced Shipyard"
+ sm_supremacy_shipyard_desc:0 "Adds 4 Shipyard Capacity and Increases Ship Construction Speed by 33%."
+ 
+ sm_supremacy_gun_battery:0 "Fortress Gun Battery"
+ sm_supremacy_gun_battery_desc:0 "Adds 1 Titanic, 2 Large, 2 Medium, and 4 Small weapon slots to the Starbase."
+ sm_supremacy_missile_battery:0 "Fortress Missile Battery"
+ sm_supremacy_missile_battery_desc:0 "Adds 8 torpedo and 4 point defense slots to the Starbase."
+ sm_supremacy_hangar_bay:0 "Fortress Hangar Bay"
+ sm_supremacy_hangar_bay_desc:0 "Adds 12 hangars for strike craft and 2 point defense slots to the Starbase."
+ 
+ BIOPHAGE_HEAVY_MILITARY_STATION_SECTION:1 "Heavy Weapons"
+ BIOPHAGE_HEAVY_HANGAR_STATION_SECTION:1 "Heavy Hangar"
+ BIOPHAGE_HEAVY_MISSILE_STATION_SECTION:1 "Missile Batteries"

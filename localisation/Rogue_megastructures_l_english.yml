@@ -1,0 +1,33 @@
+﻿l_english:
+
+ supremacy_galactic_administration_0:0 "Stellar Administration"
+ supremacy_galactic_administration_0_DESC:0 "The construction site station serves as the base for the future construction of an $supremacy_galactic_administration_4$."
+ supremacy_galactic_administration_0_MEGASTRUCTURE_DETAILS:0 "$giga_list_category_megastructure$ - $giga_list_category_miscellaneous$\nIncreases §YAdministrative Capacity§! and §YJob Production§!\n§LA center to coordinate and oversee an empire's bureaucracy.§!" #gigalistentry INTERSTELLAR ASSEMBLY
+ supremacy_galactic_administration_1:0 "Stellar Administration: Bureaus"
+ supremacy_galactic_administration_1_DESC:0 "The basis for all Administration."
+ supremacy_galactic_administration_2:0 "Stellar Administration: Archives"
+ supremacy_galactic_administration_2_DESC:0 "Massive storage for all matters concerning the empire."
+ supremacy_galactic_administration_3:0 "Stellar Administration: Sub-Space Beacons"
+ supremacy_galactic_administration_3_DESC:0 "Centralised Subspace networking allows oversight and consolidation of all communication."
+ supremacy_galactic_administration_4:0 "Stellar Administration"
+ supremacy_galactic_administration_4_DESC:0 "The only thing that saves us from the bureaucracy is its inefficiency."
+ 
+ supremacy_mega.9005.name:0 "Stellar Administration: Basics"
+ supremacy_mega.9005.desc:0 "Construction site for $supremacy_galactic_administration_4$.."
+ supremacy_mega.9006.name:0 "Stellar Administration: Bureaus"
+ supremacy_mega.9006.desc:0 "The basis for all Administration."
+ supremacy_mega.9007.name:0 "Stellar Administration: Archives"
+ supremacy_mega.9007.desc:0 "Massive storage for all matters concerning the empire."
+ supremacy_mega.9008.name:0 "Stellar Administration: Sub-Space Beacons"
+ supremacy_mega.9008.desc:0 "Centralised Subspace networking allows oversight and consolidation of all communication."
+ supremacy_mega.9009.name:0 "Stellar Administration"
+ supremacy_mega.9009.desc:0 "The only thing that saves us from the bureaucracy is its inefficiency."
+ 
+ requires_no_existing_galactic_administration:0 "$TRIGGER_FAIL$Cannot build more than one $supremacy_galactic_administration_4$."
+ 
+ stargate_instant_gateway_MEGASTRUCTURE_DETAILS:1 "§BCompleted Gateway Construction§ - $giga_list_category_transportation$\nEnables §YInstantaneous Travel§! to all other §YGateways§!\n§LThe gateway is a crucial part of any interstellar's empire galactic transportation network and can drastically shorten travel times if positioned properly.§!" #gigalistentry GATEWAY
+ stargate_instant_gateway:0 "Gateway"
+ stargate_instant_gateway_DESC:0 "A conduit through the very fabric of subspace that enables rapid travel to other Gateways."
+ 
+ ap_stargate_instant_gateways:0 "Stargates"
+ ap_stargate_instant_gateways_desc:0 "Hundreds of Worlds, just one step away. \nAccess to: §YCompleted Gateway Megastructure§! \nAccess to: §YPlanetary Gateways§! \nAccess to: §YUnrestricted Gate Travel Edict§!"

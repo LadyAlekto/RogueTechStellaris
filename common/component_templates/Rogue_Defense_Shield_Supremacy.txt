@@ -1,0 +1,379 @@
+utility_component_template = {
+	key = "Rogue_Basic_Shield_SUPREMACY"
+	size = small
+	icon = "Rogue_Basic_Shield"
+	icon_frame = 1
+	power = -0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special  }
+	size_restriction = { juggernaut star_eater }
+
+	component_set = "Rogue_Defense_Shield"
+	upgrades_to = "Rogue_Shield_Deflector_SUPREMACY"
+	
+	modifier = {
+		ship_armor_mult = 0.25
+		ship_hull_mult = 0.25
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Shield_Deflector_SUPREMACY"
+	size = small
+	icon = "Rogue_Shield_Deflector"
+	icon_frame = 1
+	power = -360
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special  }
+	size_restriction = { juggernaut star_eater }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 120
+		}
+		upkeep = {
+			energy = 1.2
+			alloys = 0.24
+		}
+	}
+
+	prerequisites = { "tech_shields_1" }
+	component_set = "Rogue_Defense_Shield"
+	upgrades_to = "Rogue_Shield_ImpDeflector_SUPREMACY"
+
+	modifier = {
+		ship_shield_add = 1800
+		ship_shield_regen_add_perc = 2
+	}
+	
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Shield_ImpDeflector_SUPREMACY"
+	size = small
+	icon = "Rogue_Shield_ImpDeflector"
+	icon_frame = 1
+	power = -480
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special  }
+	size_restriction = { juggernaut star_eater }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 156
+		}
+		upkeep = {
+			energy = 1.56
+			alloys = 0.312
+		}
+	}
+
+	prerequisites = { "tech_shields_2" }
+	component_set = "Rogue_Defense_Shield"
+	upgrades_to = "Rogue_Shield_Shields_SUPREMACY"
+
+	modifier = {
+		ship_shield_add = 2340
+		ship_shield_regen_add_perc = 2
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Shield_Shields_SUPREMACY"
+	size = small
+	icon = "Rogue_Shield_Shields"
+	icon_frame = 1
+	power = -600
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special  }
+	size_restriction = { juggernaut star_eater }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 204
+		}
+		upkeep = {
+			energy = 2.04
+			alloys = 0.408
+		}
+	}
+
+	prerequisites = { "tech_shields_3" }
+	component_set = "Rogue_Defense_Shield"
+	upgrades_to = "Rogue_Shield_AdvShields_SUPREMACY"
+
+	modifier = {
+		ship_shield_add = 3240
+		ship_shield_regen_add_perc = 2
+	}
+
+	ai_weight = {
+		weight = 3
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Shield_AdvShields_SUPREMACY"
+	size = small
+	icon = "Rogue_Shield_AdvShields"
+	icon_frame = 1
+	power = -840
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special  }
+	size_restriction = { juggernaut star_eater }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 204
+			exotic_gases = 6
+		}
+		upkeep = {
+			energy = 2.04
+			alloys = 0.408
+		}
+	}
+
+	prerequisites = { "tech_shields_4" }
+	component_set = "Rogue_Defense_Shield"
+	upgrades_to = "Rogue_Shield_HyperShield_SUPREMACY"
+
+	modifier = {
+		ship_shield_add = 3960
+		ship_shield_regen_add_perc = 2
+	}
+
+	ai_weight = {
+		weight = 4
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Shield_HyperShield_SUPREMACY"
+	size = small
+	icon = "Rogue_Shield_HyperShield"
+	icon_frame = 1
+	power = -1080
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special  }
+	size_restriction = { juggernaut star_eater }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 264
+			exotic_gases = 7.998
+		}
+		upkeep = {
+			energy = 2.64
+			alloys = 0.528
+		}
+	}
+
+	prerequisites = { "tech_shields_5" }
+	component_set = "Rogue_Defense_Shield"
+	upgrades_to = "Rogue_Shield_DarkMatter_SUPREMACY"
+
+	modifier = {
+		ship_shield_add = 5220
+		ship_shield_regen_add_perc = 2
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Shield_DarkMatter_SUPREMACY"
+	size = small
+	icon = "Rogue_Shield_DarkMatter"
+	icon_frame = 1
+	power = -1320
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special  }
+	size_restriction = { juggernaut star_eater }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 342
+			sr_dark_matter = 6
+		}
+		upkeep = {
+			energy = 3.42
+			alloys = 0.642
+		}
+	}
+
+	prerequisites = { "tech_dark_matter_deflector" }
+	component_set = "Rogue_Defense_Shield"
+	upgrades_to = "Rogue_Shield_PsiBarrier_SUPREMACY"
+
+	modifier = {
+		ship_shield_add = 6660
+		ship_shield_regen_add_perc = 2
+	}
+
+	ai_weight = {
+		weight = 6
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Shield_PsiBarrier_SUPREMACY"
+	size = small
+	icon = "Rogue_Shield_PsiBarrier"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special  }
+	size_restriction = { juggernaut star_eater }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 156
+		}
+		upkeep = {
+			alloys = 0.312
+		}
+	}
+
+	prerequisites = { "tech_psionic_barrier" }
+	component_set = "Rogue_Defense_Shield"
+	upgrades_to = "Rogue_Shield_Scalar_SUPREMACY"
+
+	modifier = {
+		ship_shield_add = 2340
+		ship_shield_regen_add_perc = 2
+	}
+
+	ai_weight = {
+		weight = 8
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Shield_Scalar_SUPREMACY"
+	size = small
+	icon = "Rogue_Shield_Scalar"
+	icon_frame = 1
+	power = -1560
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special  }
+	size_restriction = { juggernaut star_eater }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 390
+			sr_dark_matter = 6
+		}
+		upkeep = {
+			energy = 3.42
+			alloys = 0.624
+			sr_dark_matter = 0.36
+		}
+	}
+
+	prerequisites = { "tech_roguetech_scalar_energy_fields" }
+	component_set = "Rogue_Defense_Shield"
+	upgrades_to = "Rogue_Shield_PsiShields_SUPREMACY"
+
+	modifier = {
+		ship_shield_add = 7800
+		ship_shield_regen_add_perc = 2
+	}
+
+	ai_weight = {
+		weight = 8
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Shield_PsiShields_SUPREMACY"
+	size = small
+	icon = "Rogue_Shield_PsiShields_SUPREMACY"
+	icon_frame = 1
+	power = -1800
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special  }
+	size_restriction = { juggernaut star_eater }
+	
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 444
+			sr_zro = 1.998
+		}
+		upkeep = {
+			energy = 4.44
+			alloys = 0.888
+		}
+	}
+
+	prerequisites = { "tech_psionic_shield" }
+	component_set = "Rogue_Defense_Shield"
+	upgrades_to = "Rogue_Shield_Void_SUPREMACY"
+
+	modifier = {
+		ship_shield_add = 8640
+		ship_shield_regen_add_perc = 2
+	}
+
+	ai_weight = {
+		weight = 9
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Shield_Void_SUPREMACY"
+	size = small
+	icon = "Rogue_Shield_Void"
+	icon_frame = 1
+	power = -1980
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special  }
+	size_restriction = { juggernaut star_eater }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 492
+			sr_dark_matter = 7.2
+		}
+		upkeep = {
+			energy = 4.44
+			alloys = 0.888
+			sr_dark_matter = 0.72
+		}
+	}
+
+	prerequisites = { "tech_roguetech_void_shields" }
+	component_set = "Rogue_Defense_Shield"
+
+	modifier = {
+		ship_shield_add = 9600
+		ship_shield_regen_add_perc = 2
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+}

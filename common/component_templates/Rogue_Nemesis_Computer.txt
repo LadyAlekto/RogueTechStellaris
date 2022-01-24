@@ -1,0 +1,359 @@
+@nem_bs_role_cost0 = 0
+@nem_bs_role_cost1 = 5
+@nem_bs_role_cost2 = 10
+@nem_bs_role_cost3 = 20
+
+@nem_bs_role_power0 = -5
+@nem_bs_role_power1 = -10
+@nem_bs_role_power2 = -15
+@nem_bs_role_power3 = -25
+
+
+####################
+# Computer
+####################
+
+utility_component_template = {
+	key = "CRISIS_COMBAT_COMPUTER_ARTILLERY_DEFAULT"
+	size = small
+	icon = "GFX_ship_part_computer_default"
+	icon_frame = 1
+	power = @nem_bs_role_power0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @nem_bs_role_cost0
+		}
+	}
+	ship_behavior = "artillery"
+
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special }
+	size_restriction = { crisis_battleship crisis_titan }
+	component_set = "combat_computers"
+	upgrades_to = "CRISIS_COMBAT_COMPUTER_ARTILLERY_BASIC"
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "CRISIS_COMBAT_COMPUTER_ARTILLERY_BASIC"
+	size = small
+	icon = "GFX_ship_part_computer_artillery_basic"
+	icon_frame = 1
+	power = @nem_bs_role_power1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @nem_bs_role_cost1
+		}
+	}
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special }
+	size_restriction = { crisis_battleship crisis_titan }
+	component_set = "combat_computers"
+	ship_behavior = "artillery"
+	prerequisites = { "tech_combat_computers_1" }
+	upgrades_to = "CRISIS_COMBAT_COMPUTER_ARTILLERY_ADVANCED"
+
+	ship_modifier = {
+		ship_fire_rate_mult = 0.05
+		ship_weapon_range_mult = 0.05
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "CRISIS_COMBAT_COMPUTER_ARTILLERY_ADVANCED"
+	size = small
+	icon = "GFX_ship_part_computer_artillery_advanced"
+	icon_frame = 1
+	power = @nem_bs_role_power2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @nem_bs_role_cost2
+		}
+	}
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special }
+	size_restriction = { crisis_battleship crisis_titan }
+	component_set = "combat_computers"
+	ship_behavior = "artillery"
+	prerequisites = { "tech_combat_computers_2" }
+	upgrades_to = "CRISIS_COMBAT_COMPUTER_ARTILLERY_SAPIENT"
+
+	ship_modifier = {
+		ship_fire_rate_mult = 0.10
+		ship_weapon_range_mult = 0.10
+	}
+
+	ai_weight = {
+		weight = 3
+	}
+}
+
+utility_component_template = {
+	key = "CRISIS_COMBAT_COMPUTER_ARTILLERY_SAPIENT"
+	size = small
+	icon = "GFX_ship_part_computer_artillery_sapient"
+	icon_frame = 1
+	power = @nem_bs_role_power3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @nem_bs_role_cost3
+		}
+	}
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special }
+	size_restriction = { crisis_battleship crisis_titan }
+	component_set = "combat_computers"
+	ship_behavior = "artillery"
+	prerequisites = { "tech_combat_computers_3" }
+
+	ship_modifier = {
+		ship_fire_rate_mult = 0.20
+		ship_weapon_range_mult = 0.20
+	}
+
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0
+			OR = {
+				has_global_flag = ghost_signal_5_flag
+				has_global_flag = ghost_signal_4_flag
+				has_global_flag = ghost_signal_3_flag
+				has_global_flag = ghost_signal_2_flag
+				has_global_flag = ghost_signal_1_flag
+			}
+		}
+	}
+}
+
+
+utility_component_template = {
+	key = "CRISIS_COMBAT_COMPUTER_ARTILLERY_AUTONOMOUS"
+	size = small
+	icon = "GFX_ship_part_computer_artillery_sapient"
+	icon_frame = 1
+	power = @nem_bs_role_power3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @nem_bs_role_cost3
+		}
+	}
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special }
+	size_restriction = { crisis_battleship crisis_titan }
+	component_set = "combat_computers"
+	ship_behavior = "artillery"
+	prerequisites = { "tech_combat_computers_autonomous" }
+
+	ship_modifier = {
+		ship_fire_rate_mult = 0.20
+		ship_weapon_range_mult = 0.20
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+utility_component_template = {
+	key = "CRISIS_COMBAT_COMPUTER_ARTILLERY_PRECOG"
+	size = small
+	icon = "GFX_ship_part_computer_artillery_precog"
+	icon_frame = 1
+	power = @nem_bs_role_power3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @nem_bs_role_cost3
+		}
+	}
+	class_restriction = { shipclass_military shipclass_starbase }
+	size_restriction = { crisis_battleship crisis_titan }
+	component_set = "combat_computers"
+	ship_behavior = "artillery"
+	prerequisites = { "tech_precognition_interface" }
+
+	ship_modifier = {
+		ship_fire_rate_mult = 0.15
+		ship_weapon_range_mult = 0.15
+		ship_tracking_add = 10
+	}
+
+	ai_weight = {
+		weight = 4
+	}
+}
+
+#####################
+# 'SWARM' COMPUTERS #
+#####################
+
+utility_component_template = {
+	key = "CRISIS_COMBAT_COMPUTER_SWARM_BASIC"
+	size = small
+	icon = "GFX_ship_part_computer_swarm_basic"
+	icon_frame = 1
+	power = @nem_bs_role_power1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @nem_bs_role_cost1
+		}
+	}
+	class_restriction = { shipclass_military }
+	size_restriction = { crisis_cruiser crisis_destroyer }
+	component_set = "combat_computers"
+	ship_behavior = "swarm"
+	prerequisites = { "tech_combat_computers_1" }
+	upgrades_to = "CRISIS_COMBAT_COMPUTER_SWARM_ADVANCED"
+
+	modifier = {
+		ship_speed_mult = 0.05
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.05
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "CRISIS_COMBAT_COMPUTER_SWARM_ADVANCED"
+	size = small
+	icon = "GFX_ship_part_computer_swarm_advanced"
+	icon_frame = 1
+	power = @nem_bs_role_power2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @nem_bs_role_cost2
+		}
+	}
+	class_restriction = { shipclass_military }
+	size_restriction = { crisis_cruiser crisis_destroyer }
+	component_set = "combat_computers"
+	ship_behavior = "swarm"
+	prerequisites = { "tech_combat_computers_2" }
+	upgrades_to = "CRISIS_COMBAT_COMPUTER_SWARM_SAPIENT"
+
+	modifier = {
+		ship_speed_mult = 0.10
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.10
+	}
+
+	ai_weight = {
+		weight = 3
+	}
+}
+
+utility_component_template = {
+	key = "CRISIS_COMBAT_COMPUTER_SWARM_SAPIENT"
+	size = small
+	icon = "GFX_ship_part_computer_swarm_sapient"
+	icon_frame = 1
+	power = @nem_bs_role_power3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @nem_bs_role_cost3
+		}
+	}
+	class_restriction = { shipclass_military }
+	size_restriction = { crisis_cruiser crisis_destroyer }
+	component_set = "combat_computers"
+	ship_behavior = "swarm"
+	prerequisites = { "tech_combat_computers_3" }
+
+	modifier = {
+		ship_speed_mult = 0.2
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.15
+	}
+
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0
+			OR = {
+				has_global_flag = ghost_signal_5_flag
+				has_global_flag = ghost_signal_4_flag
+				has_global_flag = ghost_signal_3_flag
+				has_global_flag = ghost_signal_2_flag
+				has_global_flag = ghost_signal_1_flag
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "CRISIS_COMBAT_COMPUTER_SWARM_AUTONOMOUS"
+	size = small
+	icon = "GFX_ship_part_computer_swarm_sapient"
+	icon_frame = 1
+	power = @nem_bs_role_power3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @nem_bs_role_cost3
+		}
+	}
+	class_restriction = { shipclass_military }
+	size_restriction = { crisis_cruiser crisis_destroyer }
+	component_set = "combat_computers"
+	ship_behavior = "swarm"
+	prerequisites = { "tech_combat_computers_autonomous" }
+
+	modifier = {
+		ship_speed_mult = 0.2
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.15
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+utility_component_template = {
+	key = "CRISIS_COMBAT_COMPUTER_SWARM_PRECOG"
+	size = small
+	icon = "GFX_ship_part_computer_swarm_precog"
+	icon_frame = 1
+	power = @nem_bs_role_power3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @nem_bs_role_cost3
+		}
+	}
+	class_restriction = { shipclass_military }
+	size_restriction = { crisis_cruiser crisis_destroyer }
+	component_set = "combat_computers"
+	ship_behavior = "swarm"
+	prerequisites = { "tech_precognition_interface" }
+
+	modifier = {
+		ship_evasion_mult = 0.15
+		ship_speed_mult = 0.20
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.15
+	}
+
+	ai_weight = {
+		weight = 4
+	}
+}

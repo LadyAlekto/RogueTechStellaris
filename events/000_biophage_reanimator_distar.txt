@@ -1,0 +1,313 @@
+namespace = distar
+
+ship_event = { #Disabled event for Reanimators
+	id = distar.58
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_ship_flag = lost_amoeba_ship
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				owner = {
+					OR = { has_civic = civic_reanimated_armies
+				has_civic = civic_hive_biophage
+		}
+				}
+				#exists = event_target:amoeba_finding_scientist
+				NOT = { has_ship_flag = resurrected_once }
+			}
+			ship_event = { id = distar.340 }
+		}
+		else = {
+			if = {
+				limit = {
+					exists = event_target:amoeba_finding_scientist
+				}
+				fleet.owner = { country_event = { id = distar.57 } }
+			}
+			set_disabled = no
+			destroy_ship = this
+		}
+	}
+}
+
+country_event = { #Death of the Matriarch
+	id = distar.212
+	title = "distar.212.name"
+	desc = "distar.212.desc"
+	picture = GFX_evt_ancient_tiyanki
+	show_sound = event_space_whale
+	location = event_target:dead_matriarch
+
+	is_triggered_only = yes
+
+	trigger = {
+		exists = event_target:elderly_tiyanki_fleet
+		FromFromFrom.fleet = {
+			is_same_value = event_target:elderly_tiyanki_fleet
+		}
+	}
+
+	immediate = {
+		set_country_flag = tiyanki_killed # Achievement flag
+		create_ambient_object = {
+			type = "elderly_tiyanki_dead_object"
+			location = fromfromfrom
+			effect = {
+				save_event_target_as = dead_matriarch
+			}
+		}
+		every_playable_country = {
+			limit = {
+				has_event_chain = curator_poi_chain
+				fromfrom.solar_system = {
+					is_point_of_interest = {
+						id = curator_poi_tiyanki
+						event_chain = curator_poi_chain
+						owner = prev
+					}
+				}
+			}
+			remove_point_of_interest = curator_poi_tiyanki
+			end_curator_chain = yes
+		}
+	}
+
+	option = {
+		name = "distar.212.a"
+		trigger = { NOT = { has_valid_civic = civic_memorialist } }
+		hidden_effect = {
+			if = {
+				limit = { is_country_type = default }
+				country_event = { id = distar.213 }
+				country_event = { id = galcom.110 days = 60 }
+			}
+		}
+	}
+
+	option = {
+		name = UNDERSTOOD
+		trigger = { has_valid_civic = civic_memorialist }
+		hidden_effect = {
+			if = {
+				limit = { is_country_type = default }
+				country_event = { id = distar.213 }
+				country_event = { id = galcom.110 days = 60 }
+			}
+		}
+	}
+
+	option = {
+		name = galactic_features.385.reanimated
+
+		trigger = {
+			OR = { has_civic = civic_reanimated_armies
+				has_civic = civic_hive_biophage
+		}
+		}
+
+		event_target:dead_matriarch = {
+			enable_special_project = {
+				name = "REANIMATE_TIYANKI_MATRIARCH"
+				location = this
+				owner = root.owner
+			}
+		}
+
+		hidden_effect = {
+			country_event = { id = distar.213 }
+			country_event = { id = galcom.110 days = 60 }
+		}
+	}
+}
+
+country_event = {
+	id = distar.5009
+	title = distar.5009.name
+	desc = distar.5009.desc
+	picture = GFX_evt_voidspawn
+	show_sound = event_space_whale
+	location = event_target:slain_guardian_system
+	trackable = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		from = { has_country_flag = hatchling_country }
+	}
+
+	immediate = {
+		set_country_flag = hatchling_killed # Achievement flag
+		set_country_flag = killed_hatchling
+		fromfrom.solar_system = {
+			save_event_target_as = slain_guardian_system
+		}
+		every_playable_country = {
+			limit = {
+				has_event_chain = curator_poi_chain
+				event_target:slain_guardian_system = {
+					is_point_of_interest = {
+						id = curator_poi_hatchling
+						event_chain = curator_poi_chain
+						owner = prev
+					}
+				}
+			}
+			remove_point_of_interest = curator_poi_hatchling
+			end_curator_chain = yes
+		}
+	}
+
+	option = {
+		name = distar.5009.a
+		event_target:hatchling_egg = {
+			enable_special_project = {
+				name = SHATTERED_EGG
+				location = this
+				owner = root
+			}
+		}
+		if = {
+			limit = {
+				exists = event_target:egg_owner
+				is_same_value = event_target:egg_owner
+			}
+			add_monthly_resource_mult = {
+				resource = unity
+				value = 72
+				min = 600
+				max = 6000
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					NOT = {
+						exists = event_target:egg_owner
+					}
+					AND = {
+						exists = event_target:egg_owner
+						is_same_value = event_target:egg_owner
+					}
+				}
+			}
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier2unityreward
+				min = @tier2unitymin
+				max = @tier2unitymax
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = distar.5009.b
+		if = {
+			limit = {
+				exists = event_target:egg_owner
+				is_same_value = event_target:egg_owner
+			}
+			add_monthly_resource_mult = {
+				resource = unity
+				value = 72
+				min = 600
+				max = 6000
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					NOT = {
+						exists = event_target:egg_owner
+					}
+					AND = {
+						exists = event_target:egg_owner
+						is_same_value = event_target:egg_owner
+					}
+				}
+			}
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier2unityreward
+				min = @tier2unitymin
+				max = @tier2unitymax
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+	# Reanimate it!
+	option = {
+		ai_chance = {
+			factor = 100
+		}
+
+		name = galactic_features.385.reanimated
+
+		trigger = {
+			OR = { has_civic = civic_reanimated_armies
+				has_civic = civic_hive_biophage
+		}
+		}
+
+		event_target:hatchling_egg = {
+			enable_special_project = {
+				name = "REANIMATE_VOIDSPAWN"
+				location = this
+				owner = root.owner
+			}
+		}
+	}
+}
+
+# Reanimated Voidspawn
+country_event = {
+	id = distar.5016
+	title = "distar.218.name"
+	desc = "distar.5016.desc"
+	location = event_target:hatchling_egg
+
+	is_triggered_only = yes
+
+	picture = GFX_evt_voidspawn
+	show_sound = event_space_whale
+
+	option = {
+		name = "it_hungers"
+
+		create_fleet = {
+			name = "NAME_Voidspawn"
+			effect = {
+				set_owner = root
+				create_ship = {
+					name = "NAME_Voidspawn"
+					design = "NAME_Voidspawn"
+					prefix = no
+					upgradable = no
+				}
+				set_location = {
+					target = event_target:hatchling_egg
+					distance = 0
+					angle = random
+				}
+				set_fleet_stance = passive
+			}
+			settings = {
+				can_upgrade = no
+				can_change_composition = no
+				can_change_leader = no
+				uses_naval_capacity = no
+				spawn_debris = no
+			}
+		}
+	}
+}

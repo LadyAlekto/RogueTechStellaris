@@ -1,0 +1,110 @@
+
+	spriteTypes = {
+		
+		spriteType = {
+			name = "event_horizon_dark_matter_reactor"
+			texturefile = "gfx/interface/icons/ship_parts/event_horizon_dark_matter_reactor.dds"
+		}
+		spriteType = {
+			name = "Chronoton_Reactor_Core"
+			texturefile = "gfx/interface/icons/ship_parts/Chronoton_Reactor_Core.dds"
+		}
+		spriteType = {
+			name = "SUPREMACY_THRUSTER"
+			texturefile = "gfx/interface/icons/ship_parts/tech_warp_drive_3_PURPLE.dds"
+		}
+		spriteType = {
+			name = "SUPREMACY_JUMP_DRIVE"
+			texturefile = "gfx/interface/icons/ship_parts/ship_part_jump_drive_1_PURPLE.dds"
+		}
+		spriteType = {
+			name = "SUPREMACY_SCALAR_CANNON"
+			texturefile = "gfx/interface/icons/ship_parts/supremacy_scalar_cannon.dds"
+		}
+		
+		spriteType = {
+			name = "SUPREMACY_SCALAR_CANNON_XL"
+			texturefile = "gfx/interface/icons/ship_parts/supremacy_scalar_cannon_XL.dds"
+		}
+		
+		spriteType = {
+			name = "SUPREMACY_SCALAR_CANNON_L"
+			texturefile = "gfx/interface/icons/ship_parts/supremacy_scalar_cannon_small.dds"
+		}
+		
+		spriteType = {
+			name = "SUPREMACY_SCALAR_CANNON_SMALL"
+			texturefile = "gfx/interface/icons/ship_parts/supremacy_scalar_cannon_small.dds"
+		}
+		
+		spriteType = {
+			name = "ROGUE_BEAM_CANNON"
+			texturefile = "gfx/interface/icons/ship_parts/ROGUE_BEAM_CANNON.dds"
+		}
+		
+		spriteType = {
+			name = "SHIP_AURA_TITANCARRIER"
+			texturefile = "gfx/interface/icons/ship_parts/supremacy_carrier_command.dds"
+		}
+		
+		spriteType = {
+			name = "SHIP_AURA_INTERDICTOR"
+			texturefile = "gfx/interface/icons/ship_parts/supremacy_interdictor.dds"
+		}
+		
+		spriteType = {
+			name = "SHIP_AURA_SUBSPACEJAMMER"
+			texturefile = "gfx/interface/icons/ship_parts/supremacy_subspace_manipulator.dds"
+		}
+		
+		spriteType = {
+			name = "SUPREMACY_SHIP_AURA_DRONE"
+			texturefile = "gfx/interface/icons/ship_parts/supremacy_aura_drone_swarm.dds"
+		}
+		
+		spriteType = {
+			name = "SUPREMACY_SHIP_AURA_BOMBARDMENT"
+			texturefile = "gfx/interface/icons/ship_parts/supremacy_bombard_aura.dds"
+		}
+		
+		spriteType = {
+			name = "CHRONOTON_SENSORS"
+			texturefile = "gfx/interface/icons/ship_parts/chronoton.dds"
+		}		
+		
+		spriteType = {
+			name = "LIVING_METAL_PLATING"
+			texturefile = "gfx/interface/icons/ship_parts/LIVING_METAL_PLATING.dds"
+		}
+		
+		spriteType = {
+		name = "GFX_Supremacy_SpaceMines"
+		texturefile = "gfx/interface/icons/modules/space_mines_purple.dds"
+	}
+
+  spriteType = {
+		name = "GFX_supremacy_gun_battery"
+		texturefile = "gfx/interface/icons/modules/spaceport_module_mg_purple.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_supremacy_hangar_bay"
+		texturefile = "gfx/interface/icons/modules/sb_hangar_bay_purple.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_supremacy_missile_battery"
+		texturefile = "gfx/interface/icons/modules/sb_missile_battery_purple.dds"
+	}
+	
+	spriteType = {
+		name = "supremacy_orbital_administration"
+		texturefile = "gfx/interface/icons/modules/sb_command_center_purple.dds"
+	}
+
+  spriteType = {
+		name = "supremacy_maintenance_drones"
+		texturefile = "gfx/interface/icons/modules/spaceport_module_reinforced_hull_layers_purple.dds"
+	}
+	
+	}

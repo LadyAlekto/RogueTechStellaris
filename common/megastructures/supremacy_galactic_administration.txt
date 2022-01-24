@@ -1,0 +1,259 @@
+# Interstellar Assembly
+supremacy_galactic_administration_0 = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 1800
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 5000
+			influence = 300
+		}
+
+		upkeep = {
+			energy = 5
+		}
+	}
+
+	prerequisites = { "tech_supremacy_galactic_administration" }
+
+	possible = {
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_existing_galactic_administration"
+			from = { NOT = { has_country_flag = built_galactic_administration_site } }
+		}
+		#custom_tooltip = {
+		#	fail_text = "requires_capital_system"
+		#	from.capital_scope.solar_system = { is_same_value = root }
+		#}
+	}
+
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = {
+				fail_text = "requires_survey_not_habitable"
+				is_surveyed = {			# prevent leaking habitability information
+					who = prev.from
+					status = yes
+				}
+				colonizable_planet = no
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_anomaly"
+				NOT = { has_anomaly = yes }
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_minor_planetary_body"
+				NOR = {
+					is_asteroid = yes
+					is_moon = yes
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_star"
+				is_star = no
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_ring_world"
+				is_ringworld = no
+			}
+		}
+	}
+
+	# root = system
+	# from = country
+	ai_weight = {
+		factor = 15
+
+		modifier = {
+			factor = 0.1
+			starbase = { NOT = { has_starbase_size >= starbase_starfortress } }
+		}
+
+		modifier = {
+			factor = 0.1
+			any_neighbor_system = {
+				exists = owner
+				NOT = {
+					owner = { is_same_value = from }
+				}
+			}
+		}
+	}
+
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		from = { country_event = { id = supremacy_mega.9005 } }
+		from = { set_country_flag = built_galactic_administration_site }
+	}
+}
+
+# Interstellar Assembly 1
+supremacy_galactic_administration_1 = {
+	entity = "interstellar_assembly_stage_1_entity"
+	construction_entity = "interstellar_assembly_stage_1_entity"
+	portrait = GFX_megastructure_construction_background
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 1800
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 10000
+		}
+
+		upkeep = {
+			energy = 10
+		}
+	}
+
+	upgrade_from = {
+		supremacy_galactic_administration_0
+	}
+
+	prerequisites = { "tech_supremacy_galactic_administration" }
+
+	country_modifier = {
+		country_admin_cap_mult = 0.1
+		planet_jobs_produces_mult = 0.01
+		country_unity_produces_mult = 0.02
+	}
+	on_build_complete = {
+		from = { country_event = { id = supremacy_mega.9006 } }
+	}
+
+}
+
+# Interstellar Assembly 2
+supremacy_galactic_administration_2 = {
+	entity = "interstellar_assembly_stage_2_entity"
+	construction_entity = "interstellar_assembly_stage_2_entity"
+	portrait = GFX_megastructure_construction_background
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 1800
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 10000
+		}
+
+		upkeep = {
+			energy = 20
+		}
+	}
+
+	upgrade_from = {
+		supremacy_galactic_administration_1
+	}
+
+	prerequisites = { "tech_supremacy_galactic_administration" }
+
+	country_modifier = {
+		country_admin_cap_mult = 0.15
+		planet_jobs_produces_mult = 0.02
+		country_unity_produces_mult = 0.04
+	}
+	on_build_complete = {
+		from = { country_event = { id = supremacy_mega.9007 } }
+	}
+
+}
+
+# Interstellar Assembly 3
+supremacy_galactic_administration_3 = {
+	entity = "interstellar_assembly_stage_3_entity"
+	construction_entity = "interstellar_assembly_stage_3_entity"
+	portrait = GFX_megastructure_construction_background
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 1800
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 10000
+		}
+
+		upkeep = {
+			energy = 30
+		}
+	}
+
+	upgrade_from = {
+		supremacy_galactic_administration_2
+	}
+
+	prerequisites = { "tech_galactic_administration" }
+
+	country_modifier = {
+		country_admin_cap_mult = 0.2
+		planet_jobs_produces_mult = 0.05
+		country_unity_produces_mult = 0.07
+	}
+	on_build_complete = {
+		from = { country_event = { id = supremacy_mega.9008 } }
+	}
+
+}
+
+# Interstellar Assembly 4
+supremacy_galactic_administration_4 = {
+	entity = "interstellar_assembly_stage_4_entity"
+	construction_entity = "interstellar_assembly_stage_4_entity"
+	portrait = "GFX_megastructure_interstellar_assembly_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	build_time = 1800
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 10000
+		}
+
+		upkeep = {
+			energy = 40
+		}
+	}
+
+	upgrade_from = {
+		supremacy_galactic_administration_3
+	}
+
+	prerequisites = { "tech_supremacy_galactic_administration" }
+	show_prereqs = yes
+
+	country_modifier = {
+		country_admin_cap_mult = 0.2
+		planet_jobs_produces_mult = 0.1
+		country_unity_produces_mult = 0.1
+	}
+
+	on_build_complete = {
+		from = {
+			set_country_flag = has_built_or_repaired_megastructure
+		}
+	}
+	on_build_complete = {
+		from = { country_event = { id = supremacy_mega.9009 } }
+	}
+}

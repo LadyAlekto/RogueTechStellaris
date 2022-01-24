@@ -1,0 +1,48 @@
+component_set = {
+	key = "CONTAGION_MISSILE_1"
+	
+	icon = "CONTAGION_MISSILE_1"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "CONTAGION_MISSILE_2"
+	
+	icon = "CONTAGION_MISSILE_2"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "CONTAGION_MISSILE_3"
+	
+	icon = "CONTAGION_MISSILE_3"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "CONTAGION_MISSILE_4"
+	
+	icon = "CONTAGION_MISSILE_4"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "CONTAGION_MISSILE_5"
+	
+	icon = "CONTAGION_MISSILE_5"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "CONTAGION_MISSILE_6"
+	
+	icon = "CONTAGION_MISSILE_6"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ROGUE_TEMPEST_MISSILE"
+	
+	icon = "ROGUE_TEMPEST_MISSILE"
+	icon_frame = 1	
+}

@@ -1,0 +1,17 @@
+﻿l_english:
+ fear_of_this_battlestation_standard:0 "Fear of this Battlestation"
+ fear_of_this_battlestation_standard_desc:0 "Fear will keep the local systems in line. Fear of this battlestation."
+ fear_of_this_battlestation_pacifist:0 "Fear of this Battlestation"
+ fear_of_this_battlestation_pacifist_desc:0 "The Global Pacifier has a calming influence on the local populous. Although it saps some of their motivation, they are willing to peacefully put aside their differences and work together with less friction."
+ fear_of_this_battlestation_spiritualist:0 "Fear of this Battlestation"
+ fear_of_this_battlestation_spiritualist_desc:0 "The Divine Enforcer is seen as a holy herald, inspiring and unifying the populous behind you."
+ fear_of_this_battlestation_nanobot:0 "Fear of this Battlestation"
+ fear_of_this_battlestation_nanobot_desc:0 "The Nanobot Diffuser helps maintain the cyborg network, stabilizing deviant elements."
+
+ fear_of_this_battlestation_ocean:0 "Fear of this Battlestation"
+ fear_of_this_battlestation_ocean_desc:0 "The Deluge Machine helps maintain the Ocean biome, reducing ecological damage as well as providing a minor boost to aquatic productivity."
+ fear_of_this_battlestation_not_ocean:0 "Fear of this Battlestation"
+ fear_of_this_battlestation_not_ocean_desc:0 "Fear will keep the local systems in line. Fear of this battlestation."
+
+ fear_of_this_battlestation_star_eater:0 "Fear of this Battlestation"
+ fear_of_this_battlestation_star_eater_desc:0 "While a Star Eater positioned ominously over the star lacks the same imposing presence of a planet cracker the size of a small moon orbiting a planet. It nevertheless gives those who are knowledgeable of its presence an uneasy fear that any misstep might be their last."

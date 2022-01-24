@@ -1,0 +1,102 @@
+namespace = fear_of_this_battlestation
+#From = Planet/Starbase/Megastructure scope
+#This = Fleet scope
+# Colossus In Orbit
+fleet_event = {
+	id = fear_of_this_battlestation.100
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		This = {
+			is_ship_size = colossus
+		}
+		From = {
+			is_colony = yes
+			owner = {
+				is_same_value = root.owner
+			}
+			NOR = {
+				has_modifier = fear_of_this_battlestation_pacifist
+				has_modifier = fear_of_this_battlestation_spiritualist
+				has_modifier = fear_of_this_battlestation_nanobot
+				has_modifier = fear_of_this_battlestation_ocean
+				has_modifier = fear_of_this_battlestation_not_ocean
+				has_modifier = fear_of_this_battlestation_standard
+				has_modifier = fear_of_this_battlestation_star_eater
+			}
+		}
+	}
+	immediate = {
+		From = {
+			fear_of_this_battlestation_add_modifier = yes
+		}
+	}
+}
+
+# Star Eater in Orbit
+fleet_event = {
+	id = fear_of_this_battlestation.101
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		This = {
+			is_ship_size = star_eater
+		}
+		From = {
+			is_scope_type = planet
+			is_star = yes
+			solar_system.owner = {
+				is_same_value = root.owner
+			}
+			fotb_is_star_eater_orbiting_valid_star = yes
+		}
+	}
+	immediate = {
+		From.solar_system = {
+			every_system_planet = {
+				limit = {
+					is_colony = yes
+					owner = {
+						is_same_value = root.owner
+					}
+					NOR = {
+						has_modifier = fear_of_this_battlestation_pacifist
+						has_modifier = fear_of_this_battlestation_spiritualist
+						has_modifier = fear_of_this_battlestation_nanobot
+						has_modifier = fear_of_this_battlestation_ocean
+						has_modifier = fear_of_this_battlestation_not_ocean
+						has_modifier = fear_of_this_battlestation_standard
+						has_modifier = fear_of_this_battlestation_star_eater
+					}
+				}
+				fear_of_this_battlestation_add_modifier = yes
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = fear_of_this_battlestation.110
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		exists = this
+		OR = {
+			# Colossus over planet
+			AND = {
+				is_colony = yes
+				any_fleet_in_orbit = {
+					is_ship_size = colossus
+					owner = {
+						is_same_value = root.owner
+					}
+				}
+			}
+			# Star Eater over star
+			fotb_is_star_eater_orbiting_valid_star = yes
+		}
+	}
+	immediate = {
+		fear_of_this_battlestation_add_modifier = yes
+	}
+}

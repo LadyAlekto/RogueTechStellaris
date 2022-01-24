@@ -1,0 +1,23 @@
+#An army has been killed in ground combat
+# THIS = owner (country)
+# FROM = army
+# FROMFROM = opponent (country)
+# FROMFROMFROM = planet
+on_army_killed_in_combat = {
+    events = {
+        revive.888
+    }
+}
+
+# THIS = owner (country)
+# FROM = owner (country)
+# FROMFROM = army
+# FROMFROMFROM = opponent (country)
+# FROMFROMFROMFROM = planet
+on_army_infector_chance = {
+    random_events = {
+        60 = 0
+        25 = revive.666
+		15 = revive.777
+    }
+}

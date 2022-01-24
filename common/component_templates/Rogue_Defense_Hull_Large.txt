@@ -1,0 +1,183 @@
+utility_component_template = {
+	key = "Rogue_Basic_Hull_LARGE"
+	size = small
+	icon = "Rogue_Basic_Hull"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_station  }
+	size_restriction = { marauder_cruiser cruiser crisis_cruiser starbase_starhold RT_NEMESIS_PLATTFORM }
+
+	component_set = "Rogue_Defense_Hull"
+	upgrades_to = "Rogue_Organic_Hull_LARGE"
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Organic_Hull_LARGE"
+	size = small
+	icon = "Rogue_Organic_Hull"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_station  }
+	size_restriction = { marauder_cruiser cruiser crisis_cruiser starbase_starhold RT_NEMESIS_PLATTFORM }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			food = 0.65
+		}
+		upkeep = {
+			food = 0.065
+		}
+	}
+
+	prerequisites = { "tech_roguetech_bio_armor_plating" }
+	component_set = "Rogue_Defense_Hull"
+	upgrades_to = "Rogue_Crystal_Hull_LARGE"
+
+	modifier = {
+		ship_hull_add = 260
+		ship_hull_regen_add_perc = 1
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Crystal_Hull_LARGE"
+	size = small
+	icon = "Rogue_Crystal_Hull"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_station  }
+	size_restriction = { marauder_cruiser cruiser crisis_cruiser starbase_starhold RT_NEMESIS_PLATTFORM }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			rare_crystals = 1.3
+		}
+	}
+
+	prerequisites = { "tech_crystal_armor_1" }
+	component_set = "Rogue_Defense_Hull"
+	upgrades_to = "Rogue_Crystal_Hull_MKII_LARGE"
+
+	modifier = {
+		ship_hull_add = 715
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Crystal_Hull_MKII_LARGE"
+	size = small
+	icon = "Rogue_Crystal_Hull_MKII"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_station  }
+	size_restriction = { marauder_cruiser cruiser crisis_cruiser starbase_starhold RT_NEMESIS_PLATTFORM }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			rare_crystals = 1.69
+		}
+	}
+
+	prerequisites = { "tech_crystal_armor_2" }
+	component_set = "Rogue_Defense_Hull"
+	upgrades_to = "Rogue_Zontrium_Hull_LARGE"
+
+	modifier = {
+		ship_hull_add = 1209
+	}
+
+	ai_weight = {
+		weight = 3
+	}
+}
+
+utility_component_template = {
+	key = "Rogue_Zontrium_Hull_LARGE"
+	size = small
+	icon = "Rogue_Zontrium_Hull"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_station  }
+	size_restriction = { marauder_cruiser cruiser crisis_cruiser starbase_starhold RT_NEMESIS_PLATTFORM }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			sr_living_metal = 1.04
+			nanites = 1.04
+		}
+		upkeep = {
+			sr_living_metal = 0.052
+			nanites = 0.052
+		}
+	}
+
+	prerequisites = { "tech_roguetech_zontrium_hulls" }
+	component_set = "Rogue_Defense_Hull"
+	upgrades_to = "Rogue_Xentronium_Hull_LARGE"
+
+	modifier = {
+		ship_hull_add = 1300
+		ship_hull_regen_add_perc = 1
+	}
+
+	ai_weight = {
+		weight = 4
+	}
+
+}
+
+utility_component_template = {
+	key = "Rogue_Xentronium_Hull_LARGE"
+	size = small
+	icon = "Rogue_Xentronium_Hull"
+	icon_frame = 1
+	power = 0
+	
+	class_restriction = { shipclass_military shipclass_starbase shipclass_military_station  }
+	size_restriction = { marauder_cruiser cruiser crisis_cruiser starbase_starhold RT_NEMESIS_PLATTFORM }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			sr_living_metal = 1.716
+			nanites = 1.716
+		}
+		upkeep = {
+			sr_living_metal = 0.104
+			nanites = 0.104
+		}
+	}
+
+	prerequisites = { "tech_roguetech_xentronium_hulls" }
+	component_set = "Rogue_Defense_Hull"
+
+	modifier = {
+		ship_hull_add = 1560
+		ship_hull_regen_add_perc = 1.5
+	}
+
+	ai_weight = {
+		weight = 6
+	}
+}

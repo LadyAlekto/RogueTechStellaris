@@ -1,0 +1,309 @@
+strike_craft_component_template = {
+	key = "SUPREMACY_STEALTH_SCOUT"
+	size = LARGE
+	entity = "fighter_entity"
+	weapon_type = point_defence
+	projectile_gfx = "scout_laser_1"
+	power = -20
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 30
+			energy = 10
+			minerals = 10
+		}
+		upkeep = {
+			alloys = 0.01
+			energy = 0.05
+			minerals = 0.02
+		}
+	}
+	count = 6
+	regeneration_per_day = 1.5
+	launch_time = 1.6
+
+	damage = { min = 4 max = 8 }
+	cooldown = 2
+	range = 10
+	engagement_range = 100
+	accuracy = 1.50
+	tracking = 1.50
+
+	health = 10
+	armor = 5
+	shield = 20
+	evasion = 1.1
+
+	speed = 700
+	rotation_speed = 0.8
+	acceleration = 1.3
+
+	shield_penetration = 0.5
+	armor_penetration = 0.5
+	shield_damage = 1.5
+	armor_damage = 1.2
+	hull_damage = 0.9
+
+	ship_behavior = "fighters_behavior"
+	icon = "fighter_Ia"
+	icon_frame = 1
+	prerequisites = { "tech_roguetech_stealth" }
+	component_set = "SUPREMACY_STEALTH_SCOUT"
+	upgrades_to = "SUPREMACY_STEALTH_FIGHTER_1"
+	tags = { weapon_type_strike_craft }
+}
+
+strike_craft_component_template = {
+	key = "SUPREMACY_STEALTH_FIGHTER_1"
+	size = LARGE
+	entity = "bomber_entity"
+
+	weapon_type = point_defence
+	projectile_gfx = "strike_craft_laser_1"
+
+	power = -30
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 30
+			sr_living_metal = 1
+			nanites = 1
+			sr_dark_matter = 1
+		}
+		upkeep = {
+			alloys = 0.02
+			sr_living_metal = 0.02
+			nanites = 0.02
+			sr_dark_matter = 0.03
+		}
+	}
+
+	count = 6
+	regeneration_per_day = 1.5
+	launch_time = 1.45
+
+	damage = { min = 6 max = 12 }
+	cooldown = 2
+	range = 11
+	engagement_range = 110
+	accuracy = 1.50
+	tracking = 1.50
+
+	health = 15
+	armor = 10
+	shield = 30
+	evasion = 1.1
+
+	speed = 750
+	rotation_speed = 0.8
+	acceleration = 1.3
+
+	shield_penetration = 0.5
+	armor_penetration = 0.5
+	shield_damage = 1.5
+	armor_damage = 1.2
+	hull_damage = 0.9
+
+	ship_behavior = "fighters_behavior"
+
+	icon = "fighter_IIa"
+	icon_frame = 1
+	component_set = "SUPREMACY_STEALTH_FIGHTER_1"
+	prerequisites = { "tech_strike_craft_1" "tech_roguetech_stealth" }
+	upgrades_to = "SUPREMACY_STEALTH_FIGHTER_2"
+
+	tags = { weapon_type_strike_craft }
+	ai_tags = { weapon_role_point_defense }
+
+}
+
+strike_craft_component_template = {
+	key = "SUPREMACY_STEALTH_FIGHTER_2"
+	size = LARGE
+	entity = "bomber_entity"
+
+	weapon_type = point_defence
+	projectile_gfx = "strike_craft_laser_2"
+
+	power = -40
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 40
+			sr_living_metal = 1.3
+			nanites = 1.3
+			sr_dark_matter = 1.5
+		}
+		upkeep = {
+			alloys = 0.03
+			sr_living_metal = 0.03
+			nanites = 0.03
+			sr_dark_matter = 0.05
+		}
+	}
+
+	count = 6
+	regeneration_per_day = 1.5
+	launch_time = 1.3
+
+	damage = { min = 8 max = 16 }
+	cooldown = 2.6
+	range = 12
+	engagement_range = 120
+	accuracy = 1.50
+	tracking = 1.50
+
+	health = 20
+	armor = 15
+	shield = 40
+	evasion = 1.1
+
+	speed = 800
+	rotation_speed = 0.8
+	acceleration = 1.3
+
+	shield_penetration = 0.5
+	armor_penetration = 0.5
+	shield_damage = 1.5
+	armor_damage = 1.2
+	hull_damage = 0.9
+
+	ship_behavior = "fighters_behavior"
+
+	icon = "fighter_IIIa"
+	icon_frame = 1
+	component_set = "SUPREMACY_STEALTH_FIGHTER_2"
+	prerequisites = { "tech_strike_craft_2" "tech_roguetech_stealth" }
+	upgrades_to = "SUPREMACY_STEALTH_FIGHTER_3"
+
+	tags = { weapon_type_strike_craft }
+	ai_tags = { weapon_role_point_defense }
+
+}
+
+strike_craft_component_template = {
+	key = "SUPREMACY_STEALTH_FIGHTER_3"
+	size = LARGE
+	entity = "bomber_entity"
+
+	weapon_type = point_defence
+	projectile_gfx = "strike_craft_laser_3"
+
+	power = -50
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 50
+			sr_living_metal = 1.5
+			nanites = 1.5
+			sr_dark_matter = 1.8
+		}
+		upkeep = {
+			alloys = 0.04
+			sr_living_metal = 0.04
+			nanites = 0.04
+			sr_dark_matter = 0.07
+		}
+	}
+
+	count = 6
+	regeneration_per_day = 1.5
+	launch_time = 1.15
+
+	damage = { min = 10 max = 20 }
+	cooldown = 2
+	range = 13
+	engagement_range = 130
+	accuracy = 1.50
+	tracking = 1.50
+
+	health = 25
+	armor = 20
+	shield = 50
+	evasion = 1.1
+
+	speed = 850
+	rotation_speed = 0.8
+	acceleration = 1.3
+
+	shield_penetration = 0.5
+	armor_penetration = 0.5
+	shield_damage = 1.5
+	armor_damage = 1.2
+	hull_damage = 0.9
+
+	ship_behavior = "fighters_behavior"
+
+	icon = "fighter_IVa"
+	icon_frame = 1
+	component_set = "SUPREMACY_STEALTH_FIGHTER_3"
+	upgrades_to = "SUPREMACY_STRIKE_CRAFT"
+	prerequisites = { "tech_strike_craft_3" "tech_roguetech_stealth" }
+
+	tags = { weapon_type_strike_craft }
+	ai_tags = { weapon_role_point_defense }
+
+}
+
+strike_craft_component_template = {
+	key = "SUPREMACY_STRIKE_CRAFT"
+	size = LARGE
+	entity = "fighter_entity"
+
+	weapon_type = point_defence
+	projectile_gfx = "strike_craft_laser_3"
+
+	power = -60
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 60
+			sr_living_metal = 1.7
+			nanites = 1.7
+			sr_dark_matter = 2
+		}
+		upkeep = {
+			alloys = 0.05
+			sr_living_metal = 0.05
+			nanites = 0.05
+			sr_dark_matter = 0.09
+		}
+	}
+
+	count = 6
+	regeneration_per_day = 1.5
+	launch_time = 1
+
+	damage = { min = 15 max = 30 }
+	cooldown = 2
+	range = 15
+	engagement_range = 150
+	accuracy = 1.50
+	tracking = 1.50
+
+	health = 30
+	armor = 30
+	shield = 60
+	evasion = 1.1
+
+	speed = 900
+	rotation_speed = 0.8
+	acceleration = 1.3
+
+	shield_penetration = 0.5
+	armor_penetration = 0.5
+	shield_damage = 1.5
+	armor_damage = 1.2
+	hull_damage = 0.9
+
+	ship_behavior = "fighters_behavior"
+
+	icon = "fighter_Va"
+	icon_frame = 1
+	component_set = "SUPREMACY_STRIKE_CRAFT"
+	prerequisites = { "tech_roguetech_scalar_energy_fields" "tech_roguetech_stealth" "tech_strike_craft_3" }
+
+	tags = { weapon_type_strike_craft }
+	ai_tags = { weapon_role_point_defense }
+
+}

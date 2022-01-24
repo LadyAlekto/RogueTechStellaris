@@ -1,0 +1,154 @@
+tr_biophage_harvest_adopt = {
+	#grants bombardment
+}
+
+tr_biophage_harvest_finish = {
+	modifier = {
+		ascension_perks_add = 1
+		pop_growth_speed = 0.15
+	}
+	tradition_swap = {
+		name = tr_biophage_harvest_finish_machine
+		inherit_effects = no
+		inherit_icon = yes
+		trigger = {
+			is_machine_empire = yes
+		}
+		
+		modifier = {
+		ascension_perks_add = 1
+		pop_assembly_speed = 0.15
+	}
+
+		weight = {
+			factor = 1
+		}
+	}
+}
+
+tr_biophage_harvest_vivisection= {
+	#biophage_trad_purge_unity
+
+	ai_weight = {
+		factor = 5000
+	}
+}
+
+tr_biophage_harvest_oppression = {	
+
+	#biophage_trad_purge_influence
+
+	ai_weight = {
+		factor = 5000
+	}
+}
+
+tr_biophage_harvest_foraging = {
+	possible = {
+		has_tradition = tr_biophage_harvest_vivisection
+	}
+	modifier = {
+		job_farmer_add = 1
+	}
+
+	tradition_swap = {
+		name = tr_biophage_harvest_foraging_hive
+		inherit_effects = no
+		inherit_icon = yes
+		trigger = {
+			is_hive_empire = yes
+		}
+
+		modifier = {
+		job_agri_drone_add = 1
+	}
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_biophage_harvest_foraging_machine
+		inherit_effects = no
+		inherit_icon = yes
+		trigger = {
+			is_machine_empire = yes
+		}
+		
+		modifier = {
+		job_technician_drone_add = 1
+	}
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	ai_weight = {
+		factor = 5000
+	}
+}
+
+tr_biophage_harvest_bioweapons = {
+	possible = {
+		has_tradition = tr_biophage_harvest_vivisection
+		has_tradition = tr_biophage_harvest_oppression
+	}
+
+	modifier = {
+		planet_orbital_bombardment_damage = 0.5
+	}
+
+	ai_weight = {
+		factor = 5000
+	}
+}
+
+tr_biophage_harvest_recycle = {
+	possible = {
+		has_tradition = tr_biophage_harvest_oppression
+	}
+
+	modifier = {
+		planet_farmers_consumer_goods_produces_add = 1
+	}
+
+	tradition_swap = {
+		name = tr_biophage_harvest_recycle_hive
+		inherit_effects = no
+		inherit_icon = yes
+		trigger = {
+			is_hive_empire = yes
+		}
+
+		modifier = {
+		planet_farmers_minerals_produces_add = 1
+	}
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_biophage_harvest_recycle_machine
+		inherit_effects = no
+		inherit_icon = yes
+		trigger = {
+			is_machine_empire = yes
+		}
+		
+		modifier = {
+		planet_technician_energy_produces_add = 1
+	}
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	ai_weight = {
+		factor = 5000
+	}
+}

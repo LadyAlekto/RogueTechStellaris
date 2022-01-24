@@ -1,0 +1,111 @@
+leader_trait_biophage_engineered_leader_scientist = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_ap_engineered.dds"
+	modifier = {
+		all_technology_research_speed = 0.1
+		science_ship_survey_speed = 0.1
+		ship_anomaly_research_speed_mult = 0.2
+		ship_archaeological_site_excavation_speed_mult = 0.2
+	}
+	leader_potential_add = {
+		from = { has_ascension_perk = "ap_biophage_engineered_leaders" }
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	prerequisites = { tech_roguetech_biological_mastery }
+	
+	initial = no
+	randomized = no
+
+	ai_categories = {
+		survey
+		physics
+		society
+		engineering
+	}
+
+	ai_weight = {
+		weight = 300
+	}
+}
+
+leader_trait_biophage_engineered_leader_admiral = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_ap_engineered.dds"
+	modifier = {
+		ship_speed_mult = 0.1
+		ship_hull_mult = 0.1
+		ship_armor_mult = 0.1
+		ship_shield_mult = 0.1
+	}
+	leader_potential_add = {
+		from = { has_ascension_perk = "ap_biophage_engineered_leaders" }
+	}
+	leader_trait = { admiral }
+	leader_class = { admiral }
+	prerequisites = { tech_roguetech_biological_mastery }
+	
+	initial = no
+	randomized = no
+
+}
+
+leader_trait_biophage_engineered_leader_general = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_ap_engineered.dds"
+	modifier = {
+		army_damage_mult = 0.15
+		army_morale = 0.15
+		army_experience_gain_mult = 0.2
+	}
+	leader_potential_add = {
+		from = { has_ascension_perk = "ap_biophage_engineered_leaders" }
+	}
+	leader_trait = { general }
+	leader_class = { general }
+	prerequisites = { tech_roguetech_biological_mastery }
+	
+	initial = no
+	randomized = no
+}
+
+leader_trait_biophage_engineered_leader_governor = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_ap_engineered.dds"
+	modifier = {
+		planet_jobs_produces_mult = 0.05
+		planet_jobs_upkeep_mult = -0.05
+	}
+	leader_potential_add = {
+		from = { has_ascension_perk = "ap_biophage_engineered_leaders" }
+	}
+	leader_trait = { governor }
+	leader_class = { governor }
+	prerequisites = { tech_roguetech_biological_mastery }
+	
+	initial = no
+	randomized = no
+}
+
+leader_trait_biophage_engineered_leader_ruler = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_ap_engineered.dds"
+	modifier = {
+		country_admin_cap_mult = 0.1
+	}
+	leader_potential_add = {
+		from = { has_ascension_perk = "ap_biophage_engineered_leaders" }
+	}
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	prerequisites = { tech_roguetech_biological_mastery }
+	
+	initial = no
+	randomized = no
+
+}

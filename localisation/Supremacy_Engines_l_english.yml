@@ -1,0 +1,21 @@
+﻿l_english:
+ SUPREMACY_JUMP_DRIVE:0 "Space-Fold Drive"
+ SUPREMACY_JUMP_DRIVE_DESC:0 "Folding Hyperspace extends Hyper and Jump speeds."
+ 
+ SHIP_THRUSTER_SUPREMACY:0 "Gravimetric Thrusters"
+ SHIP_THRUSTER_SUPREMACY_DESC:0 "Folding local gravity around the ship pushes the limits of sub-light propulsion."
+  
+ DESTROYER_SHIP_THRUSTER_SUPREMACY:0 "Gravimetric Thrusters"
+ DESTROYER_SHIP_THRUSTER_SUPREMACY_DESC:0 "Folding local gravity around the ship pushes the limits of sub-light propulsion."
+ 
+ CRUISER_SHIP_THRUSTER_SUPREMACY:0 "Gravimetric Thrusters"
+ CRUISER_SHIP_THRUSTER_SUPREMACY_DESC:0 "Folding local gravity around the ship pushes the limits of sub-light propulsion."
+ 
+ BATTLESHIP_SHIP_THRUSTER_SUPREMACY:0 "Gravimetric Thrusters"
+ BATTLESHIP_SHIP_THRUSTER_SUPREMACY_DESC:0 "Folding local gravity around the ship pushes the limits of sub-light propulsion."
+ 
+ TITAN_SHIP_THRUSTER_SUPREMACY:0 "Gravimetric Thrusters"
+ TITAN_SHIP_THRUSTER_SUPREMACY_DESC:0 "Folding local gravity around the ship pushes the limits of sub-light propulsion."
+ 
+ COLOSSUS_SHIP_THRUSTER_SUPREMACY:0 "Gravimetric Thrusters"
+ COLOSSUS_SHIP_THRUSTER_SUPREMACY_DESC:0 "Folding local gravity around the ship pushes the limits of sub-light propulsion."

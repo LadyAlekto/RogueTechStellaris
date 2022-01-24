@@ -1,0 +1,41 @@
+component_set = {
+	key = "Juggernaut_Shipyard"
+	
+	icon = "Juggernaut_Shipyard"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "SUPREMACY_Juggernaut_Shipyard"
+	
+	icon = "SUPREMACY_Juggernaut_Shipyard"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "SUPREMACY_Juggernaut_Engines"
+	
+	icon = "SUPREMACY_Juggernaut_Engines"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "SUPREMACY_Juggernaut_Defenses"
+	
+	icon = "SUPREMACY_Juggernaut_Defenses"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "SUPREMACY_Juggernaut_batteries"
+	
+	icon = "SUPREMACY_Juggernaut_batteries"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "SUPREMACY_Juggernaut_minefield"
+	
+	icon = "SUPREMACY_Juggernaut_minefield"
+	icon_frame = 1	
+}

@@ -1,0 +1,218 @@
+supremacy_exotic_matter_laboratory = {
+	base_buildtime = 600
+	icon = supremacy_exotic_matter_laboratory
+	category = research
+	base_cap_amount = 1
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_anti_matter_researcher_add = 1
+		job_anti_matter_researcher_per_pop = 0.01
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_anti_matter_researcher_drone_add = 1
+		job_anti_matter_researcher_drone_per_pop = 0.01
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_anti_matter_researcher_robot_add = 1
+		job_anti_matter_researcher_robot_per_pop = 0.01
+		}
+	}
+	
+	planet_modifier = {
+		planet_buildings_upkeep_mult = -0.05
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 600
+			alloys = 600
+		}
+		produces = {
+			physics_research = 6
+			engineering_research = 6
+			society_research = 6
+			sr_dark_matter = 0.5
+			energy = 10
+		}
+		upkeep = {
+			minerals = 20
+		}
+	}
+
+	prerequisites = {
+		"tech_supremacy_exotic_matter_theory"
+	}
+	upgrades = {
+		"supremacy_exotic_matter_plant"
+	}
+}
+
+supremacy_exotic_matter_plant = {
+	base_buildtime = 200
+	icon = supremacy_exotic_matter_plant
+	category = research
+	can_build = no
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_anti_matter_researcher_add = 2
+		job_anti_matter_researcher_per_pop = 0.02
+		
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_anti_matter_researcher_drone_add = 2
+		job_anti_matter_researcher_drone_per_pop = 0.02
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_anti_matter_researcher_robot_add = 2
+		job_anti_matter_researcher_robot_per_pop = 0.02
+		}
+	}
+	
+	planet_modifier = {
+		planet_anti_matter_researcher_upkeep_mult = -0.3
+		planet_anti_matter_researcher_sr_dark_matter_produces_mult = 2
+		planet_anti_matter_researcher_energy_produces_mult = 2	
+		planet_buildings_upkeep_mult = -0.1
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 400
+			alloys = 400
+			rare_crystals = 5
+			volatile_motes = 3
+			exotic_gases = 2
+		}
+		produces = {
+			physics_research = 4
+			engineering_research = 4
+			society_research = 4
+			sr_dark_matter = 1
+			energy = 20
+		}
+		upkeep = {
+			minerals = 10
+		}
+	}
+
+	prerequisites = {
+		"tech_supremacy_exotic_matter_application"
+	}
+	
+	upgrades = {
+		"supremacy_exotic_matter_reactor"
+	}
+}
+
+supremacy_exotic_matter_reactor = {
+	base_buildtime = 200
+	icon = supremacy_exotic_matter_reactor
+	category = research
+	can_build = no
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_anti_matter_researcher_add = 3
+		job_anti_matter_researcher_per_pop = 0.03
+		
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_anti_matter_researcher_drone_add = 3
+		job_anti_matter_researcher_drone_per_pop = 0.03
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_anti_matter_researcher_robot_add = 3
+		job_anti_matter_researcher_robot_per_pop = 0.03
+		}
+	}
+	
+	planet_modifier = {
+		planet_anti_matter_researcher_upkeep_mult = -0.5
+		planet_anti_matter_researcher_sr_dark_matter_produces_mult = 3
+		planet_anti_matter_researcher_energy_produces_mult = 3
+		planet_buildings_upkeep_mult = -0.15
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 300
+			alloys = 300
+			rare_crystals = 10
+			volatile_motes = 5
+			exotic_gases = 3
+		}
+		produces = {
+			physics_research = 2
+			engineering_research = 2
+			society_research = 2
+			sr_dark_matter = 2
+			energy = 40
+		}
+		upkeep = {
+			minerals = 10
+		}
+	}
+
+	prerequisites = {
+		"tech_supremacy_exotic_matter_annihilation"
+	}
+}

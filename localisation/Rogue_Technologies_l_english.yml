@@ -1,0 +1,137 @@
+﻿l_english:
+ nanotrite_super_soldiers:0 "Nanite Super Soldier"
+ nanotrite_super_soldiers_plural:0 "Nanite Super Soldiers"
+ nanotrite_super_soldiers_desc:0 "Nanite enhanced Gene Warriors able to manipulate gravity and scalar fields during battle."
+ 
+ nanotrite_soldiers:0 "Nanite Soldier"
+ nanotrite_soldiers_plural:0 "Nanite Soldiers"
+ nanotrite_soldiers_desc:0 "Nanite enhanced Soldiers able to manipulate gravity and scalar fields during battle."
+ 
+ tech_rogue_base_delta_zero_initiative:0 "Base Delta Zero Initiative"
+ tech_rogue_base_delta_zero_initiative_desc:0 "The Base Delta Zero Initiative thoroughly liberates any planet from rebel forces."
+ 
+ tech_supremacy_galactic_administration:0 "Stellar Administration"
+ tech_supremacy_galactic_administration_desc:0 "Facilities to oversee the empire's administration"
+
+ tech_supremacy_anomalous_materials:0 "Anomalous Materials"
+ tech_supremacy_anomalous_materials_desc:0 "Theories of Self Replicating Materials that seemingly defy physics"
+ 
+ tech_supremacy_molecular_assembly:0 "Molecular Assembly"
+ tech_supremacy_molecular_assembly_desc:0 "Manipulation of matter on the Molecular Level"
+ 
+ tech_supremacy_intelligent_materials:0 "Molecular Assembly"
+ tech_supremacy_intelligent_materials_desc:0 "Materials that not only replicate themself, but can be encouraged to form any matter seemingly out of nothing"
+ 
+ tech_supremacy_exotic_matter_theory:0 "Exotic Matter Theory"
+ tech_supremacy_exotic_matter_theory_desc:0 "Space has shown that there is more to the universe then what we once conceived"
+ 
+ tech_supremacy_exotic_matter_application:0 "Exotic Matter Application"
+ tech_supremacy_exotic_matter_application_desc:0 "Extract and refine Exotic Matter"
+ 
+ tech_supremacy_exotic_matter_annihilation:0 "Exotic Matter Annihilation"
+ tech_supremacy_exotic_matter_annihilation_desc:0 "Stabilize and tame a black hole to draw power from time/space itself"
+ 
+ tech_roguetech_stealth:0 "Stealth Doctrine"
+ tech_roguetech_stealth_desc:0 "The art of war, is also to not be where one is expected"
+ 
+ tech_supremacy_exotic_matter_propulsion:0 "Exotic Matter Propulsion"
+ tech_supremacy_exotic_matter_propulsion_desc:0 "Manipulation of Exotic Matter can be applied to a ships"
+ 
+ tech_supremacy_hyperspace_folding:0 "Hyperspace Folding"
+ tech_supremacy_hyperspace_folding_desc:0 "Folding Hyperspace and manipulate space/time to move with unprecedented FTL speeds"
+ 
+ tech_supremacy_horizon_core:0 "Exotic Matter Reactor"
+ tech_supremacy_horizon_core_desc:0 "Miniaturize the Planetary Reactor into the Horizon Exotic Matter Annihilation Core"
+ 
+ tech_rogue_elerium_core:0 "Chronoton Reactor"
+ tech_rogue_elerium_core_desc:0 "Hyperspace particles known as Chronotons can be captured and excited to cause a energetic reaction beyond our wildest dreams"
+ 
+ tech_supremacy_chronoton_fields:0 "Chronoton Field Analys"
+ tech_supremacy_chronoton_fields_desc:0 "Exotic Particles discovered manipulating hyperspace and dark matter allows to predict near-future movements"
+ 
+ tech_supremacy_super_positional_materials:0 "Superpostional Materials"
+ tech_supremacy_super_positional_materials_desc:0 "Extradimensional Materials and Matter formed into defensive barriers"
+ 
+ tech_roguetech_scalar_energy_fields:0 "Scalar Energy Manipulation"
+ tech_roguetech_scalar_energy_fields_desc:0 "Manipulating Scalar Fields allows to move and create energy and matter at will"
+ 
+ tech_supremacy_scalar_cannon_minituaristion:0 "Scalar Cannon Minituarisation"
+ tech_supremacy_scalar_cannon_minituaristion_desc:0 "A marvel of Engineering and Physics, the principles of scalar weapons applied into small systems"
+ 
+ tech_supremacy_scalar_cannon_minituaristion_2:0 "Scalar Cannon Minituarisation 2"
+ tech_supremacy_scalar_cannon_minituaristion_2_desc:0 "Further advances in scalar weapon technologies allows to create smaller weapons"
+ 
+ tech_supremacy_scalar_cannon_minituaristion_3:0 "Scalar Weapon Minituarisation 3"
+ tech_supremacy_scalar_cannon_minituaristion_3_desc:0 "Scalar based Weaponry and Equipment for our Gene-Warriors allows us to field near incomprehensible super soldiers"
+ 
+ tech_supremacy_dreadnought:0 "Supremacy Dreadnought"
+ tech_supremacy_dreadnought_desc:0 "The Supremacy Dreadnought Core. Void Superiority Reborn."
+ 
+ tech_rogue_nanolathe_engineering:0 "Nanolathe Engineering"
+ tech_rogue_nanolathe_engineering_desc:0 "Application of Forcefields and Nanites allows to 3d print literally everything anywhere."
+ 
+ tech_supremacy_megastructure_building_speed:0 "Nanolathe Printing"
+ tech_supremacy_megastructure_building_speed_desc:0 "Utilize Exotic Matter and Nanites to weave structures and buildings."
+ 
+ tech_supremacy_ship_building_speed:0 "Nanolathe Production"
+ tech_supremacy_ship_building_speed_desc:0 "Quantity has a Quality all of its own."
+ 
+ tech_supremacy_naval_cap:0 "Supremacy"
+ tech_supremacy_naval_cap_desc:0 "This is a fight to the Death. The only acceptable outcome is the Total Annihilation of the Other."
+ 
+ tech_supremacy_hull:0 "Juggernaut Refinement"
+ tech_supremacy_hull_desc:0 "Advances on the Juggernaut technology improves hull and build speed"
+ 
+ tech_supremacy_class:0 "Void Superiority"
+ tech_supremacy_class_desc:0 "Improve Star bases and Juggernauts"
+ 
+ tech_supremacy_anomalous_materials_mass_production:0 "Exotic Matter Production"
+ tech_supremacy_anomalous_materials_mass_production_desc:0 "Streamlined Production of Exotic and Anomalous Matter"
+ 
+ supremacy_tech_advanced_corvettes:0 "Advanced Corvettes"
+ supremacy_tech_advanced_destroyers:0 "Advanced Destroyers"
+ supremacy_tech_advanced_cruisers:0 "Advanced Cruisers"
+ supremacy_tech_advanced_battleships:0 "Advanced Battleships"
+ supremacy_tech_advanced_titans:0 "Advanced Titans"
+ 
+ supremacy_tech_advanced_corvettes_desc:0 "Utilizing Anomalous Materials and Exotic Matter in Ship construction allows to create Advanced Corvettes Hulls"
+ supremacy_tech_advanced_destroyers_desc:0 "Utilizing Anomalous Materials and Exotic Matter in Ship construction allows to create Advanced Destroyers Hulls"
+ supremacy_tech_advanced_cruisers_desc:0 "Utilizing Anomalous Materials and Exotic Matter in Ship construction allows to create Advanced Cruisers Hulls"
+ supremacy_tech_advanced_battleships_desc:0 "Utilizing Anomalous Materials and Exotic Matter in Ship construction allows to create Advanced Battleships Hulls"
+ supremacy_tech_advanced_titans_desc:0 "Utilizing Anomalous Materials and Exotic Matter in Ship construction allows to create Advanced Titans Hulls"
+ 
+ tech_roguetech_bio_strike_craft:0 "Geneered Strikecraft"
+ tech_roguetech_bio_strike_craft_desc:0 "Genetically Engineered Organisms akin to space dwelling life forms allows to create autonomous strike craft"
+ 
+ tech_roguetech_bio_missile:0 "Contagion Bomb"
+ tech_roguetech_bio_missile_desc:0 "Refitting a warhead with engineered micro organisms that consume almost all known substances"
+ 
+ tech_roguetech_bio_armor_plating:0 "Organic Hulls"
+ tech_roguetech_bio_armor_plating_desc:0 "Applying knowledge from space borne life forms to ship hulls allows to create enhanced hulls"
+ 
+ tech_roguetech_biological_mastery:0 "Life Sculpting"
+ tech_roguetech_biological_mastery_desc:0 "Life is Art. Genetics is the Clay."
+ 
+ tech_roguetech_biological_engineering:0 "Biological Constructs"
+ tech_roguetech_biological_engineering_desc:0 "Genetic and Biological principles applied to engineering."
+ 
+ tech_roguetech_zontrium_hulls:0 "Zontrium Alloys"
+ tech_roguetech_zontrium_hulls_desc:0 "Alloys from 'Living Metal' and forged with nanite fabrication techniques"
+ 
+ tech_roguetech_xentronium_hulls:0 "Xentronium Forging"
+ tech_roguetech_xentronium_hulls_desc:0 "Utilizing extra dimensional matter extracted from black holes allows to create impossibly dense materials"
+ 
+ tech_roguetech_adamantium_armor:0 "Adamantium Armor"
+ tech_roguetech_adamantium_armor_desc:0 "An Indomitable Alloy, virtually indestructible once forged."
+ 
+ tech_roguetech_adamantium_scales:0 "Adamantium Scales"
+ tech_roguetech_adamantium_scales_desc:0 "Adamntium Dragonscales, a truly impregnable defense."
+ 
+ tech_roguetech_void_shields:0 "Dimensional Shielding"
+ tech_roguetech_void_shields_desc:0 "Artifical event horizons weaved around the ship shift any incoming weapons fire into another dimension."
+ 
+ tech_supremacy_command_limit:0 "Stateless Strategy"
+ tech_supremacy_command_limit_desc:0 "Control space and you control any battlefield you can imagine."
+ 
+ tech_rogue_tempest_missiles:0 "Tempest Launcher"
+ tech_rogue_tempest_missiles_desc:0 "A dark-matter warhead utilizing nanite composed guidance and control systems, capable to punch through nearly any defense."
