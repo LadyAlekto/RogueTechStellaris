@@ -136,3 +136,48 @@ unrestricted_stargate_travel_gestalt = {
 		}
 	}
 }
+
+rogue_sell_influence_alloys = {
+	length = 0
+	resources = {
+		category = edicts
+		cost = {
+			influence = 100
+		}
+	}
+	effect = {
+		add_resource = {
+			alloys = 100
+		}
+	}
+}
+
+rogue_sell_influence_minerals = {
+	length = 0
+	resources = {
+		category = edicts
+		cost = {
+			influence = 100
+		}
+	}
+	effect = {
+		add_resource = {
+			minerals = 200
+		}
+	}
+}
+
+rogue_sell_influence_energy = {
+	length = 0
+	resources = {
+		category = edicts
+		cost = {
+			influence = 100
+		}
+	}
+	effect = {
+		add_resource = {
+			energy = 200
+		}
+	}
+}

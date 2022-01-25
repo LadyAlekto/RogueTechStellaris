@@ -244,7 +244,7 @@ utility_component_template = {
 	}
 
 	modifier = {
-		ship_hull_regen_add_perc = 1
+		ship_hull_regen_add_perc = 0.9
 		ship_armor_regen_add_perc = 0.75
 		ship_shield_regen_add_perc = 0.5
 	}
@@ -279,7 +279,7 @@ utility_component_template = {
 	}
 
 	modifier = {
-		ship_hull_regen_add_perc = 2
+		ship_hull_regen_add_perc = 1.2
 		ship_armor_regen_add_perc = 1
 		ship_shield_regen_add_perc = 0.7
 	}

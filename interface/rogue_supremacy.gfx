@@ -1,5 +1,25 @@
 
 	spriteTypes = {
+	
+	spriteType = {
+			name = "rogue_hard_shields"
+			texturefile = "gfx/interface/icons/ship_parts/rogue_hard_shields.dds"
+		}
+		
+		spriteType = {
+			name = "rogue_heavy_armor"
+			texturefile = "gfx/interface/icons/ship_parts/rogue_heavy_armor.dds"
+		}
+		
+		spriteType = {
+			name = "rogue_reinforced_hull"
+			texturefile = "gfx/interface/icons/ship_parts/rogue_reinforced_hull.dds"
+		}
+		
+		spriteType = {
+			name = "rogue_rangemaster"
+			texturefile = "gfx/interface/icons/ship_parts/rogue_rangemaster.dds"
+		}
 		
 		spriteType = {
 			name = "event_horizon_dark_matter_reactor"

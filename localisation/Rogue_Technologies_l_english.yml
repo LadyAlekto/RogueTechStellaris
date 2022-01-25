@@ -135,3 +135,12 @@
  
  tech_rogue_tempest_missiles:0 "Tempest Launcher"
  tech_rogue_tempest_missiles_desc:0 "A dark-matter warhead utilizing nanite composed guidance and control systems, capable to punch through nearly any defense."
+ 
+ tech_rogue_nanolathe_starbase_building:0 "Starbase Compartmentalisation"
+ tech_rogue_nanolathe_starbase_building_desc:0 "Utilising advances from Nanolathe Technologies allows all starbases to have 1 additional Building."
+ 
+ tech_rogue_nanolathe_starbase_module:0 "Starbase Extension"
+ tech_rogue_nanolathe_starbase_module_desc:0 "Reinforced Starbase systems allows to expand all starbases by 1 module."
+ 
+ tech_rogue_nanolathe_starbase_module_II:0 "Starbase Extension II"
+ tech_rogue_nanolathe_starbase_module_II_desc:0 "Sclar Field Starbase extensions allows to expand all starbases by 1 module."

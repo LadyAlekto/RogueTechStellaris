@@ -49,6 +49,144 @@ tech_rogue_nanolathe_engineering = {
 	}
 }
 
+tech_rogue_nanolathe_starbase_building = {
+	area = engineering
+	cost = 80000
+	tier = 5
+	levels = 2
+	category = { voidcraft }
+    prerequisites = { "tech_rogue_nanolathe_engineering" "tech_supremacy_dreadnought" }
+	weight = @tier5weight3 
+	
+	weight_modifier = {
+		factor = 1.50
+		modifier = {
+			factor = 1.5
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_nanite_transmutation"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_deflector"
+		}
+		modifier = {
+			factor = 5
+			has_technology = "tech_dark_matter_power_core"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_propulsion"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_roguetech_stealth"
+		}
+	}
+	
+	ai_weight = {
+		factor = 1.0
+	}
+	
+	modifier = {
+		starbase_building_capacity_add = 1
+	}
+}
+
+tech_rogue_nanolathe_starbase_module = {
+	area = engineering
+	cost = 90000
+	tier = 5
+	is_rare = yes
+	category = { voidcraft }
+    prerequisites = { "tech_rogue_nanolathe_starbase_building" }
+	weight = @tier5weight3 
+	
+	weight_modifier = {
+		factor = 1.50
+		modifier = {
+			factor = 1.5
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_nanite_transmutation"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_deflector"
+		}
+		modifier = {
+			factor = 5
+			has_technology = "tech_dark_matter_power_core"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_propulsion"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_roguetech_stealth"
+		}
+	}
+	
+	ai_weight = {
+		factor = 1.0
+	}
+	
+	modifier = {
+		starbase_module_capacity_add = 1
+	}
+}
+
+tech_rogue_nanolathe_starbase_module_II = {
+	area = physics
+	cost = 100000
+	tier = 5
+	is_rare = yes
+	category = { voidcraft }
+    prerequisites = { "tech_rogue_nanolathe_starbase_module" }
+	weight = @tier5weight3 
+	
+	weight_modifier = {
+		factor = 1.50
+		modifier = {
+			factor = 1.5
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_nanite_transmutation"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_deflector"
+		}
+		modifier = {
+			factor = 5
+			has_technology = "tech_dark_matter_power_core"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_dark_matter_propulsion"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_roguetech_stealth"
+		}
+	}
+	
+	ai_weight = {
+		factor = 1.0
+	}
+	
+	modifier = {
+		starbase_module_capacity_add = 1
+	}
+}
+
 tech_supremacy_super_positional_materials = {
 	area = Engineering
 	category = { materials }

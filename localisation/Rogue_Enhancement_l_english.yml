@@ -135,4 +135,19 @@
  Rogue_Auto_Repair_Nanites_SUPREMACY_DESC:0 "Specially repurposed Nanite swarms repair the ship effortlessly"
  SUPREMACY_JUMP_DRIVE_BOOST_SUPREMACY_DESC:0 "Contains maps and gravimetric analys to facilitate improved FTL mobility"
  Rogue_Fuel_Injectors_SUPREMACY_DESC:0 "Refined extradimensional matter injectors allows drastically improved acceleration"
+ 
+ Rogue_Titan_Boost:0 "Titan Specialisation"
+ Rogue_Titan_Boost_DESC:0 "Titan Specialisation"
+ 
+ Rogue_Titan_Shields:0 "Titan Shields"
+ Rogue_Titan_Shields_DESC:0 "Additional Shield Emitters improve the titans shielding"
+ 
+ Rogue_Titan_Armor:0 "Titan Armor"
+ Rogue_Titan_Armor_DESC:0 "Heavy Armor Plating shrug off most incoming fire"
+ 
+ Rogue_Titan_Hull:0 "Titan Hull"
+ Rogue_Titan_Hull_DESC:0 "Structural reinforcements improve survivability"
+ 
+ Rogue_Titan_Weapon:0 "Titan Weapons"
+ Rogue_Titan_Weapon_DESC:0 "Improved Command and Control Systems allow for efficient punishment"
 

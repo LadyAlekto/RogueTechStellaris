@@ -275,7 +275,7 @@ titan = {
 	required_component_set = "Rogue_Defense_Armor"
 	required_component_set = "Rogue_Defense_Shield"
 	required_component_set = "Rogue_Utility_Slot"
-	required_component_set = "Rogue_Utility_Slot"
+	required_component_set = "Rogue_Titan_Boost"
 	required_component_set = "ship_aura_components"
 
 	potential_construction = {

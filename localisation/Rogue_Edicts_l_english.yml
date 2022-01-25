@@ -10,3 +10,12 @@
  
  edict_unrestricted_stargate_travel_gestalt:0 "Unrestricted Gateway Travel"
  edict_unrestricted_stargate_travel_gestalt_desc:0 "Double the effects of any active Planetary Gateway. Increases empire wide Crime."
+ 
+ edict_rogue_sell_influence_alloys:0 "Trade £influence£ for £alloys£"
+ edict_rogue_sell_influence_alloys_desc:0 "Exchange £influence£ Influence for £alloys£ Alloys."
+ 
+ edict_rogue_sell_influence_minerals:0 "Trade £influence£ for £minerals£"
+ edict_rogue_sell_influence_minerals_desc:0 "Exchange £influence£ Influence for £minerals£ Minerals."
+ 
+ edict_rogue_sell_influence_energy:0 "Trade £influence£ for £energy£"
+ edict_rogue_sell_influence_energy_desc:0 "Exchange £influence£ Influence for £energy£ Energy."
