@@ -14,7 +14,7 @@ utility_component_template = {
 	prerequisites = { "tech_roguetech_stealth" }
 	component_set = "Rogue_Utility_Slot"
 	
-	size_restriction = { marauder_destroyer destroyer crisis_destroyer military_station_small starbase_starport }
+	size_restriction = { juggernaut star_eater }
 
 	modifier = {
 		ship_evasion_mult = 0.25
@@ -49,7 +49,7 @@ utility_component_template = {
 	component_set = "Rogue_Utility_Slot"
 	upgrades_to = "Rogue_PSI_Shield_Batteries_SUPREMACY"
 	
-	size_restriction = { marauder_destroyer destroyer crisis_destroyer military_station_small starbase_starport }
+	size_restriction = { juggernaut star_eater }
 
 	modifier = {
 		ship_shield_mult = 0.25
@@ -89,7 +89,7 @@ utility_component_template = {
 	upgrades_to = "Rogue_PSI_Shield_Batteries_II_SUPREMACY"
 	component_set = "Rogue_Utility_Slot"
 	
-	size_restriction = { marauder_destroyer destroyer crisis_destroyer military_station_small starbase_starport }
+	size_restriction = { juggernaut star_eater }
 
 	modifier = {
 		ship_shield_mult = 0.3
@@ -131,7 +131,7 @@ utility_component_template = {
 	prerequisites = { "tech_psionic_shield" }
 	component_set = "Rogue_Utility_Slot"
 	
-	size_restriction = { marauder_destroyer destroyer crisis_destroyer military_station_small starbase_starport }
+	size_restriction = { juggernaut star_eater }
 
 	modifier = {
 		ship_shield_mult = 0.4
@@ -169,7 +169,7 @@ utility_component_template = {
 	prerequisites = { "tech_dragon_armor" }
 	component_set = "Rogue_Utility_Slot"
 	
-	size_restriction = { marauder_destroyer destroyer crisis_destroyer military_station_small starbase_starport }
+	size_restriction = { juggernaut star_eater }
 
 	modifier = {
 		ship_armor_mult = 0.25
@@ -201,7 +201,7 @@ utility_component_template = {
 	prerequisites = { "tech_crystal_armor_1" }
 	component_set = "Rogue_Utility_Slot"
 	
-	size_restriction = { marauder_destroyer destroyer crisis_destroyer military_station_small starbase_starport }
+	size_restriction = { juggernaut star_eater }
 
 	modifier = {
 		ship_hull_mult = 0.25
@@ -239,7 +239,7 @@ utility_component_template = {
 	component_set = "Rogue_Utility_Slot"
 	upgrades_to = "Rogue_Auto_Repair_Nanites_SUPREMACY"
 	
-	size_restriction = { marauder_destroyer destroyer crisis_destroyer military_station_small starbase_starport }
+	size_restriction = { juggernaut star_eater }
 
 	ai_weight = {
 		weight = 10
@@ -273,7 +273,7 @@ utility_component_template = {
 	prerequisites = { tech_nanite_repair_system }
 	component_set = "Rogue_Utility_Slot"
 	
-	size_restriction = { marauder_destroyer destroyer crisis_destroyer military_station_small starbase_starport }
+	size_restriction = { juggernaut star_eater }
 
 	ai_weight = {
 		weight = 10
@@ -302,7 +302,7 @@ utility_component_template = {
 		ship_speed_mult = 0.2
 	}
 	
-	size_restriction = { marauder_destroyer destroyer crisis_destroyer military_station_small starbase_starport }
+	size_restriction = { juggernaut star_eater }
 	
 	prerequisites = { "tech_afterburners_2" }
 	component_set = "Rogue_Utility_Slot"
@@ -346,5 +346,5 @@ utility_component_template = {
 	prerequisites = { "tech_supremacy_hyperspace_folding" }
 	component_set = "Rogue_Utility_Slot"
 	
-	size_restriction = { marauder_destroyer destroyer crisis_destroyer military_station_small starbase_starport }
+	size_restriction = { juggernaut star_eater }
 }

@@ -112,7 +112,6 @@ juggernaut = {
 	required_component_set = "Rogue_Defense_Armor"
 	required_component_set = "Rogue_Defense_Shield"
 	required_component_set = "Rogue_Utility_Slot"
-	required_component_set = "Rogue_Utility_Slot"
 	required_component_set = "ship_aura_components"
 	required_component_set = "Juggernaut_building_set"
 

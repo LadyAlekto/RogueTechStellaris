@@ -26,6 +26,7 @@ tr_supremacy_total_war_conscription = {
 
 	modifier = {
 		job_soldier_add = 1
+		job_soldier_per_pop = 0.1
 	}
 
 	tradition_swap = {
@@ -38,6 +39,7 @@ tr_supremacy_total_war_conscription = {
 
 		modifier = {
 		job_warrior_drone_add = 1
+		job_warrior_drone_per_pop = 0.1
 	}
 
 		weight = {
@@ -55,6 +57,7 @@ tr_supremacy_total_war_conscription = {
 		
 		modifier = {
 		job_warrior_drone_add = 1
+		job_warrior_drone_per_pop = 0.1
 	}
 
 		weight = {

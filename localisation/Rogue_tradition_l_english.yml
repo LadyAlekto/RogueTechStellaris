@@ -13,15 +13,15 @@
  tr_supremacy_total_war_mobilisation_delayed:0 "Into the Gates of Hell we march."
  
  tr_supremacy_total_war_conscription:0 "Conscription"
- tr_supremacy_total_war_conscription_desc:0 "+1 $job_soldier$ \n Soldier produce +0.5 £unity£"
+ tr_supremacy_total_war_conscription_desc:0 "+1 $job_soldier$ \n $job_soldier$ per 100 Pops"
  tr_supremacy_total_war_conscription_delayed:0 "Everyone must do their part."
  
  tr_supremacy_total_war_conscription_hive:0 "War Drones"
- tr_supremacy_total_war_conscription_hive_desc:0 "+1 $job_warrior_drone$ \n Warrior drones produce +0.5 £unity£"
+ tr_supremacy_total_war_conscription_hive_desc:0 "+1 $job_warrior_drone$ \n $job_warrior_drone$ per 100 Pops"
  tr_supremacy_total_war_conscription_hive_delayed:0 "The Hive must be protected."
  
  tr_supremacy_total_war_conscription_machine:0 "War Drones"
- tr_supremacy_total_war_conscription_machine_desc:0 "+1 $job_warrior_drone$ \n Warrior drones produce +0.5 £unity£"
+ tr_supremacy_total_war_conscription_machine_desc:0 "+1 $job_warrior_drone$ \n $job_warrior_drone$ per 100 Pops"
  tr_supremacy_total_war_conscription_machine_delayed:0 "Warrior Drone production approved."
  
  tr_supremacy_total_war_paranoia:0 "Paranoia"
@@ -63,7 +63,7 @@
  tr_biophage_harvest_finish_machine_desc:0 "Unlock Ascension Perk. \nPurge speed increased by 100%. \nMechanical Pop assembly speed increased by 15%"
 
  tr_biophage_harvest_vivisection:0 "Vivisection"
- tr_biophage_harvest_vivisection_desc:0 "Gain 10% Monthly £unity£ from Purging Organics."
+ tr_biophage_harvest_vivisection_desc:0 "Gain 15% Monthly £unity£ from Purging Organics."
  tr_biophage_harvest_vivisection_delayed:0 "We must learn what we can."
  
  tr_biophage_harvest_oppression:0 "Oppression"

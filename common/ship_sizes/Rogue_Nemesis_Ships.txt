@@ -56,7 +56,7 @@ crisis_battleship = {
 	resources = {
 		category = ships
 		cost = {
-			minerals = 1600
+			minerals = 400
 			menace = 100
 		}
 		upkeep = {
@@ -172,7 +172,7 @@ crisis_titan = {
 	resources = {
 		category = ships
 		cost = {
-			minerals = 2000
+			minerals = 800
 			menace = 150
 		}
 		upkeep = {

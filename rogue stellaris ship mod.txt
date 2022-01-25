@@ -39,22 +39,13 @@ Crisis ships nerfed to now have item cost and cost a bit of menace
 
 New Technologies, ships, weapon and plattform parts when going Crisis
 
-3 new plattform sections unlocked with "Jury Rigged Weapons"
-
 New Weapons, from biological warheads and fighters, to a whole new range of weapons that fire a constant beam
 
 New unique tech trees for other ascensions and machines will come in future
 
 New Armies
 
-Starbase Upgrade to one of the 5 ship defenses
-Defenses scale through multi and additional weapon mounts
-+2 Modules For citadel
-1 aux slot per size
-
-2 Aux for Defense Plattforms
-
-Defense Plattforms use destroyer defenses
+Starbases got some buffs
 
 Defines tweaks include much higher fleet max, command limits and scales starbase and fleet size with number of pops
 
@@ -65,4 +56,4 @@ https://steamuserimages-a.akamaihd.net/ugc/1834655158082381800/E13496108D0241709
 
 idea inspired by: https://steamcommunity.com/sharedfiles/filedetails/?id=2636347658
 
-
+Big thanks to everyone on the Stellaris Modding Den for rubberducking and being awesome :)

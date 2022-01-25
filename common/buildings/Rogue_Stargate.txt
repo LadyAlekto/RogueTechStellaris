@@ -37,7 +37,7 @@ rogue_planetary_gateway = {
 		}
 		modifier = {
 			job_coordinator_add_add = 1
-			job_coordinator_add_per_pop = 0.01
+			job_coordinator_per_pop = 0.01
 		}
 	}
 	

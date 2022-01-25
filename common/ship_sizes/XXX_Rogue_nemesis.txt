@@ -46,7 +46,7 @@ crisis_corvette = {
 	resources = {
 		category = ships
 		cost = {
-			minerals = 100
+			minerals = 50
 			menace = 10
 		}
 		upkeep = {
@@ -102,7 +102,7 @@ crisis_destroyer = {
 	resources = {
 		category = ships
 		cost = {
-			minerals = 400
+			minerals = 100
 			menace = 20
 		}
 		upkeep = {
@@ -159,7 +159,7 @@ crisis_cruiser = {
 	resources = {
 		category = ships
 		cost = {
-			minerals = 750
+			minerals = 200
 			menace = 40
 		}
 		upkeep = {
@@ -255,10 +255,7 @@ star_eater = {
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
 	required_component_set = "Rogue_Defense_Hull"
-	required_component_set = "Rogue_Defense_Hull"
 	required_component_set = "Rogue_Defense_Armor"
-	required_component_set = "Rogue_Defense_Armor"
-	required_component_set = "Rogue_Defense_Shield"
 	required_component_set = "Rogue_Defense_Shield"
 	required_component_set = "ship_aura_components"
 
@@ -266,7 +263,7 @@ star_eater = {
 		category = ships
 		cost = {
 			sr_dark_matter = 8000
-			menace = 200
+			menace = 100
 		}
 	}
 }
