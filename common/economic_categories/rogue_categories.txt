@@ -24,13 +24,13 @@ planet_anti_matter_researcher = {
 	}
 }
 
-planet_tw_soldiers = {
-	parent = planet_jobs
+planet_zro_refiners = {
+	icon = "GFX_zro_refiners"
+	parent = planet_jobs_productive
 	generate_mult_modifiers = {
 		produces
 		upkeep
 	}
-
 	generate_add_modifiers = {
 		produces
 		upkeep

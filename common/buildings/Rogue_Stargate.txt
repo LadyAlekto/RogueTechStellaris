@@ -36,7 +36,43 @@ rogue_planetary_gateway = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_coordinator_add_add = 1
+			job_coordinator_add = 1
+			job_coordinator_per_pop = 0.01
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+			owner = { has_edict = unrestricted_stargate_travel }
+		}
+		modifier = {
+			job_bureaucrat_add = 1
+			job_bureaucrat_per_pop = 0.01
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+			owner = { has_edict = unrestricted_stargate_travel_gestalt }
+		}
+		modifier = {
+			job_synapse_drone_add = 1
+			job_synapse_drone_per_pop = 0.01
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+			owner = { has_edict = unrestricted_stargate_travel_gestalt }
+		}
+		modifier = {
+			job_coordinator_add = 1
 			job_coordinator_per_pop = 0.01
 		}
 	}
@@ -65,6 +101,7 @@ rogue_planetary_gateway = {
 			planet_emigration_push_mult = 0.5
 		}
 	}
+	
 	
 	planet_modifier = {
 		planet_resettlement_unemployed_mult = 2

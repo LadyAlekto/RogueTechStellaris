@@ -1,11 +1,4 @@
 ﻿l_english:
-
- crisis_battleship:0 "Galleon"
- crisis_battleship_desc:0 "Your Discount Battleship"
- 
- RT_CRISIS_BATTLESHIP:0 "Galleon"
- RT_CRISIS_BATTLESHIP_desc:0 "Just a BFG with Engines"
-
  CORE_LA_JUGGERNAUT_SECTION_CARRIER:0 "Dreadnought"
  CORE_LA_JUGGERNAUT_SECTION_DARRIER_desc:0 "The Ultimate expression of Void Superiority"
  

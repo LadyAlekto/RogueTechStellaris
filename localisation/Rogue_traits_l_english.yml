@@ -25,20 +25,17 @@
  leader_trait_bio_comp_assistant_gestalt:0 "Bio-Comp Assistant"
  leader_trait_bio_comp_assistant_gestalt_desc:1 "A Biological Computer with subspace link to the collective assists this leader."
  
- leader_trait_biophage_engineered_leader_scientist:0 "Engineered"
- leader_trait_biophage_engineered_leader_scientist_desc:1 "This leader was Engineered for their role."
+ leader_trait_biophage_engineered_leader_scientist:0 "Gen-Eered Scientist"
+ leader_trait_biophage_engineered_leader_scientist_desc:1 "This Scientist was Genetically Engineered for their role."
  
- leader_trait_biophage_engineered_leader_admiral:0 "Engineered"
- leader_trait_biophage_engineered_leader_admiral_desc:1 "This leader was Engineered for their role."
+ leader_trait_biophage_engineered_leader_admiral:0 "Gen-Eered Admiral"
+ leader_trait_biophage_engineered_leader_admiral_desc:1 "This Admiral was Genetically Engineered for their role."
  
- leader_trait_biophage_engineered_leader_general:0 "Engineered"
- leader_trait_biophage_engineered_leader_general_desc:1 "This leader was Engineered for their role."
+ leader_trait_biophage_engineered_leader_general:0 "Gen-Eered General"
+ leader_trait_biophage_engineered_leader_general_desc:1 "This General was Genetically Engineered for their role."
  
- leader_trait_biophage_engineered_leader_governor:0 "Engineered"
- leader_trait_biophage_engineered_leader_governor_desc:1 "This leader was Engineered for their role."
+ leader_trait_biophage_engineered_leader_governor:0 "Gen-Eered Governor"
+ leader_trait_biophage_engineered_leader_governor_desc:1 "This Governor was Genetically Engineered for their role."
  
- leader_trait_biophage_engineered_leader_ruler:0 "Engineered"
- leader_trait_biophage_engineered_leader_ruler_desc:1 "This leader was Engineered for their role."
- 
- ap_biophage_engineered_leaders:0 "Engineered Leaders"
- ap_biophage_engineered_leaders_desc:0 "We cannot let nature decide who will lead us. \n\n§YLeaders Gain additional Traits§!"
+ leader_trait_biophage_engineered_leader_ruler:0 "Gen-Eered Ruler"
+ leader_trait_biophage_engineered_leader_ruler_desc:1 "This Ruler was Genetically Engineered for their role."

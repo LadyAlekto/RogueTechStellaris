@@ -407,7 +407,6 @@ tech_supremacy_dreadnought = {
 		shipsize_juggernaut_hull_add = 100
 		shipsize_juggernaut_hull_mult = 0.1
 		shipsize_juggernaut_build_speed_mult = 0.1
-		ship_juggernaut_cost_mult = -0.1
 	}
 
 	weight_modifier = {

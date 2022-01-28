@@ -5,13 +5,9 @@ hyper_matter_fuel = {
 	icon = "GFX_edict_type_policy"
 	resources = {
 		category = ship_edicts
-		cost = {
-			exotic_gases = 50
-			sr_dark_matter = 50
-		}
 		upkeep = {
-			exotic_gases = 5
-			sr_dark_matter = 5
+			exotic_gases = 1
+			sr_dark_matter = 1
 		}
 	}
 
@@ -39,13 +35,9 @@ nanolathe_mass_production = {
 	icon = "GFX_edict_type_policy"
 	resources = {
 		category = rare_edicts
-		cost = {
-			nanites = 50
-			sr_living_metal = 50
-		}
 		upkeep = {
-			nanites = 5
-			sr_living_metal = 5
+			nanites = 1
+			sr_living_metal = 1
 		}
 	}
 
@@ -73,14 +65,10 @@ unrestricted_stargate_travel = {
 	length = @EdictPerpetual
 	icon = "GFX_edict_type_policy"
 	resources = {
-		category = ship_edicts
-		cost = {
-			energy = 50
-			sr_dark_matter = 50
-		}
+		category = rare_edicts
 		upkeep = {
-			energy = 5
-			sr_dark_matter = 5
+			energy = 1
+			sr_dark_matter = 1
 		}
 	}
 
@@ -107,14 +95,10 @@ unrestricted_stargate_travel_gestalt = {
 	length = @EdictPerpetual
 	icon = "GFX_edict_type_policy"
 	resources = {
-		category = ship_edicts
-		cost = {
-			energy = 50
-			sr_dark_matter = 50
-		}
+		category = rare_edicts
 		upkeep = {
-			energy = 5
-			sr_dark_matter = 5
+			energy = 1
+			sr_dark_matter = 1
 		}
 	}
 

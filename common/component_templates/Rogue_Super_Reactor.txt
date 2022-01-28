@@ -372,7 +372,7 @@ utility_component_template = {
 	size_restriction = { corvette crisis_corvette }
 
 	ai_weight = {
-		weight = 66
+		weight = 200
 	}
 }
 
@@ -412,7 +412,7 @@ utility_component_template = {
 	size_restriction = { destroyer crisis_destroyer }
 
 	ai_weight = {
-		weight = 66
+		weight = 200
 	}
 }
 
@@ -452,7 +452,7 @@ utility_component_template = {
 	size_restriction = { cruiser crisis_cruiser }
 
 	ai_weight = {
-		weight = 66
+		weight = 200
 	}
 }
 
@@ -492,7 +492,7 @@ utility_component_template = {
 	size_restriction = { battleship crisis_battleship }
 
 	ai_weight = {
-		weight = 66
+		weight = 200
 	}
 }
 
@@ -532,7 +532,7 @@ utility_component_template = {
 	size_restriction = { titan crisis_titan }
 
 	ai_weight = {
-		weight = 66
+		weight = 200
 	}
 }
 
@@ -578,7 +578,7 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = 66
+		weight = 200
 	}
 }
 
@@ -589,8 +589,8 @@ utility_component_template = {
 	icon_frame = 1
 	power = 7000
 	
-		modifier = {
-		ship_shield_add = 600
+	modifier = {
+		ship_shield_add = 1000
 		ship_shield_mult = 0.15
 		ship_shield_regen_add_perc = 1
 	}
@@ -607,7 +607,7 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = 66
+		weight = 200
 	}
 }
 
@@ -654,6 +654,6 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = 66
+		weight = 200
 	}
 }

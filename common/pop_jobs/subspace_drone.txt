@@ -5,28 +5,41 @@ subspace_drone = {
 	icon = "brain_drone"
 	
 	planet_modifier = {		
-		planet_amenities_no_happiness_add = 2
-		planet_stability_add = 2
+		planet_amenities_no_happiness_add = 1
+		planet_stability_add = 1
+		empire_size_penalty_mult = -0.05
 	}
 
 	resources = {
 		category = planet_researchers
 		produces = {
-			physics_research = 3
-			engineering_research = 3
-			society_research = 3
+			physics_research = 2
+			engineering_research = 2
+			society_research = 2
+			unity = 1
 		}
 		upkeep = {
-			food = 4
+			food = 3
 		}
-		upkeep = {
-			trigger = {
-				exists = owner
-				owner = {
-					has_edict = research_subsidies
-				}
-			}
-			energy = 1
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			planet = { has_modifier = planet_artifact_relays_hivemind }
+		}
+		modifier = {
+			planet_stability_add = 2
+			planet_jobs_simple_drone_produces_mult = 0.01
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = tr_synchronicity_instinctive_synchronization }
+		}
+		modifier = {
+			planet_amenities_no_happiness_add = 2
 		}
 	}
 
@@ -43,69 +56,34 @@ subspace_drone = {
 	possible = { NOT = { has_trait = trait_nerve_stapled } }
 
 	weight = {
-		weight = 100
+		weight = 5
 		modifier = {
-			factor = 20
+			factor = 2
+			planet_stability > 40
 		}
 		modifier = {
 			factor = 2
-			has_trait = trait_resilient
+			free_amenities > 10
 		}
 		modifier = {
-			factor = 2
-			has_trait = trait_very_strong
+			factor = 3
+			exists = owner
+			owner = { has_active_tradition = tr_synchronicity_instinctive_synchronization }
 		}
 		modifier = {
-			factor = 1.5
-			has_trait = trait_strong
+			factor = 3
+			exists = planet
+			planet = { has_modifier = planet_artifact_relays_hivemind }
 		}
 		modifier = {
-			factor = 0.5
-			has_trait = trait_weak
-		}
-		modifier = {
-			factor = 1.1
-			has_trait = trait_cybernetic
-		}
-		modifier = {
-			factor = 2
-			has_trait = trait_presapient_earthbound
-		}
-		modifier = {
-			factor = 1.1
-			has_trait = trait_limited_regeneration
-		}
-		modifier = {
-			factor = 1.1
-			has_trait = trait_brainslug
-		}
-		modifier = {
-			factor = 1.35
-			OR = {
-				has_trait = trait_presapient_natural_intellectuals
-				has_trait = trait_natural_physicists
-				has_trait = trait_natural_sociologists
-				has_trait = trait_intelligent
+			factor = 0.1
+			trigger = {
+				exists = owner
+				owner = {
+					is_ai = no
+					has_deficit = food
+				}
 			}
-		}
-		modifier = {
-			factor = 1.75
-			has_trait = trait_erudite
-		}
-		modifier = {
-			factor = 1.05
-			OR = {
-				has_trait = trait_robust
-				has_trait = trait_robot_efficient_processors
-			}
-		}
-		modifier = {
-			factor = 0.9
-			has_trait = trait_quarrelsome
-		}
-		modifier = {
-			factor = 2
-			has_trait = trait_lithoid
-		}
+		}		
 	}
 }

@@ -1,0 +1,9 @@
+country_power_projection = {
+	parent = country_container
+	generate_add_modifiers = {
+		produces
+	}
+	generate_mult_modifiers = {
+		produces
+	}
+}

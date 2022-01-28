@@ -25,7 +25,7 @@ NGameplay = {
 		LEADER_MAX_SKILL_CAP	= 50
 		
 		STATION_SELF_REPAIR_TIMER_DAYS			= 0		# Number of days after taking damage before a station will start self-repairing
-	STARBASE_SELF_REPAIR_TIMER_DAYS			= 0		# Number of days after taking damage before a starbase will start self-repairing
+		STARBASE_SELF_REPAIR_TIMER_DAYS			= 0	# Number of days after taking damage before a starbase will start self-repairing
 	STARBASE_ENABLED_HEALTH_PERCENTAGE		= 0.50	# Percentage of max health when a starbase that can be disabled will be enabled.
 	
 	}

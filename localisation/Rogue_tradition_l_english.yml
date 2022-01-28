@@ -97,16 +97,12 @@
  tr_biophage_harvest_recycle_machine:0 "Recycle"
  tr_biophage_harvest_recycle_machine_desc:0 "+1 £energy£ from Technicians."
  tr_biophage_harvest_recycle_machine_delayed:0 "Reduce - Reuse - Recycle."
- 
- ap_supremacy_akashic_records:0 "Akashic Records"
- ap_supremacy_akashic_records_desc:0 "Secrets beyond Time and Space. §G\nAdmin Capacity +10% \nNaval Capacity +100 \n+2 Encryption and Decryption \n+10% Researcher Output§!"
- ap_supremacy_akashic_records_modifier_desc:0 "Secrets beyond Time and Space. \n§HUnlocks Building:§! $supremacy_akashic_records$"
- 
+  
  tradition_category_rogue_salvaging:0 "Salvaging"
  tradition_category_rogue_salvaging_desc:0 "Riches are everywhere if one knows where to look."
  
  tr_rogue_nemesis_salvaging_adopt:0 "Salvaging"
- tr_rogue_nemesis_salvaging_adopt_desc:0 "§G+10%§! £minerals£ production. \n §G+0.15§! £menace£ §MMenace§! produced per unlocked tier"
+ tr_rogue_nemesis_salvaging_adopt_desc:0 "§G+10%§! £minerals£ production. \n §G+0.15§! £menace£ §MMenace§! to Fleet Projection per unlocked tier"
  
  tr_rogue_nemesis_salvaging_finish:0 "Salvaging"
  tr_rogue_nemesis_salvaging_finish_desc:0 "Unlock Ascension Perk. \nGain £minerals£ from destroying enemies."

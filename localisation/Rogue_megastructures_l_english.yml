@@ -28,6 +28,3 @@
  stargate_instant_gateway_MEGASTRUCTURE_DETAILS:1 "§BCompleted Gateway Construction§ - $giga_list_category_transportation$\nEnables §YInstantaneous Travel§! to all other §YGateways§!\n§LThe gateway is a crucial part of any interstellar's empire galactic transportation network and can drastically shorten travel times if positioned properly.§!" #gigalistentry GATEWAY
  stargate_instant_gateway:0 "Gateway"
  stargate_instant_gateway_DESC:0 "A conduit through the very fabric of subspace that enables rapid travel to other Gateways."
- 
- ap_stargate_instant_gateways:0 "Stargates"
- ap_stargate_instant_gateways_desc:0 "Hundreds of Worlds, just one step away. \nAccess to: §YCompleted Gateway Megastructure§! \nAccess to: §YPlanetary Gateways§! \nAccess to: §YUnrestricted Gate Travel Edict§!"

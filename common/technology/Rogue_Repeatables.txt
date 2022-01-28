@@ -1,3 +1,33 @@
+tech_rogue_joke_hotsauce = {
+	area = society
+	cost = @repeatableTechBaseCost
+	cost_per_level = @repeatableTechLevelCost
+	tier = @repeatableTechTier
+	category = { military_theory }
+	levels = 10
+	prerequisites = { "tech_supremacy_dreadnought" }
+	weight = @repeatableTechWeight
+	
+	weight_modifier = {
+		factor = @repatableTechFactor
+	}
+	
+	ai_weight = {
+		factor = 1.0
+	}
+	
+	weight_groups = {
+		repeatable
+	}
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+	
+	modifier = {
+		pop_purge_speed = 0.05
+	}
+}
+
 tech_rogue_base_delta_zero_initiative = {
 	area = society
 	cost = @repeatableTechBaseCost

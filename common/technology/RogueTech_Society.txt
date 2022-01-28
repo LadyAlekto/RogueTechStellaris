@@ -520,7 +520,7 @@ tech_supremacy_galactic_administration = {
 	is_rare = yes
 	
 	modifier = {
-		country_admin_cap_mult = 0.05
+		empire_size_penalty_mult = -0.05
 	}
 
 	potential = {

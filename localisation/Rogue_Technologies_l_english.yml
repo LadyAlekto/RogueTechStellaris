@@ -1,12 +1,7 @@
 ﻿l_english:
- nanotrite_super_soldiers:0 "Nanite Super Soldier"
- nanotrite_super_soldiers_plural:0 "Nanite Super Soldiers"
- nanotrite_super_soldiers_desc:0 "Nanite enhanced Gene Warriors able to manipulate gravity and scalar fields during battle."
- 
- nanotrite_soldiers:0 "Nanite Soldier"
- nanotrite_soldiers_plural:0 "Nanite Soldiers"
- nanotrite_soldiers_desc:0 "Nanite enhanced Soldiers able to manipulate gravity and scalar fields during battle."
- 
+ tech_rogue_joke_hotsauce:0 "Flavoured Organics"
+ tech_rogue_joke_hotsauce_desc:0 "Food is always best when it fights back."
+
  tech_rogue_base_delta_zero_initiative:0 "Base Delta Zero Initiative"
  tech_rogue_base_delta_zero_initiative_desc:0 "The Base Delta Zero Initiative thoroughly liberates any planet from rebel forces."
  
@@ -136,11 +131,11 @@
  tech_rogue_tempest_missiles:0 "Tempest Launcher"
  tech_rogue_tempest_missiles_desc:0 "A dark-matter warhead utilizing nanite composed guidance and control systems, capable to punch through nearly any defense."
  
- tech_rogue_nanolathe_starbase_building:0 "Starbase Compartmentalisation"
- tech_rogue_nanolathe_starbase_building_desc:0 "Utilising advances from Nanolathe Technologies allows all starbases to have 1 additional Building."
+ tech_rogue_nanolathe_starbase_building:0 "Phalanx Station"
+ tech_rogue_nanolathe_starbase_building_desc:0 "Utilizing Scalar fields and Nanolathe construction techniques allows to create the ultimate fortification, equipped with massive weapon arrays and the heaviest armor imaginable."
  
  tech_rogue_nanolathe_starbase_module:0 "Starbase Extension"
- tech_rogue_nanolathe_starbase_module_desc:0 "Reinforced Starbase systems allows to expand all starbases by 1 module."
+ tech_rogue_nanolathe_starbase_module_desc:0 "Reinforced Starbase systems increase module production speeds."
  
  tech_rogue_nanolathe_starbase_module_II:0 "Starbase Extension II"
- tech_rogue_nanolathe_starbase_module_II_desc:0 "Sclar Field Starbase extensions allows to expand all starbases by 1 module."
+ tech_rogue_nanolathe_starbase_module_II_desc:0 "Sclar Field Starbase extensions increase module production speeds."

@@ -16,7 +16,7 @@ nanite_fabricator = {
 		category = planet_nanite_fabricator
 		produces = {
 			nanites = 0.5
-			sr_living_metal = 0.5
+			sr_living_metal = 0.4
 		}
 		upkeep = {
 			sr_dark_matter = 0.4
@@ -28,21 +28,100 @@ nanite_fabricator = {
 	}
 
 	weight = {
-		weight = @complex_drone_job_weight
+		weight = 1
 		modifier = {
-			factor = 0.9
+			factor = 100
 			exists = owner
-			years_passed < 1
-			owner = { has_valid_civic = civic_machine_assimilator }
-			has_trait = trait_cybernetic
+			owner = { has_deficit = nanites }
+		}
+		modifier = {
+			factor = 100
+			exists = owner
+			owner = { has_deficit = sr_living_metal }
+		}
+		modifier = {
+			factor = 10
+			exists = owner
+			owner = { has_monthly_income  = {
+					resource = nanites
+					value <= 5
+					} 
+					}
+		}
+		modifier = {
+			factor = 10
+			exists = owner
+			owner = { has_monthly_income  = {
+					resource = sr_living_metal
+					value <= 5
+					} 
+					}
+		}
+		modifier = {
+			factor = 0.5
+			exists = owner
+			owner = { resource_stockpile_compare = {
+					resource = nanites
+					value >= 1000
+					} 
+					}
 		}
 		modifier = {
 			factor = 5
-			has_job = fabricator
-			OR = {
-				has_trait = trait_robust
-				has_trait = trait_robot_efficient_processors
-			}
+			exists = owner
+			owner = { resource_stockpile_compare = {
+					resource = nanites
+					value <= 80
+					} 
+					}
+		}
+		modifier = {
+			factor = 0.5
+			exists = owner
+			owner = { resource_stockpile_compare = {
+					resource = sr_living_metal
+					value >= 1000
+					} 
+					}
+		}
+		modifier = {
+			factor = 5
+			exists = owner
+			owner = { resource_stockpile_compare = {
+					resource = sr_living_metal
+					value <= 50
+					} 
+					}
+		}
+		modifier = {
+			factor = 1.1
+			exists = owner
+			owner = { has_technology = supremacy_tech_advanced_corvettes }
+		}
+		modifier = {
+			factor = 1.15
+			exists = owner
+			owner = { has_technology = supremacy_tech_advanced_destroyers }
+		}
+		modifier = {
+			factor = 1.2
+			exists = owner
+			owner = { has_technology = supremacy_tech_advanced_cruisers }
+		}
+		modifier = {
+			factor = 1.25
+			exists = owner
+			owner = { has_technology = supremacy_tech_advanced_battleships }
+		}
+		modifier = {
+			factor = 1.3
+			exists = owner
+			owner = { has_technology = supremacy_tech_advanced_titans }
+		}
+		modifier = {
+			factor = 1.4
+			exists = owner
+			owner = { has_technology = tech_supremacy_dreadnought }
 		}
 	}
 }
@@ -66,7 +145,7 @@ nanite_fabricator_drone = {
 		category = planet_nanite_fabricator
 		produces = {
 			nanites = 0.5
-			sr_living_metal = 0.5
+			sr_living_metal = 0.4
 		}
 		upkeep = {
 			sr_dark_matter = 0.4
@@ -77,21 +156,100 @@ nanite_fabricator_drone = {
 	}
 
 	weight = {
-		weight = @complex_drone_job_weight
+		weight = 1
 		modifier = {
-			factor = 0.9
+			factor = 100
 			exists = owner
-			years_passed < 1
-			owner = { has_valid_civic = civic_machine_assimilator }
-			has_trait = trait_cybernetic
+			owner = { has_deficit = nanites }
+		}
+		modifier = {
+			factor = 100
+			exists = owner
+			owner = { has_deficit = sr_living_metal }
+		}
+		modifier = {
+			factor = 10
+			exists = owner
+			owner = { has_monthly_income  = {
+					resource = nanites
+					value <= 5
+					} 
+					}
+		}
+		modifier = {
+			factor = 10
+			exists = owner
+			owner = { has_monthly_income  = {
+					resource = sr_living_metal
+					value <= 5
+					} 
+					}
+		}
+		modifier = {
+			factor = 0.5
+			exists = owner
+			owner = { resource_stockpile_compare = {
+					resource = nanites
+					value >= 1000
+					} 
+					}
 		}
 		modifier = {
 			factor = 5
-			has_job = fabricator
-			OR = {
-				has_trait = trait_robust
-				has_trait = trait_robot_efficient_processors
-			}
+			exists = owner
+			owner = { resource_stockpile_compare = {
+					resource = nanites
+					value <= 80
+					} 
+					}
+		}
+		modifier = {
+			factor = 0.5
+			exists = owner
+			owner = { resource_stockpile_compare = {
+					resource = sr_living_metal
+					value >= 1000
+					} 
+					}
+		}
+		modifier = {
+			factor = 5
+			exists = owner
+			owner = { resource_stockpile_compare = {
+					resource = sr_living_metal
+					value <= 50
+					} 
+					}
+		}
+		modifier = {
+			factor = 1.1
+			exists = owner
+			owner = { has_technology = supremacy_tech_advanced_corvettes }
+		}
+		modifier = {
+			factor = 1.15
+			exists = owner
+			owner = { has_technology = supremacy_tech_advanced_destroyers }
+		}
+		modifier = {
+			factor = 1.2
+			exists = owner
+			owner = { has_technology = supremacy_tech_advanced_cruisers }
+		}
+		modifier = {
+			factor = 1.25
+			exists = owner
+			owner = { has_technology = supremacy_tech_advanced_battleships }
+		}
+		modifier = {
+			factor = 1.3
+			exists = owner
+			owner = { has_technology = supremacy_tech_advanced_titans }
+		}
+		modifier = {
+			factor = 1.4
+			exists = owner
+			owner = { has_technology = tech_supremacy_dreadnought }
 		}
 	}
 }
@@ -125,21 +283,100 @@ nanite_fabricator_robot = {
 	}
 
 	weight = {
-		weight = @complex_drone_job_weight
+		weight = 1
 		modifier = {
-			factor = 0.9
+			factor = 100
 			exists = owner
-			years_passed < 1
-			owner = { has_valid_civic = civic_machine_assimilator }
-			has_trait = trait_cybernetic
+			owner = { has_deficit = nanites }
+		}
+		modifier = {
+			factor = 100
+			exists = owner
+			owner = { has_deficit = sr_living_metal }
+		}
+		modifier = {
+			factor = 10
+			exists = owner
+			owner = { has_monthly_income  = {
+					resource = nanites
+					value <= 5
+					} 
+					}
+		}
+		modifier = {
+			factor = 10
+			exists = owner
+			owner = { has_monthly_income  = {
+					resource = sr_living_metal
+					value <= 5
+					} 
+					}
+		}
+		modifier = {
+			factor = 0.5
+			exists = owner
+			owner = { resource_stockpile_compare = {
+					resource = nanites
+					value >= 1000
+					} 
+					}
 		}
 		modifier = {
 			factor = 5
-			has_job = fabricator
-			OR = {
-				has_trait = trait_robust
-				has_trait = trait_robot_efficient_processors
-			}
+			exists = owner
+			owner = { resource_stockpile_compare = {
+					resource = nanites
+					value <= 80
+					} 
+					}
+		}
+		modifier = {
+			factor = 0.5
+			exists = owner
+			owner = { resource_stockpile_compare = {
+					resource = sr_living_metal
+					value >= 1000
+					} 
+					}
+		}
+		modifier = {
+			factor = 5
+			exists = owner
+			owner = { resource_stockpile_compare = {
+					resource = sr_living_metal
+					value <= 50
+					} 
+					}
+		}
+		modifier = {
+			factor = 1.1
+			exists = owner
+			owner = { has_technology = supremacy_tech_advanced_corvettes }
+		}
+		modifier = {
+			factor = 1.15
+			exists = owner
+			owner = { has_technology = supremacy_tech_advanced_destroyers }
+		}
+		modifier = {
+			factor = 1.2
+			exists = owner
+			owner = { has_technology = supremacy_tech_advanced_cruisers }
+		}
+		modifier = {
+			factor = 1.25
+			exists = owner
+			owner = { has_technology = supremacy_tech_advanced_battleships }
+		}
+		modifier = {
+			factor = 1.3
+			exists = owner
+			owner = { has_technology = supremacy_tech_advanced_titans }
+		}
+		modifier = {
+			factor = 1.4
+			exists = owner
+			owner = { has_technology = tech_supremacy_dreadnought }
 		}
 	}
 }
@@ -172,49 +409,68 @@ anti_matter_researcher = {
 	}
 
 	weight = {
-		weight = @complex_drone_job_weight
+		weight = 1
 		modifier = {
-			factor = 3
-			has_trait = trait_erudite
-		}
-		modifier = {
-			factor = 2
-			has_trait = trait_intelligent
-		}
-		modifier = {
-			factor = 1.5
-			OR = {
-				has_trait = trait_natural_engineers
-				has_trait = trait_natural_physicists
-				has_trait = trait_natural_sociologists
-			}
-		}
-		modifier = {
-			factor = 0.65
-			OR = {
-				has_trait = trait_syncretic_proles
-				has_trait = trait_presapient_proles
-			}
-		}
-		modifier = {
-			factor = 0.9
+			factor = 100
 			exists = owner
-			years_passed < 1
-			owner = { has_valid_civic = civic_machine_assimilator }
-			has_trait = trait_cybernetic
+			owner = { has_deficit = sr_dark_matter }
 		}
 		modifier = {
-			factor = 0
-			planet = {
-				owner = {
-					is_ai = yes
-					has_resource = { type = minerals amount < 500 }
-					has_monthly_income = {
-						resource = minerals
-						value < 25
+			factor = 10
+			exists = owner
+			owner = { has_monthly_income  = {
+					resource = sr_dark_matter
+					value <= 5
+					} 
 					}
-				}
-			}
+		}
+		modifier = {
+			factor = 0.5
+			exists = owner
+			owner = { resource_stockpile_compare = {
+					resource = sr_dark_matter
+					value >= 1000
+					} 
+					}
+		}
+		modifier = {
+			factor = 5
+			exists = owner
+			owner = { resource_stockpile_compare = {
+					resource = sr_dark_matter
+					value <= 100
+					} 
+					}
+		}
+		modifier = {
+			factor = 1.1
+			exists = owner
+			owner = { has_technology = supremacy_tech_advanced_corvettes }
+		}
+		modifier = {
+			factor = 1.15
+			exists = owner
+			owner = { has_technology = supremacy_tech_advanced_destroyers }
+		}
+		modifier = {
+			factor = 1.2
+			exists = owner
+			owner = { has_technology = supremacy_tech_advanced_cruisers }
+		}
+		modifier = {
+			factor = 1.25
+			exists = owner
+			owner = { has_technology = supremacy_tech_advanced_battleships }
+		}
+		modifier = {
+			factor = 1.3
+			exists = owner
+			owner = { has_technology = supremacy_tech_advanced_titans }
+		}
+		modifier = {
+			factor = 1.4
+			exists = owner
+			owner = { has_technology = tech_supremacy_dreadnought }
 		}
 	}
 }
@@ -248,49 +504,68 @@ anti_matter_researcher_drone = {
 	}
 
 	weight = {
-		weight = @complex_drone_job_weight
+		weight = 1
 		modifier = {
-			factor = 3
-			has_trait = trait_erudite
-		}
-		modifier = {
-			factor = 2
-			has_trait = trait_intelligent
-		}
-		modifier = {
-			factor = 1.5
-			OR = {
-				has_trait = trait_natural_engineers
-				has_trait = trait_natural_physicists
-				has_trait = trait_natural_sociologists
-			}
-		}
-		modifier = {
-			factor = 0.65
-			OR = {
-				has_trait = trait_syncretic_proles
-				has_trait = trait_presapient_proles
-			}
-		}
-		modifier = {
-			factor = 0.9
+			factor = 100
 			exists = owner
-			years_passed < 1
-			owner = { has_valid_civic = civic_machine_assimilator }
-			has_trait = trait_cybernetic
+			owner = { has_deficit = sr_dark_matter }
 		}
 		modifier = {
-			factor = 0
-			planet = {
-				owner = {
-					is_ai = yes
-					has_resource = { type = minerals amount < 500 }
-					has_monthly_income = {
-						resource = minerals
-						value < 25
+			factor = 10
+			exists = owner
+			owner = { has_monthly_income  = {
+					resource = sr_dark_matter
+					value <= 5
+					} 
 					}
-				}
-			}
+		}
+		modifier = {
+			factor = 0.5
+			exists = owner
+			owner = { resource_stockpile_compare = {
+					resource = sr_dark_matter
+					value >= 1000
+					} 
+					}
+		}
+		modifier = {
+			factor = 5
+			exists = owner
+			owner = { resource_stockpile_compare = {
+					resource = sr_dark_matter
+					value <= 100
+					} 
+					}
+		}
+		modifier = {
+			factor = 1.1
+			exists = owner
+			owner = { has_technology = supremacy_tech_advanced_corvettes }
+		}
+		modifier = {
+			factor = 1.15
+			exists = owner
+			owner = { has_technology = supremacy_tech_advanced_destroyers }
+		}
+		modifier = {
+			factor = 1.2
+			exists = owner
+			owner = { has_technology = supremacy_tech_advanced_cruisers }
+		}
+		modifier = {
+			factor = 1.25
+			exists = owner
+			owner = { has_technology = supremacy_tech_advanced_battleships }
+		}
+		modifier = {
+			factor = 1.3
+			exists = owner
+			owner = { has_technology = supremacy_tech_advanced_titans }
+		}
+		modifier = {
+			factor = 1.4
+			exists = owner
+			owner = { has_technology = tech_supremacy_dreadnought }
 		}
 	}
 }
@@ -323,49 +598,68 @@ anti_matter_researcher_robot = {
 	}
 
 	weight = {
-		weight = @complex_drone_job_weight
+		weight = 1
 		modifier = {
-			factor = 3
-			has_trait = trait_erudite
-		}
-		modifier = {
-			factor = 2
-			has_trait = trait_intelligent
-		}
-		modifier = {
-			factor = 1.5
-			OR = {
-				has_trait = trait_natural_engineers
-				has_trait = trait_natural_physicists
-				has_trait = trait_natural_sociologists
-			}
-		}
-		modifier = {
-			factor = 0.65
-			OR = {
-				has_trait = trait_syncretic_proles
-				has_trait = trait_presapient_proles
-			}
-		}
-		modifier = {
-			factor = 0.9
+			factor = 100
 			exists = owner
-			years_passed < 1
-			owner = { has_valid_civic = civic_machine_assimilator }
-			has_trait = trait_cybernetic
+			owner = { has_deficit = sr_dark_matter }
 		}
 		modifier = {
-			factor = 0
-			planet = {
-				owner = {
-					is_ai = yes
-					has_resource = { type = minerals amount < 500 }
-					has_monthly_income = {
-						resource = minerals
-						value < 25
+			factor = 10
+			exists = owner
+			owner = { has_monthly_income  = {
+					resource = sr_dark_matter
+					value <= 5
+					} 
 					}
-				}
-			}
+		}
+		modifier = {
+			factor = 0.5
+			exists = owner
+			owner = { resource_stockpile_compare = {
+					resource = sr_dark_matter
+					value >= 1000
+					} 
+					}
+		}
+		modifier = {
+			factor = 5
+			exists = owner
+			owner = { resource_stockpile_compare = {
+					resource = sr_dark_matter
+					value <= 100
+					} 
+					}
+		}
+		modifier = {
+			factor = 1.1
+			exists = owner
+			owner = { has_technology = supremacy_tech_advanced_corvettes }
+		}
+		modifier = {
+			factor = 1.15
+			exists = owner
+			owner = { has_technology = supremacy_tech_advanced_destroyers }
+		}
+		modifier = {
+			factor = 1.2
+			exists = owner
+			owner = { has_technology = supremacy_tech_advanced_cruisers }
+		}
+		modifier = {
+			factor = 1.25
+			exists = owner
+			owner = { has_technology = supremacy_tech_advanced_battleships }
+		}
+		modifier = {
+			factor = 1.3
+			exists = owner
+			owner = { has_technology = supremacy_tech_advanced_titans }
+		}
+		modifier = {
+			factor = 1.4
+			exists = owner
+			owner = { has_technology = tech_supremacy_dreadnought }
 		}
 	}
 }

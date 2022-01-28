@@ -1,0 +1,18 @@
+utility_component_template = {
+	key = "PHALANX_REACTOR"
+	size = large
+	icon = "Chronoton_Reactor_Core"
+	icon_frame = 1
+	power = 10000
+
+	prerequisites = { "tech_rogue_nanolathe_starbase_building" }
+	class_restriction = { shipclass_starbase }
+	component_set = "power_core"
+	size_restriction = {
+		starbase_rogue
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+}

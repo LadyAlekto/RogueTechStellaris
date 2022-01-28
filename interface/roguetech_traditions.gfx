@@ -87,13 +87,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_tr_biophage_harvest_recycle"
 		textureFile = "gfx/interface/traditions/tr_biophage_harvest_recycle.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_ap_biophage_engineered_leaders"
-		texturefile = "gfx/interface/icons/ascension_perks/ap_biophage_engineered_leaders.dds"
-		alwaystransparent = yes
-	}
+	}	
 	
 	spriteType = {
 		name = "GFX_tradition_category_bg_tradition_category_rogue_salvaging"

@@ -1,0 +1,13 @@
+﻿l_english:
+ ap_supremacy_akashic_records:0 "Akashic Records"
+ ap_supremacy_akashic_records_desc:0 "Secrets beyond Time and Space. §G\nAdmin Capacity +10% \nNaval Capacity +100 \n+2 Encryption and Decryption \n+10% Researcher Output§!"
+ ap_supremacy_akashic_records_modifier_desc:0 "Secrets beyond Time and Space. \n§HUnlocks Building:§! $supremacy_akashic_records$"
+ 
+ ap_biophage_engineered_leaders:0 "Engineered Leaders"
+ ap_biophage_engineered_leaders_desc:0 "We cannot let nature decide who will lead us. \n\n§YLeaders Gain additional Traits§!"
+ 
+ ap_rogue_power_overwhelming:0 "Power Overwhelming"
+ ap_rogue_power_overwhelming_desc:0 "Absolute power corrupts absolutely!"
+ 
+ ap_stargate_instant_gateways:0 "Stargates"
+ ap_stargate_instant_gateways_desc:0 "Hundreds of Worlds, just one step away. \nAccess to: §YCompleted Gateway Megastructure§! \nAccess to: §YPlanetary Gateways§! \nAccess to: §YUnrestricted Gate Travel Edict§!"

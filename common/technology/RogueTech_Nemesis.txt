@@ -14,7 +14,7 @@ tech_rogue_jury_rigged_weapons = {
 	}
 	
 	modifier = {
-		country_base_menace_produces_add = 1
+		country_power_projection_menace_produces_add = 1
 	}
 
 	weight_modifier = {
@@ -92,7 +92,7 @@ tech_rogue_crisis_plattform = {
 	}
 	
 	modifier = {
-		country_base_menace_produces_add = 1
+		country_power_projection_menace_produces_add = 1
 	}
 	
 	prerequisites = { "tech_rogue_jury_rigged_weapons" }
@@ -184,7 +184,7 @@ tech_rogue_crisis_battleship = {
 	}
 	
 	modifier = {
-		country_base_menace_produces_add = 1
+		country_power_projection_menace_produces_add = 1
 	}
 	
 	prerequisites = { "tech_rogue_jury_rigged_weapons" "tech_battleships" }
@@ -272,7 +272,7 @@ tech_rogue_crisis_titan = {
 	}
 	
 	modifier = {
-		country_base_menace_produces_add = 1
+		country_power_projection_menace_produces_add = 1
 	}
 	
 	prerequisites = { "tech_rogue_jury_rigged_weapons" "tech_rogue_crisis_plattform" "tech_rogue_crisis_battleship" "tech_titans" }

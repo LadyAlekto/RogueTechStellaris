@@ -6,7 +6,7 @@ utility_component_template = {
 	power = -0
 	
 	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special  }
-	size_restriction = { juggernaut star_eater }
+	size_restriction = { juggernaut star_eater starbase_rogue }
 
 	component_set = "Rogue_Defense_Shield"
 	upgrades_to = "Rogue_Shield_Deflector_SUPREMACY"
@@ -29,7 +29,7 @@ utility_component_template = {
 	power = -360
 	
 	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special  }
-	size_restriction = { juggernaut star_eater }
+	size_restriction = { juggernaut star_eater starbase_rogue }
 	
 	resources = {
 		category = ship_components
@@ -64,7 +64,7 @@ utility_component_template = {
 	power = -480
 	
 	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special  }
-	size_restriction = { juggernaut star_eater }
+	size_restriction = { juggernaut star_eater starbase_rogue }
 	
 	resources = {
 		category = ship_components
@@ -99,7 +99,7 @@ utility_component_template = {
 	power = -600
 	
 	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special  }
-	size_restriction = { juggernaut star_eater }
+	size_restriction = { juggernaut star_eater starbase_rogue }
 	
 	resources = {
 		category = ship_components
@@ -134,7 +134,7 @@ utility_component_template = {
 	power = -840
 	
 	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special  }
-	size_restriction = { juggernaut star_eater }
+	size_restriction = { juggernaut star_eater starbase_rogue }
 	
 	resources = {
 		category = ship_components
@@ -170,7 +170,7 @@ utility_component_template = {
 	power = -1080
 	
 	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special  }
-	size_restriction = { juggernaut star_eater }
+	size_restriction = { juggernaut star_eater starbase_rogue }
 	
 	resources = {
 		category = ship_components
@@ -206,7 +206,7 @@ utility_component_template = {
 	power = -1320
 	
 	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special  }
-	size_restriction = { juggernaut star_eater }
+	size_restriction = { juggernaut star_eater starbase_rogue }
 	
 	resources = {
 		category = ship_components
@@ -242,7 +242,7 @@ utility_component_template = {
 	power = 0
 	
 	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special  }
-	size_restriction = { juggernaut star_eater }
+	size_restriction = { juggernaut star_eater starbase_rogue }
 	
 	resources = {
 		category = ship_components
@@ -276,7 +276,7 @@ utility_component_template = {
 	power = -1560
 	
 	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special  }
-	size_restriction = { juggernaut star_eater }
+	size_restriction = { juggernaut star_eater starbase_rogue }
 	
 	resources = {
 		category = ship_components
@@ -313,7 +313,7 @@ utility_component_template = {
 	power = -1800
 	
 	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special  }
-	size_restriction = { juggernaut star_eater }
+	size_restriction = { juggernaut star_eater starbase_rogue }
 	
 	
 	resources = {
@@ -350,7 +350,7 @@ utility_component_template = {
 	power = -1980
 	
 	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special  }
-	size_restriction = { juggernaut star_eater }
+	size_restriction = { juggernaut star_eater starbase_rogue }
 	
 	resources = {
 		category = ship_components

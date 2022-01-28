@@ -218,8 +218,6 @@ utility_component_template = {
 	ship_modifier = {
 		weapon_type_explosive_weapon_damage_mult = 0.15
 		weapon_type_explosive_weapon_fire_rate_mult = 0.15
-		weapon_type_point_defense_weapon_damage_mult = 0.1
-		weapon_type_point_defense_weapon_fire_rate_mult = 0.1
 		ship_weapon_range_mult = 0.15
 	}
 
@@ -260,8 +258,6 @@ utility_component_template = {
 	ship_modifier = {
 		weapon_type_explosive_weapon_damage_mult = 0.15
 		weapon_type_explosive_weapon_fire_rate_mult = 0.15
-		weapon_type_point_defense_weapon_damage_mult = 0.15
-		weapon_type_point_defense_weapon_fire_rate_mult = 0.15
 		ship_weapon_range_mult = 0.2
 	}
 
@@ -283,7 +279,7 @@ utility_component_template = {
 		}
 	}
 	class_restriction = { shipclass_military shipclass_starbase shipclass_military_special }
-	size_restriction = { juggernaut star_eater }
+	size_restriction = { juggernaut star_eater starbase_rogue }
 	component_set = "combat_computers"
 	ship_behavior = "carrier"
 	prerequisites = { "tech_supremacy_dreadnought" }
@@ -301,6 +297,6 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = 5
+		weight = 500
 	}
 }

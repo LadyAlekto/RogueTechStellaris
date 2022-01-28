@@ -1,18 +1,16 @@
-﻿l_english:
- job_nanite_fabricator:0 "Nanite Fabricator"
- job_nanite_fabricator_plural:0 "Nanite Fabricators"
- job_nanite_fabricator_desc:1 "Produces rare nanites from raw materials."
- job_nanite_fabricator_effect_desc:1 "Produces rare nanites from raw materials"
+﻿l_english: 
+ mod_job_zro_refiners_drone_add:0 "$job_zro_refiners$ Jobs"
+ mod_job_zro_refiners_drone_per_pop:0 "§G+1§! $job_zro_refiners$ Job per $VALUE$ Pops"
+ mod_job_zro_refiners_drone_per_pop_short:0 "\n§G+1§! £mod_job_zro_refiners_per_pop£ per $VALUE$ £pop£"
+ 
+ mod_job_zro_refiners_add:0 "$job_zro_refiners$ Jobs"
+ mod_job_zro_refiners_per_pop:0 "§G+1§! $job_zro_refiners$ Job per $VALUE$ Pops"
+ mod_job_zro_refiners_per_pop_short:0 "\n§G+1§! £mod_job_zro_refiners_per_pop£ per $VALUE$ £pop£"
  
  mod_job_nanite_fabricator_add:0 "$job_nanite_fabricator$ Jobs"
  mod_job_nanite_fabricator_per_pop:0 "§G+1§! $job_nanite_fabricator$ Job per $VALUE$ Pops"
  mod_job_nanite_fabricator_per_pop_short:0 "Nanite Fabricators produce nanites slowly"
- 
- job_nanite_fabricator_drone:0 "Nanite Fabricator"
- job_nanite_fabricator_drone_plural:0 "Nanite Fabricators"
- job_nanite_fabricator_drone_desc:1 "Produces rare nanites from raw materials."
- job_nanite_fabricator_drone_effect_desc:1 "Produces rare nanites from raw materials"
- 
+  
  mod_job_nanite_fabricator_drone_add:0 "$job_nanite_fabricator_drone$ Jobs"
  mod_job_nanite_fabricator_drone_per_pop:0 "§G+1§! $job_nanite_fabricator_drone$ Job per $VALUE$ Pops"
  mod_job_nanite_fabricator_drone_per_pop_short:0 "Nanite Fabricators produce nanites slowly"
@@ -49,7 +47,9 @@
  mod_planet_nanite_fabricator_energy_upkeep_mult:0 "$job_nanite_fabricator$ $VALUE$ £energy£ upkeep"
  mod_planet_nanite_fabricator_consumer_goods_upkeep_mult:0 "$job_nanite_fabricator$ $VALUE$ £consumer_goods£ upkeep"
  
- mod_planet_nanite_fabricator_upkeep_mult:0 "$job_nanite_fabricator$ $VALUE$ upkeep"
+ mod_planet_nanite_fabricator_upkeep_mult:0 "$job_nanite_fabricator$ upkeep"
+ 
+ mod_planet_nanite_fabricator_produces_mult:0 "$job_nanite_fabricator$ production"
  
  mod_planet_anti_matter_researcher_physics_research_produces_add:0 "$job_anti_matter_researcher$ $VALUE$ £physics_research£ produced"
  mod_planet_anti_matter_researcher_engineering_research_produces_add:0 "$job_anti_matter_researcher$ $VALUE$ £engineering_research£ produced"
@@ -64,9 +64,9 @@
  mod_planet_anti_matter_researcher_consumer_goods_upkeep_mult:0 "$job_anti_matter_researcher$ $VALUE$ £consumer_goods£ upkeep"
  mod_planet_anti_matter_researcher_food_upkeep_mult:0 "$job_anti_matter_researcher$ $VALUE$ £food£ upkeep"
  
- mod_planet_anti_matter_researcher_upkeep_mult:0 "$job_anti_matter_researcher$ $VALUE$ upkeep"
+ mod_planet_anti_matter_researcher_upkeep_mult:0 "$job_anti_matter_researcher$ upkeep"
  
- mod_planet_anti_matter_researcher_produces_mult:0 "$job_anti_matter_researcher$ $VALUE$ production"
+ mod_planet_anti_matter_researcher_produces_mult:0 "$job_anti_matter_researcher$ production"
    
  mod_job_anti_matter_researcher_add:0 "Exotic-Matter Tech"
  
@@ -132,8 +132,19 @@
  mod_shipsize_juggernaut_hull_mult:0 "Juggernaut Hull $VALUE$"
  mod_shipsize_juggernaut_build_speed_mult:0 "Juggernaut build speed $VALUE$"
  
- mod_station_gatherers_alloys_produces_mult:0 "Mining Station Alloys Output"
- mod_station_gatherers_food_produces_mult:0 "Mining Station Food Output"
+ mod_planet_jobs_sr_dark_matter_produces_mult:0 "£sr_dark_matter£ $sr_dark_matter$ from £job£ Jobs"
+ mod_planet_jobs_sr_living_metal_produces_mult:0 "£sr_living_metal£ $sr_living_metal$ from £job£ Jobs"
+ mod_planet_jobs_nanites_produces_mult:0 "£nanites£ $nanites$ from £job£ Jobs"
+ 
+ mod_station_gatherers_minerals_produces_mult:0 "£minerals£ $minerals$ from Stations"
+ mod_station_gatherers_alloys_produces_mult:0 "£alloys£ $alloys$ from Stations"
+ mod_station_gatherers_food_produces_mult:0 "£food£ $food$ from Stations"
+ mod_station_gatherers_rare_crystals_produces_mult:0 "£rare_crystals£ $rare_crystals$ from Stations"
+ mod_station_gatherers_volatile_motes_produces_mult:0 "£volatile_motes£ $volatile_motes$ from Stations"
+ mod_station_gatherers_exotic_gases_produces_mult:0 "£exotic_gases£ $exotic_gases$ from Stations"
+ mod_station_gatherers_sr_dark_matter_produces_mult:0 "£sr_dark_matter£ $sr_dark_matter$ from Stations"
+ mod_station_gatherers_sr_living_metal_produces_mult:0 "£sr_living_metal£ $sr_living_metal$ from Stations"
+ mod_station_gatherers_nanites_produces_mult:0 "£nanites£ $nanites$ from Stations"
  
  mod_shipsize_titan_cost_mult:0 "Titan Cost $VALUE$"
  mod_shipsize_titan_build_speed_mult:0 "Titan build speed $VALUE$"
@@ -143,3 +154,6 @@
  
  mod_country_menace_produces_add:0 "$VALUE$ £menace£ §MMenace§! produced"
  mod_country_base_menace_produces_add:0 "$VALUE$ £menace£ §MMenace§! produced"
+ 
+ mod_country_power_projection_unity_produces_add:0 "Force Projection $VALUE$ £unity£ §EUnity§! produced"
+ mod_country_power_projection_menace_produces_add:0 "Force Projection $VALUE$ £menace£ §MMenace§! produced"

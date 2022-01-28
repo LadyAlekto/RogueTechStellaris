@@ -7,7 +7,6 @@ nanotrite_army = {
 	war_exhaustion = 1.00
 	time = 90
 	icon = GFX_army_type_machine_defensive
-	prerequisites = { "tech_assault_armies" }
 	resources = {
 		category = armies
 		cost = {

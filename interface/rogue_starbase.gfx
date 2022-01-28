@@ -1,12 +1,7 @@
 
 	spriteTypes = {
-	
+				
 	spriteType = {
-		name = "supremacy_dark_matter_core"
-		texturefile = "gfx/interface/icons/modules/supremacy_dark_matter_core.dds"
-	}
-			
-		spriteType = {
 		name = "GFX_Supremacy_SpaceMines"
 		texturefile = "gfx/interface/icons/modules/space_mines_purple.dds"
 	}

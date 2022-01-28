@@ -1,0 +1,3 @@
+navy_coverage_shortage = {
+	country_power_projection_produces_mult = -1
+}

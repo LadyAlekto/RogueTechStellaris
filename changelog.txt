@@ -1,0 +1,32 @@
+alpha 0.2
+reworked titan and juggernauts a bit
+tweaked all icons
+Added an additional starbase level for a maximum of 5 buildings and 10 modules (just looks nicer in dynui starbases)
+
+Available to research after Nanolathe Engineering,
+The Phalanx comes with even more weapons and a scalar cannon (1T, 2L, 4 Missiles, 4 Strike Craft, 2 PD)
+Additionall it has double base armor and hull compared to a citadel
+
+Also tweaked starbase weapons bonus from fire rate to damage
+
+Tweaks because of 3.3
+Subspace drones have 1% mult against sprawl penalties
+
+Galactic Administration gains improved multi and minor added admin cap
+
+added the forgotten nerf to crisis level required amounts
+
+you can now instantly become the crisis, and you generate 0.1 menace per force projection unit
+
+Added a new AP "Power Overwhelming", requires Galactic Force Projection
+Grants additional admin cap, increases all production from force projection AND generates 1 unity from force projection
+
+Additional Economic Starbase Modules and Buildings
+
+Adds a Zro Refinery building
+
+Attempt at teaching ai and job auto assign to use the exotic materials jobs reasonable 
+
+todo! script tied to gatebuilders that decreases empire size for every gateway
+
+nerf planetary gateways after

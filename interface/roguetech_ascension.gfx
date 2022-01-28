@@ -1,0 +1,17 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_ap_biophage_engineered_leaders"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_biophage_engineered_leaders.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ap_stargate_instant_gateways"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_stargate_instant_gateways.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ap_rogue_power_overwhelming"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_rogue_power_overwhelming.dds"
+		alwaystransparent = yes
+	}
+}

@@ -134,8 +134,7 @@ supremacy_galactic_administration_1 = {
 	prerequisites = { "tech_supremacy_galactic_administration" }
 
 	country_modifier = {
-		country_admin_cap_mult = 0.1
-		planet_jobs_produces_mult = 0.01
+		empire_size_mult = -0.1
 		country_unity_produces_mult = 0.02
 	}
 	on_build_complete = {
@@ -170,8 +169,7 @@ supremacy_galactic_administration_2 = {
 	prerequisites = { "tech_supremacy_galactic_administration" }
 
 	country_modifier = {
-		country_admin_cap_mult = 0.15
-		planet_jobs_produces_mult = 0.02
+		empire_size_mult = -0.15
 		country_unity_produces_mult = 0.04
 	}
 	on_build_complete = {
@@ -206,8 +204,7 @@ supremacy_galactic_administration_3 = {
 	prerequisites = { "tech_galactic_administration" }
 
 	country_modifier = {
-		country_admin_cap_mult = 0.2
-		planet_jobs_produces_mult = 0.05
+		empire_size_mult = -0.2
 		country_unity_produces_mult = 0.07
 	}
 	on_build_complete = {
@@ -243,8 +240,7 @@ supremacy_galactic_administration_4 = {
 	show_prereqs = yes
 
 	country_modifier = {
-		country_admin_cap_mult = 0.2
-		planet_jobs_produces_mult = 0.1
+		empire_size_mult = -0.3
 		country_unity_produces_mult = 0.1
 	}
 

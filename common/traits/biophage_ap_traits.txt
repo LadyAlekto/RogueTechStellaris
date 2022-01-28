@@ -96,7 +96,7 @@ leader_trait_biophage_engineered_leader_ruler = {
 	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_ap_engineered.dds"
 	modifier = {
-		country_admin_cap_mult = 0.1
+		empire_size_mult = -0.05
 	}
 	leader_potential_add = {
 		from = { has_ascension_perk = "ap_biophage_engineered_leaders" }

@@ -63,7 +63,7 @@ orbital_administration = {
 	}
 
 	country_modifier = {
-		country_admin_cap_add = 15
+		empire_size_mult = -0.01
 	}
 
 	ai_build_at_chokepoint = yes
@@ -248,8 +248,8 @@ supremacy_shipyard = {
 	}
 }
 
-supremacy_dark_matter_collector = {
-	icon = "supremacy_dark_matter_core"
+rogue_orbital_exotic_reactor = {
+	icon = "rogue_spaceport_exotic_reactor"
 	construction_days = 180
 	
 	potential = {
@@ -258,6 +258,13 @@ supremacy_dark_matter_collector = {
 	}
 	
 	show_in_tech = "tech_supremacy_exotic_matter_annihilation"
+	
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_citadel"
+			has_starbase_size >= starbase_citadel
+		}
+	}
 
 	resources = {
 		category = starbase_buildings
@@ -268,17 +275,79 @@ supremacy_dark_matter_collector = {
 		}
 
 		upkeep = {
-			minerals = 8
+			minerals = 10
 		}
 			produces = {
-		sr_dark_matter = 3
-		energy = 3
+		sr_dark_matter = 2
+		energy = 5
 	}
+	}
+	
+	station_modifier = {
+		ship_shield_mult = 0.25
+		ship_shield_regen_add_perc = 0.5
+		ship_weapon_damage = 0.15
 	}
 
 	system_modifier = {
 		planet_anti_matter_researcher_upkeep_mult = -0.05
+		planet_anti_matter_researcher_produces_mult = 0.05
+	}
+
+	ai_build_at_chokepoint = yes
+	ai_build_outside_chokepoint = yes
+	ai_weight = {
+		weight = 50
+	}
+}
+
+rogue_orbital_universal_constructor = {
+	icon = "rogue_spaceport_universal_constructor"
+	construction_days = 180
+	
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_supremacy_intelligent_materials }
+	}
+	
+	show_in_tech = "tech_supremacy_intelligent_materials"
+	
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_citadel"
+			has_starbase_size >= starbase_citadel
+		}
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 50
+			sr_living_metal = 10
+			nanites = 10
+			sr_dark_matter = 20
+		}
+
+		upkeep = {
+			sr_dark_matter = 3
+		}
+			produces = {
+		sr_living_metal = 1
+			nanites = 1
+	}
+	}
+	
+	station_modifier = {
+		ship_armor_mult = 0.1
+		ship_armor_regen_add_perc = 0.5
+		ship_hull_mult = 0.1
+		ship_hull_regen_add_perc = 0.5
+		starbase_shipyard_build_speed_mult = 0.2
+	}
+
+	system_modifier = {
 		planet_nanite_fabricator_upkeep_mult = -0.05
+		planet_nanite_fabricator_produces_mult = 0.05
 	}
 
 	ai_build_at_chokepoint = yes

@@ -91,7 +91,9 @@ tech_rogue_nanolathe_starbase_building = {
 	}
 	
 	modifier = {
-		starbase_building_capacity_add = 1
+		starbase_building_build_speed_mult = 0.15
+		shipsize_ion_cannon_build_speed_mult = 0.15
+		shipsize_military_station_small_build_speed_mult = 0.15
 	}
 }
 
@@ -137,7 +139,10 @@ tech_rogue_nanolathe_starbase_module = {
 	}
 	
 	modifier = {
-		starbase_module_capacity_add = 1
+		starbase_module_build_speed_mult = 0.15
+		starbase_building_build_speed_mult = 0.15
+		shipsize_ion_cannon_build_speed_mult = 0.15
+		shipsize_military_station_small_build_speed_mult = 0.15
 	}
 }
 
@@ -183,7 +188,10 @@ tech_rogue_nanolathe_starbase_module_II = {
 	}
 	
 	modifier = {
-		starbase_module_capacity_add = 1
+		starbase_module_build_speed_mult = 0.2
+		starbase_building_build_speed_mult = 0.2
+		shipsize_ion_cannon_build_speed_mult = 0.2
+		shipsize_military_station_small_build_speed_mult = 0.2
 	}
 }
 

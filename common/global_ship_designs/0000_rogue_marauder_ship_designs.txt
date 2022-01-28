@@ -217,8 +217,8 @@ ship_design = {
 			template = "RT_NEMESIS_CANNON_SMALL"
 		}
 		component = {
-			slot = "ROGUE_TEMPEST_MISSILE"
-			template = "AUTOCANNON_2"
+			slot = "SMALL_GUN_02"
+			template = "ROGUE_TEMPEST_MISSILE"
 		}
 		component = {
 			slot = "AUX_UTILITY_1"

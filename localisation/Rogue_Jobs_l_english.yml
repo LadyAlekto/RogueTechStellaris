@@ -1,4 +1,14 @@
 ﻿l_english:
+ job_zro_refiners:0 "Z-ro Refiner"
+ job_zro_refiners_plural:0 "Z-ro Refiners"
+ job_zro_refiners_desc:1 "These specialists transform rare resource into the elusive Z-ro."
+ job_zro_refiners_effect_desc:0 "£job_zro_refiners£ $job_zro_refiners_plural$ produce £sr_zro£ §B$Zro$§!"
+ 
+ job_zro_refiners_drone:0 "Z-ro Refiner"
+ job_zro_refiners_drone_plural:0 "Z-ro Refiners"
+ job_zro_refiners_drone_desc:1 "These specialists transform rare resource into the elusive Z-ro."
+ job_zro_refiners_drone_effect_desc:0 "£job_zro_refiners£ $job_zro_refiners_plural$ produce £sr_zro£ §B$Zro$§!" 
+
  job_nanite_fabricator:0 "Nanite Fabricator"
  job_nanite_fabricator_plural:0 "Nanite Fabricators"
  job_nanite_fabricator_desc:1 "Produces rare nanites from raw materials."

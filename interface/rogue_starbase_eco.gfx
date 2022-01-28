@@ -1,0 +1,72 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "rogue_spaceport_alloys"
+		texturefile = "gfx/interface/icons/modules/rogue_eco/rogue_spaceport_alloys.dds"
+	}
+	
+	spriteType = {
+		name = "rogue_spaceport_consumer"
+		texturefile = "gfx/interface/icons/modules/rogue_eco/rogue_spaceport_consumer.dds"
+	}
+	
+	spriteType = {
+		name = "rogue_spaceport_crystals"
+		texturefile = "gfx/interface/icons/modules/rogue_eco/rogue_spaceport_crystals.dds"
+	}
+	
+	spriteType = {
+		name = "rogue_spaceport_dark_matter"
+		texturefile = "gfx/interface/icons/modules/rogue_eco/rogue_spaceport_dark_matter.dds"
+	}
+	
+	spriteType = {
+		name = "rogue_spaceport_energy"
+		texturefile = "gfx/interface/icons/modules/rogue_eco/rogue_spaceport_energy.dds"
+	}
+	
+	spriteType = {
+		name = "rogue_spaceport_food"
+		texturefile = "gfx/interface/icons/modules/rogue_eco/rogue_spaceport_food.dds"
+	}
+	
+	spriteType = {
+		name = "rogue_spaceport_gas"
+		texturefile = "gfx/interface/icons/modules/rogue_eco/rogue_spaceport_gas.dds"
+	}
+	
+	spriteType = {
+		name = "rogue_spaceport_livingmetal"
+		texturefile = "gfx/interface/icons/modules/rogue_eco/rogue_spaceport_livingmetal.dds"
+	}
+	
+	spriteType = {
+		name = "rogue_spaceport_minerals"
+		texturefile = "gfx/interface/icons/modules/rogue_eco/rogue_spaceport_minerals.dds"
+	}
+	
+	spriteType = {
+		name = "rogue_spaceport_motes"
+		texturefile = "gfx/interface/icons/modules/rogue_eco/rogue_spaceport_motes.dds"
+	}
+	
+	spriteType = {
+		name = "rogue_spaceport_nanites"
+		texturefile = "gfx/interface/icons/modules/rogue_eco/rogue_spaceport_nanites.dds"
+	}
+	
+	spriteType = {
+		name = "rogue_spaceport_zro"
+		texturefile = "gfx/interface/icons/modules/rogue_eco/rogue_spaceport_zro.dds"
+	}
+	
+	spriteType = {
+		name = "rogue_spaceport_exotic_reactor"
+		texturefile = "gfx/interface/icons/modules/rogue_eco/rogue_spaceport_exotic_reactor.dds"
+	}
+	
+	spriteType = {
+		name = "rogue_spaceport_universal_constructor"
+		texturefile = "gfx/interface/icons/modules/rogue_eco/rogue_spaceport_universal_constructor.dds"
+	}
+}

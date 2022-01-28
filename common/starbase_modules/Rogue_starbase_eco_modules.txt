@@ -1,0 +1,473 @@
+rogue_spaceport_eco_food = {
+	icon = "rogue_spaceport_food"
+	section = "REFINERY_STARBASE_SECTION"
+	construction_days = 180
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_food_processing_1 }
+	}
+	
+	show_in_tech = "tech_food_processing_1"
+
+	resources = {
+		category = starbase_modules
+		cost = {
+			alloys = 75
+			energy = 25
+		}
+
+		produces = {
+			food = 5
+		}
+
+		upkeep = {
+			energy = 1.5
+		}
+	}
+
+	system_modifier = {
+		planet_jobs_food_produces_mult = 0.1
+		station_gatherers_food_produces_mult = 0.1
+	}
+	
+	ai_build_at_chokepoint = no
+	ai_weight = {
+		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+	}
+}
+
+rogue_spaceport_eco_energy = {
+	icon = "rogue_spaceport_energy"
+	section = "REFINERY_STARBASE_SECTION"
+	construction_days = 180
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_power_hub_1 }
+	}
+	
+	show_in_tech = "tech_power_hub_1"
+
+	resources = {
+		category = starbase_modules
+		cost = {
+			alloys = 75
+			energy = 25
+		}
+
+		produces = {
+			energy = 5
+		}
+	}
+
+	system_modifier = {
+		planet_jobs_energy_produces_mult = 0.1
+		station_gatherers_energy_produces_mult = 0.1
+	}
+	
+	ai_build_at_chokepoint = no
+	ai_weight = {
+		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+	}
+}
+
+rogue_spaceport_eco_minerals = {
+	icon = "rogue_spaceport_minerals"
+	section = "REFINERY_STARBASE_SECTION"
+	construction_days = 180
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_mineral_purification_1 }
+	}
+	
+	show_in_tech = "tech_mineral_purification_1"
+
+	resources = {
+		category = starbase_modules
+		cost = {
+			alloys = 75
+			energy = 25
+		}
+
+		produces = {
+			minerals = 5
+		}
+
+		upkeep = {
+			energy = 2
+		}
+	}
+	
+	system_modifier = {
+		planet_jobs_minerals_produces_mult = 0.1
+		station_gatherers_minerals_produces_mult = 0.1
+	}
+	
+	ai_build_at_chokepoint = no
+	ai_weight = {
+		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+	}
+}
+
+rogue_spaceport_eco_alloys = {
+	icon = "rogue_spaceport_alloys"
+	section = "REFINERY_STARBASE_SECTION"
+	construction_days = 180
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_alloys_1 }
+	}
+	
+	show_in_tech = "tech_alloys_1"
+
+	resources = {
+		category = starbase_modules
+		cost = {
+			alloys = 75
+			energy = 25
+		}
+
+		produces = {
+			alloys = 5
+		}
+
+		upkeep = {
+			minerals = 10
+			energy = 5
+		}
+	}
+
+	system_modifier = {
+		planet_jobs_alloys_produces_mult = 0.1
+		station_gatherers_alloys_produces_mult = 0.1
+	}
+	
+	ai_build_at_chokepoint = no
+	ai_weight = {
+		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+	}
+}
+
+rogue_spaceport_eco_consumer = {
+	icon = "GFX_rogue_spaceport_consumer"
+	section = "REFINERY_STARBASE_SECTION"
+	construction_days = 180
+	potential = {
+		AND = {
+				exists = owner
+				owner = {
+					has_technology = tech_luxuries_1
+					country_uses_consumer_goods = no
+				}
+			}
+	}
+	
+	destroy_trigger = {
+		exists = owner
+				owner = {
+					country_uses_consumer_goods = no
+				}
+	}
+	
+	show_in_tech = "tech_luxuries_1"
+
+	resources = {
+		category = starbase_modules
+		cost = {
+			alloys = 75
+			energy = 25
+		}
+
+		produces = {
+			consumer_goods = 5
+		}
+
+		upkeep = {
+			minerals = 5
+			energy = 1
+		}
+	}
+
+	system_modifier = {
+		planet_jobs_consumer_goods_produces_mult = 0.1
+		planet_jobs_consumer_goods_upkeep_mult = -0.1
+	}
+	
+	ai_build_at_chokepoint = no
+	ai_weight = {
+		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+	}
+}
+
+rogue_spaceport_eco_motes = {
+	icon = "rogue_spaceport_motes"
+	section = "REFINERY_STARBASE_SECTION"
+	construction_days = 180
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_volatile_motes }
+	}
+	
+	show_in_tech = "tech_volatile_motes"
+
+	resources = {
+		category = starbase_modules
+		cost = {
+			alloys = 75
+			energy = 25
+		}
+
+		produces = {
+			volatile_motes = 3
+		}
+
+		upkeep = {
+			minerals = 10
+			energy = 5
+		}
+	}
+
+	system_modifier = {
+		planet_jobs_volatile_motes_produces_mult = 0.1
+		station_gatherers_volatile_motes_produces_mult = 0.1
+	}
+	
+	ai_build_at_chokepoint = no
+	ai_weight = {
+		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+	}
+}
+
+rogue_spaceport_eco_gases = {
+	icon = "rogue_spaceport_gas"
+	section = "REFINERY_STARBASE_SECTION"
+	construction_days = 180
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_exotic_gases }
+	}
+	
+	show_in_tech = "tech_exotic_gases"
+
+	resources = {
+		category = starbase_modules
+		cost = {
+			alloys = 75
+			energy = 25
+		}
+
+		produces = {
+			exotic_gases = 3
+		}
+
+		upkeep = {
+			minerals = 10
+			energy = 5
+		}
+	}
+
+	system_modifier = {
+		planet_jobs_exotic_gases_produces_mult = 0.1
+		station_gatherers_exotic_gases_produces_mult = 0.1
+	}
+	
+	ai_build_at_chokepoint = no
+	ai_weight = {
+		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+	}
+}
+
+rogue_spaceport_eco_crystals = {
+	icon = "rogue_spaceport_crystals"
+	section = "REFINERY_STARBASE_SECTION"
+	construction_days = 180
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_rare_crystals }
+	}
+	
+	show_in_tech = "tech_rare_crystals"
+
+	resources = {
+		category = starbase_modules
+		cost = {
+			alloys = 75
+			energy = 25
+		}
+
+		produces = {
+			rare_crystals = 3
+		}
+
+		upkeep = {
+			minerals = 10
+			energy = 5
+		}
+	}
+
+	system_modifier = {
+		planet_jobs_rare_crystals_produces_mult = 0.1
+		station_gatherers_rare_crystals_produces_mult = 0.1
+	}
+	
+	ai_build_at_chokepoint = no
+	ai_weight = {
+		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+	}
+}
+
+rogue_spaceport_eco_dark_matter = {
+	icon = "rogue_spaceport_dark_matter"
+	section = "REFINERY_STARBASE_SECTION"
+	construction_days = 180
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_supremacy_exotic_matter_application }
+	}
+	
+	show_in_tech = "tech_supremacy_exotic_matter_application"
+
+	resources = {
+		category = starbase_modules
+		cost = {
+			alloys = 75
+			energy = 25
+		}
+
+		produces = {
+			sr_dark_matter = 1
+		}
+
+		upkeep = {
+			minerals = 4
+			energy = 10
+		}
+	}
+
+	system_modifier = {
+		planet_jobs_sr_dark_matter_produces_mult = 0.1
+		station_gatherers_sr_dark_matter_produces_mult = 0.1
+	}
+	
+	ai_build_at_chokepoint = no
+	ai_weight = {
+		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+	}
+}
+
+rogue_spaceport_eco_livingmetal = {
+	icon = "rogue_spaceport_livingmetal"
+	section = "REFINERY_STARBASE_SECTION"
+	construction_days = 180
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_supremacy_molecular_assembly }
+	}
+	
+	show_in_tech = "tech_supremacy_molecular_assembly"
+
+	resources = {
+		category = starbase_modules
+		cost = {
+			alloys = 75
+			energy = 25
+		}
+
+		produces = {
+			sr_living_metal = 1
+		}
+
+		upkeep = {
+			alloys = 5
+			energy = 5
+		}
+	}
+
+	system_modifier = {
+		planet_jobs_sr_living_metal_produces_mult = 0.1
+		station_gatherers_sr_living_metal_produces_mult = 0.1
+	}
+	
+	ai_build_at_chokepoint = no
+	ai_weight = {
+		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+	}
+}
+
+rogue_spaceport_eco_nanites = {
+	icon = "rogue_spaceport_nanites"
+	section = "REFINERY_STARBASE_SECTION"
+	construction_days = 180
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_supremacy_molecular_assembly }
+	}
+	
+	show_in_tech = "tech_supremacy_molecular_assembly"
+
+	resources = {
+		category = starbase_modules
+		cost = {
+			alloys = 75
+			energy = 25
+		}
+
+		produces = {
+			nanites = 1
+		}
+
+		upkeep = {
+			alloys = 5
+			energy = 5
+		}
+	}
+
+	system_modifier = {
+		planet_jobs_nanites_produces_mult = 0.1
+		station_gatherers_nanites_produces_mult = 0.1
+	}
+	
+	ai_build_at_chokepoint = no
+	ai_weight = {
+		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+	}
+}
+
+rogue_spaceport_eco_zro = {
+	icon = "rogue_spaceport_zro"
+	section = "REFINERY_STARBASE_SECTION"
+	construction_days = 180
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_mine_zro }
+	}
+	
+	show_in_tech = "tech_mine_zro"
+
+	resources = {
+		category = starbase_modules
+		cost = {
+			alloys = 75
+			energy = 25
+		}
+
+		produces = {
+			sr_zro = 1
+		}
+
+		upkeep = {
+			volatile_motes = 1
+			exotic_gases = 1
+			rare_crystals =1
+		}
+	}
+
+	system_modifier = {
+		planet_jobs_sr_zro_produces_mult = 0.15
+		station_gatherers_sr_zro_produces_mult = 0.15
+	}
+	
+	ai_build_at_chokepoint = no
+	ai_weight = {
+		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+	}
+}

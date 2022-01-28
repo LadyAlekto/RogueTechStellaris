@@ -1,4 +1,14 @@
 ﻿l_english:
+ PHALANX_REACTOR:0 "Phalanx Core"
+ PHALANX_REACTOR_DESC:0 "A contained singularity reactor capable of siphoning extra dimensional energy and exotic matter"
+ 
+ ROGUE_STARBASE_SECTION:0 "Phalanx"
+ 
+ starbase_rogue:0 "Phalanx"
+ starbase_rogue_plural:0 "Phalanx"
+ requires_phalanx:0 "§RRequires §Y$starbase_rogue$§! upgrade.§!"
+ starbase_rogue_trigger:0 "£trigger_no£  Starbase needs to be §YPhalanx§! level"
+
  sm_science_quarters:0 "Science Quarters"
  sm_science_quarters_desc:0 "Quarters for Scientists to generate some research and speed up Empire Wide Science Projects."
  
@@ -16,19 +26,7 @@
  
  aura_starbase_maintenance_drones:0 "Maintenance Drones"
  aura_starbase_maintenance_drones_desc:0 "Maintenance Drones that actively seek out, shield and repair allied forces in orbit."
- 
- sm_supremacy_starbase_orbital_mineral_refineries:0 "Orbital Mineral Refineries"
- sm_supremacy_starbase_orbital_energy_refineries:0 "Orbital Power Grid"
- sm_supremacy_starbase_orbital_food_refineries:0 "Orbital Farms"
- sm_supremacy_starbase_orbital_alloy_refineries:0 "Orbital Alloy Smelters"
- sm_supremacy_dark_matter_collector:0 "Exotic Matter Collectors"
- 
- sm_supremacy_starbase_orbital_mineral_refineries_desc:0 "Refineries added directly into the starbase improves the systems mineral output"
- sm_supremacy_starbase_orbital_energy_refineries_desc:0 "Interconnected solar farms and power production improves the systems energy output"
- sm_supremacy_starbase_orbital_food_refineries_desc:0 "Orbital Seed stores and distribution systems improves the systems food output"
- sm_supremacy_starbase_orbital_alloy_refineries_desc:0 "Integrated Zero-G smelters improves the systems alloy output"
- sm_supremacy_dark_matter_collector_desc:0 "Draw Exotic Matter directly from the vacuum of space"
-  
+   
  sm_supremacy_shipyard:0 "Advanced Shipyard"
  sm_supremacy_shipyard_desc:0 "Adds 4 Shipyard Capacity and Increases Ship Construction Speed by 33%."
  
@@ -42,3 +40,46 @@
  BIOPHAGE_HEAVY_MILITARY_STATION_SECTION:1 "Heavy Weapons"
  BIOPHAGE_HEAVY_HANGAR_STATION_SECTION:1 "Heavy Hangar"
  BIOPHAGE_HEAVY_MISSILE_STATION_SECTION:1 "Missile Batteries"
+ 
+ sm_rogue_orbital_exotic_reactor:0 "Exotic Matter Reactor"
+ sm_rogue_orbital_exotic_reactor_desc:0 "An Exotic Matter Reactor that provides a steady supply of Dark Matter and powers station systems"
+ 
+ sm_rogue_orbital_universal_constructor:0 "Universal Constructor"
+ sm_rogue_orbital_universal_constructor_desc:0 "A Universal Constructor integrated into the station helps with its maintenance and produce additional Nanites and Living Metal"
+ 
+ sm_rogue_spaceport_eco_alloys:0 "Orbital Alloy Smelters"
+ sm_rogue_spaceport_eco_consumer:0 "Orbital Manufactory"
+ sm_rogue_spaceport_eco_crystals:0 "Orbital Crystal Synthesizer"
+ sm_rogue_spaceport_eco_dark_matter:0 "Dark Matter Synthesizer" 
+ sm_rogue_spaceport_eco_energy:0 "Orbital Power Grid"
+ sm_rogue_spaceport_eco_food:0 "Orbital Farms"
+ sm_rogue_spaceport_eco_gases:0 "Orbital Gas Synthesizer"
+ sm_rogue_spaceport_eco_livingmetal:0 "Living Metal Incubators"
+ sm_rogue_spaceport_eco_minerals:0 "Orbital Mineral Refineries"
+ sm_rogue_spaceport_eco_motes:0 "Orbital Motes Synthesizer"
+ sm_rogue_spaceport_eco_nanites:0 "Nanite Assemblers"
+ sm_rogue_spaceport_eco_zro:0 "Orbital Zro Synthesizer"
+ 
+ sm_rogue_spaceport_eco_alloys_desc:0 "Integrated Zero-G smelters improves the systems alloy output"
+ sm_rogue_spaceport_eco_consumer_desc:0 "High-Quality Consumer Goods production and distribution"
+ sm_rogue_spaceport_eco_crystals_desc:0 "Orbital Crystal synthesis and refinement enhances system wide output"
+ sm_rogue_spaceport_eco_dark_matter_desc:0 "Laboratories to extract Dark Matter from artifical contained singularities" 
+ sm_rogue_spaceport_eco_energy_desc:0 "Interconnected solar farms and power production improves the systems energy output"
+ sm_rogue_spaceport_eco_food_desc:0 "Orbital Seed stores and distribution systems improves the systems food output"
+ sm_rogue_spaceport_eco_gases_desc:0 "Orbital Exotic Gas synthesis and refinement enhances system wide output"
+ sm_rogue_spaceport_eco_livingmetal_desc:0 "Controlled enviroments and pools that excite living metal to grow"
+ sm_rogue_spaceport_eco_minerals_desc:0 "Refineries added directly into the starbase improves the systems mineral output"
+ sm_rogue_spaceport_eco_motes_desc:0 "Orbital Volatile Motes synthesis and refinement enhances system wide output"
+ sm_rogue_spaceport_eco_nanites_desc:0 "Autonomous 0-G Nanite assemblers provide a steady output"
+ sm_rogue_spaceport_eco_zro_desc:0 "Refineries that allow production of Zro"
+ 
+ 
+ 
+ sm_supremacy_starbase_orbital_mineral_refineries:0 "Orbital Mineral Refineries"
+ sm_supremacy_starbase_orbital_energy_refineries:0 "Orbital Power Grid"
+ sm_supremacy_starbase_orbital_food_refineries:0 "Orbital Farms"
+ 
+ sm_supremacy_starbase_orbital_mineral_refineries_desc:0 "Refineries added directly into the starbase improves the systems mineral output"
+ sm_supremacy_starbase_orbital_energy_refineries_desc:0 "Interconnected solar farms and power production improves the systems energy output"
+ sm_supremacy_starbase_orbital_food_refineries_desc:0 "Orbital Seed stores and distribution systems improves the systems food output"
+ sm_supremacy_starbase_orbital_alloy_refineries_desc:0 "Integrated Zero-G smelters improves the systems alloy output"

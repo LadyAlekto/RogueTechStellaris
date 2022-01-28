@@ -8,6 +8,7 @@ ship_section_template = {
 	ship_size = starbase_starhold
 	ship_size = starbase_starfortress
 	ship_size = starbase_citadel
+	ship_size = starbase_rogue
 
 	fits_on_slot = "1"
 	fits_on_slot = "2"
@@ -15,6 +16,12 @@ ship_section_template = {
 	fits_on_slot = "4"
 	fits_on_slot = "5"
 	fits_on_slot = "6"
+	fits_on_slot = "7"
+	fits_on_slot = "8"
+	fits_on_slot = "9"
+	fits_on_slot = "10"
+	fits_on_slot = "11"
+	fits_on_slot = "12"
 
 	should_draw_components = yes
 
@@ -95,6 +102,7 @@ ship_section_template = {
 	ship_size = starbase_starhold
 	ship_size = starbase_starfortress
 	ship_size = starbase_citadel
+	ship_size = starbase_rogue
 
 	fits_on_slot = "1"
 	fits_on_slot = "2"
@@ -102,6 +110,12 @@ ship_section_template = {
 	fits_on_slot = "4"
 	fits_on_slot = "5"
 	fits_on_slot = "6"
+	fits_on_slot = "7"
+	fits_on_slot = "8"
+	fits_on_slot = "9"
+	fits_on_slot = "10"
+	fits_on_slot = "11"
+	fits_on_slot = "12"
 
 	should_draw_components = yes
 
@@ -189,6 +203,7 @@ ship_section_template = {
 	ship_size = starbase_starhold
 	ship_size = starbase_starfortress
 	ship_size = starbase_citadel
+	ship_size = starbase_rogue
 
 	fits_on_slot = "1"
 	fits_on_slot = "2"
@@ -196,6 +211,12 @@ ship_section_template = {
 	fits_on_slot = "4"
 	fits_on_slot = "5"
 	fits_on_slot = "6"
+	fits_on_slot = "7"
+	fits_on_slot = "8"
+	fits_on_slot = "9"
+	fits_on_slot = "10"
+	fits_on_slot = "11"
+	fits_on_slot = "12"
 
 	should_draw_components = yes
 
