@@ -1,0 +1,65 @@
+namespace = rt_supremacy_tech
+
+
+country_event = {
+	id = rt_supremacy_tech.1
+	hide_window = yes
+	
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			last_increased_tech = tech_supremacy_anomalous_materials
+			last_increased_tech = tech_supremacy_molecular_assembly
+			last_increased_tech = tech_supremacy_intelligent_materials
+			}
+		}
+	
+	immediate = {
+		add_tech_progress = {
+			tech = tech_mine_living_metal
+			progress = 0.15
+		}
+	}	
+}
+
+country_event = {
+	id = rt_supremacy_tech.2
+	hide_window = yes
+	
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			last_increased_tech = tech_supremacy_exotic_matter_theory
+			last_increased_tech = tech_supremacy_exotic_matter_application
+			last_increased_tech = tech_supremacy_exotic_matter_annihilation
+			}
+		}
+	
+	immediate = {
+		add_tech_progress = {
+			tech = tech_mine_dark_matter
+			progress = 0.1
+		}
+	}	
+}
+
+
+country_event = {
+	id = rt_supremacy_tech.3
+	hide_window = yes
+	
+	is_triggered_only = yes
+
+	trigger = {
+			last_increased_tech = tech_nanite_transmutation
+		}
+	
+	immediate = {
+		add_tech_progress = {
+			tech = tech_supremacy_anomalous_materials
+			progress = 0.2
+		}
+	}	
+}

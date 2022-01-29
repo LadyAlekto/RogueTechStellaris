@@ -41,6 +41,48 @@ component_set = {
 }
 
 component_set = {
+	key = "SYNTH_ARMOR_1"
+
+	icon = "SYNTH_ARMOR_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "SYNTH_ARMOR_2"
+
+	icon = "SYNTH_ARMOR_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "SYNTH_ARMOR_3"
+
+	icon = "SYNTH_ARMOR_3"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "SYNTH_ARMOR_4"
+
+	icon = "SYNTH_ARMOR_4"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "SYNTH_ARMOR_5"
+
+	icon = "SYNTH_ARMOR_5"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "SYNTH_ARMOR_6"
+
+	icon = "SYNTH_ARMOR_6"
+	icon_frame = 1
+}
+
+component_set = {
 	key = "ROGUE_SHIELD_BOOSTER_1"
 
 	icon = "ROGUE_SHIELD_BOOSTER_1"

@@ -1,0 +1,34 @@
+component_set = {
+	key = "RED_PSI_LASER"
+	
+	icon = "ship_part_psi_laser_1"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "BLUE_PSI_LASER"
+	
+	icon = "ship_part_psi_laser_2"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "UV_PSI_LASER"
+	
+	icon = "ship_part_psi_laser_3"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "XRAY_PSI_LASER"
+	
+	icon = "ship_part_psi_laser_4"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "GAMMA_PSI_LASER"
+	
+	icon = "ship_part_psi_laser_5"
+	icon_frame = 1	
+}

@@ -5,13 +5,13 @@ utility_component_template = {
 	icon_frame = 1
 	power = 0
 	modifier = {
-		ship_armor_mult = 0.1
-		ship_hull_mult = 0.05
-		ship_armor_regen_add_perc = 0.5
+		ship_armor_mult = 0.05
+		ship_hull_mult = 0.1
+		ship_armor_regen_add_perc = 0.25
 		ship_hull_regen_add_perc = 0.5
 	}
 
-	prerequisites = { "tech_roguetech_bio_armor_plating"  "tech_ship_armor_1" }
+	prerequisites = { "tech_roguetech_AP_BIO_UNLOCK" }
 	component_set = "BIOPHAGE_ARMOR_1"
 	upgrades_to = "BIOPHAGE_ARMOR_2"
 	resources = {
@@ -35,9 +35,9 @@ utility_component_template = {
 	icon_frame = 1
 	power = 0
 	modifier = {
-		ship_armor_mult = 0.12
-		ship_hull_mult = 0.06
-		ship_armor_regen_add_perc = 0.5
+		ship_armor_mult = 0.06
+		ship_hull_mult = 0.12
+		ship_armor_regen_add_perc = 0.25
 		ship_hull_regen_add_perc = 0.5
 	}
 
@@ -65,9 +65,9 @@ utility_component_template = {
 	icon_frame = 1
 	power = 0
 	modifier = {
-		ship_armor_mult = 0.14
-		ship_hull_mult = 0.07
-		ship_armor_regen_add_perc = 0.5
+		ship_armor_mult = 0.07
+		ship_hull_mult = 0.14
+		ship_armor_regen_add_perc = 0.25
 		ship_hull_regen_add_perc = 0.5
 	}
 
@@ -95,9 +95,9 @@ utility_component_template = {
 	icon_frame = 1
 	power = 0
 	modifier = {
-		ship_armor_mult = 0.16
-		ship_hull_mult = 0.08
-		ship_armor_regen_add_perc = 0.5
+		ship_armor_mult = 0.08
+		ship_hull_mult = 0.16
+		ship_armor_regen_add_perc = 0.25
 		ship_hull_regen_add_perc = 0.5
 	}
 
@@ -125,9 +125,9 @@ utility_component_template = {
 	icon_frame = 1
 	power = 0
 	modifier = {
-		ship_armor_mult = 0.18
-		ship_hull_mult = 0.09
-		ship_armor_regen_add_perc = 0.5
+		ship_armor_mult = 0.09
+		ship_hull_mult = 0.18
+		ship_armor_regen_add_perc = 0.25
 		ship_hull_regen_add_perc = 0.5
 	}
 
@@ -155,10 +155,10 @@ utility_component_template = {
 	icon_frame = 1
 	power = 0
 	modifier = {
-		ship_armor_mult = 0.2
-		ship_hull_mult = 0.1
-		ship_armor_regen_add_perc = 0.5
-		ship_hull_regen_add_perc = 0.5
+		ship_armor_mult = 0.1
+		ship_hull_mult = 0.2
+		ship_armor_regen_add_perc = 0.3
+		ship_hull_regen_add_perc = 0.6
 	}
 
 	prerequisites = { "tech_roguetech_bio_armor_plating"  "tech_dragon_armor" }

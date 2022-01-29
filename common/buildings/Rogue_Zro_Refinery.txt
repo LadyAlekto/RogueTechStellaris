@@ -43,7 +43,7 @@ building_zero_mine = {
 	}
 
 	prerequisites = {
-		"tech_mine_zro"
+		"tech_psionic_theory"
 	}
 
 	triggered_desc = {

@@ -1,0 +1,71 @@
+tech_roguetech_AP_SYNTH_UNLOCK = {
+	area = engineering
+	cost = @tier3cost3
+	tier = 2
+	is_rare = yes
+	is_reverse_engineerable = no
+	category = { materials }
+	ai_update_type = military
+	weight = 0
+	potential = {
+		OR = {
+			has_ascension_perk = ap_the_flesh_is_weak
+			has_ascension_perk = ap_synthetic_age
+			}
+	}
+		
+	weight_modifier = {
+	factor = 0
+	}
+
+	ai_weight = {
+		factor = 0
+	}
+}
+
+tech_roguetech_AP_BIO_UNLOCK = {
+	area = Society
+	cost = @tier3cost3
+	tier = 2
+	is_rare = yes
+	is_reverse_engineerable = no
+	category = { biology }
+	ai_update_type = military
+	weight = 0
+	potential = {
+		has_ascension_perk = ap_engineered_evolution
+	}
+		
+	weight_modifier = {
+	factor = 0
+	}
+
+	ai_weight = {
+		factor = 0
+	}
+}
+
+tech_roguetech_AP_PSI_UNLOCK = {
+	area = physics
+	cost = @tier3cost3
+	tier = 2
+	is_rare = yes
+	is_reverse_engineerable = no
+	category = { particles }
+	ai_update_type = military
+	weight = 0
+	potential = {
+		OR = {
+			has_ascension_perk = ap_the_flesh_is_weak
+			has_ascension_perk = ap_synthetic_age
+			}
+	}
+		
+	weight_modifier = {
+	factor = 0
+	}
+
+	ai_weight = {
+		factor = 0
+	}
+}

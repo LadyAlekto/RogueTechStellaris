@@ -30,6 +30,26 @@ ship_section_template = {
 		template = "large_strike_craft"
 		locatorname = "strike_craft_locator_04"
 	}
+	component_slot = {
+		name = "STRIKE_CRAFT_05"
+		template = "large_strike_craft"
+		locatorname = "strike_craft_locator_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_06"
+		template = "large_strike_craft"
+		locatorname = "strike_craft_locator_02"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_07"
+		template = "large_strike_craft"
+		locatorname = "strike_craft_locator_03"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_08"
+		template = "large_strike_craft"
+		locatorname = "strike_craft_locator_04"
+	}
 	
 	component_slot = {
 		name = "LARGE_01"
@@ -58,6 +78,12 @@ ship_section_template = {
 	component_slot = {
 		name = "PLANET_KILLER_GUN_01"
 		template = "invisible_planet_killer_fixed"
+		locatorname = "planet_killer_gun_01"
+	}
+	
+	component_slot = {
+		name = "PLANET_KILLER_GUN_01"
+		template = "invisible_titanic_fixed"
 		locatorname = "planet_killer_gun_01"
 	}
 
@@ -101,12 +127,12 @@ ship_section_template = { # Hanger Core
 	}
 	component_slot = {
 		name = "TITANIC_03"
-		template = "invisible_titanic_fixed"
+		template = "extra_large_turret"
 		locatorname = "xl_gun_03"
 	}
 	component_slot = {
 		name = "TITANIC_04"
-		template = "invisible_titanic_fixed"
+		template = "extra_large_turret"
 		locatorname = "xl_gun_04"
 	}
 

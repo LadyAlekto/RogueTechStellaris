@@ -5,6 +5,11 @@ strike_craft_component_template = {
 	weapon_type = point_defence
 	projectile_gfx = "scout_laser_1"
 	power = -20
+	
+	prerequisites = { "tech_roguetech_AP_SYNTH_UNLOCK" }
+	
+	ship_modifier = { ship_armor_mult = 0.05 }
+	
 	resources = {
 		category = ship_components
 		cost = {
@@ -18,36 +23,35 @@ strike_craft_component_template = {
 			minerals = 0.02
 		}
 	}
-	count = 6
-	regeneration_per_day = 1.5
-	launch_time = 1.6
+	count = 8
+	regeneration_per_day = 1
+	launch_time = 1.5
 
 	damage = { min = 4 max = 8 }
 	cooldown = 2
 	range = 10
 	engagement_range = 100
-	accuracy = 1.50
-	tracking = 1.50
+	accuracy = 0.8
+	tracking = 0.50
 
 	health = 10
-	armor = 5
-	shield = 20
-	evasion = 1.1
+	armor = 0
+	shield = 10
+	evasion = 0.50
 
 	speed = 700
 	rotation_speed = 0.8
 	acceleration = 1.3
 
-	shield_penetration = 0.5
-	armor_penetration = 0.5
-	shield_damage = 1.5
-	armor_damage = 1.2
-	hull_damage = 0.9
+	shield_penetration = 0.25
+	armor_penetration = 0.25
+	shield_damage = 1
+	armor_damage = 1.1
+	hull_damage = 0.8
 
 	ship_behavior = "fighters_behavior"
 	icon = "fighter_Ia"
 	icon_frame = 1
-	prerequisites = { "tech_roguetech_stealth" }
 	component_set = "SUPREMACY_STEALTH_SCOUT"
 	upgrades_to = "SUPREMACY_STEALTH_FIGHTER_1"
 	tags = { weapon_type_strike_craft }
@@ -60,6 +64,8 @@ strike_craft_component_template = {
 
 	weapon_type = point_defence
 	projectile_gfx = "strike_craft_laser_1"
+	
+	ship_modifier = { ship_armor_mult = 0.05 }
 
 	power = -30
 	resources = {
@@ -78,30 +84,30 @@ strike_craft_component_template = {
 		}
 	}
 
-	count = 6
-	regeneration_per_day = 1.5
-	launch_time = 1.45
+	count = 8
+	regeneration_per_day = 1
+	launch_time = 1.5
 
-	damage = { min = 6 max = 12 }
+	damage = { min = 8 max = 10 }
 	cooldown = 2
-	range = 11
-	engagement_range = 110
-	accuracy = 1.50
-	tracking = 1.50
+	range = 10
+	engagement_range = 100
+	accuracy = 0.8
+	tracking = 0.50
 
 	health = 15
-	armor = 10
-	shield = 30
-	evasion = 1.1
+	armor = 0
+	shield = 20
+	evasion = 0.50
 
-	speed = 750
+	speed = 700
 	rotation_speed = 0.8
 	acceleration = 1.3
 
-	shield_penetration = 0.5
-	armor_penetration = 0.5
-	shield_damage = 1.5
-	armor_damage = 1.2
+	shield_penetration = 0.3
+	armor_penetration = 0.3
+	shield_damage = 1.1
+	armor_damage = 1.1
 	hull_damage = 0.9
 
 	ship_behavior = "fighters_behavior"
@@ -109,7 +115,7 @@ strike_craft_component_template = {
 	icon = "fighter_IIa"
 	icon_frame = 1
 	component_set = "SUPREMACY_STEALTH_FIGHTER_1"
-	prerequisites = { "tech_strike_craft_1" "tech_roguetech_stealth" }
+	prerequisites = { "tech_strike_craft_1" "tech_roguetech_drone_swarm_fighter" }
 	upgrades_to = "SUPREMACY_STEALTH_FIGHTER_2"
 
 	tags = { weapon_type_strike_craft }
@@ -124,6 +130,8 @@ strike_craft_component_template = {
 
 	weapon_type = point_defence
 	projectile_gfx = "strike_craft_laser_2"
+	
+	ship_modifier = { ship_armor_mult = 0.1 }
 
 	power = -40
 	resources = {
@@ -142,30 +150,30 @@ strike_craft_component_template = {
 		}
 	}
 
-	count = 6
-	regeneration_per_day = 1.5
-	launch_time = 1.3
+	count = 10
+	regeneration_per_day = 1.1
+	launch_time = 1.4
 
-	damage = { min = 8 max = 16 }
-	cooldown = 2.6
-	range = 12
-	engagement_range = 120
-	accuracy = 1.50
-	tracking = 1.50
+	damage = { min = 8 max = 10 }
+	cooldown = 2
+	range = 10
+	engagement_range = 100
+	accuracy = 0.8
+	tracking = 0.50
 
-	health = 20
-	armor = 15
-	shield = 40
-	evasion = 1.1
+	health = 15
+	armor = 0
+	shield = 30
+	evasion = 0.50
 
-	speed = 800
+	speed = 700
 	rotation_speed = 0.8
 	acceleration = 1.3
 
-	shield_penetration = 0.5
-	armor_penetration = 0.5
-	shield_damage = 1.5
-	armor_damage = 1.2
+	shield_penetration = 0.35
+	armor_penetration = 0.35
+	shield_damage = 1.2
+	armor_damage = 1.1
 	hull_damage = 0.9
 
 	ship_behavior = "fighters_behavior"
@@ -173,7 +181,7 @@ strike_craft_component_template = {
 	icon = "fighter_IIIa"
 	icon_frame = 1
 	component_set = "SUPREMACY_STEALTH_FIGHTER_2"
-	prerequisites = { "tech_strike_craft_2" "tech_roguetech_stealth" }
+	prerequisites = { "tech_strike_craft_2" "tech_roguetech_drone_swarm_fighter" }
 	upgrades_to = "SUPREMACY_STEALTH_FIGHTER_3"
 
 	tags = { weapon_type_strike_craft }
@@ -188,6 +196,8 @@ strike_craft_component_template = {
 
 	weapon_type = point_defence
 	projectile_gfx = "strike_craft_laser_3"
+	
+	ship_modifier = { ship_armor_mult = 0.1 }
 
 	power = -50
 	resources = {
@@ -206,31 +216,31 @@ strike_craft_component_template = {
 		}
 	}
 
-	count = 6
-	regeneration_per_day = 1.5
-	launch_time = 1.15
+	count = 10
+	regeneration_per_day = 1.3
+	launch_time = 1.5
 
-	damage = { min = 10 max = 20 }
+	damage = { min = 10 max = 12 }
 	cooldown = 2
-	range = 13
-	engagement_range = 130
-	accuracy = 1.50
-	tracking = 1.50
+	range = 10
+	engagement_range = 100
+	accuracy = 0.8
+	tracking = 0.50
 
-	health = 25
-	armor = 20
-	shield = 50
-	evasion = 1.1
+	health = 20
+	armor = 5
+	shield = 40
+	evasion = 0.50
 
-	speed = 850
+	speed = 700
 	rotation_speed = 0.8
 	acceleration = 1.3
 
 	shield_penetration = 0.5
 	armor_penetration = 0.5
-	shield_damage = 1.5
-	armor_damage = 1.2
-	hull_damage = 0.9
+	shield_damage = 1.1
+	armor_damage = 1.5
+	hull_damage = 1
 
 	ship_behavior = "fighters_behavior"
 
@@ -238,7 +248,7 @@ strike_craft_component_template = {
 	icon_frame = 1
 	component_set = "SUPREMACY_STEALTH_FIGHTER_3"
 	upgrades_to = "SUPREMACY_STRIKE_CRAFT"
-	prerequisites = { "tech_strike_craft_3" "tech_roguetech_stealth" }
+	prerequisites = { "tech_strike_craft_3" "tech_roguetech_drone_swarm_fighter" }
 
 	tags = { weapon_type_strike_craft }
 	ai_tags = { weapon_role_point_defense }
@@ -252,6 +262,15 @@ strike_craft_component_template = {
 
 	weapon_type = point_defence
 	projectile_gfx = "strike_craft_laser_3"
+	
+	ship_modifier = { ship_armor_mult = 0.15 }
+	
+		potential = {
+		OR = {
+			has_ascension_perk = ap_synthetic_evolution
+			has_ascension_perk = ap_synthetic_age
+			}
+	}
 
 	power = -60
 	resources = {
@@ -270,38 +289,38 @@ strike_craft_component_template = {
 		}
 	}
 
-	count = 6
-	regeneration_per_day = 1.5
-	launch_time = 1
+	count = 12
+	regeneration_per_day = 1.6
+	launch_time = 1.2
 
-	damage = { min = 15 max = 30 }
+	damage = { min = 12 max = 20 }
 	cooldown = 2
-	range = 15
-	engagement_range = 150
-	accuracy = 1.50
-	tracking = 1.50
+	range = 10
+	engagement_range = 100
+	accuracy = 0.8
+	tracking = 0.50
 
-	health = 30
-	armor = 30
-	shield = 60
-	evasion = 1.1
+	health = 25
+	armor = 10
+	shield = 50
+	evasion = 0.50
 
-	speed = 900
+	speed = 700
 	rotation_speed = 0.8
 	acceleration = 1.3
 
 	shield_penetration = 0.5
 	armor_penetration = 0.5
 	shield_damage = 1.5
-	armor_damage = 1.2
-	hull_damage = 0.9
+	armor_damage = 1.5
+	hull_damage = 1
 
 	ship_behavior = "fighters_behavior"
 
 	icon = "fighter_Va"
 	icon_frame = 1
 	component_set = "SUPREMACY_STRIKE_CRAFT"
-	prerequisites = { "tech_roguetech_scalar_energy_fields" "tech_roguetech_stealth" "tech_strike_craft_3" }
+	prerequisites = { "tech_roguetech_scalar_energy_fields" "tech_roguetech_drone_swarm_fighter" "tech_strike_craft_3" }
 
 	tags = { weapon_type_strike_craft }
 	ai_tags = { weapon_role_point_defense }

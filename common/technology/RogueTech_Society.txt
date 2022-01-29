@@ -213,8 +213,7 @@ tech_roguetech_bio_armor_plating = {
 	prerequisites = { "tech_roguetech_biological_engineering" }
 	
 	modifier = {
-		ship_armor_mult = 0.05
-		ship_hull_mult = 0.05
+		ship_hull_mult = 0.1
 	}
 	
 	weight_modifier = {
@@ -303,20 +302,23 @@ tech_roguetech_bio_armor_plating = {
 
 tech_roguetech_biological_engineering = {
 	area = society
-	cost = @tier2cost3
+	cost = @tier1cost3
 	tier = 1
 	is_rare = yes
 	is_reverse_engineerable = no
 	category = { biology }
 	ai_update_type = military
 	weight = 5
+	
+	potential = {
+		has_ascension_perk = ap_engineered_evolution
+	}
 		
 	modifier = {
-		ship_armor_mult = 0.03
-		ship_hull_mult = 0.03
-		ship_hull_regen_add_perc = 0.2
-		ship_armor_regen_add_perc = 0.2
-		pop_growth_speed = 0.10
+		ship_hull_mult = 0.1
+		ship_hull_regen_add_perc = 0.25
+		BIOLOGICAL_species_trait_points_add = 1
+		modify_species_cost_mult = -0.1
 	}
 	
 	weight_modifier = {
@@ -417,12 +419,11 @@ tech_roguetech_biological_mastery = {
 	prerequisites = { "tech_roguetech_biological_engineering" "tech_roguetech_bio_missile" "tech_roguetech_bio_strike_craft" "tech_roguetech_bio_armor_plating" }
 	
 	modifier = {
-		ship_armor_mult = 0.05
-		ship_hull_mult = 0.05
 		ship_orbital_bombardment_mult = 0.2
+		ship_hull_mult = 0.1
 		ship_hull_regen_add_perc = 0.5
-		ship_armor_regen_add_perc = 0.5
-		pop_growth_speed = 0.10
+		BIOLOGICAL_species_trait_points_add = 1
+		modify_species_cost_mult = -0.15
 	}
 	
 	weight_modifier = {

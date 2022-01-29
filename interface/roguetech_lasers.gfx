@@ -1,0 +1,23 @@
+
+	spriteTypes = {	
+	spriteType = {
+			name = "ship_part_psi_laser_1"
+			texturefile = "gfx/interface/icons/ship_parts/psi_laser/ship_part_psi_laser_1.dds"
+		}
+	spriteType = {
+			name = "ship_part_psi_laser_2"
+			texturefile = "gfx/interface/icons/ship_parts/psi_laser/ship_part_psi_laser_2.dds"
+		}
+	spriteType = {
+			name = "ship_part_psi_laser_3"
+			texturefile = "gfx/interface/icons/ship_parts/psi_laser/ship_part_psi_laser_3.dds"
+		}
+	spriteType = {
+			name = "ship_part_psi_laser_4"
+			texturefile = "gfx/interface/icons/ship_parts/psi_laser/ship_part_psi_laser_4.dds"
+		}
+	spriteType = {
+			name = "ship_part_psi_laser_5"
+			texturefile = "gfx/interface/icons/ship_parts/psi_laser/ship_part_psi_laser_5.dds"
+		}
+	}

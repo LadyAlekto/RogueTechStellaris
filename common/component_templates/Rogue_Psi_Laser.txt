@@ -1,0 +1,770 @@
+
+# ####################
+# Laser
+# ####################
+
+### Red Lasers
+weapon_component_template = {
+	key = "SMALL_RED_PSI_LASER"
+	size = small
+	type = point_defence
+	icon = "ship_part_psi_laser_1"
+	icon_frame = 1
+	prerequisites = { "tech_roguetech_AP_PSI_ULOCK" "tech_lasers_1" }
+	component_set = "RED_PSI_LASER"
+	projectile_gfx = "infrared_laser_s"
+	tags = { weapon_type_energy }
+	upgrades_to = "SMALL_BLUE_PSI_LASER"
+	ai_tags = { weapon_role_anti_armor }	#tags must be pre-registered in common/weapon_tags
+	
+	power = 3
+	
+	damage = { min = 6 max = 16 }
+	
+	windup = { min = 2 max = 20 }
+	total_fire_time =25
+	
+	cooldown = 35
+	
+	hull_damage = 1
+	shield_damage = 0.5
+	shield_penetration = 0
+	armor_damage = 1.5
+	armor_penetration = 0
+	
+	range = 40
+	accuracy = 0.9
+	tracking = 0.65
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+			sr_zro = 0.1
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+}
+
+
+weapon_component_template = {
+	key = "MEDIUM_RED_PSI_LASER"
+	size = medium
+	type = point_defence
+	icon = "ship_part_psi_laser_1"
+	icon_frame = 1
+	prerequisites = { "tech_roguetech_AP_PSI_ULOCK" "tech_lasers_1" }
+	component_set = "RED_PSI_LASER"
+	projectile_gfx = "infrared_laser_m"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "MEDIUM_BLUE_PSI_LASER"
+	
+	power = 8
+	
+	damage = { min = 15 max = 40 }
+	
+	windup = { min = 2 max = 20 }
+	total_fire_time =25
+	
+	cooldown = 35
+	
+	hull_damage = 1
+	shield_damage = 0.5
+	shield_penetration = 0
+	armor_damage = 1.5
+	armor_penetration = 0
+	
+	range = 60
+	accuracy = 0.9
+	tracking = 0.5
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t1_cost
+			sr_zro = 0.2
+		}
+		upkeep = {
+			energy = @m_t1_upkeep_energy
+			alloys = @m_t1_upkeep_alloys
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "LARGE_RED_PSI_LASER"
+	size = large
+	type = point_defence
+	icon = "ship_part_psi_laser_1"
+	icon_frame = 1
+	prerequisites = { "tech_roguetech_AP_PSI_ULOCK" "tech_lasers_1" }
+	component_set = "RED_PSI_LASER"
+	projectile_gfx = "infrared_laser_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "LARGE_BLUE_PSI_LASER"
+	
+	power = 17
+	
+	damage = { min = 36 max = 96 }
+	
+	windup = { min = 2 max = 20 }
+	total_fire_time =25
+	
+	cooldown = 35
+	
+	hull_damage = 1
+	shield_damage = 0.5
+	shield_penetration = 0
+	armor_damage = 1.5
+	armor_penetration = 0
+	
+	range = 80
+	accuracy = 0.9
+	tracking = 0.15
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t1_cost
+			sr_zro = 0.3
+		}
+		upkeep = {
+			energy = @l_t1_upkeep_energy
+			alloys = @l_t1_upkeep_alloys
+		}
+	}
+}
+
+
+### Blue Lasers
+weapon_component_template = {
+	key = "SMALL_BLUE_PSI_LASER"
+	size = small
+	type = point_defence
+	icon = "ship_part_psi_laser_2"
+	icon_frame = 1
+	prerequisites = { "tech_psionic_theory" "tech_lasers_2" }
+	component_set = "BLUE_PSI_LASER"
+	projectile_gfx = "blue_laser_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "SMALL_UV_PSI_LASER"
+	
+	power = 5
+	
+	damage = { min = 8 max = 21 }
+	
+	windup = { min = 2 max = 20 }
+	total_fire_time =25
+	
+	cooldown = 35
+	
+	hull_damage = 1
+	shield_damage = 0.5
+	shield_penetration = 0
+	armor_damage = 1.5
+	armor_penetration = 0
+	
+	range = 40
+	accuracy = 0.9
+	tracking = 0.65
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t2_cost
+			sr_zro = 0.3
+		}
+		upkeep = {
+			energy = @s_t2_upkeep_energy
+			alloys = @s_t2_upkeep_alloys
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "MEDIUM_BLUE_PSI_LASER"
+	size = medium
+	type = point_defence
+	icon = "ship_part_psi_laser_2"
+	icon_frame = 1
+	prerequisites = { "tech_psionic_theory" "tech_lasers_2" }
+	component_set = "BLUE_PSI_LASER"
+	projectile_gfx = "blue_laser_m"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "MEDIUM_UV_PSI_LASER"
+	
+	power = 10
+	
+	damage = { min = 20 max = 53 }
+	
+	windup = { min = 2 max = 20 }
+	total_fire_time =25
+	
+	cooldown = 35
+	
+	hull_damage = 1
+	shield_damage = 0.5
+	shield_penetration = 0
+	armor_damage = 1.5
+	armor_penetration = 0
+	
+	range = 60
+	accuracy = 0.9
+	tracking = 0.5
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t2_cost
+			sr_zro = 0.4
+		}
+		upkeep = {
+			energy = @m_t2_upkeep_energy
+			alloys = @m_t2_upkeep_alloys
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "LARGE_BLUE_PSI_LASER"
+	size = large
+	type = point_defence
+	icon = "ship_part_psi_laser_2"
+	icon_frame = 1
+	prerequisites = { "tech_psionic_theory" "tech_lasers_2" }
+	component_set = "BLUE_PSI_LASER"
+	projectile_gfx = "blue_laser_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "LARGE_UV_PSI_LASER"
+	
+	power = 22
+	
+	damage = { min = 48 max = 126 }
+	
+	windup = { min = 2 max = 20 }
+	total_fire_time =25
+	
+	cooldown = 35
+	
+	hull_damage = 1
+	shield_damage = 0.5
+	shield_penetration = 0
+	armor_damage = 1.5
+	armor_penetration = 0
+	
+	range = 80
+	accuracy = 0.9
+	tracking = 0.15
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t2_cost
+			sr_zro = 0.5
+		}
+		upkeep = {
+			energy = @l_t2_upkeep_energy
+			alloys = @l_t2_upkeep_alloys
+		}
+	}
+}
+
+### UV Lasers
+weapon_component_template = {
+	key = "SMALL_UV_PSI_LASER"
+	size = small
+	type = point_defence
+
+	icon = "ship_part_psi_laser_3"
+	icon_frame = 1
+	#color = { 1.0 0.1 1.0 1 }
+
+	prerequisites = { "tech_psionic_theory" "tech_lasers_3" }
+	component_set = "UV_PSI_LASER"
+	projectile_gfx = "uv_laser_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "SMALL_XRAY_PSI_LASER"
+	
+	power = 8
+	
+	damage = { min = 10 max = 27 }
+	
+	windup = { min = 2 max = 20 }
+	total_fire_time =25
+	
+	cooldown = 35
+	
+	hull_damage = 1
+	shield_damage = 0.5
+	shield_penetration = 0
+	armor_damage = 1.5
+	armor_penetration = 0
+	
+	range = 40
+	accuracy = 0.9
+	tracking = 0.65
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t3_cost
+			sr_zro = 0.5
+		}
+		upkeep = {
+			energy = @s_t3_upkeep_energy
+			alloys = @s_t3_upkeep_alloys
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "MEDIUM_UV_PSI_LASER"
+	size = medium
+	type = point_defence
+
+	icon = "ship_part_psi_laser_3"
+	icon_frame = 1
+	#color = { 1.0 0.1 1.0 1 }
+
+	prerequisites = { "tech_psionic_theory" "tech_lasers_3" }
+	component_set = "UV_PSI_LASER"
+	projectile_gfx = "uv_laser_m"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "MEDIUM_XRAY_PSI_LASER"
+		
+	power = 14
+	
+	damage = { min = 25 max = 68 }
+	
+	windup = { min = 2 max = 20 }
+	total_fire_time =25
+	
+	cooldown = 35
+	
+	hull_damage = 1
+	shield_damage = 0.5
+	shield_penetration = 0
+	armor_damage = 1.5
+	armor_penetration = 0
+	
+	range = 60
+	accuracy = 0.9
+	tracking = 0.5
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t3_cost
+			sr_zro = 0.65
+		}
+		upkeep = {
+			energy = @m_t3_upkeep_energy
+			alloys = @m_t3_upkeep_alloys
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "LARGE_UV_PSI_LASER"
+	size = large
+	accuracy = 1
+	type = point_defence
+
+	icon = "ship_part_psi_laser_3"
+	icon_frame = 1
+	#color = { 1.0 0.1 1.0 1 }
+
+	prerequisites = { "tech_psionic_theory" "tech_lasers_3" }
+	component_set = "UV_PSI_LASER"
+	projectile_gfx = "uv_laser_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "LARGE_XRAY_PSI_LASER"
+	
+	power = 30
+	
+	damage = { min = 60 max = 162 }
+	
+	windup = { min = 2 max = 20 }
+	total_fire_time =25
+	
+	cooldown = 35
+	
+	hull_damage = 1
+	shield_damage = 0.5
+	shield_penetration = 0
+	armor_damage = 1.5
+	armor_penetration = 0
+	
+	range = 80
+	accuracy = 0.9
+	tracking = 0.15
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t3_cost
+			sr_zro = 0.7
+		}
+		upkeep = {
+			energy = @l_t3_upkeep_energy
+			alloys = @l_t3_upkeep_alloys
+		}
+	}
+}
+
+### XRay Lasers
+weapon_component_template = {
+	key = "SMALL_XRAY_PSI_LASER"
+	size = small
+	type = point_defence
+
+	icon = "ship_part_psi_laser_4"
+	icon_frame = 1
+	#color = { 1.0 1.0 1.0 1 }
+
+	prerequisites = { "tech_psionic_theory" "tech_lasers_4" }
+	component_set = "XRAY_PSI_LASER"
+	projectile_gfx = "xray_laser_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "SMALL_GAMMA_PSI_LASER"
+	
+	power = 10
+	
+	damage = { min = 13 max = 35 }
+	
+	windup = { min = 2 max = 20 }
+	total_fire_time =25
+	
+	cooldown = 35
+	
+	hull_damage = 1
+	shield_damage = 0.5
+	shield_penetration = 0
+	armor_damage = 1.5
+	armor_penetration = 0
+	
+	range = 40
+	accuracy = 0.9
+	tracking = 0.65
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t4_cost
+			rare_crystals = @s_t4_rare
+			sr_zro = 0.7
+		}
+		upkeep = {
+			energy = @s_t4_upkeep_energy
+			alloys = @s_t4_upkeep_alloys
+			sr_zro = 0.007
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = rare_crystals }
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "MEDIUM_XRAY_PSI_LASER"
+	size = medium
+	type = point_defence
+
+	icon = "ship_part_psi_laser_4"
+	icon_frame = 1
+	#color = { 1.0 1.0 1.0 1 }
+
+	prerequisites = { "tech_psionic_theory" "tech_lasers_4" }
+	component_set = "XRAY_PSI_LASER"
+	projectile_gfx = "xray_laser_m"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "MEDIUM_GAMMA_PSI_LASER"
+	
+	power = 20
+	
+	damage = { min = 33 max = 88 }
+	
+	windup = { min = 2 max = 20 }
+	total_fire_time =25
+	
+	cooldown = 35
+	
+	hull_damage = 1
+	shield_damage = 0.5
+	shield_penetration = 0
+	armor_damage = 1.5
+	armor_penetration = 0
+	
+	range = 60
+	accuracy = 0.9
+	tracking = 0.5
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t4_cost
+			rare_crystals = @m_t4_rare
+			sr_zro = 0.8
+		}
+		upkeep = {
+			energy = @m_t4_upkeep_energy
+			alloys = @m_t4_upkeep_alloys
+			sr_zro = 0.008
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = rare_crystals }
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "LARGE_XRAY_PSI_LASER"
+	size = large
+	type = point_defence
+
+	icon = "ship_part_psi_laser_4"
+	icon_frame = 1
+	#color = { 1.0 1.0 1.0 1 }
+
+	prerequisites = { "tech_psionic_theory" "tech_lasers_4" }
+	component_set = "XRAY_PSI_LASER"
+	projectile_gfx = "xray_laser_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "LARGE_GAMMA_PSI_LASER"
+	
+	power = 40
+	
+	damage = { min = 78 max = 210 }
+	
+	windup = { min = 2 max = 20 }
+	total_fire_time =25
+	
+	cooldown = 35
+	
+	hull_damage = 1
+	shield_damage = 0.5
+	shield_penetration = 0
+	armor_damage = 1.5
+	armor_penetration = 0
+	
+	range = 80
+	accuracy = 0.9
+	tracking = 0.15
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t4_cost
+			rare_crystals = @l_t4_rare
+			sr_zro = 0.9
+		}
+		upkeep = {
+			energy = @l_t4_upkeep_energy
+			alloys = @l_t4_upkeep_alloys
+			sr_zro = 0.009
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = rare_crystals }
+		}
+	}
+}
+
+### Gamma Lasers
+weapon_component_template = {
+	key = "SMALL_GAMMA_PSI_LASER"
+	size = small
+	type = point_defence
+
+	icon = "ship_part_psi_laser_5"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+
+	prerequisites = { "tech_psionic_theory" "tech_lasers_5" }
+	component_set = "GAMMA_PSI_LASER"
+	projectile_gfx = "gamma_laser_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	
+	power = 14
+	
+	damage = { min = 17 max = 46 }
+	
+	windup = { min = 2 max = 20 }
+	total_fire_time =25
+	
+	cooldown = 35
+	
+	hull_damage = 1
+	shield_damage = 0.5
+	shield_penetration = 0
+	armor_damage = 1.5
+	armor_penetration = 0
+	
+	range = 40
+	accuracy = 0.9
+	tracking = 0.65
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t5_cost
+			rare_crystals = @s_t5_rare
+			sr_zro = 0.9
+		}
+		upkeep = {
+			energy = @s_t5_upkeep_energy
+			alloys = @s_t5_upkeep_alloys
+			sr_zro = 0.009
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = rare_crystals }
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "MEDIUM_GAMMA_PSI_LASER"
+	size = medium
+	type = point_defence
+
+	icon = "ship_part_psi_laser_5"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+
+	prerequisites = { "tech_psionic_theory" "tech_lasers_5" }
+	component_set = "GAMMA_PSI_LASER"
+	projectile_gfx = "gamma_laser_m"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	
+	power = 25
+	
+	damage = { min = 43 max = 115 }
+	
+	windup = { min = 2 max = 20 }
+	total_fire_time =25
+	
+	cooldown = 35
+	
+	hull_damage = 1
+	shield_damage = 0.5
+	shield_penetration = 0
+	armor_damage = 1.5
+	armor_penetration = 0
+	
+	range = 60
+	accuracy = 0.9
+	tracking = 0.5
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t5_cost
+			rare_crystals = @m_t5_rare
+			sr_zro = 1
+		}
+		upkeep = {
+			energy = @m_t5_upkeep_energy
+			alloys = @m_t5_upkeep_alloys
+			sr_zro =  0.01
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = rare_crystals }
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "LARGE_GAMMA_PSI_LASER"
+	size = large
+	type = point_defence
+
+	icon = "ship_part_psi_laser_5"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+
+	prerequisites = { "tech_psionic_theory" "tech_lasers_5" }
+	component_set = "GAMMA_PSI_LASER"
+	projectile_gfx = "gamma_laser_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	
+	power = 50
+	
+	damage = { min = 102 max = 276 }
+	
+	windup = { min = 2 max = 20 }
+	total_fire_time =25
+	
+	cooldown = 35
+	
+	hull_damage = 1
+	shield_damage = 0.5
+	shield_penetration = 0
+	armor_damage = 1.5
+	armor_penetration = 0
+	
+	range = 80
+	accuracy = 0.9
+	tracking = 0.15
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t5_cost
+			rare_crystals = @l_t5_rare
+			sr_zro = 1.1
+		}
+		upkeep = {
+			energy = @l_t5_upkeep_energy
+			alloys = @l_t5_upkeep_alloys
+			sr_zro = 0.011
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = rare_crystals }
+		}
+	}
+}

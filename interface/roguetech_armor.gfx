@@ -38,6 +38,30 @@
 		}
 		
 		spriteType = {
+			name = "SYNTH_ARMOR_1"
+			texturefile = "gfx/interface/icons/ship_parts/armor/synth_armor_1.dds"
+		}
+		spriteType = {
+			name = "SYNTH_ARMOR_2"
+			texturefile = "gfx/interface/icons/ship_parts/armor/synth_armor_2.dds"
+		}
+		spriteType = {
+			name = "SYNTH_ARMOR_3"
+			texturefile = "gfx/interface/icons/ship_parts/armor/synth_armor_3.dds"
+		}	
+		spriteType = {
+			name = "SYNTH_ARMOR_4"
+			texturefile = "gfx/interface/icons/ship_parts/armor/synth_armor_4.dds"
+		}
+		spriteType = {
+			name = "SYNTH_ARMOR_5"
+			texturefile = "gfx/interface/icons/ship_parts/armor/synth_armor_5.dds"
+		}
+		spriteType = {
+			name = "SYNTH_ARMOR_6"
+			texturefile = "gfx/interface/icons/ship_parts/armor/synth_armor_6.dds"
+		}
+		spriteType = {
 			name = "BIOPHAGE_ARMOR_1"
 			texturefile = "gfx/interface/icons/ship_parts/armor/biophage_armor_1.dds"
 		}
@@ -48,8 +72,7 @@
 		spriteType = {
 			name = "BIOPHAGE_ARMOR_3"
 			texturefile = "gfx/interface/icons/ship_parts/armor/biophage_armor_3.dds"
-		}
-	
+		}	
 		spriteType = {
 			name = "BIOPHAGE_ARMOR_4"
 			texturefile = "gfx/interface/icons/ship_parts/armor/biophage_armor_4.dds"

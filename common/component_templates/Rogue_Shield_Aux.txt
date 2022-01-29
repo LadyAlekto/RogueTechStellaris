@@ -3,23 +3,23 @@ utility_component_template = {
 	size = aux
 	icon = "ROGUE_SHIELD_BOOSTER_1"
 	icon_frame = 1
-	power = @power_S1
+	power = -5
 	modifier = {
 		ship_shield_mult = 0.1
 		ship_shield_regen_add_perc = 0.5
 	}
 
-	prerequisites = { "tech_roguetech_stealth"  "tech_shields_1" }
+	prerequisites = { "tech_roguetech_AP_PSI_ULOCK"  "tech_shields_1" }
 	component_set = "ROGUE_SHIELD_BOOSTER_1"
 	upgrades_to = "ROGUE_SHIELD_BOOSTER_2"
 	resources = {
 		category = ship_components
 		cost = {
 			alloys = @shield_s_t1_cost
+			sr_zro = 0.1
 		}
 		upkeep = {
-			energy = @shield_s_t1_upkeep_energy
-			alloys = @shield_s_t1_upkeep_alloys
+			sr_zro = 0.01
 		}
 	}
 		ai_weight = {
@@ -32,23 +32,23 @@ utility_component_template = {
 	size = aux
 	icon = "ROGUE_SHIELD_BOOSTER_2"
 	icon_frame = 1
-	power = @power_S2
+	power = -10
 	modifier = {
-		ship_shield_mult = 0.12
+		ship_shield_mult = 0.13
 		ship_shield_regen_add_perc = 0.5
 	}
 
-	prerequisites = { "tech_roguetech_stealth"  "tech_shields_2" }
+	prerequisites = { "tech_roguetech_psionic_shield_booster"  "tech_shields_2" }
 	component_set = "ROGUE_SHIELD_BOOSTER_2"
 	upgrades_to = "ROGUE_SHIELD_BOOSTER_3"
 	resources = {
 		category = ship_components
 		cost = {
 			alloys = @shield_s_t2_cost
+			sr_zro = 0.2
 		}
 		upkeep = {
-			energy = @shield_s_t2_upkeep_energy
-			alloys = @shield_s_t2_upkeep_alloys
+			sr_zro = 0.02
 		}
 	}
 		ai_weight = {
@@ -61,23 +61,23 @@ utility_component_template = {
 	size = aux
 	icon = "ROGUE_SHIELD_BOOSTER_3"
 	icon_frame = 1
-	power = @power_S3
+	power = -15
 	modifier = {
-		ship_shield_mult = 0.14
+		ship_shield_mult = 0.16
 		ship_shield_regen_add_perc = 0.5
 	}
 
-	prerequisites = { "tech_roguetech_stealth"  "tech_shields_3" }
+	prerequisites = { "tech_roguetech_psionic_shield_booster"  "tech_shields_3" }
 	component_set = "ROGUE_SHIELD_BOOSTER_3"
 	upgrades_to = "ROGUE_SHIELD_BOOSTER_4"
 	resources = {
 		category = ship_components
 		cost = {
 			alloys = @shield_s_t3_cost
+			sr_zro = 0.3
 		}
 		upkeep = {
-			energy = @shield_s_t3_upkeep_energy
-			alloys = @shield_s_t3_upkeep_alloys
+			sr_zro = 0.03
 		}
 	}
 		ai_weight = {
@@ -90,13 +90,13 @@ utility_component_template = {
 	size = aux
 	icon = "ROGUE_SHIELD_BOOSTER_4"
 	icon_frame = 1
-	power = @power_S4
+	power = -20
 	modifier = {
-		ship_shield_mult = 0.16
+		ship_shield_mult = 0.19
 		ship_shield_regen_add_perc = 0.5
 	}
 
-	prerequisites = { "tech_roguetech_stealth"  "tech_shields_4" }
+	prerequisites = { "tech_roguetech_psionic_shield_booster"  "tech_shields_4" }
 	component_set = "ROGUE_SHIELD_BOOSTER_4"
 	upgrades_to = "ROGUE_SHIELD_BOOSTER_5"
 	resources = {
@@ -104,10 +104,11 @@ utility_component_template = {
 		cost = {
 			alloys = @shield_s_t4_cost
 			exotic_gases = 0.25
+			sr_zro = 0.4
 		}
 		upkeep = {
-			energy = @shield_s_t4_upkeep_energy
-			alloys = @shield_s_t4_upkeep_alloys
+			sr_zro = 0.04
+			exotic_gases = 0.025
 		}
 	}
 		ai_weight = {
@@ -120,13 +121,13 @@ utility_component_template = {
 	size = aux
 	icon = "ROGUE_SHIELD_BOOSTER_5"
 	icon_frame = 1
-	power = @power_S5
+	power = -25
 	modifier = {
-		ship_shield_mult = 0.18
+		ship_shield_mult = 0.22
 		ship_shield_regen_add_perc = 0.5
 	}
 
-	prerequisites = { "tech_roguetech_stealth"  "tech_shields_5" }
+	prerequisites = { "tech_roguetech_psionic_shield_booster"  "tech_shields_5" }
 	component_set = "ROGUE_SHIELD_BOOSTER_5"
 	upgrades_to = "ROGUE_SHIELD_BOOSTER_6"
 	resources = {
@@ -134,10 +135,11 @@ utility_component_template = {
 		cost = {
 			alloys = @shield_s_t5_cost
 			exotic_gases = 0.333
+			sr_zro = 0.5
 		}
 		upkeep = {
-			energy = @shield_s_t5_upkeep_energy
-			alloys = @shield_s_t5_upkeep_alloys
+			sr_zro = 0.05
+			exotic_gases = 0.0333
 		}
 	}
 		ai_weight = {
@@ -150,23 +152,24 @@ utility_component_template = {
 	size = aux
 	icon = "ROGUE_SHIELD_BOOSTER_6"
 	icon_frame = 1
-	power = @power_S6
+	power = -30
 	modifier = {
-		ship_shield_mult = 0.2
+		ship_shield_mult = 0.25
 		ship_shield_regen_add_perc = 0.5
 	}
 
-	prerequisites = { "tech_roguetech_stealth"  "tech_dark_matter_deflector" }
+	prerequisites = { "tech_roguetech_psionic_shield_booster"  "tech_dark_matter_deflector" }
 	component_set = "ROGUE_SHIELD_BOOSTER_6"
 	resources = {
 		category = ship_components
 		cost = {
 			alloys = @shield_s_t6_cost
 			sr_dark_matter = 0.25
+			sr_zro = 0.6
 		}
 		upkeep = {
-			energy = @shield_s_t6_upkeep_energy
-			alloys = @shield_s_t6_upkeep_alloys
+			sr_zro = 0.06
+			sr_dark_matter = 0.025
 		}
 	}
 		ai_weight = {

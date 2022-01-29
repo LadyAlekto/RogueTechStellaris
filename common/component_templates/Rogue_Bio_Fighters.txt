@@ -21,6 +21,9 @@ strike_craft_component_template = {
 	weapon_type = point_defence
 	projectile_gfx = "small_space_amoeba_weapon"
 	power = @power1
+	
+	prerequisites = { "tech_roguetech_AP_BIO_UNLOCK" }
+	
 	resources = {
 		category = ship_components
 		cost = {
@@ -63,7 +66,6 @@ strike_craft_component_template = {
 	icon_frame = 1
 	component_set = "BIOPHAGE_SWARM_FIGHTER_1"
 	upgrades_to = "BIOPHAGE_SWARM_FIGHTER_2"
-	prerequisites = { "tech_roguetech_biological_engineering" }
 	tags = { weapon_type_strike_craft }
 }
 

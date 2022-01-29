@@ -1,3 +1,55 @@
+tech_roguetech_aegis_shell = {
+	area = engineering
+	cost = @tier3cost3
+	tier = 2
+	is_rare = yes
+	is_reverse_engineerable = no
+	category = { materials }
+	ai_update_type = military
+	weight = 4
+	potential = {
+		OR = {
+			has_ascension_perk = ap_the_flesh_is_weak
+			has_ascension_perk = ap_synthetic_age
+			}
+	}
+	
+	modifier = {
+		ship_armor_mult = 0.1
+		ship_armor_regen_add_perc = 0.25
+	}
+	
+	weight_modifier = {
+	factor = 1
+	modifier = {
+		factor = 5 #
+		OR = {
+			has_ethic = ethic_gestalt_consciousness
+		} # Is militarist
+	}
+	modifier = {
+			factor = 2
+			has_ascension_perk = ap_technological_ascendancy
+		}
+}
+
+	ai_weight = {
+		factor = 0.25
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 5
+			has_ethic = ethic_gestalt_consciousness
+		}
+	}
+}
+
 tech_rogue_nanolathe_engineering = {
 	area = engineering
 	cost = 40000

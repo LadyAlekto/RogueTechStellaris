@@ -20,4 +20,11 @@ can_planet_auto_migrate = {
 		colony_age > 5
 		is_capital = yes # Don't break Doomsday!
 	}
+	exists = owner
+	owner = {
+		OR = {
+			is_country_type = default
+			is_country_type = awakened_fallen_empire
+		}
+	}
 }

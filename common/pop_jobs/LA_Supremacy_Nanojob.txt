@@ -19,8 +19,8 @@ nanite_fabricator = {
 			sr_living_metal = 0.4
 		}
 		upkeep = {
-			sr_dark_matter = 0.4
-			minerals = 18
+			sr_dark_matter = 0.6
+			alloys = 9
 			consumer_goods = 2
 			food = 2
 			energy = 2
@@ -148,8 +148,8 @@ nanite_fabricator_drone = {
 			sr_living_metal = 0.4
 		}
 		upkeep = {
-			sr_dark_matter = 0.4
-			minerals = 20
+			sr_dark_matter = 0.6
+			alloys = 10
 			food = 4
 			energy = 4
 		}
@@ -276,8 +276,9 @@ nanite_fabricator_robot = {
 			sr_living_metal = 0.5
 		}
 		upkeep = {
-			sr_dark_matter = 0.4
-			minerals = 24
+			sr_dark_matter = 0.6
+			alloys = 10
+			minerals = 6
 			energy = 6
 		}
 	}

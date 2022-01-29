@@ -1,0 +1,173 @@
+utility_component_template = {
+	key = "SYNTH_ARMOR_1"
+	size = aux
+	icon = "SYNTH_ARMOR_1"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_mult = 0.1
+		ship_armor_regen_add_perc = 0.2
+	}
+
+	prerequisites = { "tech_roguetech_AP_SYNTH_UNLOCK" }
+	component_set = "SYNTH_ARMOR_1"
+	upgrades_to = "SYNTH_ARMOR_2"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 2
+		}
+		upkeep = {
+			alloys = 0.02
+		}
+	}
+		ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "SYNTH_ARMOR_2"
+	size = aux
+	icon = "SYNTH_ARMOR_2"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_mult = 0.12
+		ship_armor_regen_add_perc = 0.25
+	}
+
+	prerequisites = { "tech_roguetech_aegis_shell"  "tech_ship_armor_2" }
+	component_set = "SYNTH_ARMOR_2"
+	upgrades_to = "SYNTH_ARMOR_3"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 3
+			minerals = 1
+		}
+		upkeep = {
+			alloys = 0.03
+		}
+	}
+		ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "SYNTH_ARMOR_3"
+	size = aux
+	icon = "SYNTH_ARMOR_3"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_mult = 0.15
+		ship_armor_regen_add_perc = 0.3
+	}
+
+	prerequisites = { "tech_roguetech_aegis_shell"  "tech_ship_armor_3" }
+	component_set = "SYNTH_ARMOR_3"
+	upgrades_to = "SYNTH_ARMOR_4"
+resources = {
+		category = ship_components
+		cost = {
+			alloys = 4
+			minerals = 1
+		}
+		upkeep = {
+			alloys = 0.04
+		}
+	}
+		ai_weight = {
+		weight = 3
+	}
+}
+
+utility_component_template = {
+	key = "SYNTH_ARMOR_4"
+	size = aux
+	icon = "SYNTH_ARMOR_4"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_mult = 0.18
+		ship_armor_regen_add_perc = 0.35
+	}
+
+	prerequisites = { "tech_roguetech_aegis_shell"  "tech_ship_armor_4" }
+	component_set = "SYNTH_ARMOR_4"
+	upgrades_to = "SYNTH_ARMOR_5"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 5
+			minerals = 2
+		}
+		upkeep = {
+			alloys = 0.05
+			minerals = 0.05
+		}
+	}
+		ai_weight = {
+		weight = 5
+	}
+}
+
+utility_component_template = {
+	key = "SYNTH_ARMOR_5"
+	size = aux
+	icon = "SYNTH_ARMOR_5"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_mult = 0.2
+		ship_armor_regen_add_perc = 0.4
+	}
+
+	prerequisites = { "tech_roguetech_aegis_shell"  "tech_ship_armor_5" }
+	component_set = "SYNTH_ARMOR_5"
+	upgrades_to = "SYNTH_ARMOR_6"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 4
+			sr_living_metal = 0.3
+		}
+		upkeep = {
+			sr_living_metal = 0.03
+		}
+	}
+		ai_weight = {
+		weight = 7
+	}
+}
+
+utility_component_template = {
+	key = "SYNTH_ARMOR_6"
+	size = aux
+	icon = "SYNTH_ARMOR_6"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_mult = 0.25
+		ship_armor_regen_add_perc = 0.5
+	}
+
+	prerequisites = { "tech_roguetech_aegis_shell"  "tech_dragon_armor" }
+	component_set = "SYNTH_ARMOR_6"
+	resources = {
+		category = ship_components
+		cost = {
+			sr_living_metal = 0.4
+			nanites = 0.4
+		}
+		upkeep = {
+			sr_living_metal = 0.04
+			nanites = 0.04
+		}
+	}
+		ai_weight = {
+		weight = 10
+	}
+}

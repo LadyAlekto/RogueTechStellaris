@@ -1,4 +1,13 @@
 ﻿l_english:
+ tech_roguetech_AP_PSI_UNLOCK:0 "Psionic Ascension"
+ tech_roguetech_AP_PSI_UNLOCK_desc:0 "Granted through Psionic Ascension."
+ 
+ tech_roguetech_AP_BIO_UNLOCK:0 "Genetical Ascension"
+ tech_roguetech_AP_BIO_UNLOCK_desc:0 "Granted through Genetic Ascension."
+ 
+ tech_roguetech_AP_SYNTH_UNLOCK:0 "Synthetical Ascension"
+ tech_roguetech_AP_SYTNH_UNLOCK_desc:0 "Granted through Synthetic Ascension."
+ 
  tech_rogue_joke_hotsauce:0 "Flavoured Organics"
  tech_rogue_joke_hotsauce_desc:0 "Food is always best when it fights back."
 
@@ -94,6 +103,9 @@
  supremacy_tech_advanced_cruisers_desc:0 "Utilizing Anomalous Materials and Exotic Matter in Ship construction allows to create Advanced Cruisers Hulls"
  supremacy_tech_advanced_battleships_desc:0 "Utilizing Anomalous Materials and Exotic Matter in Ship construction allows to create Advanced Battleships Hulls"
  supremacy_tech_advanced_titans_desc:0 "Utilizing Anomalous Materials and Exotic Matter in Ship construction allows to create Advanced Titans Hulls"
+ 
+ tech_roguetech_drone_swarm_fighter:0 "Drone Swarm"
+ tech_roguetech_drone_swarm_fighter_desc:0 "Large swarms of weak strike craft that simply overwhelm any enemy through sheer numbers"
  
  tech_roguetech_bio_strike_craft:0 "Geneered Strikecraft"
  tech_roguetech_bio_strike_craft_desc:0 "Genetically Engineered Organisms akin to space dwelling life forms allows to create autonomous strike craft"

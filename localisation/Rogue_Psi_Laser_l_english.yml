@@ -1,0 +1,32 @@
+﻿l_english:
+ RED_PSI_LASER:0 "Red Psi-Laser"
+ RED_PSI_LASER_DESC:0 "Psionic gunnery crews allows these lasers to fire at even the smallest targets with improved accuracy."
+ BLUE_PSI_LASER:0 "Blue Psi-Laser"
+ BLUE_PSI_LASER_DESC:0 "Psionic gunnery crews allows these lasers to fire at even the smallest targets with improved accuracy."
+ UV_PSI_LASER:0 "UV Psi-Laser"
+ UV_PSI_LASER_DESC:0 "Psionic gunnery crews allows these lasers to fire at even the smallest targets with improved accuracy."
+ XRAY_PSI_LASER:0 "X-Ray Psi-Laser"
+ XRAY_PSI_LASER_DESC:0 "Psionic gunnery crews allows these lasers to fire at even the smallest targets with improved accuracy."
+ GAMMA_PSI_LASER:0 "Gamma Psi-Laser"
+ GAMMA_PSI_LASER_DESC:0 "Psionic gunnery crews allows these lasers to fire at even the smallest targets with improved accuracy."
+ 
+ SMALL_RED_PSI_LASER:0 "Small Red Psi-Laser"
+ MEDIUM_RED_PSI_LASER:0 "Medium Red Psi-Laser"
+ LARGE_RED_PSI_LASER:0 "Large Red Psi-Laser"
+ 
+ SMALL_BLUE_PSI_LASER:0 "Small Blue Psi-Laser"
+ MEDIUM_BLUE_PSI_LASER:0 "Medium Blue Psi-Laser"
+ LARGE_BLUE_PSI_LASER:0 "Large Blue Psi-Laser"
+ 
+ SMALL_UV_PSI_LASER:0 "Small UV Psi-Laser"
+ MEDIUM_UV_PSI_LASER:0 "Medium UV Psi-Laser"
+ LARGE_UV_PSI_LASER:0 "Large UV Psi-Laser"
+ 
+ PD_UV_PSI_LASER:0 "Point-Defense UV Psi-Laser"
+ SMALL_XRAY_PSI_LASER:0 "Small X-Ray Psi-Laser"
+ MEDIUM_XRAY_PSI_LASER:0 "Medium X-Ray Psi-Laser"
+ LARGE_XRAY_PSI_LASER:0 "Large X-Ray Psi-Laser"
+ 
+ SMALL_GAMMA_PSI_LASER:0 "Small Gamma Psi-Laser"
+ MEDIUM_GAMMA_PSI_LASER:0 "Medium Gamma Psi-Laser"
+ LARGE_GAMMA_PSI_LASER:0 "Large Gamma Psi-Laser"

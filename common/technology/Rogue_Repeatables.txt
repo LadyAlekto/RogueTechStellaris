@@ -5,7 +5,9 @@ tech_rogue_joke_hotsauce = {
 	tier = @repeatableTechTier
 	category = { military_theory }
 	levels = 10
-	prerequisites = { "tech_supremacy_dreadnought" }
+	potential = {
+		has_valid_civic = civic_hive_devouring_swarm
+	}
 	weight = @repeatableTechWeight
 	
 	weight_modifier = {
@@ -214,6 +216,7 @@ tech_supremacy_megastructure_building_speed = {
 	modifier = {
 		megastructure_build_speed_mult = 0.05
 		shipclass_starbase_build_speed_mult = 0.05
+		starbase_upgrade_speed_mult = 0.05
 		starbase_module_build_speed_mult = 0.05
 		starbase_building_build_speed_mult = 0.05		
 	}

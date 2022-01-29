@@ -1,9 +1,78 @@
+###########################
+###	Rare Resources	###
+###########################
+
+# Living Metal
+sr_living_metal = {
+	tradable = yes
+	market_amount = 5
+	market_price = 100
+	max = 15000
+
+	prerequisites = { "tech_mine_living_metal" }
+	visibility_prerequisite = { always = yes }
+	
+	deficit_modifier = living_metal_deficit #found in static modifiers
+
+	ai_weight = {
+		weight = 100
+	}
+
+	ai_wants = {
+		base = 5
+	}
+}
+
+# Zro
+sr_zro = {
+	tradable = yes
+	market_amount = 5
+	market_price = 100
+	max = 15000
+
+	prerequisites = { "tech_mine_zro" }
+	visibility_prerequisite = { always = yes }
+	
+	deficit_modifier = zro_deficit #found in static modifiers
+
+	ai_weight = {
+		weight = 100
+	}
+
+	ai_wants = {
+		base = 5
+	}
+}
+
+# Dark Matter
+sr_dark_matter = {
+	tradable = yes
+	market_amount = 5
+	market_price = 100
+	max = 15000
+
+	prerequisites = { "tech_mine_dark_matter" }
+	visibility_prerequisite = { always = yes }
+	
+	deficit_modifier = dark_matter_deficit #found in static modifiers
+
+	ai_weight = {
+		weight = 100
+	}
+
+	ai_wants = {
+		base = 5
+	}
+}
+
 # Nanites
 nanites = {
 	tradable = yes
 	market_amount = 5
 	market_price = 100
 	max = 15000
+	
+	prerequisites = { "tech_supremacy_anomalous_materials" }
 
 	visibility_prerequisite = { always = yes }
 	deficit_modifier = nanites_deficit #found in static modifiers

@@ -29,4 +29,28 @@ Attempt at teaching ai and job auto assign to use the exotic materials jobs reas
 
 todo! script tied to gatebuilders that decreases empire size for every gateway
 
+repurposed stealth fighters into drone swarm
+
 nerf planetary gateways after
+
+New AP based tech and tweaks:
+
+Had to override ascension paths to add the techs
+All Ascensions for all empires, the usual restrictions apply, so psionics need psionic theory and biological requires gene tailoring
+Synthetic evolution for machines -> synthetic age to syntehtic evolution instead of the flesh is weak
+
+Biological:
+Moved the bio tech tree to require genetic ascension
+Grants t1 bio fighters and t1 bio hull on ascension
+
+Psionics:
+Added Psionic Lasers
+Require Psionic Theory and Small amounts of Zro instead of energy and scales with laser tech
+It counts as point defense and will shoot down missiles and strike craft, requires a minor amount less power
+Several shield boosting components
+Grants t1 lasers and t1 psi-shield-caps on ascension
+
+Synth/Robot:
+Drone Fighter, individually weaker but far larger swarms and they grant a small amount of extra armor
+Aegis Armor, grants strong armor multiplier and regenerates
+Grants t1 aegis and t1 drone fighters on ascension
