@@ -6,7 +6,7 @@ tech_supremacy_anomalous_materials = {
 	weight = 10
 	is_rare = yes
 	
-	prerequisites = { "tech_supremacy_exotic_matter_theory" }
+	prerequisites = { "tech_supremacy_exotic_matter_theory" "tech_volatile_motes" "tech_rare_crystals" "tech_exotic_gases" }
 	
 	weight_modifier = {
 		modifier = {
@@ -138,7 +138,7 @@ tech_supremacy_molecular_assembly = {
 	weight = 10
 	is_rare = yes
 	
-	prerequisites = { "tech_supremacy_anomalous_materials" }
+	prerequisites = { "tech_supremacy_anomalous_materials" "tech_mine_volatile_motes" "tech_mine_exotic_gases" "tech_mine_rare_crystals" }
 	
 	weight_modifier = {
 		modifier = {

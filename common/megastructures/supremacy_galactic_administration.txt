@@ -240,7 +240,7 @@ supremacy_galactic_administration_4 = {
 	show_prereqs = yes
 
 	country_modifier = {
-		empire_size_mult = -0.3
+		empire_size_mult = -0.25
 		country_unity_produces_mult = 0.1
 	}
 

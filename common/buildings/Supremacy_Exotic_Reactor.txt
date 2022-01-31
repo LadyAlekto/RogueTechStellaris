@@ -80,7 +80,7 @@ supremacy_exotic_matter_plant = {
 		}
 		modifier = {
 			job_anti_matter_researcher_add = 2
-		job_anti_matter_researcher_per_pop = 0.02
+		job_anti_matter_researcher_per_pop = 0.01
 		
 		}
 	}
@@ -92,7 +92,7 @@ supremacy_exotic_matter_plant = {
 		}
 		modifier = {
 			job_anti_matter_researcher_drone_add = 2
-		job_anti_matter_researcher_drone_per_pop = 0.02
+		job_anti_matter_researcher_drone_per_pop = 0.01
 		}
 	}
 
@@ -103,7 +103,7 @@ supremacy_exotic_matter_plant = {
 		}
 		modifier = {
 			job_anti_matter_researcher_robot_add = 2
-		job_anti_matter_researcher_robot_per_pop = 0.02
+		job_anti_matter_researcher_robot_per_pop = 0.01
 		}
 	}
 	
@@ -169,7 +169,7 @@ supremacy_exotic_matter_reactor = {
 		}
 		modifier = {
 			job_anti_matter_researcher_drone_add = 3
-		job_anti_matter_researcher_drone_per_pop = 0.03
+		job_anti_matter_researcher_drone_per_pop = 0.01
 		}
 	}
 
@@ -180,7 +180,7 @@ supremacy_exotic_matter_reactor = {
 		}
 		modifier = {
 			job_anti_matter_researcher_robot_add = 3
-		job_anti_matter_researcher_robot_per_pop = 0.03
+		job_anti_matter_researcher_robot_per_pop = 0.01
 		}
 	}
 	

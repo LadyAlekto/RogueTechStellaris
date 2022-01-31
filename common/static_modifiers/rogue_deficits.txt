@@ -7,9 +7,9 @@ dark_matter_deficit = {
 }
 
 zro_deficit = {
-	empire_size_mult = 0.1
+	empire_size_mult = 0.15
 }
 
 living_metal_deficit = {
-	megastructure_build_speed_mult = -0.2
+	megastructure_build_speed_mult = -0.75
 }

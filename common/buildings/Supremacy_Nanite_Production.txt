@@ -83,7 +83,7 @@ supremacy_nanite_plant = {
 		}
 		modifier = {
 			job_nanite_fabricator_add = 2
-			job_nanite_fabricator_per_pop = 0.02
+			job_nanite_fabricator_per_pop = 0.01
 		}
 	}
 
@@ -94,7 +94,7 @@ supremacy_nanite_plant = {
 		}
 		modifier = {
 			job_nanite_fabricator_drone_add = 2
-			job_nanite_fabricator_drone_per_pop = 0.02
+			job_nanite_fabricator_drone_per_pop = 0.01
 		}
 	}
 
@@ -105,7 +105,7 @@ supremacy_nanite_plant = {
 		}
 		modifier = {
 			job_nanite_fabricator_robot_add = 2
-			job_nanite_fabricator_robot_per_pop = 0.02
+			job_nanite_fabricator_robot_per_pop = 0.01
 		}
 	}
 	
@@ -165,7 +165,7 @@ supremacy_universal_constructor = {
 		}
 		modifier = {
 			job_nanite_fabricator_add = 3
-			job_nanite_fabricator_per_pop = 0.03
+			job_nanite_fabricator_per_pop = 0.01
 		}
 	}
 
@@ -176,7 +176,7 @@ supremacy_universal_constructor = {
 		}
 		modifier = {
 			job_nanite_fabricator_drone_add = 3
-			job_nanite_fabricator_drone_per_pop = 0.03
+			job_nanite_fabricator_drone_per_pop = 0.01
 		}
 	}
 
@@ -187,7 +187,7 @@ supremacy_universal_constructor = {
 		}
 		modifier = {
 			job_nanite_fabricator_robot_add = 3
-			job_nanite_fabricator_robot_per_pop = 0.03
+			job_nanite_fabricator_robot_per_pop = 0.01
 		}
 	}
 	

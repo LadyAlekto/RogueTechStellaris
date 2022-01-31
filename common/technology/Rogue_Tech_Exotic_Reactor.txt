@@ -130,7 +130,7 @@ tech_supremacy_exotic_matter_application = {
 	weight = 10
 	is_rare = yes
 	
-	prerequisites = { "tech_supremacy_exotic_matter_theory" }
+	prerequisites = { "tech_supremacy_exotic_matter_theory" "tech_cold_fusion_power" }
 	
 	weight_modifier = {
 		modifier = {
@@ -254,7 +254,7 @@ tech_supremacy_exotic_matter_annihilation = {
 	weight = 10
 	is_rare = yes
 	
-	prerequisites = { "tech_supremacy_exotic_matter_application" }
+	prerequisites = { "tech_supremacy_exotic_matter_application" "tech_antimatter_power" }
 	
 	weight_modifier = {
 		modifier = {

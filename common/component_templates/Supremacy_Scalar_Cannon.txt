@@ -28,7 +28,7 @@ weapon_component_template = {
 
 	prerequisites = { "tech_roguetech_scalar_energy_fields" }
 	component_set = "SUPREMACY_SCALAR_CANNON"
-	projectile_gfx = "perdition_beam"
+	projectile_gfx = "gatebuilder_titan_weapon"
 	size_restriction = { colossus juggernaut star_eater starbase_rogue }
 	resources = {
 		category = ship_components
@@ -80,7 +80,7 @@ weapon_component_template = {
 
 	prerequisites = { "tech_roguetech_scalar_energy_fields" }
 	component_set = "SUPREMACY_SCALAR_CANNON"
-	projectile_gfx = "perdition_beam"
+	projectile_gfx = "gatebuilder_titan_weapon"
 	size_restriction = { ion_cannon }
 	resources = {
 		category = ship_components

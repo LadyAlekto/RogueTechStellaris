@@ -1,0 +1,7 @@
+is_reanimator = {
+	OR = {
+		has_valid_civic = civic_reanimated_armies
+		has_valid_civic = civic_permanent_employment
+		has_valid_civic = civic_hive_biophage
+	}
+}

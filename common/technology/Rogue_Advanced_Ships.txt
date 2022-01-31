@@ -3,7 +3,7 @@ supremacy_tech_advanced_corvettes = {
 	area = engineering
 	tier = 2
 	category = { voidcraft }
-	prerequisites = { "tech_supremacy_anomalous_materials" }
+	prerequisites = { "tech_supremacy_anomalous_materials" "tech_corvette_hull_2" "tech_corvette_build_speed" }
 	weight = @tier2weight3
 	is_rare = yes
 	
@@ -78,7 +78,7 @@ supremacy_tech_advanced_destroyers = {
 	area = engineering
 	tier = 3
 	category = { voidcraft }
-	prerequisites = { "supremacy_tech_advanced_corvettes" "tech_destroyers" "tech_supremacy_anomalous_materials" }
+	prerequisites = { "supremacy_tech_advanced_corvettes" "tech_destroyer_build_speed" "tech_destroyer_hull_2" "tech_supremacy_anomalous_materials" }
 	weight = @tier3weight3
 	is_rare = yes
 
@@ -156,7 +156,7 @@ supremacy_tech_advanced_cruisers = {
 	area = engineering
 	tier = 4
 	category = { voidcraft }
-	prerequisites = { "supremacy_tech_advanced_destroyers" "tech_cruisers" "tech_supremacy_anomalous_materials" }
+	prerequisites = { "supremacy_tech_advanced_destroyers" "tech_cruiser_build_speed" "tech_cruiser_hull_2" "tech_supremacy_anomalous_materials" }
 	weight = @tier4weight3
 	is_rare = yes
 
@@ -234,7 +234,7 @@ supremacy_tech_advanced_battleships = {
 	area = engineering
 	tier = 5
 	category = { voidcraft }
-	prerequisites = { "supremacy_tech_advanced_cruisers" "tech_battleships" "tech_supremacy_anomalous_materials" }
+	prerequisites = { "supremacy_tech_advanced_cruisers" "tech_battleship_build_speed" "tech_battleship_hull_2" "tech_supremacy_anomalous_materials" }
 	weight = @tier5weight3
 	is_rare = yes
 
@@ -310,7 +310,7 @@ supremacy_tech_advanced_titans = {
 	area = engineering
 	tier = 5
 	category = { voidcraft }
-	prerequisites = { "supremacy_tech_advanced_battleships" "tech_titans" "tech_supremacy_anomalous_materials" }
+	prerequisites = { "supremacy_tech_advanced_battleships" "tech_titan_hull_2" "tech_supremacy_anomalous_materials" }
 	weight = @tier5weight3
 	ai_update_type = military
 	is_rare = yes
@@ -399,7 +399,7 @@ tech_supremacy_dreadnought = {
 	is_rare = yes
 	is_reverse_engineerable = no
 	ai_update_type = all
-	prerequisites = { "tech_supremacy_intelligent_materials" "tech_supremacy_exotic_matter_annihilation" "tech_roguetech_scalar_energy_fields" "tech_juggernaut" }
+	prerequisites = { "tech_supremacy_intelligent_materials" "tech_supremacy_exotic_matter_annihilation" "tech_roguetech_scalar_energy_fields" "tech_juggernaut" "supremacy_tech_advanced_titans" }
 	cost = 100000
 	weight = 11
 			

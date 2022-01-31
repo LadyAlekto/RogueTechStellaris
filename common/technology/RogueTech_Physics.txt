@@ -409,7 +409,7 @@ tech_roguetech_scalar_energy_fields = {
 	is_rare = yes
 	is_reverse_engineerable = no
 	ai_update_type = all
-	prerequisites = { "tech_supremacy_exotic_matter_annihilation" "tech_shields_5" "tech_juggernaut" }
+	prerequisites = { "tech_supremacy_exotic_matter_annihilation" "tech_shields_5" "tech_juggernaut" "tech_energy_lance_2" "tech_mass_accelerator_2" "tech_arc_emitter_2" }
 	cost = 60000
 	weight = 11
 	

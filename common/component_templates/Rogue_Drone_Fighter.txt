@@ -1,7 +1,7 @@
 strike_craft_component_template = {
 	key = "SUPREMACY_STEALTH_SCOUT"
 	size = LARGE
-	entity = "fighter_entity"
+	entity = "gatebuilder_01_strikecraft_entity"
 	weapon_type = point_defence
 	projectile_gfx = "scout_laser_1"
 	power = -20
@@ -60,7 +60,7 @@ strike_craft_component_template = {
 strike_craft_component_template = {
 	key = "SUPREMACY_STEALTH_FIGHTER_1"
 	size = LARGE
-	entity = "bomber_entity"
+	entity = "gatebuilder_01_strikecraft_entity"
 
 	weapon_type = point_defence
 	projectile_gfx = "strike_craft_laser_1"
@@ -126,7 +126,7 @@ strike_craft_component_template = {
 strike_craft_component_template = {
 	key = "SUPREMACY_STEALTH_FIGHTER_2"
 	size = LARGE
-	entity = "bomber_entity"
+	entity = "gatebuilder_01_strikecraft_entity"
 
 	weapon_type = point_defence
 	projectile_gfx = "strike_craft_laser_2"
@@ -192,7 +192,7 @@ strike_craft_component_template = {
 strike_craft_component_template = {
 	key = "SUPREMACY_STEALTH_FIGHTER_3"
 	size = LARGE
-	entity = "bomber_entity"
+	entity = "gatebuilder_01_strikecraft_entity"
 
 	weapon_type = point_defence
 	projectile_gfx = "strike_craft_laser_3"
@@ -258,7 +258,7 @@ strike_craft_component_template = {
 strike_craft_component_template = {
 	key = "SUPREMACY_STRIKE_CRAFT"
 	size = LARGE
-	entity = "fighter_entity"
+	entity = "gatebuilder_01_strikecraft_entity"
 
 	weapon_type = point_defence
 	projectile_gfx = "strike_craft_laser_3"

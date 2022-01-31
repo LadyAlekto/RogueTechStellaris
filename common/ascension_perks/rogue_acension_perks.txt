@@ -95,6 +95,7 @@ ap_stargate_instant_gateways = {
 		pop_growth_from_immigration = 0.2
 		planet_immigration_pull_mult = 0.05
 		planet_emigration_push_mult = 0.15
+		empire_size_mult = -0.15
 	}
 
 	potential = {

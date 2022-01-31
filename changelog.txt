@@ -54,3 +54,8 @@ Synth/Robot:
 Drone Fighter, individually weaker but far larger swarms and they grant a small amount of extra armor
 Aegis Armor, grants strong armor multiplier and regenerates
 Grants t1 aegis and t1 drone fighters on ascension
+
+!todo! techs for synth and psionics
+repeatable additional energy weapon damage and shield strength for psionics, psionic army buffs
+repeatable additional kinetic weapon damage and armor strength, improved build speeds
+repeatable additional fighter and explosives damage + hull strength for biological

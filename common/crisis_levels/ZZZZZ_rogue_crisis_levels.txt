@@ -88,7 +88,7 @@ crisis_level_3 = {
 			}
 		}
 	}
-	required_menace = 4000
+	required_menace = 6000
 
 	# REWARDS
 	perks = {
@@ -128,7 +128,7 @@ crisis_level_4 = {
 			}
 		}
 	}
-	required_menace = 10000
+	required_menace = 20000
 
 	# REWARDS
 	perks = {
@@ -168,7 +168,7 @@ crisis_level_5 = {
 		}
 		is_subject = no
 	}
-	required_menace = 50000
+	required_menace = 60000
 
 	# REWARDS
 	perks = {

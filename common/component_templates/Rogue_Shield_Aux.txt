@@ -9,7 +9,7 @@ utility_component_template = {
 		ship_shield_regen_add_perc = 0.5
 	}
 
-	prerequisites = { "tech_roguetech_AP_PSI_ULOCK"  "tech_shields_1" }
+	prerequisites = { "tech_roguetech_AP_PSI_UNLOCK"  "tech_shields_1" }
 	component_set = "ROGUE_SHIELD_BOOSTER_1"
 	upgrades_to = "ROGUE_SHIELD_BOOSTER_2"
 	resources = {

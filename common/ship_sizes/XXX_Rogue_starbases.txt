@@ -16,10 +16,11 @@ starbase_outpost = {
 		ship_hull_mult = 0.1
 		starbase_defense_platform_capacity_add = 3
 		ship_sensor_range_add = 1
-	}
-	ship_modifier = {
 		ship_weapon_damage = 0.25
 		ship_weapon_range_mult = 0.1
+	}
+	ship_modifier = {
+		
 	}
 	max_hitpoints = 5000
 	base_buildtime = 360
@@ -96,10 +97,11 @@ starbase_starport = {
 		starbase_trade_protection_range_add = 1
 		starbase_trade_protection_add = 8
 		ship_sensor_range_add = 1
-	}
-	ship_modifier = {
 		ship_weapon_damage = 0.3
 		ship_weapon_range_mult = 0.1
+	}
+	ship_modifier = {
+		
 	}
 	max_hitpoints = 10000
 	base_buildtime = 360
@@ -166,10 +168,11 @@ starbase_starhold = {
 		starbase_trade_protection_range_add = 1
 		starbase_trade_protection_add = 16
 		ship_sensor_range_add = 1
-	}
-	ship_modifier = {
 		ship_weapon_damage = 0.35
 		ship_weapon_range_mult = 0.15
+	}
+	ship_modifier = {
+		
 	}
 	max_hitpoints = 20000
 	base_buildtime = 720
@@ -238,10 +241,11 @@ starbase_starfortress = {
 		starbase_trade_protection_range_add = 1
 		starbase_trade_protection_add = 24
 		ship_sensor_range_add = 1
-	}
-	ship_modifier = {
 		ship_weapon_damage = 0.4
 		ship_weapon_range_mult = 0.15
+	}
+	ship_modifier = {
+		
 	}
 	max_hitpoints = 40000
 	base_buildtime = 1080
@@ -312,10 +316,11 @@ starbase_citadel = {
 		starbase_trade_protection_range_add = 1
 		starbase_trade_protection_add = 32
 		ship_sensor_range_add = 1
-	}
-	ship_modifier = {
 		ship_weapon_damage = 0.45
 		ship_weapon_range_mult = 0.20
+	}
+	ship_modifier = {
+		
 	}
 	max_hitpoints = 80000
 	base_buildtime = 1440
@@ -390,10 +395,11 @@ starbase_rogue = {
 		starbase_trade_protection_range_add = 1
 		starbase_trade_protection_add = 40
 		ship_sensor_range_add = 2
-	}
-	ship_modifier = {
 		ship_weapon_damage = 0.50
 		ship_weapon_range_mult = 0.20
+	}
+	ship_modifier = {
+		
 	}
 	max_hitpoints = 160000
 	base_buildtime = 2000
