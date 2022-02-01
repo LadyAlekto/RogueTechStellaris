@@ -28,7 +28,7 @@
  aura_starbase_maintenance_drones_desc:0 "Maintenance Drones that actively seek out, shield and repair allied forces in orbit."
    
  sm_supremacy_shipyard:0 "Advanced Shipyard"
- sm_supremacy_shipyard_desc:0 "Adds 4 Shipyard Capacity and Increases Ship Construction Speed by 33%."
+ sm_supremacy_shipyard_desc:0 "Adds 2 Shipyard Capacity and Increases Ship Construction Speed by 33%. \n §YCounts as any Shipyard Uplink with Gigastructures§!"
  
  sm_supremacy_gun_battery:0 "Fortress Gun Battery"
  sm_supremacy_gun_battery_desc:0 "Adds 1 Titanic, 2 Large, 2 Medium, and 4 Small weapon slots to the Starbase."

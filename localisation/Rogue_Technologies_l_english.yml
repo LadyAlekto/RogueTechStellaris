@@ -1,12 +1,12 @@
 ﻿l_english:
  tech_roguetech_AP_PSI_UNLOCK:0 "Psionic Ascension"
- tech_roguetech_AP_PSI_UNLOCK_desc:0 "Granted through Psionic Ascension."
+ tech_roguetech_AP_PSI_UNLOCK_desc:0 "Psionic Ascension Technologies."
  
  tech_roguetech_AP_BIO_UNLOCK:0 "Genetical Ascension"
- tech_roguetech_AP_BIO_UNLOCK_desc:0 "Granted through Genetic Ascension."
+ tech_roguetech_AP_BIO_UNLOCK_desc:0 "Genetic Ascension Technologies."
  
  tech_roguetech_AP_SYNTH_UNLOCK:0 "Synthetical Ascension"
- tech_roguetech_AP_SYTNH_UNLOCK_desc:0 "Granted through Synthetic Ascension."
+ tech_roguetech_AP_SYTNH_UNLOCK_desc:0 "Synthetic Ascension Technologies."
  
  tech_rogue_joke_hotsauce:0 "Flavoured Organics"
  tech_rogue_joke_hotsauce_desc:0 "Food is always best when it fights back."
@@ -63,10 +63,10 @@
  tech_supremacy_scalar_cannon_minituaristion_desc:0 "A marvel of Engineering and Physics, the principles of scalar weapons applied into small systems"
  
  tech_supremacy_scalar_cannon_minituaristion_2:0 "Scalar Cannon Minituarisation 2"
- tech_supremacy_scalar_cannon_minituaristion_2_desc:0 "Further advances in scalar weapon technologies allows to create smaller weapons"
+ tech_supremacy_scalar_cannon_minituaristion_2_desc:0 "Improvements to the Quantum Flux Compensator allows to build smaller scale scalar beam cannons"
  
  tech_supremacy_scalar_cannon_minituaristion_3:0 "Scalar Weapon Minituarisation 3"
- tech_supremacy_scalar_cannon_minituaristion_3_desc:0 "Scalar based Weaponry and Equipment for our Gene-Warriors allows us to field near incomprehensible super soldiers"
+ tech_supremacy_scalar_cannon_minituaristion_3_desc:0 "Scalar based Weaponry and Equipment for our Armies allows us to field super soldiers of unprecendet power"
  
  tech_supremacy_dreadnought:0 "Supremacy Dreadnought"
  tech_supremacy_dreadnought_desc:0 "The Supremacy Dreadnought Core. Void Superiority Reborn."
@@ -147,7 +147,7 @@
  tech_rogue_nanolathe_starbase_building_desc:0 "Utilizing Scalar fields and Nanolathe construction techniques allows to create the ultimate fortification, equipped with massive weapon arrays and the heaviest armor imaginable."
  
  tech_rogue_nanolathe_starbase_module:0 "Starbase Extension"
- tech_rogue_nanolathe_starbase_module_desc:0 "Reinforced Starbase systems increase module production speeds."
+ tech_rogue_nanolathe_starbase_module_desc:0 "Nanolathe Starbase engineering improve module production speeds."
  
  tech_rogue_nanolathe_starbase_module_II:0 "Starbase Extension II"
- tech_rogue_nanolathe_starbase_module_II_desc:0 "Sclar Field Starbase extensions increase module production speeds."
+ tech_rogue_nanolathe_starbase_module_II_desc:0 "Scalar Field Starbase extensions improve module production speeds."

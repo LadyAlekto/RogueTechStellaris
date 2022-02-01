@@ -1,204 +1,181 @@
-science_quarters = {
-	icon = "supremacy_science_quarters"
-	construction_days = 180
-	
-	potential = {
-		exists = owner
-		owner = { has_technology = tech_basic_science_lab_2 }
-	}
-	
-	show_in_tech = "tech_basic_science_lab_2"
-
-	resources = {
-		category = starbase_buildings
-		cost = {
-			alloys = 50
-		}
-
-		upkeep = {
-			energy = 2
-		}
-			produces = {
-		physics_research = 5
-		engineering_research = 5
-		society_research = 5
-	}
-	}
-
-	system_modifier = {
-		planet_researchers_produces_mult = 0.1
-	}
-
-	ai_build_at_chokepoint = yes
+virtual_shipyard_uplink_building = {
+	icon = "GFX_spaceport_module_virtual_shipyard"
+	construction_days = 360
+	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
-	ai_weight = {
-		weight = 50
-	}
-}
+	ai_weight = { weight = 150 }
 
-orbital_administration = {
-	icon = "supremacy_orbital_administration"
-	construction_days = 180
-	
 	potential = {
 		exists = owner
-		owner = { has_technology = tech_autocurating_vault }
-	}
-	
-	show_in_tech = "tech_autocurating_vault"
-
-	resources = {
-		category = starbase_buildings
-		cost = {
-			alloys = 50
-		}
-
-		upkeep = {
-			energy = 2
-		}
-		
-		produces = {
-			unity = 5
-		}
+		solar_system = { any_system_planet = { has_planet_flag = giga_virtual_shipyard } }
 	}
 
-	country_modifier = {
-		empire_size_mult = -0.01
-	}
-
-	ai_build_at_chokepoint = yes
-	ai_build_outside_chokepoint = yes
-	ai_weight = {
-		weight = 50
-	}
-}
-
-system_wide_minefield = {
-	icon = "GFX_Supremacy_SpaceMines"
-	construction_days = 180
-	
-	potential = {
-		exists = owner
-		owner = { has_technology = tech_starbase_3 }
-	}
-	
-	show_in_tech = "tech_starbase_3"
-	
 	possible = {
-		custom_tooltip = {
-			fail_text = "requires_starport"
-			has_starbase_size >= starbase_starport
+		custom_tooltip = { fail_text = "requires_starport"
+			OR = {
+				has_starbase_size >= starbase_starport
+				has_starbase_size >= acot_precusor_starbase
+				has_starbase_size >= acot_precusor_sigma_starbase
+				has_starbase_size >= acot_precusor_phanon_starcitadel
+			}
 		}
+		custom_tooltip = { fail_text = "requires_virtual_shipyard"	solar_system = { any_system_planet = { has_planet_flag = giga_virtual_shipyard } } }
+		NOT = { has_starbase_building = supremacy_shipyard }
 	}
 
 	resources = {
 		category = starbase_buildings
-		cost = {
-			alloys = 150
-			minerals = 50
+		cost = { alloys = 100 }
+		upkeep = {
+			volatile_motes = 5
+			exotic_gases = 5
+			rare_crystals = 5
+			alloys = 20
 			energy = 50
 		}
-
-		upkeep = {
-			energy = 2
-			alloys = 1
-			minerals = 1
-		}
 	}
 
-	equipped_component = "STARBASE_SYSTEM_WIDE_MINEFIELD"
-
-	ai_build_at_chokepoint = yes
-	ai_build_outside_chokepoint = no
-	ai_weight = {
-		weight = 10
-	}
-}
-
-maintenance_drones = {
-	icon = "supremacy_maintenance_drones"
-	construction_days = 180
-	
-	potential = {
-		exists = owner
-		owner = { has_technology = tech_space_defense_station_improvement }
-	}
-	
-	show_in_tech = "tech_space_defense_station_improvement"
-
-	resources = {
-		category = starbase_buildings
-		cost = {
-			alloys = 100
-			sr_dark_matter = 20
-			nanites = 50
-			sr_living_metal = 50
-		}
-
-		upkeep = {
-			energy = 10
-			sr_dark_matter = 1
-			nanites = 1
-			sr_living_metal = 1
-		}
-	}
-
-	orbit_modifier = {
-		ship_orbit_upkeep_mult = -0.25
-	}
-	
 	station_modifier = {
-		starbase_shipyard_build_speed_mult = 0.2
+		starbase_shipyard_capacity_add = 10
+		starbase_shipyard_build_cost_mult = -0.5
 	}
-	
-	equipped_component = "STARBASE_MAINTENANCE_DRONES"
 
-	ai_build_at_chokepoint = yes
-	ai_build_outside_chokepoint = yes
-	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+	ship_modifier = {
+		ship_starting_experience_add = 300
 	}
 }
 
-supremacy_shipyard = {
-	icon = "supremacy_shipyard"
-	construction_days = 180
-		
+hyperstructural_shipyard_uplink = {
+	icon = "GFX_spaceport_module_hyperstructural_shipyard"
+	construction_days = 0
+	ai_weight = { weight = 1500 }
+
 	potential = {
 		exists = owner
-		owner = { has_technology = tech_supremacy_intelligent_materials }
+		solar_system = { any_system_megastructure = { is_megastructure_type = hyperstructural_ass_4 } }
 	}
-	
-	show_in_tech = "tech_supremacy_intelligent_materials"
 
-	resources = {
-		category = starbase_buildings
-		cost = {
-			alloys = 100
-			sr_dark_matter = 20
-			nanites = 50
-			sr_living_metal = 50
-		}
-
-		upkeep = {
-			energy = 10
-			sr_dark_matter = 1
-			nanites = 1
-			sr_living_metal = 1
-		}
-	}
-	
 	possible = {
-		custom_tooltip = { fail_text = "already_have_pd_uplink"		NOT = { has_starbase_building = planetary_drive_yard_uplink } }
-		custom_tooltip = { fail_text = "already_have_eq_uplink"		NOT = { has_starbase_building = equatorial_shipyard_uplink } }
+		custom_tooltip = { fail_text = "requires_starport"
+			OR = {
+				has_starbase_size >= starbase_starport
+				has_starbase_size >= acot_precusor_starbase
+				has_starbase_size >= acot_precusor_sigma_starbase
+				has_starbase_size >= acot_precusor_phanon_starcitadel
+			}
+		}
 		custom_tooltip = { fail_text = "already_have_ass_uplink"	NOT = { has_starbase_building = hyperstructural_shipyard_uplink } }
+		custom_tooltip = {
+			fail_text = "requires_shipyard"
+			OR = {
+				has_starbase_module = shipyard
+				has_starbase_module = acot_starbase_shipyard
+				has_starbase_module = acot_sigma_starbase_shipyard
+				has_starbase_module = acot_phanon_starbase_shipyard
+			}
+		}
 	}
 
+	resources = { category = starbase_modules }
+	ship_modifier = { ship_starting_experience_add = 150 }
 	station_modifier = {
-		starbase_shipyard_capacity_add = 2
-		starbase_shipyard_build_speed_mult = 0.15
+		starbase_shipyard_capacity_add = 90
+		starbase_shipyard_build_speed_mult = 2
+		starbase_shipyard_build_cost_mult = -0.15
 	}
-	
+}
+
+equatorial_shipyard_uplink = {
+	icon = "GFX_spaceport_module_equatorial_shipyard"
+	construction_days = 0
+	ai_weight = { weight = 1500 }
+
+	potential = {
+		exists = owner
+		solar_system = { any_system_megastructure = { is_megastructure_type = eq_shipyard_2 } }
+	}
+
+	possible = {
+		custom_tooltip = { fail_text = "requires_starport"
+			OR = {
+				has_starbase_size >= starbase_starport
+				has_starbase_size >= acot_precusor_starbase
+				has_starbase_size >= acot_precusor_sigma_starbase
+				has_starbase_size >= acot_precusor_phanon_starcitadel
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_shipyard"
+			OR = {
+				has_starbase_module = shipyard
+				has_starbase_module = acot_starbase_shipyard
+				has_starbase_module = acot_sigma_starbase_shipyard
+				has_starbase_module = acot_phanon_starbase_shipyard
+			}
+		}
+		custom_tooltip = { fail_text = "already_have_eq_uplink"		NOT = { has_starbase_building = equatorial_shipyard_uplink } }
+		NOT = { has_starbase_building = supremacy_shipyard }
+	}
+
+	resources = { category = starbase_modules }
+	ship_modifier = { ship_starting_experience_add = 50 }
+	triggered_station_modifier = {
+		starbase_shipyard_build_speed_mult = 0.5
+		starbase_shipyard_build_cost_mult = -0.1
+	}
+
+	triggered_station_modifier = { potential = { solar_system = { count_system_megastructure = { limit = { is_megastructure_type = eq_shipyard_2 } count = 1  } } } starbase_shipyard_capacity_add = 8 }
+	triggered_station_modifier = { potential = { solar_system = { count_system_megastructure = { limit = { is_megastructure_type = eq_shipyard_2 } count = 2  } } } starbase_shipyard_capacity_add = 16 }
+	triggered_station_modifier = { potential = { solar_system = { count_system_megastructure = { limit = { is_megastructure_type = eq_shipyard_2 } count = 3  } } } starbase_shipyard_capacity_add = 24 }
+	triggered_station_modifier = { potential = { solar_system = { count_system_megastructure = { limit = { is_megastructure_type = eq_shipyard_2 } count = 4  } } } starbase_shipyard_capacity_add = 32 }
+	triggered_station_modifier = { potential = { solar_system = { count_system_megastructure = { limit = { is_megastructure_type = eq_shipyard_2 } count = 5  } } } starbase_shipyard_capacity_add = 40 }
+	triggered_station_modifier = { potential = { solar_system = { count_system_megastructure = { limit = { is_megastructure_type = eq_shipyard_2 } count = 6  } } } starbase_shipyard_capacity_add = 48 }
+	triggered_station_modifier = { potential = { solar_system = { count_system_megastructure = { limit = { is_megastructure_type = eq_shipyard_2 } count = 7  } } } starbase_shipyard_capacity_add = 56 }
+	triggered_station_modifier = { potential = { solar_system = { count_system_megastructure = { limit = { is_megastructure_type = eq_shipyard_2 } count = 8  } } } starbase_shipyard_capacity_add = 64 }
+	triggered_station_modifier = { potential = { solar_system = { count_system_megastructure = { limit = { is_megastructure_type = eq_shipyard_2 } count = 9  } } } starbase_shipyard_capacity_add = 72 }
+	triggered_station_modifier = { potential = { solar_system = { count_system_megastructure = { limit = { is_megastructure_type = eq_shipyard_2 } count = 10 } } } starbase_shipyard_capacity_add = 80 }
+}
+
+planetary_drive_yard_uplink = {
+	icon = "GFX_spaceport_module_planetary_dockyard"
+	construction_days = 0
+	ai_weight = { weight = 1500 }
+
+	potential = {
+		exists = owner
+		solar_system = { 
+			OR = {
+				any_system_megastructure = { is_megastructure_type = planetary_drive_yard_1 }
+				any_system_megastructure = { is_megastructure_type = planetary_drive_yard_1_shipyard } 
+				any_system_megastructure = { is_megastructure_type = planetary_drive_yard_1_fortress } 
+			}
+		}
+	}
+
+	possible = {
+		custom_tooltip = { fail_text = "requires_starport"
+			OR = {
+				has_starbase_size >= starbase_starport
+				has_starbase_size >= acot_precusor_starbase
+				has_starbase_size >= acot_precusor_sigma_starbase
+				has_starbase_size >= acot_precusor_phanon_starcitadel
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_shipyard"
+			OR = {
+				has_starbase_module = shipyard
+				has_starbase_module = acot_starbase_shipyard
+				has_starbase_module = acot_sigma_starbase_shipyard
+				has_starbase_module = acot_phanon_starbase_shipyard
+			}
+		}
+		custom_tooltip = { fail_text = "already_have_pd_uplink"		NOT = { has_starbase_building = planetary_drive_yard_uplink } }
+		NOT = { has_starbase_building = supremacy_shipyard }
+	}
+
+	resources = { category = starbase_modules }
+
 	triggered_station_modifier = { potential = { solar_system = { count_system_megastructure = { limit = { is_megastructure_type = planetary_drive_yard_1 } count = 1  } } } starbase_shipyard_capacity_add = 3 starbase_shipyard_build_speed_mult = 0.15 }
 	triggered_station_modifier = { potential = { solar_system = { count_system_megastructure = { limit = { is_megastructure_type = planetary_drive_yard_1 } count = 2  } } } starbase_shipyard_capacity_add = 6 starbase_shipyard_build_speed_mult = 0.30 }
 	triggered_station_modifier = { potential = { solar_system = { count_system_megastructure = { limit = { is_megastructure_type = planetary_drive_yard_1 } count = 3  } } } starbase_shipyard_capacity_add = 9 starbase_shipyard_build_speed_mult = 0.45 }
@@ -266,182 +243,36 @@ supremacy_shipyard = {
 	triggered_station_modifier = { potential = { solar_system = { count_system_megastructure = { limit = { is_megastructure_type = planetary_drive_yard_1_shipyard } count = 2  } } } starbase_shipyard_build_cost_mult = -0.15 }
 	triggered_station_modifier = { potential = { solar_system = { count_system_megastructure = { limit = { is_megastructure_type = planetary_drive_yard_1_shipyard } count = 3  } } } starbase_shipyard_build_cost_mult = -0.225 }
 	triggered_station_modifier = { potential = { solar_system = { count_system_megastructure = { limit = { is_megastructure_type = planetary_drive_yard_1_shipyard } count >= 4  } } } starbase_shipyard_build_cost_mult = -0.30 }
-	
-	triggered_station_modifier = { potential = { solar_system = { count_system_megastructure = { limit = { is_megastructure_type = eq_shipyard_2 } count = 1  } } } starbase_shipyard_capacity_add = 8 }
-	triggered_station_modifier = { potential = { solar_system = { count_system_megastructure = { limit = { is_megastructure_type = eq_shipyard_2 } count = 2  } } } starbase_shipyard_capacity_add = 16 }
-	triggered_station_modifier = { potential = { solar_system = { count_system_megastructure = { limit = { is_megastructure_type = eq_shipyard_2 } count = 3  } } } starbase_shipyard_capacity_add = 24 }
-	triggered_station_modifier = { potential = { solar_system = { count_system_megastructure = { limit = { is_megastructure_type = eq_shipyard_2 } count = 4  } } } starbase_shipyard_capacity_add = 32 }
-	triggered_station_modifier = { potential = { solar_system = { count_system_megastructure = { limit = { is_megastructure_type = eq_shipyard_2 } count = 5  } } } starbase_shipyard_capacity_add = 40 }
-	triggered_station_modifier = { potential = { solar_system = { count_system_megastructure = { limit = { is_megastructure_type = eq_shipyard_2 } count = 6  } } } starbase_shipyard_capacity_add = 48 }
-	triggered_station_modifier = { potential = { solar_system = { count_system_megastructure = { limit = { is_megastructure_type = eq_shipyard_2 } count = 7  } } } starbase_shipyard_capacity_add = 56 }
-	triggered_station_modifier = { potential = { solar_system = { count_system_megastructure = { limit = { is_megastructure_type = eq_shipyard_2 } count = 8  } } } starbase_shipyard_capacity_add = 64 }
-	triggered_station_modifier = { potential = { solar_system = { count_system_megastructure = { limit = { is_megastructure_type = eq_shipyard_2 } count = 9  } } } starbase_shipyard_capacity_add = 72 }
-	triggered_station_modifier = { potential = { solar_system = { count_system_megastructure = { limit = { is_megastructure_type = eq_shipyard_2 } count = 10 } } } starbase_shipyard_capacity_add = 80 }
-	
-	triggered_station_modifier = { potential = { solar_system = { count_system_megastructure = { limit = { is_megastructure_type = hyperstructural_ass_4 } count = 1  } } } starbase_shipyard_capacity_add = 90 starbase_shipyard_build_speed_mult = 2 starbase_shipyard_build_cost_mult = -0.15 }
-	
-	triggered_station_modifier = { potential = { solar_system = { count_system_megastructure = { limit = { is_megastructure_type = giga_virtual_shipyard } count = 1  } } } starbase_shipyard_capacity_add = 10 starbase_shipyard_build_cost_mult = -0.5 }
-	
-	ai_build_at_chokepoint = no
-	ai_build_outside_chokepoint = yes
-	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
-		modifier = {
-			factor = 100
-			owner = {
-				OR = {
-					count_owned_starbase = {
-						count = 0
-						limit = { has_starbase_module = shipyard }
-					}
-					AND = {
-						num_starbases >= 4
-						count_owned_starbase = {
-							count < 2
-							limit = { has_starbase_module = shipyard }
-						}
-					}
-					AND = {
-						num_starbases >= 9
-						count_owned_starbase = {
-							count < 3
-							limit = { has_starbase_module = shipyard }
-						}
-					}
-					AND = {
-						num_starbases >= 15
-						count_owned_starbase = {
-							count < 4
-							limit = { has_starbase_module = shipyard }
-						}
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 3
-			has_starbase_module = shipyard
-			count_starbase_modules = {
-				count < 2
-				type = shipyard
-			}
-		}
-		modifier = {
-			factor = 3
-			has_starbase_module = shipyard
-			count_starbase_modules = {
-				count < 4
-				type = shipyard
-			}
-		}
-	}
 }
 
-rogue_orbital_exotic_reactor = {
-	icon = "rogue_spaceport_exotic_reactor"
-	construction_days = 180
-	
+katzen_submarine_snare = {
+	icon = "GFX_spaceport_module_orbital_mind_control_lazer"
+	construction_days = 90
+	ai_build_at_chokepoint = yes
+	ai_build_outside_chokepoint = no
+	ai_weight = { weight = 150 }
+
 	potential = {
 		exists = owner
-		owner = { has_technology = tech_supremacy_exotic_matter_annihilation }
+		owner = { has_country_flag = studied_katzen_subs }
 	}
-	
-	show_in_tech = "tech_supremacy_exotic_matter_annihilation"
-	
+
 	possible = {
-		custom_tooltip = {
-			fail_text = "requires_citadel"
-			has_starbase_size >= starbase_citadel
+		custom_tooltip = { fail_text = "requires_starport"
+			OR = {
+				has_starbase_size >= starbase_starport
+				has_starbase_size >= acot_precusor_starbase
+				has_starbase_size >= acot_precusor_sigma_starbase
+				has_starbase_size >= acot_precusor_phanon_starcitadel
+			}
 		}
 	}
 
 	resources = {
 		category = starbase_buildings
-		cost = {
-			alloys = 100
-			sr_living_metal = 10
-			nanites = 10
-		}
-
+		cost = { alloys = 100 }
 		upkeep = {
-			minerals = 10
+			energy = 5
 		}
-			produces = {
-		sr_dark_matter = 2
-		energy = 5
-	}
-	}
-	
-	station_modifier = {
-		ship_shield_mult = 0.25
-		ship_shield_regen_add_perc = 0.5
-		ship_weapon_damage = 0.15
-	}
-
-	system_modifier = {
-		planet_anti_matter_researcher_upkeep_mult = -0.05
-		planet_anti_matter_researcher_produces_mult = 0.05
-	}
-
-	ai_build_at_chokepoint = yes
-	ai_build_outside_chokepoint = yes
-	ai_weight = {
-		weight = 50
-	}
-}
-
-rogue_orbital_universal_constructor = {
-	icon = "rogue_spaceport_universal_constructor"
-	construction_days = 180
-	
-	potential = {
-		exists = owner
-		owner = { has_technology = tech_supremacy_intelligent_materials }
-	}
-	
-	show_in_tech = "tech_supremacy_intelligent_materials"
-	
-	possible = {
-		custom_tooltip = {
-			fail_text = "requires_citadel"
-			has_starbase_size >= starbase_citadel
-		}
-	}
-
-	resources = {
-		category = starbase_buildings
-		cost = {
-			alloys = 50
-			sr_living_metal = 10
-			nanites = 10
-			sr_dark_matter = 20
-		}
-
-		upkeep = {
-			sr_dark_matter = 3
-		}
-			produces = {
-		sr_living_metal = 1
-			nanites = 1
-	}
-	}
-	
-	station_modifier = {
-		ship_armor_mult = 0.1
-		ship_armor_regen_add_perc = 0.5
-		ship_hull_mult = 0.1
-		ship_hull_regen_add_perc = 0.5
-		starbase_shipyard_build_speed_mult = 0.2
-	}
-
-	system_modifier = {
-		planet_nanite_fabricator_upkeep_mult = -0.05
-		planet_nanite_fabricator_produces_mult = 0.05
-	}
-
-	ai_build_at_chokepoint = yes
-	ai_build_outside_chokepoint = yes
-	ai_weight = {
-		weight = 50
 	}
 }

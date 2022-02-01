@@ -6,6 +6,8 @@ on_pop_purged = {
 	events = {
 		biophage_trad_purge.1
 		biophage_trad_purge.2
+		biophage_trad_purge.66
+		biophage_trad_purge.99
 	}
 }
 

@@ -1,13 +1,23 @@
 alpha 0.2
+
+Biophage is now a origin (quite a strong one)
+It is based on planetary diversity infecting hive and uses the same code and planet classes for compatibility
+
 reworked titan and juggernauts a bit
 tweaked all icons
+
 Added an additional starbase level for a maximum of 5 buildings and 10 modules (just looks nicer in dynui starbases)
 
 Available to research after Nanolathe Engineering,
 The Phalanx comes with even more weapons and a scalar cannon (1T, 2L, 4 Missiles, 4 Strike Craft, 2 PD)
-Additionall it has double base armor and hull compared to a citadel
+Additionally it has double base armor and hull compared to a citadel
 
 Also tweaked starbase weapons bonus from fire rate to damage
+
+Advanced Shipyard Starbase Building now counts AS ANY! uplink for gigastructures
+Nerfed its effect down to +2 Shipyards and +15% Build speed
+
+requires to load AFTER! gigas
 
 Tweaks because of 3.3
 Subspace drones have 1% mult against sprawl penalties
@@ -26,12 +36,13 @@ Additional Economic Starbase Modules and Buildings
 Adds a Zro Refinery building
 
 Attempt at teaching ai and job auto assign to use the exotic materials jobs reasonable 
+nerfed these buildings a tiny bit
 
-todo! script tied to gatebuilders that decreases empire size for every gateway
+Made reaching higher crisis levels harder, but the aetherophasic engine upgrade costs have been halfed
+
+Juggernauts and Rogue-Starbase stuff now have a influence upkeep
 
 repurposed stealth fighters into drone swarm
-
-nerf planetary gateways after
 
 New AP based tech and tweaks:
 
@@ -59,3 +70,6 @@ Grants t1 aegis and t1 drone fighters on ascension
 repeatable additional energy weapon damage and shield strength for psionics, psionic army buffs
 repeatable additional kinetic weapon damage and armor strength, improved build speeds
 repeatable additional fighter and explosives damage + hull strength for biological
+
+!todo!
+Rework all ships slightly to permit 1-2 standard utilities

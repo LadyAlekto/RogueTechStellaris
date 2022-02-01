@@ -1,0 +1,9 @@
+no_pdhive = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_bioforming.dds"
+	icon_frame = 3
+	planet_jobs_produces_mult = -0.2
+	planet_building_build_speed_mult = -0.4
+	planet_districts_cost_mult = 0.4
+	planet_buildings_cost_mult = 0.4
+	pop_growth_speed_reduction = 1.0
+}

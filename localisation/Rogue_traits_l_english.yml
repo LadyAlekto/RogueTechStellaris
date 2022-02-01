@@ -5,13 +5,13 @@
  civic_tooltip_biophage_effects:0 "Allows your empire to §YNecrophage§! organics, infecting them and giving birth to new pops of your §YMain species§! when purged.\n\nInfecting Organic Armies can spawn Reaper and Regenerator Armies on their death. \n\nReanimate Biological Leviathans to fight for you"
  
  trait_biophage:0 "Biophage"
- trait_biophage_desc:1 "§LThis plague grows by consuming other lifeforms.§!\n"
+ trait_biophage_desc:1 "§LThis plague grows by consuming all life.§!\n"
  
  trait_biophage_purification:0 "Purifiers"
- trait_biophage_purification_desc:1 "§LPurifyiers purge all.§!\n"
+ trait_biophage_purification_desc:1 "Gain 5% Monthly £unity£ from Purging."
  
  trait_biophage_rapid_purification:0 "Rabid Purifiers"
- trait_biophage_rapid_purification_desc:1 "§LRabid Purifyiers rapidly purge all.§!\n"
+ trait_biophage_rapid_purification_desc:1 "Gain 10% Monthly £unity£ from Purging."
  
  leader_trait_synaptic_enhance_gestalt:0 "Shared Consciousness"
  leader_trait_synaptic_enhance_gestalt_desc:1 "This Leader has a strong connection to the collective memory."

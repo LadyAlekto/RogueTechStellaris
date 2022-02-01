@@ -7,12 +7,12 @@ building_biophage_spawning_pool = {
 
 	potential = {	
 		owner = { is_hive_empire = yes 	
-					has_valid_civic = civic_hive_biophage
+					has_origin = origin_rogue_phage
 		}
 	}
 	
 	show_tech_unlock_if = {
-		has_valid_civic = civic_hive_biophage
+		has_origin = origin_rogue_phage
 	}
 
 	destroy_trigger = {
@@ -64,12 +64,12 @@ building_biophage_spawning_pool_MKII = {
 
 	potential = {	
 		owner = { is_hive_empire = yes 	
-					has_valid_civic = civic_hive_biophage
+					has_origin = origin_rogue_phage
 		}
 	}
 	
 	show_tech_unlock_if = {
-		has_valid_civic = civic_hive_biophage
+		has_origin = origin_rogue_phage
 	}
 
 	destroy_trigger = {
@@ -128,12 +128,12 @@ building_biophage_spawning_pool_MKIII = {
 
 	potential = {	
 		owner = { is_hive_empire = yes 	
-					has_valid_civic = civic_hive_biophage
+					has_origin = origin_rogue_phage
 		}
 	}
 	
 	show_tech_unlock_if = {
-		has_valid_civic = civic_hive_biophage
+		has_origin = origin_rogue_phage
 	}
 
 	destroy_trigger = {

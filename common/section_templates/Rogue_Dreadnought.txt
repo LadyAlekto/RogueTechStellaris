@@ -82,7 +82,7 @@ ship_section_template = {
 	}
 	
 	component_slot = {
-		name = "PLANET_KILLER_GUN_01"
+		name = "TITANIC_GUN_02"
 		template = "invisible_titanic_fixed"
 		locatorname = "planet_killer_gun_01"
 	}

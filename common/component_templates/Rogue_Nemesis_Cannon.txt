@@ -66,7 +66,7 @@ weapon_component_template = {
 
 	tags = { weapon_type_energy }
 	
-	size_restriction = { crisis_battleship battleship RT_NEMESIS_PLATTFORM asteroid_artillery giga_massive_planet giga_planet_behemoth crisis_titan RT_NEMESIS_PLATTFORM_CANNON star_eater juggernaut }
+	size_restriction = { crisis_battleship RT_NEMESIS_PLATTFORM asteroid_artillery giga_massive_planet giga_planet_behemoth crisis_titan RT_NEMESIS_PLATTFORM_CANNON star_eater juggernaut }
 
 	prerequisites = { "tech_rogue_crisis_battleship" }
 	component_set = "ROGUE_BEAM_CANNON"

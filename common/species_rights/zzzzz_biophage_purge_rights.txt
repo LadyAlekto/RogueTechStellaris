@@ -18,6 +18,10 @@ purge_necrophage = {
 					has_origin = origin_necrophage
 					has_trait = trait_necrophage
 				}
+				AND = {
+					has_origin = origin_rogue_phage
+					has_trait = trait_biophage
+				}
 			}
 		}
 	}

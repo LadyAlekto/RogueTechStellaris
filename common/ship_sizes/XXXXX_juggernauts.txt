@@ -16,6 +16,7 @@ juggernaut = {
 		upkeep = {
 			energy = 30
 			alloys = 10
+			influence = 0.1
 		}
 	}
 
@@ -78,7 +79,7 @@ juggernaut = {
 	}
 
 	empire_limit = {
-		base = 1
+		base = 0
 		max = 10
 		naval_cap_div = 600
 		show = {

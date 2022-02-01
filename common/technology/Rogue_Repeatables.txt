@@ -88,6 +88,7 @@ tech_supremacy_naval_cap = {
 	modifier = {
 		country_naval_cap_add = 5
 		country_command_limit_add = 5
+		country_power_projection_unity_produces_add = 5
 	}
 }
 
@@ -118,6 +119,7 @@ tech_supremacy_command_limit = {
 	
 	modifier = {
 		country_command_limit_add = 5
+		country_power_projection_unity_produces_add = 5
 	}
 }
 

@@ -6,7 +6,6 @@ trait_biophage = {
 
 	initial = no
 	randomized = no
-	modification = no
 	forced_happiness = no
 	immortal_leaders = no
 
@@ -14,13 +13,22 @@ trait_biophage = {
 	ai_weight = {
 		weight = 0
 	}
+	
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
 
 	icon = "gfx/interface/icons/traits/trait_biophage.dds"
 
 	modifier = {
 		pop_growth_speed = -0.5
 		pop_assembly_speed = -0.5
-		species_empire_size_mult = -0.2
 		pop_housing_usage_mult = -0.2
 		planet_resettlement_unemployed_mult = 0.5
 		slave_market_cost_mult = 0.5	
@@ -38,6 +46,17 @@ trait_biophage_purification = {
 	allowed_archetypes = { BIOLOGICAL LITHOID MACHINE }
 	valid_for_all_ethics = no
 	allowed_ethics = {ethic_fanatic_xenophobe ethic_xenophobe ethic_gestalt_consciousness}
+	
+	species_potential_add = {
+		always = yes
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+	
 	modifier = {
 		pop_purge_speed = 0.5
 	}
@@ -53,6 +72,15 @@ trait_biophage_rapid_purification = {
 	allowed_archetypes = { BIOLOGICAL LITHOID MACHINE }
 	valid_for_all_ethics = no
 	allowed_ethics = {ethic_fanatic_xenophobe ethic_xenophobe ethic_gestalt_consciousness}
+	species_potential_add = {
+		always = yes
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
 	modifier = {
 		pop_purge_speed = 1
 	}

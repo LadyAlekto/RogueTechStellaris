@@ -1,50 +1,47 @@
-civic_hive_biophage = {
-	potential = { authority = { value = auth_hive_mind } }
-	possible = {
-		civics = {
-			NOR = {
-				value = civic_mutualistic_behavior 
-				value = civic_hive_parasitic 
-			}
-		}
-		origin = {
-			#NOT = { value = origin_hive_thriving_prey }
-			NOR = { value = origin_hive_overmind
-					value = origin_necrophage
-					}			
-		}
-	}
-
-	modification = no
-	random_weight = {
-		base = 1
-		modifier = {
-			# civic has no effect after galaxy generation, disable for random generation
-			factor = 0
-			has_global_flag = game_started
-		}
-	}
-	
-	traits = {
-		trait = trait_biophage
-	}
-	
-	description = civic_tooltip_biophage_effects
-	modifier = {
-	job_infector_drone_add = 1
-	pop_purge_speed = 0.5
-	}
-	swap_type = {
-		name = civic_hive_biophage_lithoid
-		trigger = {
-			local_human_species_class = LITHOID
-		}	
-		}
-	swap_type = {
-		name = civic_hive_biophage_necroid
-		trigger = {
-			local_human_species_class = NECROID
-		}	
-		}
-}
+#civic_hive_biophage = {
+#	potential = { authority = { value = auth_hive_mind } }
+#	possible = {
+#		civics = {
+#			NOR = {
+#				value = civic_mutualistic_behavior 
+#				value = civic_hive_parasitic 
+#			}
+#		}
+#		origin = {
+#			#NOT = { value = origin_hive_thriving_prey }
+#			NOR = { value = origin_hive_overmind
+#					value = origin_necrophage
+#					}	
+#		}
+# }
+#
+#	modification = no
+#	random_weight = {
+#		base = 1
+#		modifier = {
+#			# civic has no effect after galaxy generation, disable for random generation
+#			factor = 0
+#			has_global_flag = game_started
+#		}
+#	}
+#	
+#	description = civic_tooltip_biophage_effects
+#	modifier = {
+#	job_infector_drone_add = 1
+#	pop_purge_speed = 0.5
+#	empire_size_mult = -0.2
+#	}
+#	swap_type = {
+#		name = civic_hive_biophage_lithoid
+#		trigger = {
+#			local_human_species_class = LITHOID
+#		}	
+#		}
+#	swap_type = {
+#		name = civic_hive_biophage_necroid
+#		trigger = {
+#			local_human_species_class = NECROID
+#		}	
+#		}
+#}
 

@@ -1,0 +1,24 @@
+on_colonized = {
+	events = {
+		Rogue_auto_infest.29
+	}
+}
+
+on_planet_transfer = {
+	events = {
+		Rogue_auto_infest.32
+	}
+}
+
+on_colony_destroyed = {
+	events = {
+		Rogue_auto_infest.32
+	}
+}
+
+on_planet_transfer = {
+	events = {
+		Rogue_auto_infest.32
+		Rogue_auto_infest.33
+	}
+}

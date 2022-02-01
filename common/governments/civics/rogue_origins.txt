@@ -1,0 +1,35 @@
+origin_rogue_phage = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origin_biophage_start.dds"
+	picture = GFX_origin_rogue_biophage_start
+	description = "origin_tooltip_rogue_phage_start_effects"
+	starting_colony = pc_hive
+	habitability_preference = pc_hive
+	max_once_global = no
+	random_weight = { base = 1 }
+	possible = { 
+		authority = { value = auth_hive_mind }
+		civics = {
+			NOR = {
+				text = civic_tooltip_not_idyllic_bloom
+				value = civic_hive_idyllic_bloom
+			}
+		} 
+	}
+	#flags = { custom_start_screen }
+	#advanced_start = yes
+	
+	modifier = {
+	job_infector_drone_add = 1
+	pop_purge_speed = 0.5
+	empire_size_mult = -0.2
+	}
+	
+	playable = {
+		host_has_dlc = "Necroids Species Pack"
+	}
+	
+	traits = {
+		trait = trait_biophage
+	}
+}

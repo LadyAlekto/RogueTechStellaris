@@ -78,3 +78,51 @@ planet_event = {
 		}
 	}
 }
+
+planet_event = {
+	id = biophage_trad_purge.66
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		from = {
+			OR = {
+				has_trait = trait_biophage_purification
+			}
+		}
+		is_controlled_by = from
+	}
+	
+	immediate = {	
+		owner = {
+			add_monthly_resource_mult = { 
+				resource = unity
+				value = 0.05	
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = biophage_trad_purge.99
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		from = {
+			OR = {
+				has_trait = trait_biophage_rapid_purification
+			}
+		}
+		is_controlled_by = from
+	}
+	
+	immediate = {	
+		owner = {
+			add_monthly_resource_mult = { 
+				resource = unity
+				value = 0.1	
+			}
+		}
+	}
+}

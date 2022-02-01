@@ -14,6 +14,7 @@ rogue_spaceport_eco_food = {
 		cost = {
 			alloys = 75
 			energy = 25
+			influence = 1
 		}
 
 		produces = {
@@ -22,6 +23,7 @@ rogue_spaceport_eco_food = {
 
 		upkeep = {
 			energy = 1.5
+			influence = 0.03
 		}
 	}
 
@@ -52,10 +54,12 @@ rogue_spaceport_eco_energy = {
 		cost = {
 			alloys = 75
 			energy = 25
+			influence = 1
 		}
 
 		produces = {
 			energy = 5
+			influence = 0.03
 		}
 	}
 
@@ -86,6 +90,7 @@ rogue_spaceport_eco_minerals = {
 		cost = {
 			alloys = 75
 			energy = 25
+			influence = 1
 		}
 
 		produces = {
@@ -94,6 +99,7 @@ rogue_spaceport_eco_minerals = {
 
 		upkeep = {
 			energy = 2
+			influence = 0.03
 		}
 	}
 	
@@ -124,6 +130,7 @@ rogue_spaceport_eco_alloys = {
 		cost = {
 			alloys = 75
 			energy = 25
+			influence = 2
 		}
 
 		produces = {
@@ -133,6 +140,7 @@ rogue_spaceport_eco_alloys = {
 		upkeep = {
 			minerals = 10
 			energy = 5
+			influence = 0.05
 		}
 	}
 
@@ -175,6 +183,7 @@ rogue_spaceport_eco_consumer = {
 		cost = {
 			alloys = 75
 			energy = 25
+			influence = 2
 		}
 
 		produces = {
@@ -184,6 +193,7 @@ rogue_spaceport_eco_consumer = {
 		upkeep = {
 			minerals = 5
 			energy = 1
+			influence = 0.02
 		}
 	}
 
@@ -214,6 +224,7 @@ rogue_spaceport_eco_motes = {
 		cost = {
 			alloys = 75
 			energy = 25
+			influence = 3
 		}
 
 		produces = {
@@ -223,6 +234,7 @@ rogue_spaceport_eco_motes = {
 		upkeep = {
 			minerals = 10
 			energy = 5
+			influence = 0.05
 		}
 	}
 
@@ -253,6 +265,7 @@ rogue_spaceport_eco_gases = {
 		cost = {
 			alloys = 75
 			energy = 25
+			influence = 3
 		}
 
 		produces = {
@@ -262,6 +275,7 @@ rogue_spaceport_eco_gases = {
 		upkeep = {
 			minerals = 10
 			energy = 5
+			influence = 0.05
 		}
 	}
 
@@ -292,6 +306,7 @@ rogue_spaceport_eco_crystals = {
 		cost = {
 			alloys = 75
 			energy = 25
+			influence = 3
 		}
 
 		produces = {
@@ -301,12 +316,55 @@ rogue_spaceport_eco_crystals = {
 		upkeep = {
 			minerals = 10
 			energy = 5
+			influence = 0.05
 		}
 	}
 
 	system_modifier = {
 		planet_jobs_rare_crystals_produces_mult = 0.1
 		station_gatherers_rare_crystals_produces_mult = 0.1
+	}
+	
+	ai_build_at_chokepoint = no
+	ai_weight = {
+		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+	}
+}
+
+rogue_spaceport_eco_zro = {
+	icon = "rogue_spaceport_zro"
+	section = "REFINERY_STARBASE_SECTION"
+	construction_days = 180
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_mine_zro }
+	}
+	
+	show_in_tech = "tech_mine_zro"
+
+	resources = {
+		category = starbase_modules
+		cost = {
+			alloys = 75
+			energy = 25
+			influence = 5
+		}
+
+		produces = {
+			sr_zro = 1
+		}
+
+		upkeep = {
+			volatile_motes = 0.8
+			exotic_gases = 0.8
+			rare_crystals = 0.8
+			influence = 0.05
+		}
+	}
+
+	system_modifier = {
+		planet_jobs_sr_zro_produces_mult = 0.15
+		station_gatherers_sr_zro_produces_mult = 0.15
 	}
 	
 	ai_build_at_chokepoint = no
@@ -331,6 +389,7 @@ rogue_spaceport_eco_dark_matter = {
 		cost = {
 			alloys = 75
 			energy = 25
+			influence = 5
 		}
 
 		produces = {
@@ -340,6 +399,7 @@ rogue_spaceport_eco_dark_matter = {
 		upkeep = {
 			minerals = 4
 			energy = 10
+			influence = 0.08
 		}
 	}
 
@@ -370,6 +430,7 @@ rogue_spaceport_eco_livingmetal = {
 		cost = {
 			alloys = 75
 			energy = 25
+			influence = 5
 		}
 
 		produces = {
@@ -379,6 +440,7 @@ rogue_spaceport_eco_livingmetal = {
 		upkeep = {
 			alloys = 5
 			energy = 5
+			influence = 0.08
 		}
 	}
 
@@ -409,6 +471,7 @@ rogue_spaceport_eco_nanites = {
 		cost = {
 			alloys = 75
 			energy = 25
+			influence = 5
 		}
 
 		produces = {
@@ -418,52 +481,13 @@ rogue_spaceport_eco_nanites = {
 		upkeep = {
 			alloys = 5
 			energy = 5
+			influence = 0.08
 		}
 	}
 
 	system_modifier = {
 		planet_jobs_nanites_produces_mult = 0.1
 		station_gatherers_nanites_produces_mult = 0.1
-	}
-	
-	ai_build_at_chokepoint = no
-	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
-	}
-}
-
-rogue_spaceport_eco_zro = {
-	icon = "rogue_spaceport_zro"
-	section = "REFINERY_STARBASE_SECTION"
-	construction_days = 180
-	potential = {
-		exists = owner
-		owner = { has_technology = tech_mine_zro }
-	}
-	
-	show_in_tech = "tech_mine_zro"
-
-	resources = {
-		category = starbase_modules
-		cost = {
-			alloys = 75
-			energy = 25
-		}
-
-		produces = {
-			sr_zro = 1
-		}
-
-		upkeep = {
-			volatile_motes = 1
-			exotic_gases = 1
-			rare_crystals =1
-		}
-	}
-
-	system_modifier = {
-		planet_jobs_sr_zro_produces_mult = 0.15
-		station_gatherers_sr_zro_produces_mult = 0.15
 	}
 	
 	ai_build_at_chokepoint = no

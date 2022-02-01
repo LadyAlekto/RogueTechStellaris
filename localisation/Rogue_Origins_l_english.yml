@@ -1,0 +1,64 @@
+﻿l_english:
+
+ origin_rogue_phage: "Biophage"
+ origin_rogue_phage_desc:0 "A sentient plague that will infect and bioform any biological material to more of itself."
+ origin_tooltip_rogue_phage_start_effects:0 "All life exists to serve the Hive. Be it a planet or a lifeform \n\n Can convert £pops£ Pops of other species to the §Hprimary species§!.\n\nInfected Organic Armies can spawn Reaper and Regenerator Armies on their death. \n\nReanimate Biological Leviathans to fight for you \n\n§RWARNING: All planet classes are slowly transformed to §!§Y$pc_pdhive2$s§!" 
+ 
+  #Hive Level 1
+ pc_pdhive1:0 "Infected World"
+ pc_pdhive1_desc:0 "This world has been infected by a Hive mind. The planet is slowly going through a process turning all of it's biomass into organic hive structures."
+ pc_pdhive1_tile:0 "Infected Hive Terrain"
+ pc_pdhive1_tile_desc:0 "The hive's biomass is slowly taking over the planet."
+ trait_pc_pdhive1_preference:0 "Infected Hive Preference"
+ trait_pc_pdhive1_preference_desc:1 "$trait_pc_arctic_preference_desc$"
+ mod_pc_pdhive1_habitability:1 "Infected Hive Habitability"
+
+ #Hive Level 2
+ pc_pdhive2:0 "Infested World"
+ pc_pdhive2_desc:0 "This world has been almost been complete infested by a Hive mind. The planet is slowly going through a process turning all of it's biomass into organic hive structures."
+ pc_pdhive2_tile:0 "Infested Hive Terrain"
+ pc_pdhive2_tile_desc:0 "The hive's biomass has taking over most of the planet. What was once forets, deserts and ocean has been replaced by giant organic structures that house the drones of the hive mind."
+ trait_pc_pdhive2_preference:0 "Infested Hive Preference"
+ trait_pc_pdhive2_preference_desc:1 "$trait_pc_arctic_preference_desc$"
+ mod_pc_pdhive2_habitability:1 "Infested Hive Habitability"
+
+ #Hive World Decisions
+ decision_pdhive_infest1:0 "Planetary Infection"
+ decision_pdhive_infest1_desc:0 "To make this world truley ours we must begin the process of infecting the planet, consuming the biomass of this world to house the hive."
+ decision_pdhive_infest2:0 "Planetary Infestion"
+ decision_pdhive_infest2_desc:0 "By focusing the drones on expanding the hive we will be able to control more of the planet. This will gain the hive more districts, housing and efficency."
+ decision_pdhive_infest3:0 "Complete Hive Infestion"
+ decision_pdhive_infest3_desc:0 "This world will finally become completely part of the hive, destorying all traces of what this planet once was. Nothing outside of the hive will be able to live here afterwards." 
+ decision_pdhive_uninfest:0 "Destroy Infestation"
+ decision_pdhive_uninfest_desc:0 "The Infestation left behind on this world must be destroyed, allowing for the orginal biome once again thrive."
+ decision_uninfesthivepd_tooltip:0 "The Hive infestation will be removed, returning the planet to it's orginal biome."
+
+ #Hive Blockers
+ d_pdhive10:0 "Growing Hive"
+ d_pdhive10_desc:0 "Much of the hive has not yet fully matured and will take time complete its transformation."
+ d_pdhive8:0 "Growing Hive"
+ d_pdhive8_desc:0 "Much of the hive has not yet fully matured and will take time complete its transformation."
+ d_pdhive6:0 "Growing Hive"
+ d_pdhive6_desc:0 "Much of the hive has not yet fully matured and will take time complete its transformation."
+ d_pdhive5:0 "Growing Hive"
+ d_pdhive5_desc:0 "Much of the hive has not yet fully matured and will take time complete its transformation."
+ d_pdhive4:0 "Growing Hive"
+ d_pdhive4_desc:0 "Much of the hive has not yet fully matured and will take time complete its transformation."
+ d_pdhive3:0 "Growing Hive"
+ d_pdhive3_desc:0 "Much of the hive has not yet fully matured and will take time complete its transformation."
+ d_pdhive2:0 "Growing Hive"
+ d_pdhive2_desc:0 "Much of the hive has not yet fully matured and will take time complete its transformation."
+
+ #Hive Deposits
+ d_hive_gas2:0 "Large Gas Deposit"
+ d_hive_gas2_desc:0 "Before the hive took over this planet had a large Exotic Gas deposit."
+ d_hive_gas1:0 "Gas Deposit"
+ d_hive_gas1_desc:0 "Before the hive took over this planet had a Exotic Gas deposit."
+ d_hive_motes2:0 "Large Motes Deposit"
+ d_hive_motes2_desc:0 "Before the hive took over this planet had a large Volitile Motes deposit."
+ d_hive_motes1:0 "Motes Deposit"
+ d_hive_motes1_desc:0 "Before the hive took over this planet had a Volitile Motes deposit."
+ d_hive_crystal1:0 "Crystal Deposit"
+ d_hive_crystal1_desc:0 "Before the hive took over this planet had a large Rare Crystals deposit."
+ d_hive_crystal2:0 "Large Crystal Deposit"
+ d_hive_crystal2_desc:0 "Before the hive took over this planet had a large Rare Crystals deposit."
