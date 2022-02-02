@@ -26,12 +26,6 @@ ship_section_template = {
 	should_draw_components = yes
 
 	component_slot = {
-		name = "TITANIC_01"
-		template = "invisible_titanic_turret"
-		locatorname = "medium_gun_01"
-	}
-
-	component_slot = {
 		name = "EXTRA_LARGE_01"
 		template = "invisible_extra_large_fixed"
 		locatorname = "medium_gun_02"
@@ -169,25 +163,13 @@ ship_section_template = {
 	
 	component_slot = {
 		name = "SMALL_GUN_01"
-		template = "invisible_point_defence_turret"
+		template = "invisible_small_turret"
 		locatorname = "medium_gun_01"
 	}	
 
 	component_slot = {
 		name = "SMALL_GUN_02"
-		template = "invisible_point_defence_turret"
-		locatorname = "medium_gun_02"
-	}
-	
-	component_slot = {
-		name = "SMALL_GUN_03"
-		template = "invisible_point_defence_turret"
-		locatorname = "medium_gun_01"
-	}
-
-	component_slot = {
-		name = "SMALL_GUN_04"
-		template = "invisible_point_defence_turret"
+		template = "invisible_small_turret"
 		locatorname = "medium_gun_02"
 	}
 	
@@ -306,13 +288,13 @@ ship_section_template = {
 	
 	component_slot = {
 		name = "SMALL_GUN_01"
-		template = "invisible_point_defence_turret"
+		template = "invisible_small_turret"
 		locatorname = "medium_gun_01"
 	}	
 
 	component_slot = {
 		name = "SMALL_GUN_02"
-		template = "invisible_point_defence_turret"
+		template = "invisible_small_turret"
 		locatorname = "medium_gun_02"
 	}
 }

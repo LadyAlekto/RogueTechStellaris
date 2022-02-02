@@ -1,15 +1,15 @@
-namespace = pdengine
+namespace = rogue_infest
 
 #PD Auto Infest Planet for Hive Start
 planet_event = {
-	id = pdengine.29
+	id = rogue_infest.29
 	hide_window = yes
 	location = root
 
 	is_triggered_only = yes
 
 	trigger = {
-		owner = { has_origin = origin_pd_hive }
+		owner = { has_origin = origin_rogue_phage }
 		NOT = { has_planet_flag = pd_infesting1 }
 		NOT = { has_planet_flag = pd_infesting2 }
 		NOT = { is_planet_class = pc_hive }
@@ -22,15 +22,15 @@ planet_event = {
 		IF = {
 			limit = { not = { OR = { is_planet_class = pc_pdhive1 is_planet_class = pc_pdhive2 } } }
 			set_planet_flag = pd_infesting1	
-			add_modifier = { modifier = pd_infestingplanet days = 3600 }
-			planet_event = { id = pdengine.30 days = 3600 }
+			add_modifier = { modifier = rogue_infestingplanet days = 2400 }
+			planet_event = { id = rogue_infest.30 days = 2400 }
 			remove_modifier = no_pdhive
 		}
 		ELSE_IF = {
 			limit = { is_planet_class = pc_pdhive1 }
 			set_planet_flag = pd_infesting2
-			add_modifier = { modifier = pd_infestingplanet2 days = 7200 }
-			planet_event = { id = pdengine.31 days = 7200 }
+			add_modifier = { modifier = rogue_infestingplanet2 days = 4800 }
+			planet_event = { id = rogue_infest.31 days = 4800 }
 			remove_planet_flag = pdremovehive
 			remove_modifier = pdremovehive
 			remove_modifier = land_appropriation
@@ -48,14 +48,14 @@ planet_event = {
 
 #PD Change to infested Planet level 1
 planet_event = {
-	id = pdengine.30
+	id = rogue_infest.30
 	hide_window = yes
 	location = root
 
 	is_triggered_only = yes
 
 	trigger = {
-		owner = { has_origin = origin_pd_hive }
+		owner = { has_origin = origin_rogue_phage }
 		has_planet_flag = pd_infesting1
 	}
 
@@ -171,21 +171,21 @@ planet_event = {
 		pd_remove_special_deposits_modifiers = yes
 		change_pc = pc_pdhive1
 		set_planet_flag = pd_infesting2
-		add_modifier = { modifier = pd_infestingplanet2 days = 7200 }
-		planet_event = { id = pdengine.31 days = 7200 }
+		add_modifier = { modifier = rogue_infestingplanet2 days = 4800 }
+		planet_event = { id = rogue_infest.31 days = 4800 }
 	}
 }
 
 #PD Change to infested Planet level 2
 planet_event = {
-	id = pdengine.31
+	id = rogue_infest.31
 	hide_window = yes
 	location = root
 
 	is_triggered_only = yes
 
 	trigger = {
-		owner = { has_origin = origin_pd_hive }
+		owner = { has_origin = origin_rogue_phage }
 		has_planet_flag = pd_infesting2
 	}
 
@@ -200,13 +200,13 @@ planet_event = {
 
 #Stop Infesting, kill the bugs
 planet_event = {
-	id = pdengine.32
+	id = rogue_infest.32
 	hide_window = yes
 
 	is_triggered_only = yes
 	
 	trigger = {
-		owner = { has_origin = origin_pd_hive }
+		owner = { has_origin = origin_rogue_phage }
 	}
 
 	immediate = {
@@ -219,15 +219,15 @@ planet_event = {
 		remove_deposit = d_pdhive4
 		remove_deposit = d_pdhive3
 		remove_deposit = d_pdhive2
-		remove_modifier = pd_infestingplanet
-		remove_modifier = pd_infestingplanet2
+		remove_modifier = rogue_infestingplanet
+		remove_modifier = rogue_infestingplanet2
 		set_planet_flag = pd_restart_infesting
 	}
 }
 
 #modify the modifier for lacking hive infestation
 planet_event = {
-	id = pdengine.33
+	id = rogue_infest.33
 	hide_window = yes
 
 	is_triggered_only = yes
@@ -235,7 +235,7 @@ planet_event = {
 	trigger = {
 		OR = {
 			AND = {
-				FROM = { has_origin = origin_pd_hive }
+				FROM = { has_origin = origin_rogue_phage }
 				NOR = {
 					is_planet_class = pc_hive
 					is_planet_class = pc_pdhive1
@@ -243,10 +243,10 @@ planet_event = {
 				}
 			}
 			AND = { 
-				FROM = { NOT = { has_origin = origin_pd_hive } }
+				FROM = { NOT = { has_origin = origin_rogue_phage } }
 				OR = {
-				has_modifier = pd_infestingplanet
-				has_modifier = pd_infestingplanet2
+				has_modifier = rogue_infestingplanet
+				has_modifier = rogue_infestingplanet2
 				has_planet_flag = pd_infesting2
 				has_planet_flag = pd_infesting1
 				}
@@ -257,32 +257,32 @@ planet_event = {
 	immediate = {
 		if = {
 			limit = {
-				FROM = { has_origin = origin_pd_hive }
+				FROM = { has_origin = origin_rogue_phage }
 				is_under_colonization = no
 				NOT = { has_planet_flag = pd_infesting1 }
 				NOT = { has_planet_flag = pd_infesting2 }
 			}
 			planet_event = {
-				id = pdengine.29
+				id = rogue_infest.29
 			}
 			remove_planet_flag = pdremovehive
 			remove_modifier = pdremovehive
 		}
 		if = {
 			limit = {
-				FROM = { NOT = { has_origin = origin_pd_hive } }
+				FROM = { NOT = { has_origin = origin_rogue_phage } }
 			}
 			remove_planet_flag = pd_infesting2
 			remove_planet_flag = pd_infesting1
-			remove_modifier = pd_infestingplanet
-			remove_modifier = pd_infestingplanet2
+			remove_modifier = rogue_infestingplanet
+			remove_modifier = rogue_infestingplanet2
 			add_modifier = {
 				modifier = pdremovehive
-				days = 3600
+				days = 2400
 			}
 			planet_event = {
-				id = pdengine.63
-				days = 3600
+				id = rogue_infest.63
+				days = 2400
 			}
 			set_planet_flag = pdremovehive
 		}
@@ -291,7 +291,7 @@ planet_event = {
 
 #remove infestation if colony is destoryed
 planet_event = {
-	id = pdengine.34
+	id = rogue_infest.34
 	hide_window = yes
 
 	is_triggered_only = yes
@@ -299,7 +299,7 @@ planet_event = {
 	trigger = {
 		OR = {
 			AND = {
-				FROM = { has_origin = origin_pd_hive }
+				FROM = { has_origin = origin_rogue_phage }
 				NOR = {
 					is_planet_class = pc_hive
 					is_planet_class = pc_pdhive1
@@ -307,10 +307,10 @@ planet_event = {
 				}
 			}
 			AND = { 
-				FROM = { NOT = { has_origin = origin_pd_hive } }
+				FROM = { NOT = { has_origin = origin_rogue_phage } }
 				OR = {
-				has_modifier = pd_infestingplanet
-				has_modifier = pd_infestingplanet2
+				has_modifier = rogue_infestingplanet
+				has_modifier = rogue_infestingplanet2
 				has_planet_flag = pd_infesting2
 				has_planet_flag = pd_infesting1
 				}
@@ -324,30 +324,30 @@ planet_event = {
 		remove_modifier = pdremovehive
 		if = {
 			limit = {
-				FROM = { has_origin = origin_pd_hive }
+				FROM = { has_origin = origin_rogue_phage }
 				is_under_colonization = no
 				NOT = { has_planet_flag = pd_infesting1 }
 				NOT = { has_planet_flag = pd_infesting2 }
 			}
 			planet_event = {
-				id = pdengine.29
+				id = rogue_infest.29
 			}
 		}
 		if = {
 			limit = {
-				FROM = { NOT = { has_origin = origin_pd_hive } }
+				FROM = { NOT = { has_origin = origin_rogue_phage } }
 			}
 			remove_planet_flag = pd_infesting2
 			remove_planet_flag = pd_infesting1
-			remove_modifier = pd_infestingplanet
-			remove_modifier = pd_infestingplanet2
+			remove_modifier = rogue_infestingplanet
+			remove_modifier = rogue_infestingplanet2
 			add_modifier = {
 				modifier = pdremovehive
-				days = 3600
+				days = 2400
 			}
 			planet_event = {
-				id = pdengine.63
-				days = 3600
+				id = rogue_infest.63
+				days = 2400
 			}
 			set_planet_flag = pdremovehive
 		}
@@ -356,7 +356,7 @@ planet_event = {
 
 #turn back into normal world from infested
 planet_event = {
-	id = pdengine.63
+	id = rogue_infest.63
 	hide_window = yes
 
 	is_triggered_only = yes

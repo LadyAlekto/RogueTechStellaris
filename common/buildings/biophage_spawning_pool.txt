@@ -22,19 +22,17 @@ building_biophage_spawning_pool = {
 
 	planet_modifier = {
 		job_infector_drone_add = 1
-		job_infector_drone_per_pop = 0.05
-		planet_pop_assembly_organic_mult = 0.1
-		planet_pop_assembly_organic_add = 1
-		pop_growth_speed = 0.1
-		pop_purge_speed = 1
-		planet_housing_add = 1
-		planet_amenities_add = 5
+		job_infector_drone_per_pop = 0.01
 		job_patrol_drone_add = 1
-		job_patrol_drone_per_pop = 0.03		
+		job_patrol_drone_per_pop = 0.01	
+		planet_jobs_unity_produces_mult = 0.05
 	}
 	
 	resources = {
 		category = planet_buildings
+		produces = {
+			unity = 2
+		}
 		cost = {
 			minerals = 200
 			food = 100
@@ -79,21 +77,16 @@ building_biophage_spawning_pool_MKII = {
 
 	planet_modifier = {
 		job_infector_drone_add = 2
-		job_infector_drone_per_pop = 0.05
-		planet_pop_assembly_organic_mult = 0.15
-		planet_pop_assembly_organic_add = 1.15
-		pop_growth_speed = 0.2
-		pop_purge_speed = 2	
-		planet_housing_add = 2
-		planet_amenities_add = 10
-		job_patrol_drone_add = 1.5
-		job_patrol_drone_per_pop = 0.04
+		job_infector_drone_per_pop = 0.01
+		job_patrol_drone_add = 2
+		job_patrol_drone_per_pop = 0.01
+		planet_jobs_unity_produces_mult = 0.1
 	}
 		
 	resources = {
 		category = planet_buildings
 		produces = {
-			unity = 2
+			unity = 3
 		}
 		cost = {
 			minerals = 300
@@ -111,7 +104,7 @@ building_biophage_spawning_pool_MKII = {
 	}
 	
 	prerequisites = {
-		"tech_roguetech_biological_engineering"
+		"tech_hive_cluster"
 	}
 
 	triggered_desc = {
@@ -143,21 +136,16 @@ building_biophage_spawning_pool_MKIII = {
 
 	planet_modifier = {
 		job_infector_drone_add = 3
-		job_infector_drone_per_pop = 0.05
-		planet_pop_assembly_organic_mult = 0.3
-		planet_pop_assembly_organic_add = 1.3
-		pop_growth_speed = 0.3
-		pop_purge_speed = 3	
-		planet_housing_add = 3
-		planet_amenities_add = 15
-		job_patrol_drone_add = 2
-		job_patrol_drone_per_pop = 0.05
+		job_infector_drone_per_pop = 0.01
+		job_patrol_drone_add = 3
+		job_patrol_drone_per_pop = 0.01
+		planet_jobs_unity_produces_mult = 0.15
 	}
 	
 	resources = {
 		category = planet_buildings
 		produces = {
-			unity = 3
+			unity = 4
 		}
 		cost = {
 			minerals = 500
@@ -171,7 +159,7 @@ building_biophage_spawning_pool_MKIII = {
 	}
 		
 	prerequisites = {
-		"tech_roguetech_biological_mastery"
+		"tech_hive_confluence"
 	}
 
 	triggered_desc = {

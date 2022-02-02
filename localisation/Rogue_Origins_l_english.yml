@@ -4,6 +4,14 @@
  origin_rogue_phage_desc:0 "A sentient plague that will infect and bioform any biological material to more of itself."
  origin_tooltip_rogue_phage_start_effects:0 "All life exists to serve the Hive. Be it a planet or a lifeform \n\n Can convert £pops£ Pops of other species to the §Hprimary species§!.\n\nInfected Organic Armies can spawn Reaper and Regenerator Armies on their death. \n\nReanimate Biological Leviathans to fight for you \n\n§RWARNING: All planet classes are slowly transformed to §!§Y$pc_pdhive2$s§!" 
  
+  #Auto Infesting
+ rogue_infestingplanet:0 "Phage Contagion"
+ rogue_infestingplanet_desc:0 "The Phage is spreading throughout the Biosphere."
+ rogue_infestingplanet2:0 "Phage Contamination"
+ rogue_infestingplanet2_desc:0 "The Phage is spreading throughout the Biosphere."
+ no_pdhive:0 "No Infestation"
+ no_pdhive_desc:0 "Without an active infestation our hive cannot thrive, we must begin the process at once."
+ 
   #Hive Level 1
  pc_pdhive1:0 "Infected World"
  pc_pdhive1_desc:0 "This world has been infected by a Hive mind. The planet is slowly going through a process turning all of it's biomass into organic hive structures."

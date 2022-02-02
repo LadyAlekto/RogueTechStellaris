@@ -4,7 +4,7 @@ tradition_category_biophage_harvest = {
 	finish_bonus = "tr_biophage_harvest_finish"
 
 	potential = {
-		has_nemesis = yes
+		has_origin = origin_rogue_phage
 	}
 
 	traditions = {

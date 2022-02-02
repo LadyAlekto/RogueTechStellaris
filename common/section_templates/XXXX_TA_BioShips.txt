@@ -78,20 +78,14 @@ ship_section_template = {
 	
 	component_slot = {
 		name = "SMALL_GUN_01"
-		template = "small_turret"
+		template = "medium_turret"
 		locatorname = "small_gun_01"
 	}
-	
+
 	component_slot = {
 		name = "SMALL_GUN_02"
-		template = "small_turret"
+		template = "medium_turret"
 		locatorname = "small_gun_02"
-	}
-	
-	component_slot = {
-		name = "SMALL_GUN_03"
-		template = "small_turret"
-		locatorname = "small_gun_03"
 	}
 	
 	 
@@ -115,11 +109,11 @@ ship_section_template = {
 	resources = {
 		category = ship_sections
 		cost = {
-			food = @section_cost_food
+			food = 90
         }
         upkeep = {
-			food = @section_food_upkeep
-			alloys = @section_alloy_reduction
+			food = 0.4
+			alloys = -0.1
         }
 	}
 }
@@ -130,9 +124,9 @@ ship_section_template = {
 	fits_on_slot = mid
 	should_draw_components = yes
 	entity = "corvette_S3_entity"
-    icon = "GFX_ship_part_core_mid"
+   icon = "GFX_ship_part_core_mid"
     
-    prerequisites = { tech_voidcraft_breakthrough } 
+   prerequisites = { tech_voidcraft_breakthrough } 
 	
 	ai_weight = {
 		modifier = {
@@ -152,16 +146,16 @@ ship_section_template = {
 		modifier = {
 			factor = 0.1
 			is_preferred_weapons = weapon_type_explosive
-        }	
+       }	
         modifier = {
-            factor = 0
-            has_authority = auth_machine_intelligence
-        }
+           factor = 0
+           has_authority = auth_machine_intelligence
+       }
 	}
 	
 	component_slot = {
 		name = "SMALL_GUN_01"
-		template = "point_defence_turret"
+		template = "small_turret"
 		locatorname = "small_gun_01"
 	}
 	
@@ -184,11 +178,11 @@ ship_section_template = {
 		category = ship_sections
 		cost = {
 			food = @section_cost_food
-        }
+       }
         upkeep = {
 			food = @section_food_upkeep
 			alloys = @section_alloy_reduction
-        }
+       }
 	}
 }
 
@@ -286,7 +280,7 @@ ship_section_template = {
 	
 	component_slot = {
 		name = "SMALL_GUN_01"
-		template = "point_defence_turret"
+		template = "small_turret"
 		locatorname = "small_gun_01"
 	}	
 	
@@ -371,20 +365,20 @@ ship_section_template = {
 	ai_weight = {
 		factor = 200
 		modifier = {
-            factor = 0
+           factor = 0
             has_authority = auth_machine_intelligence
-        }
+       }
 	}
 	
 	component_slot = {
 		name = "SMALL_GUN_01"
-		template = "point_defence_turret"
+		template = "small_turret"
 		locatorname = "small_gun_01"
 	}
 	
 	component_slot = {
 		name = "SMALL_GUN_02"
-		template = "point_defence_turret"
+		template = "small_turret"
 		locatorname = "small_gun_02"
 	}
 	
@@ -393,12 +387,12 @@ ship_section_template = {
 	resources = {
 		category = ship_sections
 		cost = {
-            food = @section_cost_food
-        }
-        upkeep = {
+           food = @section_cost_food
+       }
+       upkeep = {
 			food = @section_food_upkeep
 			alloys = @section_alloy_reduction
-        }
+       }
 	}
 }
 
@@ -422,14 +416,8 @@ ship_section_template = {
 	
 	component_slot = {
 		name = "SMALL_GUN_01"
-		template = "small_turret"
+		template = "medium_missile_turret"
 		locatorname = "small_gun_01"
-	}
-	
-	component_slot = {
-		name = "SMALL_GUN_02"
-		template = "small_turret"
-		locatorname = "small_gun_02"
 	}
 	
 	aux_utility_slots = 1
@@ -634,12 +622,12 @@ ship_section_template = {
 
 	component_slot = {
 		name = "PD_01"
-		template = "point_defence_turret"
+		template = "small_turret"
 		locatorname = "small_gun_01"
 	}
 	component_slot = {
 		name = "PD_02"
-		template = "point_defence_turret"
+		template = "small_turret"
 		locatorname = "small_gun_02"
 	}
 	component_slot = {
@@ -995,13 +983,13 @@ ship_section_template = {
 	
 	component_slot = {
 		name = "SMALL_GUN_01"
-		template = "point_defence_turret"
+		template = "small_turret"
 		locatorname = "small_gun_01"
 	}
 	
 	component_slot = {
 		name = "SMALL_GUN_02"
-		template = "point_defence_turret"
+		template = "small_turret"
 		locatorname = "small_gun_02"
 	}
 	component_slot = {
@@ -1266,13 +1254,13 @@ ship_section_template = {
 	
 	component_slot = {
 		name = "SMALL_GUN_03"
-		template = "point_defence_turret"
+		template = "small_turret"
 		locatorname = "small_gun_03"
 	}
 	
 		component_slot = {
 		name = "SMALL_GUN_04"
-		template = "point_defence_turret"
+		template = "small_turret"
 		locatorname = "small_gun_04"
 	}
 	component_slot = {

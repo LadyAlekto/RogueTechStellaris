@@ -48,16 +48,17 @@ infector_drone = {
 	}
 
 	planet_modifier = {
-		pop_growth_speed = 0.05
-		planet_pop_assembly_organic_mult = 0.05
+		pop_growth_speed = 0.1
+		planet_pop_assembly_organic_mult = 0.1
 		planet_pop_assembly_organic_add = 0.5
-		pop_purge_speed = 0.2		
-		planet_stability_add = 1
-		planet_crime_no_happiness_add = -2
+		pop_purge_speed = 0.25	
 	}
 
 	resources = {
 		category = planet_infector_drone
+		produces = {
+			unity = 2
+		}
 		upkeep = {
 			trigger = {
 				is_lithoid = no
@@ -76,9 +77,9 @@ infector_drone = {
 	}
 
 	weight = {
-		weight = 1
+		weight = @spawner_drone_job_weight
 		modifier = {
-			factor = 200
+			factor = 20
 			trigger = {
 				planet = {
 					has_current_purge = yes

@@ -138,13 +138,13 @@ ship_section_template = { # Hanger Core
 
 	component_slot = {
 		name = "EXTRA_LARGE_01"
-		template = "invisible_point_defence_turret"
+		template = "large_turret"
 		locatorname = "xl_gun_01"
 	}
 
 	component_slot = {
 		name = "EXTRA_LARGE_02"
-		template = "invisible_point_defence_turret"
+		template = "large_turret"
 		locatorname = "xl_gun_02"
 	}
 	

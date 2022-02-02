@@ -15,7 +15,7 @@ country_event = {
             is_organic_species = yes
         }
 		FROMFROM  = {
-            has_civic = civic_hive_biophage
+            has_origin = origin_rogue_phage
         }
         FROMFROMFROM = { NOT = { has_planet_flag = army_infected } }
     }

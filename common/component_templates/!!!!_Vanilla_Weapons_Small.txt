@@ -1,0 +1,752 @@
+# ####################
+# Mass Drivers
+# ####################
+
+# ## Mass Drivers
+weapon_component_template = {
+	type = point_defence
+
+	key = "SMALL_MASS_DRIVER_1"
+	size = small
+
+	icon = "GFX_ship_part_mass_driver_1"
+	icon_frame = 1
+
+	prerequisites = { "tech_mass_drivers_1" }
+	component_set = "MASS_DRIVER_1"
+	projectile_gfx = "mass_driver_s"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+	upgrades_to = "SMALL_MASS_DRIVER_2"
+	
+	accuracy = 0.65
+	tracking = 0.4
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+}
+
+# ## Coilguns
+weapon_component_template = {
+	type = point_defence
+
+	key = "SMALL_MASS_DRIVER_2"
+	size = small
+
+	icon = "GFX_ship_part_mass_driver_2"
+	icon_frame = 1
+
+	prerequisites = { "tech_mass_drivers_2" }
+	component_set = "MASS_DRIVER_2"
+	projectile_gfx = "coilgun_s"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+	upgrades_to = "SMALL_MASS_DRIVER_3"
+	
+	accuracy = 0.65
+	tracking = 0.4
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t2_cost
+		}
+		upkeep = {
+			energy = @s_t2_upkeep_energy
+			alloys = @s_t2_upkeep_alloys
+		}
+	}
+}
+
+# ## Railguns
+weapon_component_template = {
+	type = point_defence
+
+	key = "SMALL_MASS_DRIVER_3"
+	size = small
+
+	icon = "GFX_ship_part_mass_driver_3"
+	icon_frame = 1
+
+	prerequisites = { "tech_mass_drivers_3" }
+	component_set = "MASS_DRIVER_3"
+	projectile_gfx = "railgun_s"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+	upgrades_to = "SMALL_MASS_DRIVER_4"
+	
+	accuracy = 0.65
+	tracking = 0.4
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t3_cost
+		}
+		upkeep = {
+			energy = @s_t3_upkeep_energy
+			alloys = @s_t3_upkeep_alloys
+		}
+	}
+}
+
+# ## Advanced Railguns
+weapon_component_template = {
+	type = point_defence
+
+	key = "SMALL_MASS_DRIVER_4"
+	size = small
+
+	icon = "GFX_ship_part_mass_driver_4"
+	icon_frame = 1
+
+	prerequisites = { "tech_mass_drivers_4" }
+	component_set = "MASS_DRIVER_4"
+	projectile_gfx = "advanced_railgun_s"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+	upgrades_to = "SMALL_MASS_DRIVER_5"
+	
+	accuracy = 0.65
+	tracking = 0.4
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t4_cost
+			volatile_motes = @s_t4_rare
+		}
+		upkeep = {
+			energy = @s_t4_upkeep_energy
+			alloys = @s_t4_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = volatile_motes }
+		}
+	}
+}
+
+# ## Gauss Cannons
+weapon_component_template = {
+	type = point_defence
+
+	key = "SMALL_MASS_DRIVER_5"
+	size = small
+
+	icon = "GFX_ship_part_mass_driver_5"
+	icon_frame = 1
+
+	prerequisites = { "tech_mass_drivers_5" }
+	component_set = "MASS_DRIVER_5"
+	projectile_gfx = "gauss_cannon_s"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+	
+	accuracy = 0.65
+	tracking = 0.4
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t5_cost
+			volatile_motes = @s_t5_rare
+		}
+		upkeep = {
+			energy = @s_t5_upkeep_energy
+			alloys = @s_t5_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = volatile_motes }
+		}
+	}
+}
+
+# ####################
+# Autocannons
+# ####################
+
+# ## Autocannons 1
+weapon_component_template = {
+	type = point_defence
+
+	key = "AUTOCANNON_1"
+	size = small
+
+	icon = "GFX_ship_part_autocannon_1"
+	icon_frame = 1
+
+	prerequisites = { "tech_autocannons_1" }
+	component_set = "AUTOCANNON_1"
+	projectile_gfx = "auto_cannons_s"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+	upgrades_to = "AUTOCANNON_2"
+	
+	accuracy = 0.8
+	tracking = 0.7
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t3_cost
+		}
+		upkeep = {
+			energy = @s_t3_upkeep_energy
+			alloys = @s_t3_upkeep_alloys
+		}
+	}
+}
+
+# ## Autocannons 2
+weapon_component_template = {
+	type = point_defence
+
+	key = "AUTOCANNON_2"
+	size = small
+
+	icon = "GFX_ship_part_autocannon_2"
+	icon_frame = 1
+
+	prerequisites = { "tech_autocannons_2" }
+	component_set = "AUTOCANNON_2"
+	projectile_gfx = "ripper_auto_cannons_s"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+	upgrades_to = "AUTOCANNON_3"
+	
+	accuracy = 0.8
+	tracking = 0.7
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t4_cost
+			volatile_motes = @s_t4_rare
+		}
+		upkeep = {
+			energy = @s_t4_upkeep_energy
+			alloys = @s_t4_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = volatile_motes }
+		}
+	}
+}
+
+# ## Autocannons 3
+weapon_component_template = {
+	type = point_defence
+
+	key = "AUTOCANNON_3"
+	size = small
+
+	icon = "GFX_ship_part_autocannon_3"
+	icon_frame = 1
+
+	prerequisites = { "tech_autocannons_3" }
+	component_set = "AUTOCANNON_3"
+	projectile_gfx = "stormfire_auto_cannons_s"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+	
+	accuracy = 0.8
+	tracking = 0.7
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t5_cost
+			volatile_motes = @s_t5_rare
+		}
+		upkeep = {
+			energy = @s_t5_upkeep_energy
+			alloys = @s_t5_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = volatile_motes }
+		}
+	}
+}
+
+# ####################
+# Laser
+# ####################
+
+### Red Lasers
+weapon_component_template = {
+	key = "SMALL_RED_LASER"
+	size = small
+	type = point_defence
+	icon = "GFX_ship_part_laser_1"
+	icon_frame = 1
+	prerequisites = { "tech_lasers_1" }
+	component_set = "RED_LASER"
+	projectile_gfx = "infrared_laser_s"
+	tags = { weapon_type_energy }
+	upgrades_to = "SMALL_BLUE_LASER"
+	ai_tags = { weapon_role_anti_armor }	#tags must be pre-registered in common/weapon_tags
+	
+	accuracy = 0.7
+	tracking = 0.4
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+}
+
+### Blue Lasers
+weapon_component_template = {
+	key = "SMALL_BLUE_LASER"
+	size = small
+	type = point_defence
+	icon = "GFX_ship_part_laser_2"
+	icon_frame = 1
+	prerequisites = { "tech_lasers_2" }
+	component_set = "BLUE_LASER"
+	projectile_gfx = "blue_laser_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "SMALL_UV_LASER"
+	
+	accuracy = 0.7
+	tracking = 0.4
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t2_cost
+		}
+		upkeep = {
+			energy = @s_t2_upkeep_energy
+			alloys = @s_t2_upkeep_alloys
+		}
+	}
+}
+
+### UV Lasers
+weapon_component_template = {
+	key = "SMALL_UV_LASER"
+	size = small
+	type = point_defence
+
+	icon = "GFX_ship_part_laser_3"
+	icon_frame = 1
+	#color = { 1.0 0.1 1.0 1 }
+
+	prerequisites = { "tech_lasers_3" }
+	component_set = "UV_LASER"
+	projectile_gfx = "uv_laser_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "SMALL_XRAY_LASER"
+	
+	accuracy = 0.7
+	tracking = 0.4
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t3_cost
+		}
+		upkeep = {
+			energy = @s_t3_upkeep_energy
+			alloys = @s_t3_upkeep_alloys
+		}
+	}
+}
+
+### XRay Lasers
+weapon_component_template = {
+	key = "SMALL_XRAY_LASER"
+	size = small
+	type = point_defence
+
+	icon = "GFX_ship_part_laser_4"
+	icon_frame = 1
+	#color = { 1.0 1.0 1.0 1 }
+
+	prerequisites = { "tech_lasers_4" }
+	component_set = "XRAY_LASER"
+	projectile_gfx = "xray_laser_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "SMALL_GAMMA_LASER"
+	
+	accuracy = 0.7
+	tracking = 0.4
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t4_cost
+			rare_crystals = @s_t4_rare
+		}
+		upkeep = {
+			energy = @s_t4_upkeep_energy
+			alloys = @s_t4_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = rare_crystals }
+		}
+	}
+}
+
+### Gamma Lasers
+weapon_component_template = {
+	key = "SMALL_GAMMA_LASER"
+	size = small
+	type = point_defence
+
+	icon = "GFX_ship_part_laser_5"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+
+	prerequisites = { "tech_lasers_5" }
+	component_set = "GAMMA_LASER"
+	projectile_gfx = "gamma_laser_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	
+	accuracy = 0.7
+	tracking = 0.4
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t5_cost
+			rare_crystals = @s_t5_rare
+		}
+		upkeep = {
+			energy = @s_t5_upkeep_energy
+			alloys = @s_t5_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = rare_crystals }
+		}
+	}
+}
+
+# ####################
+# Plasma
+# ####################
+
+# ## Plasma 1
+weapon_component_template = {
+	key = "SMALL_PLASMA_1"
+	size = small
+	type = point_defence
+
+	icon = "GFX_ship_part_plasma_1"
+	icon_frame = 1
+	#color = { 1.0 1.0 1.0 1 }
+
+	prerequisites = { "tech_plasma_1" }
+	component_set = "PLASMA_1"
+	projectile_gfx = "plasma_thrower_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 3
+	upgrades_to = "SMALL_PLASMA_2"
+	
+	accuracy = 0.75
+	tracking = 0.35
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t3_cost
+		}
+		upkeep = {
+			energy = @s_t3_upkeep_energy
+			alloys = @s_t3_upkeep_alloys
+		}
+	}
+}
+
+# ## Plasma 2
+weapon_component_template = {
+	key = "SMALL_PLASMA_2"
+	size = small
+	accuracy = 1
+	type = point_defence
+
+	icon = "GFX_ship_part_plasma_2"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+
+	prerequisites = { "tech_plasma_2" }
+	component_set = "PLASMA_2"
+	projectile_gfx = "plasma_accelerator_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 3
+	upgrades_to = "SMALL_PLASMA_3"
+	
+	accuracy = 0.75
+	tracking = 0.35
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t4_cost
+			exotic_gases = @s_t4_rare
+		}
+		upkeep = {
+			energy = @s_t4_upkeep_energy
+			alloys = @s_t4_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = exotic_gases }
+		}
+	}
+}
+
+# ## Plasma 3
+weapon_component_template = {
+	key = "SMALL_PLASMA_3"
+	size = small
+	type = point_defence
+
+	icon = "GFX_ship_part_plasma_3"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+
+	prerequisites = { "tech_plasma_3" }
+	component_set = "PLASMA_3"
+	projectile_gfx = "plasma_cannon_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 3
+	
+	accuracy = 0.75
+	tracking = 0.35
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t5_cost
+			exotic_gases = @s_t5_rare
+		}
+		upkeep = {
+			energy = @s_t5_upkeep_energy
+			alloys = @s_t5_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = exotic_gases }
+		}
+	}
+}
+
+# ####################
+# Disruptors
+# ####################
+
+# ## Disruptor 1
+weapon_component_template = {
+	key = "SMALL_DISRUPTOR_1"
+	size = small
+	type = point_defence
+
+	icon = "GFX_ship_part_disruptor_1"
+	icon_frame = 1
+	#color = { 1.0 1.0 1.0 1 }
+
+	prerequisites = { "tech_disruptors_1" }
+	component_set = "DISRUPTOR_1"
+	projectile_gfx = "disruptor_1_small"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_hull }
+	ai_tag_weight = 5
+	upgrades_to = "SMALL_DISRUPTOR_2"
+	
+	accuracy = 0.85
+	tracking = 0.55
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t3_cost
+		}
+		upkeep = {
+			energy = @s_t3_upkeep_energy
+			alloys = @s_t3_upkeep_alloys
+		}
+	}
+}
+
+# ## Disruptor 2
+weapon_component_template = {
+	key = "SMALL_DISRUPTOR_2"
+	size = small
+	type = point_defence
+
+	icon = "GFX_ship_part_disruptor_2"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+
+	prerequisites = { "tech_disruptors_2" }
+	component_set = "DISRUPTOR_2"
+	projectile_gfx = "disruptor_2_small"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_hull }
+	ai_tag_weight = 5
+	upgrades_to = "SMALL_DISRUPTOR_3"
+	
+	accuracy = 0.85
+	tracking = 0.55
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t4_cost
+			rare_crystals = @s_t4_rare
+		}
+		upkeep = {
+			energy = @s_t4_upkeep_energy
+			alloys = @s_t4_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = rare_crystals }
+		}
+	}
+}
+
+
+# ## Disruptor 3
+weapon_component_template = {
+	key = "SMALL_DISRUPTOR_3"
+	size = small
+	type = point_defence
+
+	icon = "GFX_ship_part_disruptor_3"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+
+	prerequisites = { "tech_disruptors_3" }
+	component_set = "DISRUPTOR_3"
+	projectile_gfx = "disruptor_3_small"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_hull }
+	ai_tag_weight = 5
+	
+	accuracy = 0.85
+	tracking = 0.55
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t5_cost
+			rare_crystals = @s_t5_rare
+		}
+		upkeep = {
+			energy = @s_t5_upkeep_energy
+			alloys = @s_t5_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = rare_crystals }
+		}
+	}
+}
+
+###################
+# Null void beam
+###################
+
+weapon_component_template = {
+	key = "SMALL_NV_WEAPON"
+
+	size = small
+	entity = "small_kinetic_gun_entity"
+	type = point_defence
+	icon = "GFX_ship_part_null_void_weapon" #
+	icon_frame = 1
+	projectile_gfx = "space_whale_weapon"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_shield }
+
+	component_set = "NULL_VOID"
+	prerequisites = { "null_void_beam" }
+	
+	accuracy = 0.85
+	tracking = 0.55
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t2_cost
+		}
+		upkeep = {
+			energy = @s_t2_upkeep_energy
+			alloys = @s_t2_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}

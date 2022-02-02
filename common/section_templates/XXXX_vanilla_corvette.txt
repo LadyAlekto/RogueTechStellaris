@@ -58,20 +58,14 @@ ship_section_template = {
 
 	component_slot = {
 		name = "SMALL_GUN_01"
-		template = "small_turret"
+		template = "medium_turret"
 		locatorname = "small_gun_01"
 	}
 
 	component_slot = {
 		name = "SMALL_GUN_02"
-		template = "small_turret"
+		template = "medium_turret"
 		locatorname = "small_gun_02"
-	}
-
-	component_slot = {
-		name = "SMALL_GUN_03"
-		template = "small_turret"
-		locatorname = "small_gun_03"
 	}
 
 	
@@ -91,7 +85,7 @@ ship_section_template = {
 	resources = {
 		category = ship_sections
 		cost = {
-			alloys = @section_cost
+			alloys = 45
 		}
 	}
 }
@@ -117,7 +111,7 @@ ship_section_template = {
 
 	component_slot = {
 		name = "SMALL_GUN_01"
-		template = "point_defence_turret"
+		template = "small_turret"
 		locatorname = "small_gun_01"
 	}
 

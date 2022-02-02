@@ -42,7 +42,7 @@ utility_component_template = {
 
 weapon_component_template = {
 	key = "ROGUE_BEAM_CANNON"
-	size = point_defence
+	size = large
 	type = point_defence
 	prio_projectile = no
 

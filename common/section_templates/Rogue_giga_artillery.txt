@@ -9,8 +9,8 @@ ship_section_template = {
 	prerequisites = { "tech_rogue_crisis_titan" }
 
 	component_slot = { name = "TITANIC_GUN_01"		template = "invisible_titanic_fixed"		locatorname = "loc104" }
-	component_slot = { name = "TITANIC_GUN_02"	template = "invisible_point_defence_turret"		locatorname = "loc104" }
-	component_slot = { name = "TITANIC_GUN_03"	template = "invisible_point_defence_turret"		locatorname = "loc104" }
+	component_slot = { name = "TITANIC_GUN_02"	template = "giga_invisible_large_fixed"		locatorname = "loc104" }
+	component_slot = { name = "TITANIC_GUN_03"	template = "giga_invisible_large_fixed"		locatorname = "loc104" }
 	component_slot = { name = "LARGE_GUN_06"	template = "giga_invisible_large_fixed"		locatorname = "loc104" }
 	component_slot = { name = "LARGE_GUN_05"	template = "giga_invisible_large_fixed"		locatorname = "loc104" }
 	component_slot = { name = "LARGE_GUN_01"		template = "giga_invisible_large_fixed"			locatorname = "loc104" }

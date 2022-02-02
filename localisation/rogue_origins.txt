@@ -1,3 +1,0 @@
-origin_pd_hive: "Infecting Planetary Hive"
- origin_pd_hive_desc:0 "This civilization's homeworld begins as an Hive World, a world shaped in the image of the hive. This has become part of the hive's exsistance and it will do this to all worlds it lands on."
- origin_tooltip_pd_hive_start_effects:0 "The hive has long turned it's homeworld into an extension of itself. Once it arrives on a any new world it will slowly infect with the hive, suffering penalties until the process is complete. \n\n§RWARNING: All planet classes are slowly transformed to §Y$pc_pdhive2$s§!" 

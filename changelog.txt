@@ -1,5 +1,7 @@
 alpha 0.2
 
+requires to load AFTER! gigas
+
 Biophage is now a origin (quite a strong one)
 It is based on planetary diversity infecting hive and uses the same code and planet classes for compatibility
 
@@ -17,8 +19,6 @@ Also tweaked starbase weapons bonus from fire rate to damage
 Advanced Shipyard Starbase Building now counts AS ANY! uplink for gigastructures
 Nerfed its effect down to +2 Shipyards and +15% Build speed
 
-requires to load AFTER! gigas
-
 Tweaks because of 3.3
 Subspace drones have 1% mult against sprawl penalties
 
@@ -26,7 +26,7 @@ Galactic Administration gains improved multi and minor added admin cap
 
 added the forgotten nerf to crisis level required amounts
 
-you can now instantly become the crisis, and you generate 0.1 menace per force projection unit
+you can now instantly become the crisis, and you generate menace per force projection unit
 
 Added a new AP "Power Overwhelming", requires Galactic Force Projection
 Grants additional admin cap, increases all production from force projection AND generates 1 unity from force projection
@@ -35,8 +35,10 @@ Additional Economic Starbase Modules and Buildings
 
 Adds a Zro Refinery building
 
-Attempt at teaching ai and job auto assign to use the exotic materials jobs reasonable 
-nerfed these buildings a tiny bit
+All Point Defense Weapons now count as "small" weapons
+removed pd slots, may be reused in the future
+All Small Weapons have PD capacity, but reduced accuracy and tracking of Non-PD weapons, slightly buffed vanilla PD
+Since i had to replace the vanilla weapons file, redid it so larger turrets have less accuracy
 
 Made reaching higher crisis levels harder, but the aetherophasic engine upgrade costs have been halfed
 
